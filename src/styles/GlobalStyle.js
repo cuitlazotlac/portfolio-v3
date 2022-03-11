@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -7,16 +7,16 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
-    --gray-1: #BCB4B4;
-    --deep-dark: #1E1E1E;
+    --dark-bg: #001321;
+    --gray-1: #C7CBCE;
+    --deep-dark: #082235;
     --gray-2: #363636;
     --white : white;
     --black: black;
   }
   html{
     font-size: 10px;
-    font-family: 'Roboto Mono';
+    font-family: 'Questrial', sans-serif;
     background-color: var(--dark-bg);
   }
   ul,li{

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footer from "./components/Footer";
-import NavMenu from "./components/NavMenu";
+import Footer from "./components/shared/Footer";
+import NavMenu from "./components/shared/NavMenu";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
