@@ -10,7 +10,7 @@ import PText from "./PText";
 import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <HeroStyles>
