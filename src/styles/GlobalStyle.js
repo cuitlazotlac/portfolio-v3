@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+.light-theme{
+  --primary-color: #001bff;
+}
+.dark-theme{
+  --primary-color: #ffff;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --dark-bg: #001321;
-    --gray-1: #C7CBCE;
+    --gray-1: #BCB4B4;
     --deep-dark: #082235;
     --gray-2: #363636;
     --white : white;
@@ -16,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html{
     font-size: 10px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'monospace';
     background-color: var(--dark-bg);
   }
   ul,li{

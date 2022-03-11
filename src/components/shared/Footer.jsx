@@ -1,55 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import FooterCol from "./FooterCol";
 import PText from "../PText";
+import LanguageSelect from "../LanguageSelect";
 
-import { DropdownButton, Dropdown, Badge } from "react-bootstrap";
+import i18n from "i18next";
 import { useTranslation } from "react-i18next";
+import ThemeToggle from "../ThemeToggle";
 
 export default function Footer() {
-  const { t, i18n } = useTranslation();
-
-  const [lang_value, setValue] = useState(
-    <i className="fas fa-globe-africa"></i>
-  );
-
-  const handleSelect = (e) => {
-    console.log(e);
-    setValue(e);
+  const { t } = useTranslation();
+  const onChange = (event) => {
+    i18n.changeLanguage(event.target.value);
   };
-
-  function handleClick(lang) {
-    i18n.changeLanguage(lang);
-  }
 
   return (
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Hayssem Elsayed</h1>
+          <h1 className="footer__col1__title">{t("Home.Title")}</h1>
           <PText>
             I'm a product manager working on the blockchain infrastructure
           </PText>
-          <div className="lang-list">
-            <DropdownButton
-              alignRight
-              title={lang_value}
-              id="dropdown-menu-align-right"
-              onSelect={handleSelect}
-              variant="Secondary"
-              size="sm"
-            >
-              <Dropdown.Item eventKey="🇺🇸" onClick={() => handleClick("en")}>
-                {t("NavBar.English")}
-              </Dropdown.Item>
-              <Dropdown.Item eventKey="🇫🇷" onClick={() => handleClick("fr")}>
-                {t("NavBar.French")}
-              </Dropdown.Item>
-              <Dropdown.Item eventKey="🇲🇽" onClick={() => handleClick("es")}>
-                {t("NavBar.Spanish")}
-              </Dropdown.Item>
-            </DropdownButton>
-          </div>
+          <LanguageSelect />
+          <ThemeToggle />
         </div>
         <div className="footer__col2">
           <FooterCol
@@ -132,7 +106,8 @@ export default function Footer() {
 }
 
 const FooterStyle = styled.div`
-  background-color: var(--deep-dark);
+  // background-color: var(--deep-dark);
+  background-color: var(--primary-color);
   padding-top: 10rem;
   .lang-list {
     margin-top: 2rem;
