@@ -2,5 +2,11 @@
   "Home": {
     "Title": "Hey I'm Hayssem",
     "Description": "Bitcoin PM"
+  },
+  "Footer": {
+    "Title": "Hayssem Vazquez-Elsayed",
+    "Description": "Product Manager currently building the infrastructure of digital assets",
+    "Section": "Section",
+    "Social Links": "Social Links"
   }
 }

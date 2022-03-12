@@ -76,7 +76,7 @@ const ProjectStyle = styled.div`
     font-size: 2rem;
     padding: 0.8rem;
     color: var(--black);
-    border-radius: 6px;
+    border-radius: 1px;
     outline: none;
     border: none;
   }
