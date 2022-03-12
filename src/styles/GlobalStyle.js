@@ -2,10 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 .light-theme{
-  --primary-color: #001bff;
+  --primary-color: #FFFFFF;
 }
 .dark-theme{
-  --primary-color: #ffff;
+  --primary-color: #001321;
 }
 
 *{

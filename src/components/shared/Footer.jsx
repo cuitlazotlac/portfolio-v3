@@ -18,16 +18,14 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">{t("Home.Title")}</h1>
-          <PText>
-            I'm a product manager working on the blockchain infrastructure
-          </PText>
+          <h1 className="footer__col1__title">{t("Footer.Title")}</h1>
+          <PText>{t("Footer.Description")}</PText>
           <LanguageSelect />
           <ThemeToggle />
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Important Links"
+            heading={t("Footer.Section")}
             links={[
               {
                 title: "Home",
@@ -54,37 +52,41 @@ export default function Footer() {
         </div>
         <div className="footer__col3">
           <FooterCol
-            heading="Contact Info"
+            heading=" "
             links={[
               {
-                title: "+88012312",
-                path: "tel:+88012312",
+                title: " ",
+                path: " ",
               },
               {
-                title: "webcifar@gmail.com",
-                path: "mailto:webcifar@gmail.com",
+                title: " ",
+                path: " ",
               },
               {
-                title: "GEC Circle, Chittagong, Bangladesh",
-                path: "http://google.com/maps",
+                title: " ",
+                path: " ",
               },
             ]}
           />
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="social Links"
+            heading={t("Footer.Social Links")}
             links={[
               {
-                title: "Facebook",
+                title: "LinkedIn",
                 path: "http://facebook.com",
               },
               {
-                title: "Twitter",
+                title: "Github",
                 path: "http://twitter.com",
               },
               {
-                title: "Instagram",
+                title: "Behance",
+                path: "http://instagram.com",
+              },
+              {
+                title: "Codepen",
                 path: "http://instagram.com",
               },
             ]}
@@ -93,12 +95,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>
-            © 2021 - Hayssem Elsayed | Designed By{" "}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{" "}
-          </PText>
+          {/* <PText>© 2021 - Hayssem Elsayed | Built with</PText> */}
         </div>
       </div>
     </FooterStyle>
@@ -106,7 +103,6 @@ export default function Footer() {
 }
 
 const FooterStyle = styled.div`
-  // background-color: var(--deep-dark);
   background-color: var(--primary-color);
   padding-top: 10rem;
   .lang-list {

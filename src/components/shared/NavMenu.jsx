@@ -92,7 +92,7 @@ const NavStyles = styled.nav`
     text-align: center;
     li {
       display: inline-block;
-      border-radius: 8px;
+      border-radius: 1px;
       transition: 0.3s ease background-color;
       &:hover {
         background-color: var(--deep-dark);
