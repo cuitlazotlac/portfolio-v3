@@ -31,13 +31,13 @@ const ProjectItemStyles = styled.div`
     border-radius: 1px;
     overflow: hidden;
     display: inline-block;
-    border: 1px solid var(--gray-2);
+    border: 1px solid var(--font-color);
     img {
       height: 100%;
     }
   }
   .projectItem__info {
-    background-color: var(--deep-dark);
+    border: 1px solid var(--font-color);
     padding: 1rem;
     border-radius: 1px;
   }

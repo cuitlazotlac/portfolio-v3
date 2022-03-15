@@ -21,9 +21,9 @@ const ButtonStyle = styled.div`
   .button {
     font-size: 2rem;
     background-color: ${(props) =>
-      props.outline ? "transperant" : "var(--gray-1)"};
+      props.outline ? "transperant" : "var(--secondary-color)"};
     padding: 0.35em 1.5em;
-    border: 1px solid var(--gray-1);
+    border: 1px solid var(--font-color);
     border-radius: 1px;
     display: inline-block;
     color: ${(props) => (props.outline ? "var(--gary-1)" : "black")};

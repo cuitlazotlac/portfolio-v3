@@ -107,9 +107,8 @@ const HeroStyles = styled.div`
       width: 100%;
     }
     .hero__name {
-      font-family: "Montserrat SemiBold";
       font-size: 7rem;
-      color: var(--white);
+      color: var(--brand-color);
     }
   }
   .hero__img {
@@ -117,7 +116,6 @@ const HeroStyles = styled.div`
     width: 100%;
     height: 600px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
   }
   .hero__info {
     margin-top: -18rem;

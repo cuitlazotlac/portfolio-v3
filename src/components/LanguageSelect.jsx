@@ -25,10 +25,12 @@ const LanguageSelectStyle = styled.div`
   margin-top: 1rem;
   .select {
     background-color: ${(props) =>
-      props.outline ? "transperant" : "var(--gray-1)"};
+      props.outline ? "transperant" : "var(--secondary-color)"};
+    padding: 0.35em 1.5em;
+    border: 1px solid var(--font-color);
     padding: 0.5em 1.5em;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 1px;
     display: inline-block;
     color: ${(props) => (props.outline ? "var(--gary-1)" : "black")};
   }
