@@ -2,10 +2,18 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 .light-theme{
-  --primary-color: #FFFFFF;
+  --background-color: #F5EFEB;
+  --secondary-color: #F5F4DC;
+  --third-color: #1F2124;
+  --font-color: #000000;
+  --brand-color: #01E3B4;
 }
 .dark-theme{
-  --primary-color: #001321;
+  --background-color: #001421;
+  --secondary-color: #082235;
+  --third-color: ###5B5C5D;
+  --font-color: #EDF2F6;
+  --brand-color: #01E3B4;
 }
 
 *{
@@ -14,17 +22,21 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #001321;
-    --gray-1: #BCB4B4;
-    --deep-dark: #082235;
-    --gray-2: #363636;
-    --white : white;
+    // --dark-bg: #001321;
+    // --gray-1: #BCB4B4;
+    // --deep-dark: #082235;
+    // --gray-2: #363636;
+    --white : #FFFFF;
     --black: black;
   }
   html{
+    --main-font: 'Raleway', sans-serif;
+    --secondary-font: 'Alfa Slab One', cursive;
+
     font-size: 10px;
-    font-family: 'monospace';
-    background-color: var(--dark-bg);
+    font-family:  var(--main-font);
+    color: var(--font-color);
+    background-color: var(--background-color);
   }
   ul,li{
     list-style: none;
@@ -49,14 +61,14 @@ const GlobalStyles = createGlobalStyle`
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
-    background-color: var(--gray-1);
+    background-color: var(--background-color);
     .scroll-content {
       background-color: var(--dark-bg);
     }
     .scrollbar-track.scrollbar-track-y {
       background: var(--deep-dark);
       .scrollbar-thumb-y {
-        background: var(--gray-1);
+        background: var(--background-color);
       }
     }
   }

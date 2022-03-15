@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
-import ContactForm from "./ContactForm";
 import ContactInfoItem from "./ContactInfoItem";
 import SectionTitle from "./SectionTitle";
 
@@ -41,7 +40,7 @@ const ContactSectionStyle = styled.div`
     content: "";
     width: 2px;
     height: 50%;
-    background-color: var(--gray-1);
+    background-color: var(--background-color);
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);

@@ -4,6 +4,8 @@ import FooterCol from "./FooterCol";
 import PText from "../PText";
 import LanguageSelect from "../LanguageSelect";
 
+import logo from "../../assets/images/avatar.png";
+
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 import ThemeToggle from "../ThemeToggle";
@@ -52,25 +54,6 @@ export default function Footer() {
         </div>
         <div className="footer__col3">
           <FooterCol
-            heading=" "
-            links={[
-              {
-                title: " ",
-                path: " ",
-              },
-              {
-                title: " ",
-                path: " ",
-              },
-              {
-                title: " ",
-                path: " ",
-              },
-            ]}
-          />
-        </div>
-        <div className="footer__col4">
-          <FooterCol
             heading={t("Footer.Social Links")}
             links={[
               {
@@ -93,28 +76,28 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="copyright">
-        <div className="container">
-          {/* <PText>© 2021 - Hayssem Elsayed | Built with</PText> */}
-        </div>
-      </div>
+      <br />
     </FooterStyle>
   );
 }
 
 const FooterStyle = styled.div`
-  background-color: var(--primary-color);
-  padding-top: 10rem;
+  background-color: var(--secondary-color);
+  // background-image: url("https://drive.google.com/file/d/1rerm1A_hlBCtEcayZP7vnHkSfjWYHaLS/view?usp=sharing");
+  background-image: url(${"logo"});
+  background-position: center;
+  background-size: cover;
+  padding-top: 5rem;
   .lang-list {
     margin-top: 2rem;
     font-size: 2.2rem;
     background-color: ${(props) =>
-      props.outline ? "transperant" : "var(--gray-1)"};
+      props.outline ? "transperant" : "var(--background-color)"};
     padding: 0.7em 2em;
-    border: 2px solid var(--gray-1);
+    border: 2px solid var(--font-color);
     border-radius: 8px;
     display: inline-block;
-    color: ${(props) => (props.outline ? "var(--gary-1)" : "black")};
+    color: ${(props) => (props.outline ? "var(--background-color)" : "black")};
     @media only screen and (max-width: 768px) {
       .lang-list {
         font-size: 1.8rem;
@@ -137,15 +120,6 @@ const FooterStyle = styled.div`
     font-size: 3.5rem;
     margin-bottom: 1rem;
   }
-  .copyright {
-    background-color: var(--dark-bg);
-    text-align: left;
-    padding: 1rem 0;
-    margin-top: 5rem;
-    .para {
-      margin-left: 0;
-    }
-  }
   @media only screen and (max-width: 768px) {
     .container {
       flex-direction: column;
@@ -156,13 +130,6 @@ const FooterStyle = styled.div`
     }
     .footer__col1 .para {
       max-width: 100%;
-    }
-    .copyright {
-      .container {
-        div {
-          margin-top: 0;
-        }
-      }
     }
   }
 `;
