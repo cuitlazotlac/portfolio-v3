@@ -88,9 +88,9 @@ const FooterStyle = styled.div`
   background-position: center;
   background-size: cover;
   padding-top: 5rem;
+  font-size: 1.5rem;
   .lang-list {
     margin-top: 2rem;
-    font-size: 2.2rem;
     background-color: ${(props) =>
       props.outline ? "transperant" : "var(--background-color)"};
     padding: 0.7em 2em;
@@ -100,7 +100,7 @@ const FooterStyle = styled.div`
     color: ${(props) => (props.outline ? "var(--background-color)" : "black")};
     @media only screen and (max-width: 768px) {
       .lang-list {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -117,7 +117,7 @@ const FooterStyle = styled.div`
     flex: 1;
   }
   .footer__col1__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
   @media only screen and (max-width: 768px) {
