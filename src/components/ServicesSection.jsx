@@ -1,11 +1,50 @@
-import React from 'react';
-import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
-import styled from 'styled-components';
-import SectionTitle from './SectionTitle';
-import ServicesSectionItem from './ServicesSectionItem';
+import React from "react";
+
+import { FaDharmachakra } from "react-icons/fa";
+import { FaBezierCurve } from "react-icons/fa";
+import { FaLayerGroup } from "react-icons/fa";
+
+import styled from "styled-components";
+import SectionTitle from "./SectionTitle";
+import ServicesSectionItem from "./ServicesSectionItem";
+
+import { useTranslation } from "react-i18next";
+
+export default function ServicesSection() {
+  const { t } = useTranslation();
+
+  return (
+    <ServicesItemsStyles>
+      <div className="container">
+        <SectionTitle
+          subheading={t("Expertise.SectionDescription")}
+          heading={t("Expertise.SectionTitle")}
+        />
+        <div className="services__allItems">
+          <ServicesSectionItem
+            icon={<FaDharmachakra />}
+            title={t("Expertise.Title1")}
+            desc={t("Expertise.Title1")}
+          />
+          <ServicesSectionItem
+            icon={<FaBezierCurve />}
+            title={t("Expertise.Title2")}
+            desc={t("Expertise.Title2")}
+          />
+          <ServicesSectionItem
+            icon={<FaLayerGroup />}
+            title={t("Expertise.Title3")}
+            desc={t("Expertise.Title3")}
+          />
+        </div>
+      </div>
+    </ServicesItemsStyles>
+  );
+}
 
 const ServicesItemsStyles = styled.div`
-  padding: 10rem 0;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
   .services__allItems {
     display: flex;
     gap: 10rem;
@@ -22,30 +61,3 @@ const ServicesItemsStyles = styled.div`
     }
   }
 `;
-
-export default function ServicesSection() {
-  return (
-    <ServicesItemsStyles>
-      <div className='container'>
-        <SectionTitle subheading='What i will do for you' heading='Services' />
-        <div className='services__allItems'>
-          <ServicesSectionItem
-            icon={<MdDesktopMac />}
-            title='web design'
-            desc='I do ui/ux design for the website that helps website to get a unique look.'
-          />
-          <ServicesSectionItem
-            icon={<MdCode />}
-            title='web dev'
-            desc='I also develop the websites. I create high performance website with blazing fast speed.'
-          />
-          <ServicesSectionItem
-            icon={<MdPhonelinkSetup />}
-            title='app Dev'
-            desc='I develop mobile application. I create mobile app with eye catching ui. '
-          />
-        </div>
-      </div>
-    </ServicesItemsStyles>
-  );
-}

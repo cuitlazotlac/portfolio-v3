@@ -1,24 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import ProjectImg from "../assets/images/projects/img1.svg";
+
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectItem({
-  // img = ProjectImg,
-  title = "Project Name",
-  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  img = { ProjectImg },
+  title = "",
+  desc = "",
+  stacks = "",
+  link1 = "",
+  link2 = "",
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt="project img" />
-      </Link>
       <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
-        <p className="projectItem__desc">{desc}</p>
+        <h3 className="projectItem__title">{title}</h3>
+        <div className="projectItem__desc__section">
+          <p className="projectItem__desc">{desc}</p>
+        </div>
+        <div className="projectItem__stacks__section">
+          <p className="projectItem__stacks">{stacks}</p>
+        </div>
+        <div className="projectItem__links__section">
+          <a href={link1} target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+          <a href={link2} target="_blank" rel="noreferrer">
+            <FaExternalLinkAlt />
+          </a>
+        </div>
       </div>
     </ProjectItemStyles>
   );
@@ -43,10 +53,29 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
+    padding-bottom: 1rem;
+  }
+  .projectItem__desc__section {
+    border-top: 1px solid var(--font-color);
   }
   .projectItem__desc {
     font-size: 1.6rem;
     margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .projectItem__links__section {
+    border-top: 1px solid var(--font-color);
+    svg {
+      max-width: 8%;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  .projectItem__stacks {
+    border-top: 1px solid var(--font-color);
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-family: var(--stacks-font);
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {

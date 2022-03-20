@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { MdSearch } from "react-icons/md";
 import SectionTitle from "../components/SectionTitle";
-import ProjectsInfo from "../assets/data/projects";
 import ProjectItem from "../components/ProjectItem";
 
+import ProjectsInfo from "../assets/data/portfolios";
+
+import { useTranslation } from "react-i18next";
+
 export default function Projects() {
+  const { t } = useTranslation();
+
   const [searchText, setSearchText] = useState("");
   const [projectsData, setProjectsData] = useState(ProjectsInfo);
   useEffect(() => {
@@ -28,8 +33,8 @@ export default function Projects() {
       <ProjectStyle>
         <div className="container">
           <SectionTitle
-            heading="Projects"
-            subheading="some of my recent works"
+            heading={t("Project.Placeholder")}
+            subheading={t("Project.Placeholder")}
           />
           <div className="projects__searchBar">
             <form>
@@ -37,7 +42,7 @@ export default function Projects() {
                 type="text"
                 value={searchText}
                 onChange={handleChange}
-                placeholder="Project Name"
+                placeholder={t("Project.Placeholder")}
               />
               <MdSearch className="searchIcon" />
             </form>
@@ -46,9 +51,10 @@ export default function Projects() {
             {projectsData.map((item) => (
               <ProjectItem
                 key={item.id}
-                title={item.name}
+                title={item.title}
                 desc={item.desc}
-                img={item.img}
+                stacks={item.stack}
+                img={item.image}
               />
             ))}
           </div>

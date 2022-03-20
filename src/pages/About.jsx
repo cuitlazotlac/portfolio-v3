@@ -2,95 +2,69 @@ import React from "react";
 import styled from "styled-components";
 import PText from "../components/PText";
 import Button from "../components/Button";
-// import AboutImg from '../assets/images/about-page-img.png';
+import CredlyButton from "../components/CredlyButton";
+
+import Avatar from "../assets/images/avatar.svg";
+
 import AboutInfoItem from "../components/AboutInfoItem";
-import ContactBanner from "../components/ContactBanner";
+
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <>
       <AboutPageStyles>
         <div className="container">
           <div className="top-section">
             <div className="left">
-              <p className="about__subheading">
-                Hi, I am <span>Hayssem Elsayed</span>
-              </p>
-              <h2 className="about__heading">A freelance Web developer</h2>
+              <h4 className="about__heading">{t("About.Title")}</h4>
               <div className="about__info">
                 <PText>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
-                  <br /> <br />
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum."
+                  {t("About.Paragraph1")}
                   <br />
                   <br />
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum."
+                  {t("About.Paragraph2")}
+                  <br />
+                  <br />
+                  {t("About.Paragraph3")}
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+              <div className="button_row">
+                <Button btnText="Download CV" btnLink="#" id="btn1" />
+                <CredlyButton btnText="Download CV" btnLink="#" id="btn2" />
+              </div>
             </div>
             <div className="right">
-              <img src={"AboutImg"} alt="me" />
+              <img src={Avatar} alt="avatar" />
             </div>
           </div>
           <div className="about__info__items">
+            {/* // SKILLS SECTION */}
             <div className="about__info__item">
-              <h1 className="about__info__heading">Education</h1>
+              <h1 className="about__info__heading">{t("About.Skill")}</h1>
 
               <AboutInfoItem
-                title="School"
-                items={["Nasirabad Govt. High School, Chattogram"]}
+                title="Coding"
+                items={["React", "CSS", "JavaScript"]}
               />
               <AboutInfoItem
-                title="Collage"
-                items={["BAF Shaheen College Chattogram"]}
+                title="Data"
+                items={["React", "CSS", "JavaScript"]}
               />
               <AboutInfoItem
-                title="Varsity"
-                items={["University Of Chitiagong"]}
-              />
-            </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">My Skills</h1>
-
-              <AboutInfoItem
-                title="FrontEnd"
-                items={["HTML", "CSS", "JavaScript", "REACT"]}
-              />
-              <AboutInfoItem
-                title="BackEnd"
+                title="Blockchain"
                 items={["Node", "Express", "PHP"]}
               />
               <AboutInfoItem
                 title="Design"
-                items={["Photoshop", "After Effects", "Figma"]}
+                items={["Figma", "After Effects", "Figma"]}
               />
             </div>
+            {/* // EXPERIENCE SECTION */}
             <div className="about__info__item">
-              <h1 className="about__info__heading">Experiences</h1>
+              <h1 className="about__info__heading">{t("About.Experience")}</h1>
 
               <AboutInfoItem
                 title="2010-2012"
@@ -105,9 +79,44 @@ export default function About() {
                 items={["Freelance web Developer"]}
               />
             </div>
+            {/* // CERTIFICATION SECTION */}
+            <div className="about__info__item">
+              <h1 className="about__info__heading">
+                {t("About.Certification")}
+              </h1>
+
+              <AboutInfoItem
+                title="2010-2012"
+                items={["junior developer at web Cifar"]}
+              />
+              <AboutInfoItem
+                title="2012-2016"
+                items={["Front end developer at web Cifar "]}
+              />
+              <AboutInfoItem
+                title="2016-"
+                items={["Freelance web Developer"]}
+              />
+            </div>
+            {/* // EDUCATION SECTION */}
+            <div className="about__info__item">
+              <h1 className="about__info__heading">{t("About.Education")}</h1>
+
+              <AboutInfoItem
+                title="School"
+                items={["Nasirabad Govt. High School, Chattogram"]}
+              />
+              <AboutInfoItem
+                title="Collage"
+                items={["BAF Shaheen College Chattogram"]}
+              />
+              <AboutInfoItem
+                title="Varsity"
+                items={["University Of Chitiagong"]}
+              />
+            </div>
           </div>
         </div>
-        <ContactBanner />
       </AboutPageStyles>
     </>
   );
@@ -136,6 +145,11 @@ const AboutPageStyles = styled.div`
       border-radius: 8px;
     }
   }
+  .button_row {
+    display: flex;
+    gap: 1rem;
+  }
+
   .about__heading {
     font-size: 3.6rem;
     margin-bottom: 3rem;

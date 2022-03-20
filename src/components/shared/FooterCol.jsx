@@ -1,45 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-
-const ColStyle = styled.div`
-  .heading {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
-  }
-  li {
-    margin-bottom: 1rem;
-  }
-  a {
-    font-size: 1.8rem;
-  }
-`;
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 export default function FooterCol({
-  heading = 'Col Heading',
+  heading = "Col Heading",
   links = [
     {
-      type: 'Link',
-      title: 'Home',
-      path: '/home',
+      type: "Link",
+      title: "Home",
+      path: "/home",
     },
     {
-      type: 'Link',
-      title: 'About',
-      path: '/about',
+      type: "Link",
+      title: "About",
+      path: "/about",
     },
   ],
 }) {
   return (
     <ColStyle>
-      <h2 className='heading'>{heading}</h2>
+      <h2 className="heading">{heading}</h2>
       <ul>
         {links.map((item, index) => (
           <li key={index}>
-            {item.type === 'Link' ? (
+            {item.type === "Link" ? (
               <Link to={item.path}>{item.title}</Link>
             ) : (
-              <a href={item.path} target='_blank' rel='noreferrer'>
+              <a href={item.path} target="_blank" rel="noreferrer">
                 {item.title}
               </a>
             )}
@@ -49,3 +36,18 @@ export default function FooterCol({
     </ColStyle>
   );
 }
+
+const ColStyle = styled.div`
+  .heading {
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+  a {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+`;

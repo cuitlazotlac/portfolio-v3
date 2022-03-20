@@ -3,10 +3,58 @@
     "Title": "Hey I'm Hayssem",
     "Description": "Bitcoin PM"
   },
+  "Hero": {
+    "Title": "Hey there I'm Hayssem 👋",
+    "Description_Part1": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
+    "Description_Part2": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
+    "Follow": "Connect"
+  },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
     "Description": "Product Manager currently building the infrastructure of digital assets",
     "Section": "Section",
-    "Social Links": "Social Links"
+    "Social Links": "Social Links",
+    "English": "English 🇨🇦",
+    "French": "French 🇫🇷",
+    "Spanish": "Spanish 🇲🇽"
+  },
+  "Confsquare": {
+    "SectionTitle": "Confsquare",
+    "SectionDescription": "Let's Gather",
+    "Description_Part1": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
+    "Description_Part2": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
+    "ReadMore": "Check website",
+    "Works": "Side hustle"
+  },
+  "Expertise": {
+    "SectionTitle": "Expertise",
+    "SectionDescription": "What I've learn long the way",
+    "Title1": "Product Management",
+    "Description1": "Lorem Ipsum.",
+    "Title2": "Interface Design",
+    "Description2": "Lorem Ipsum.",
+    "Title3": "Data Analysis",
+    "Description3": "Lorem Ipsum."
+  },
+  "About": {
+    "Title": "Just a Product Manager currently building the infrastructure of digital assets",
+    "Paragraph1": "Product Management",
+    "Paragraph2": "Lorem Ipsum.",
+    "Paragraph3": "Interface Design",
+    "Button": "Check Resume",
+    "Skill": "Skills",
+    "Experience": "Experiences",
+    "Certification": "Certifications",
+    "Education": "Education"
+  },
+  "Project": {
+    "SectionTitle": "",
+    "SectionDescription": "",
+    "Placeholder": "Project Name..."
+  },
+  "Contact": {
+    "SectionTitle": "Let's catchup",
+    "SectionDescription": "Let's get to know about each others",
+    "Button": "Contact Me !"
   }
 }
