@@ -1,14 +1,12 @@
 import { createGlobalStyle } from "styled-components";
-import Alliance from "../assets/fonts/Alliance-No.1-Light.otf";
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: "Alliance No.1";
-    src: url(${"Alliance"});
+    font-family: 'Raleway';
     font-style: normal;
   }
   html{
-    font-family: "Alliance No.1";
+    font-family: 'Raleway';
     color: var(--font-color);
   }
   *{
