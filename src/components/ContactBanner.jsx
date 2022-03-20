@@ -1,7 +1,25 @@
-import React from 'react';
-import styled from 'styled-components';
-import Button from './Button';
-import PText from './PText';
+import React from "react";
+import styled from "styled-components";
+import Button from "./Button";
+import PText from "./PText";
+
+import { useTranslation } from "react-i18next";
+
+export default function ContactBanner() {
+  const { t } = useTranslation();
+
+  return (
+    <ContactBannerStyles>
+      <div className="container">
+        <div className="contactBanner__wrapper">
+          <PText>{t("Contact.SectionDescription")}</PText>
+          <h3 className="contactBanner__heading">{t("Contact.SectionTitle")}</h3>
+          <Button btnText={t("Contact.Button")} btnLink="/contact" />
+        </div>
+      </div>
+    </ContactBannerStyles>
+  );
+}
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
@@ -21,17 +39,3 @@ const ContactBannerStyles = styled.div`
     }
   }
 `;
-
-export default function ContactBanner() {
-  return (
-    <ContactBannerStyles>
-      <div className='container'>
-        <div className='contactBanner__wrapper'>
-          <PText>Have a project in mind</PText>
-          <h3 className='contactBanner__heading'>Let me help you</h3>
-          <Button btnText='Contact Now' btnLink='/contact' />
-        </div>
-      </div>
-    </ContactBannerStyles>
-  );
-}

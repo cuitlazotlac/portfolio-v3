@@ -14,24 +14,25 @@ export default function SectionTitle({
 }
 
 const SectionTitleStyle = styled.div`
-  text-align: center;
-  p {
-    font-family: var(--main-font);
-    font-size: 2rem;
-  }
+  text-align: left;
   h2 {
     font-family: var(--secondary-font);
     font-size: 6rem;
-    margin-top: 0.5rem;
+    font-weight: 900;
     text-transform: uppercase;
   }
+  p {
+    font-weight: 200;
+    font-size: 1.8rem;
+  }
+
   @media only screen and (max-width: 768px) {
-    text-align: center;
-    p {
-      font-size: 1.2rem;
-    }
+    text-align: left;
     h2 {
       font-size: 3.6rem;
+    }
+    p {
+      font-size: 1.2rem;
     }
   }
 `;

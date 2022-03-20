@@ -32,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
   html{
     --main-font: 'Raleway', sans-serif;
     --secondary-font: 'Nunito Sans', sans-serif;
+    --stacks-font: monospace;
 
     font-size: 10px;
     font-family:  var(--main-font);

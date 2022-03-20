@@ -1,5 +1,5 @@
 import React from "react";
-import AboutSection from "../components/AboutSection";
+import ConfsquareSection from "../components/ConfsquareSection";
 import ServicesSection from "../components/ServicesSection";
 import ProjectsSection from "../components/ProjectsSection";
 // import TestimonialsSection from '../components/TestimonialsSection';
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <AboutSection />
+      <ConfsquareSection />
       <ServicesSection />
       <ProjectsSection />
       {/* <TestimonialsSection /> */}

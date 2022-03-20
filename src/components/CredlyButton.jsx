@@ -1,33 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
 
-export default function Button({
-  btnText = "",
-  btnLink = "",
-  outline = false,
-}) {
+import styled from "styled-components";
+import credly from "../assets/images/credly.png";
+
+export default function CredlyButton() {
   return (
-    <ButtonStyle outline={outline} className="button-wrapper">
-      <Link className="button" to={btnLink}>
-        {btnText}
-      </Link>
-    </ButtonStyle>
+    <a
+      href="https://www.credly.com/users/hayssem-elsayed/badges"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <CredlyButtonStyled>
+        <img src={credly} alt="credly"></img>
+      </CredlyButtonStyled>
+    </a>
   );
 }
 
-const ButtonStyle = styled.div`
+const CredlyButtonStyled = styled.button`
   margin-top: 2rem;
-  .button {
-    font-size: 2rem;
-    background-color: ${(props) =>
-      props.outline ? "transperant" : "var(--secondary-color)"};
-    padding: 0.35em 1.5em;
-    border: 1px solid var(--font-color);
-    border-radius: 1px;
-    display: inline-block;
-    color: ${(props) => (props.outline ? "var(--gary-1)" : "black")};
+  padding: 0.35em 1.5em;
+  background-color: #fac3a1;
+  border: 1px solid var(--font-color);
+  img {
+    width: 144px;
+    height: 25.9px;
   }
+
   &:hover {
     // background-color: var(--secondary-color);
     // border: 1px solid var(--background-color);
@@ -47,5 +46,8 @@ const ButtonStyle = styled.div`
     .button {
       font-size: 1.8rem;
     }
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 0.95rem;
   }
 `;

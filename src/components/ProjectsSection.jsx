@@ -56,7 +56,7 @@ export default function ProjectsSection() {
 }
 
 const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
+  padding: 2rem 0;
   .projects__allItems {
     display: flex;
     gap: 3rem;

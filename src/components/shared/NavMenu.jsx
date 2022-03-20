@@ -63,6 +63,17 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
+            to="/portfolio"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Portfolio
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/contact"
             onClick={() => setShowNav(!showNav)}
             role="button"
@@ -108,6 +119,9 @@ const NavStyles = styled.nav`
     }
     .active {
       color: var(--brand-color);
+      &:hover {
+        color: var(--font-color);
+      }
     }
   }
   .mobile-menu-icon {

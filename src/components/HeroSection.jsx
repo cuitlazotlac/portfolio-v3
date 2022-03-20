@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import HeroImg from "../assets/images/avatar.svg";
 import Button from "./Button";
 import SocialMediaArrow from "../assets/images/scroll-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 
-import PText from "./PText";
+import { FaBehanceSquare } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaMailBulk } from "react-icons/fa";
 
 import { useTranslation } from "react-i18next";
 
@@ -18,60 +20,56 @@ export default function HeroSection() {
         <div className="container">
           <h1 className="hero__heading">
             <span>Hello, This is</span>
-            <span className="hero__name">{t("Home.Title")}</span>
+            <span className="hero__name">{t("Hero.Title")}</span>
           </h1>
-          <div className="hero__img">
-            <img src={HeroImg} alt="" />
-          </div>
           <div className="hero__info">
-            <PText>
-              I am working as a product manager for 5 years. I'm working on the
-              blockchain infrastructure. I love to build and design new product
-              to help people
-            </PText>
+            <h3>{t("Hero.Description_Part1")}</h3>
+            <br />
+            <h3>{t("Hero.Description_Part2")}</h3>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
-              <p>Follow</p>
+              <p>{t("Hero.Follow")}</p>
               <img src={SocialMediaArrow} alt="icon" />
             </div>
             <div className="hero__social__text">
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="https://www.google.com/"
                     target="_blank"
                     rel="noreferrer"
+                    className="icon"
                   >
-                    FB
+                    <FaGithubSquare />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
+                    href="https://www.google.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    TW
+                    <FaLinkedin />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/web_cifar"
+                    href="https://www.google.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IG
+                    <FaBehanceSquare />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://webcifar.com"
+                    href="https://www.google.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LI
+                    <FaMailBulk />
                   </a>
                 </li>
               </ul>
@@ -99,26 +97,22 @@ const HeroStyles = styled.div`
     position: relative;
   }
   .hero__heading {
-    font-size: 2rem;
-    margin-bottom: -4rem;
-    position: relative;
+    text-align: left;
+    font-size: 2.4rem;
     span {
       display: inline-block;
       width: 100%;
     }
     .hero__name {
-      font-size: 7rem;
+      font-size: 5rem;
       color: var(--brand-color);
     }
   }
-  .hero__img {
-    max-width: 900px;
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-  }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: 1rem;
+    display: block;
+    font-size: 2rem;
+    text-align: left;
   }
   .hero__social,
   .hero__scrollDown {
@@ -162,10 +156,10 @@ const HeroStyles = styled.div`
         margin-bottom: 1rem;
         a {
           display: inline-block;
-          font-size: 1.6rem;
-          transform: rotate(-90deg);
-          letter-spacing: 5px;
-          margin-bottom: 2rem;
+          font-size: 2.5rem;
+          transform: rotate(360deg);
+          letter-spacing: 3px;
+          margin-bottom: 1rem;
         }
       }
     }
@@ -204,7 +198,7 @@ const HeroStyles = styled.div`
         ul {
           li {
             a {
-              font-size: 1.2rem;
+              font-size: 1.8rem;
               margin-bottom: 1rem;
             }
           }
