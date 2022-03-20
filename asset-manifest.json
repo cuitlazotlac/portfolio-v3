@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio-v3/static/js/main.77434ee9.chunk.js",
-    "main.js.map": "/portfolio-v3/static/js/main.77434ee9.chunk.js.map",
+    "main.js": "/portfolio-v3/static/js/main.8dd71a00.chunk.js",
+    "main.js.map": "/portfolio-v3/static/js/main.8dd71a00.chunk.js.map",
     "runtime-main.js": "/portfolio-v3/static/js/runtime-main.c475c6f7.js",
     "runtime-main.js.map": "/portfolio-v3/static/js/runtime-main.c475c6f7.js.map",
     "static/css/2.853ba1bc.chunk.css": "/portfolio-v3/static/css/2.853ba1bc.chunk.css",
@@ -10,7 +10,6 @@
     "index.html": "/portfolio-v3/index.html",
     "static/css/2.853ba1bc.chunk.css.map": "/portfolio-v3/static/css/2.853ba1bc.chunk.css.map",
     "static/js/2.b12c1aed.chunk.js.LICENSE.txt": "/portfolio-v3/static/js/2.b12c1aed.chunk.js.LICENSE.txt",
-    "static/media/Alliance-No.1-Light.946e0e59.otf": "/portfolio-v3/static/media/Alliance-No.1-Light.946e0e59.otf",
     "static/media/avatar.dc87e9a4.svg": "/portfolio-v3/static/media/avatar.dc87e9a4.svg",
     "static/media/getFetch.cjs": "/portfolio-v3/static/media/getFetch.582d29c4.cjs",
     "static/media/img1.7032f015.svg": "/portfolio-v3/static/media/img1.7032f015.svg",
@@ -22,6 +21,6 @@
     "static/js/runtime-main.c475c6f7.js",
     "static/css/2.853ba1bc.chunk.css",
     "static/js/2.b12c1aed.chunk.js",
-    "static/js/main.77434ee9.chunk.js"
+    "static/js/main.8dd71a00.chunk.js"
   ]
 }
