@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html{
     --main-font: 'Raleway', sans-serif;
-    --secondary-font: 'Alfa Slab One', cursive;
+    --secondary-font: 'Nunito Sans', sans-serif;
 
     font-size: 10px;
     font-family:  var(--main-font);
