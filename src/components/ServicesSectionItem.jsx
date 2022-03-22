@@ -12,15 +12,19 @@ export default function ServicesSectionItem({
       <div className="servicesItem__icon">{icon}</div>
       <div className="servicesItem__title">{title}</div>
       <PText>{desc}</PText>
+      <br />
     </ItemStyles>
   );
 }
 
 const ItemStyles = styled.div`
   text-align: center;
+  border: 1px solid var(--font-color);
+  width: 100%;
   .servicesItem__icon {
+    margin-top: 1rem;
     svg {
-      width: 3rem;
+      width: 4rem;
     }
   }
   .servicesItem__title {

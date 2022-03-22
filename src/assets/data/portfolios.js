@@ -1,20 +1,18 @@
-// import clapperboard from "../resources/img/project-icons/what_movie.svg";
-// import co2 from "../resources/img/project-icons/carb_one.svg";
-// import corona from "../resources/img/project-icons/covid_dashboard.svg";
-// import cryto from "../resources/img/project-icons/dapp_farmer.svg";
-// import controller from "../resources/img/project-icons/pygame.svg";
-// import blockchain from "../resources/img/project-icons/crypto_watcher.svg";
-// import manga from "../resources/img/project-icons/anime_library.svg";
-// import sun from "../resources/img/project-icons/weather_tracker.svg";
-// import taco from "../resources/img/project-icons/mex_mtl.svg";
-
-import test from "../images/avatar.png";
+import crypto_watcher from "../images/portfolios/crypto_watcher.svg";
+import dapp_farmer from "../images/portfolios/dapp_farmer.svg";
+import weather_tracker from "../images/portfolios/weather_tracker.svg";
+import mex_mtl from "../images/portfolios/mex_mtl.svg";
+import anime_library from "../images/portfolios/anime_library.svg";
+import what_movie from "../images/portfolios/what_movie.svg";
+import covid_dashboard from "../images/portfolios/covid_dashboard.svg";
+import carb_one from "../images/portfolios/carb_one.svg";
+import pygame from "../images/portfolios/pygame.svg";
 
 const portfolios = [
   {
     id: 1,
     category: "React",
-    image: test,
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/crypto-watcher",
     link2: "https://cryptowatcher1.herokuapp.com/",
     title: "Crypto Watcher",
@@ -24,7 +22,7 @@ const portfolios = [
   {
     id: 2,
     category: "DApp",
-    image: test,
+    image: dapp_farmer,
     link1: "https://github.com/cuitlazotlac/defi_app",
     link2: "https://defi-dapp-token-farm.herokuapp.com/",
     title: "DeFi DApp Token Farm",
@@ -34,7 +32,7 @@ const portfolios = [
   {
     id: 3,
     category: "React",
-    image: test,
+    image: weather_tracker,
     link1: "https://github.com/cuitlazotlac/WeatherChecker",
     link2: "https://weatherchecker1.herokuapp.com/",
     title: "Weather Checker",
@@ -44,7 +42,7 @@ const portfolios = [
   {
     id: 4,
     category: "API",
-    image: test,
+    image: mex_mtl,
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
     link2: "https://mtlmex-api.herokuapp.com/",
     title: "MTL Mex API",
@@ -54,7 +52,7 @@ const portfolios = [
   {
     id: 5,
     category: "React",
-    image: test,
+    image: anime_library,
     link1: "https://github.com/cuitlazotlac/anime-library",
     link2: "https://anime-library1.herokuapp.com/",
     title: "Anime Library",
@@ -64,7 +62,7 @@ const portfolios = [
   {
     id: 6,
     category: "Vue",
-    image: test,
+    image: what_movie,
     link1: "https://github.com/cuitlazotlac/what-movie",
     link2: "https://what-movies.herokuapp.com/",
     title: "What Movie ?",
@@ -74,7 +72,7 @@ const portfolios = [
   {
     id: 7,
     category: "React",
-    image: test,
+    image: covid_dashboard,
     link1: "https://github.com/cuitlazotlac/covid-tracker-dashboard",
     link2: "https://www.google.com",
     title: "Covid Tracker Dashboard",
@@ -84,7 +82,7 @@ const portfolios = [
   {
     id: 8,
     category: "Open Source Project",
-    image: test,
+    image: carb_one,
     link1: "https://github.com/climate-stuff/carbon-calculator",
     link2: "https://www.google.com",
     title: "Carb One Caculator",
@@ -94,7 +92,7 @@ const portfolios = [
   {
     id: 9,
     category: "Python",
-    image: test,
+    image: pygame,
     link1: "https://github.com/cuitlazotlac/pygamon",
     link2: "https://www.google.com",
     title: "PyGamon",

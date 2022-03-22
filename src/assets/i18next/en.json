@@ -4,10 +4,19 @@
     "Description": "Bitcoin PM"
   },
   "Hero": {
+    "SubTitle": "Hello, This is",
     "Title": "Hey there I'm Hayssem 👋",
     "Description_Part1": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
     "Description_Part2": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
-    "Follow": "Connect"
+    "Connect": "Connect",
+    "Scroll": "Scroll"
+  },
+  "Navigation": {
+    "Home": "Home",
+    "About": "About",
+    "Projects": "Smart Contracts",
+    "Portfolio": "Portfolio",
+    "Contact": "Contact"
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
@@ -48,9 +57,13 @@
     "Education": "Education"
   },
   "Project": {
-    "SectionTitle": "",
-    "SectionDescription": "",
+    "SectionTitle": "DApps & Smart Contracts",
+    "SectionDescription": "Development related to blockchain field",
     "Placeholder": "Project Name..."
+  },
+  "Portfolio": {
+    "SectionTitle": "Web development",
+    "SectionDescription": "Side development"
   },
   "Contact": {
     "SectionTitle": "Let's catchup",

@@ -5,42 +5,36 @@ import credly from "../assets/images/credly.png";
 
 export default function CredlyButton() {
   return (
-    <a
-      href="https://www.credly.com/users/hayssem-elsayed/badges"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <CredlyButtonStyled>
+    <CredlyButtonStyled>
+      <a
+        href="https://www.credly.com/users/hayssem-elsayed/badges"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
         <img src={credly} alt="credly"></img>
-      </CredlyButtonStyled>
-    </a>
+      </a>
+    </CredlyButtonStyled>
   );
 }
 
 const CredlyButtonStyled = styled.button`
   margin-top: 2rem;
-  padding: 0.35em 1.5em;
+  padding: 1rem;
   background-color: #fac3a1;
+  width: 160px;
+  height: 45.95px;
   border: 1px solid var(--font-color);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
   img {
-    width: 144px;
-    height: 25.9px;
+    max-width: 36%;
   }
-
   &:hover {
-    // background-color: var(--secondary-color);
-    // border: 1px solid var(--background-color);
     transform: scale(1.1);
     transform: translate(7px, -7px);
     transform-style: preserve-3d;
     transition: all 0.2s ease-in-out;
-    box-shadow: 5px 10px var(--secondary-color);
-  }
-  &:active,
-  &:focus {
-    background-color: var(--secondary-color);
-    color: var(--brand-color);
-    border: 1px solid var(--secondary-color);
+    box-shadow: 5px 10px var(--shadow-color);
   }
   @media only screen and (max-width: 768px) {
     .button {

@@ -3,7 +3,11 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MdClose, MdMenu } from "react-icons/md";
 
+import { useTranslation } from "react-i18next";
+
 export default function NavMenu() {
+  const { t, i18n } = useTranslation();
+
   const [showNav, setShowNav] = useState(false);
   return (
     <NavStyles>
@@ -36,7 +40,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Home
+            {t("Navigation.Home")}
           </NavLink>
         </li>
         <li>
@@ -47,7 +51,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            About
+            {t("Navigation.About")}
           </NavLink>
         </li>
         <li>
@@ -58,7 +62,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Projects
+            {t("Navigation.Projects")}
           </NavLink>
         </li>
         <li>
@@ -69,7 +73,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Portfolio
+            {t("Navigation.Portfolio")}
           </NavLink>
         </li>
         <li>
@@ -80,7 +84,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Contact
+            {t("Navigation.Contact")}
           </NavLink>
         </li>
       </ul>
@@ -150,7 +154,8 @@ const NavStyles = styled.nav`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: var(--secondary-color);
+      opacity: 0.9;
       padding: 2rem;
       width: 90%;
       max-width: 300px;
