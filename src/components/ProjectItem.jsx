@@ -4,13 +4,7 @@ import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-export default function ProjectItem({
-  title = "",
-  desc = "",
-  stacks = "",
-  link1 = "",
-  link2 = "",
-}) {
+export default function ProjectItem({ title, desc, stacks, link1, link2 }) {
   return (
     <ProjectItemStyles>
       <div className="projectItem__info">
@@ -35,21 +29,21 @@ export default function ProjectItem({
 }
 
 const ProjectItemStyles = styled.div`
-  .projectItem__img {
-    width: 100%;
-    height: 400px;
-    border-radius: 1px;
-    overflow: hidden;
-    display: inline-block;
-    border: 1px solid var(--font-color);
-    img {
-      height: 100%;
-    }
-  }
+  display: grid;
   .projectItem__info {
     border: 1px solid var(--font-color);
     padding: 1rem;
     border-radius: 1px;
+    width: 100%;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
+    transform-style: preserve-3d;
+    &:hover {
+      transform: scale(1.1);
+      transform: translate(7px, -7px);
+      transform-style: preserve-3d;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 5px 10px var(--shadow-color);
+    }
   }
   .projectItem__title {
     font-size: 2.2rem;
@@ -66,7 +60,7 @@ const ProjectItemStyles = styled.div`
   .projectItem__links__section {
     border-top: 1px solid var(--font-color);
     svg {
-      max-width: 8%;
+      max-width: 6%;
       margin-top: 1rem;
       margin-left: 1rem;
     }

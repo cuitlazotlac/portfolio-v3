@@ -31,11 +31,15 @@ export default function Portfolios() {
       <PortfolioStyle>
         <div className="container">
           <SectionTitle
-            heading={t("Project.Placeholder")}
-            subheading={t("Project.Placeholder")}
+            heading={t("Portfolio.SectionTitle")}
+            subheading={t("Portfolio.SectionDescription")}
           />
           <Filter filter={filter} button={button} />
-          <PortfolioItem portfolioItem={portfolioItem} />
+          <br />
+          <br />
+          <div className="portfolio__allItems">
+            <PortfolioItem portfolioItem={portfolioItem} />
+          </div>
         </div>
       </PortfolioStyle>
     </>
@@ -44,32 +48,17 @@ export default function Portfolios() {
 
 const PortfolioStyle = styled.div`
   padding: 10rem 0;
-  .projects__allItems {
+  width: 100%;
+  .portfolio__allItems {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5rem;
-    margin-top: 5rem;
-  }
-  .projects__searchBar {
-    position: relative;
-    width: 300px;
-    margin-top: 5rem;
-  }
-  .projects__searchBar input {
-    width: 100%;
-    font-size: 2rem;
-    padding: 0.8rem;
-    border-radius: 1px;
-    outline: none;
-    border: none;
-  }
-  .projects__searchBar .searchIcon {
-    position: absolute;
-    width: 2rem;
-    right: 1rem;
-  }
-  .projects__searchBar .searchIcon path {
-    color: var(--deep-dark);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    @media screen and (max-width: 920px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 670px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   @media only screen and (max-width: 768px) {
     .projects__searchBar,

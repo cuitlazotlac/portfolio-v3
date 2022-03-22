@@ -1,8 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { MdEmail, MdLocalPhone } from "react-icons/md";
+
 import ContactInfoItem from "./ContactInfoItem";
 import SectionTitle from "./SectionTitle";
+
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
+
+import { FaCodepen } from "react-icons/fa";
+import { FaAngellist } from "react-icons/fa";
+import { FaMailBulk } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
@@ -11,14 +19,38 @@ export default function ContactSection() {
         <SectionTitle heading="contact" subheading="get in touch" />
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+8801231" />
-            <ContactInfoItem icon={<MdEmail />} text="webcifar@gmail.com" />
-            <ContactInfoItem text="Chittagong, Bangladesh" />
+            <ContactInfoItem
+              icon={<FaGithub />}
+              text="github.com/cuitlazotlac"
+              cardLink="https://www.freefonts.io/geomanist-font-family/"
+            />
+            <ContactInfoItem
+              icon={<FaLinkedin />}
+              text="linkedin.com/in/hayssem-elsayed"
+              cardLink="https://www.freefonts.io/geomanist-font-family/"
+            />
+            <ContactInfoItem
+              icon={<FaBehance />}
+              text="behance.net/cuitlazotlac"
+              cardLink="https://www.freefonts.io/geomanist-font-family/"
+            />
           </div>
           <div className="right">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+8801231" />
-            <ContactInfoItem icon={<MdEmail />} text="webcifar@gmail.com" />
-            <ContactInfoItem text="Chittagong, Bangladesh" />{" "}
+            <ContactInfoItem
+              icon={<FaCodepen />}
+              text="codepen.io/cuitlazotlac"
+              cardLink="https://www.freefonts.io/geomanist-font-family/"
+            />
+            <ContactInfoItem
+              icon={<FaAngellist />}
+              text="angel.co/u/hayssem-elsayed"
+              cardLink="https://angel.co/u/hayssem-elsayed"
+            />
+            <ContactInfoItem
+              icon={<FaMailBulk />}
+              text="heyhayssem@gmail.com"
+              cardLink="https://www.freefonts.io/geomanist-font-family/"
+            />
           </div>
         </div>
       </div>
@@ -30,7 +62,7 @@ const ContactSectionStyle = styled.div`
   padding: 10rem 0;
   .contactSection__wrapper {
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
     margin-top: 7rem;
     justify-content: space-between;
     position: relative;
@@ -63,7 +95,6 @@ const ContactSectionStyle = styled.div`
     .left,
     .right {
       max-width: 100%;
-      padding: 4rem 2rem 2rem 2rem;
     }
   }
 `;

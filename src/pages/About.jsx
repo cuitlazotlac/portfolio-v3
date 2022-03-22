@@ -147,7 +147,7 @@ const AboutPageStyles = styled.div`
   }
   .button_row {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .about__heading {

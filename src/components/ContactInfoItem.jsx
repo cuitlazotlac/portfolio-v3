@@ -1,19 +1,44 @@
 import React from "react";
-import { MdPlace } from "react-icons/md";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import PText from "./PText";
 
+export default function ContactInfoItem({ icon, text, cardLink }) {
+  return (
+    <ItemStyles>
+      <a href={cardLink} target="_blank" rel="noreferrer" className="container">
+        <div className="icon">{icon}</div>
+        <div className="info">
+          <PText>{text}</PText>
+        </div>
+      </a>
+    </ItemStyles>
+  );
+}
+
 const ItemStyles = styled.div`
-  padding: 2rem;
-  background-color: var(--deep-dark);
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+  .container {
+    padding: 2rem;
+    border: 1px solid var(--font-color);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
+    transform-style: preserve-3d;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.1);
+      transform: translate(7px, -7px);
+      transform-style: preserve-3d;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 5px 10px var(--shadow-color);
+    }
+  }
   .icon {
-    color: var(--brand-color);
-    background-color: var(--secondary-color);
+    background-color: var(--brand-color);
     padding: 1.3rem;
     display: flex;
     align-items: center;
@@ -24,17 +49,3 @@ const ItemStyles = styled.div`
     width: 3.5rem;
   }
 `;
-
-export default function ContactInfoItem({
-  icon = <MdPlace />,
-  text = "I need text ",
-}) {
-  return (
-    <ItemStyles>
-      <div className="icon">{icon}</div>
-      <div className="info">
-        <PText>{text}</PText>
-      </div>
-    </ItemStyles>
-  );
-}

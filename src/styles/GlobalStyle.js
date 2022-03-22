@@ -5,13 +5,15 @@ const GlobalStyles = createGlobalStyle`
   --background-color: #F5EFEB;
   --secondary-color: #F5F4DC;
   --third-color: #1F2124;
+  --shadow-color: #3C3C3C;
   --font-color: #000000;
   --brand-color: #01E3B4;
 }
 .dark-theme{
   --background-color: #001421;
   --secondary-color: #082235;
-  --third-color: ###5B5C5D;
+  --third-color: #5B5C5D;
+  --shadow-color: #4D638D;
   --font-color: #EDF2F6;
   --brand-color: #01E3B4;
 }
@@ -31,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html{
     --main-font: 'Raleway', sans-serif;
-    --secondary-font: 'Nunito Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --stacks-font: monospace;
 
     font-size: 10px;

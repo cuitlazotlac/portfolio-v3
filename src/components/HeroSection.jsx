@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello, This is</span>
+            <span>{t("Hero.SubTitle")}</span>
             <span className="hero__name">{t("Hero.Title")}</span>
           </h1>
           <div className="hero__info">
@@ -30,8 +30,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
-              <p>{t("Hero.Follow")}</p>
-              <img src={SocialMediaArrow} alt="icon" />
+              <p>{t("Hero.Connect")}</p>
+              <br />
             </div>
             <div className="hero__social__text">
               <ul>
@@ -76,7 +76,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="hero__scrollDown">
-            <p>Scroll</p>
+            <p>{t("Hero.Scroll")}</p>
             <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
           </div>
         </div>
