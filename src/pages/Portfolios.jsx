@@ -12,9 +12,9 @@ import { useTranslation } from "react-i18next";
 const allButtons = ["All", ...new Set(portfolios.map((item) => item.category))];
 
 export default function Portfolios() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [portfolioItem, setPortfolioItems] = useState(portfolios);
-  const [button, setButtons] = useState(allButtons);
+  const [button] = useState(allButtons);
 
   const filter = (button) => {
     if (button === "All") {

@@ -6,7 +6,7 @@ import { MdClose, MdMenu } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
 export default function NavMenu() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [showNav, setShowNav] = useState(false);
   return (
