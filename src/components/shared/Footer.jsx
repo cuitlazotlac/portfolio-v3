@@ -1,19 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import FooterCol from "./FooterCol";
 import LanguageSelect from "../LanguageSelect";
 
-import logo from "../../assets/images/avatar.png";
-
-import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 import ThemeToggle from "../ThemeToggle";
 
 export default function Footer() {
   const { t } = useTranslation();
-  const onChange = (event) => {
-    i18n.changeLanguage(event.target.value);
-  };
 
   return (
     <FooterStyle>

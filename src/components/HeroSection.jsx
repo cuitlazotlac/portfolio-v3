@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
-import SocialMediaArrow from "../assets/images/scroll-media-arrow.svg";
+// import SocialMediaArrow from "../assets/images/scroll-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 
 import { FaBehanceSquare } from "react-icons/fa";
