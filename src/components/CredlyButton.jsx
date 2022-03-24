@@ -39,9 +39,13 @@ const CredlyButtonStyled = styled.button`
   @media only screen and (max-width: 768px) {
     .button {
       font-size: 1.8rem;
+      width: 160px;
+      height: 43.95px;
     }
   }
   @media only screen and (max-width: 768px) {
     font-size: 0.95rem;
+    width: 160px;
+    height: 43.95px;
   }
 `;

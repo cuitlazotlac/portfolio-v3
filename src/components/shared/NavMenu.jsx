@@ -5,6 +5,8 @@ import { MdClose, MdMenu } from "react-icons/md";
 
 import { useTranslation } from "react-i18next";
 
+import logo from "../../assets/images/favicon.svg";
+
 export default function NavMenu() {
   const { t } = useTranslation();
 
@@ -31,6 +33,9 @@ export default function NavMenu() {
         >
           <MdClose />
         </div>
+        <li className="logo">
+          <img src={logo} />
+        </li>
         <li>
           <NavLink
             to="/"
@@ -99,7 +104,10 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--background-color);
+  background-color: var(--background-color);
+  .logo {
+    width: 5%;
+  }
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -118,6 +126,7 @@ const NavStyles = styled.nav`
       display: inline-block;
       padding: 1rem 2rem;
       font-size: 2rem;
+      font-weight: 700;
       color: var(--font-color);
       outline: none;
     }
@@ -175,6 +184,9 @@ const NavStyles = styled.nav`
       li {
         display: block;
         margin-bottom: 1rem;
+      }
+      .logo {
+        width: 20%;
       }
     }
   }

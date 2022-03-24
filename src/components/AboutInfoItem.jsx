@@ -22,22 +22,26 @@ const AboutItemStyles = styled.div`
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   .title {
     font-size: 2rem;
     font-weight: 400;
   }
   .items {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     position: absolute;
     left: 18rem;
-    font-weight: 300;
+    font-weight: 200;
   }
   .item {
-    background-color: var(--secondary-color);
+    border: 1px solid var(--font-color);
+    background-color: var(--primary-color);
+    border-radius: 1px;
     padding: 1rem;
-    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    overflow: hidden;
   }
   @media only screen and (max-width: 768px) {
     flex-direction: column;

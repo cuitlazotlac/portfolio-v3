@@ -34,7 +34,7 @@ const ProjectItemStyles = styled.div`
     border: 1px solid var(--font-color);
     padding: 1rem;
     border-radius: 1px;
-    width: 100%;
+    overflow: hidden;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;
     &:hover {

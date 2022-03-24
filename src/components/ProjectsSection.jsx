@@ -9,15 +9,21 @@ import ProjectItem from "./ProjectItem";
 import SectionTitle from "./SectionTitle";
 import projects from "../assets/data/projects";
 
+import { useTranslation } from "react-i18next";
+
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
 export default function ProjectsSection() {
-  // console.log(projects);
+  const { t } = useTranslation();
+
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTitle subheading="some of my recent works" heading="Projects" />
+        <SectionTitle
+          subheading={t("ProjectSwiper.SectionDescription")}
+          heading={t("ProjectSwiper.SectionTitle")}
+        />
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}
@@ -42,11 +48,14 @@ export default function ProjectsSection() {
               if (index >= 5) return null;
               return (
                 <SwiperSlide key={project.id}>
-                  <ProjectItem
-                    title={project.name}
-                    img={project.img}
-                    desc={project.desc}
-                  />
+                  <div className="item">
+                    <ProjectItem
+                      title={project.name}
+                      img={project.img}
+                      desc={project.desc}
+                      stacks={project.stacks}
+                    />
+                  </div>
                 </SwiperSlide>
               );
             })}
@@ -59,21 +68,23 @@ export default function ProjectsSection() {
 
 const ProjectSectionStyle = styled.div`
   padding: 2rem 0;
+  width: 100%;
+  display: grid;
   .projects__allItems {
-    display: flex;
+    display: grid;
     gap: 3rem;
     margin-top: 5rem;
   }
   .swiper-container {
     padding-top: 8rem;
-    max-width: 100%;
+    width: 100%;
   }
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
     height: 50px;
     width: 50px;
-    background: var(--deep-dark);
+    background-color: var(--brand-color);
     z-index: 10;
     right: 60px;
     left: auto;
