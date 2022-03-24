@@ -24,17 +24,17 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<FaDharmachakra />}
             title={t("Expertise.Title1")}
-            desc={t("Expertise.Title1")}
+            desc={t("Expertise.Description1")}
           />
           <ServicesSectionItem
             icon={<FaBezierCurve />}
             title={t("Expertise.Title2")}
-            desc={t("Expertise.Title2")}
+            desc={t("Expertise.Description2")}
           />
           <ServicesSectionItem
             icon={<FaLayerGroup />}
             title={t("Expertise.Title3")}
-            desc={t("Expertise.Title3")}
+            desc={t("Expertise.Description3")}
           />
         </div>
       </div>

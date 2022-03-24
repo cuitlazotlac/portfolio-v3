@@ -4,7 +4,7 @@ import { MdSearch } from "react-icons/md";
 import SectionTitle from "../components/SectionTitle";
 import ProjectItem from "../components/ProjectItem";
 
-import ProjectsInfo from "../assets/data/projects";
+import ProjectsInfo from "../assets/data/blockchain";
 
 import { useTranslation } from "react-i18next";
 
@@ -31,7 +31,6 @@ export default function Projects() {
   return (
     <>
       <ProjectStyle>
-        Î
         <div className="container">
           <SectionTitle
             heading={t("Project.SectionTitle")}
@@ -54,10 +53,9 @@ export default function Projects() {
             {projectsData.map((item) => (
               <ProjectItem
                 key={item.id}
-                title={item.name}
+                title={item.title}
                 desc={item.desc}
                 stacks={item.stack}
-                img={item.image}
               />
             ))}
           </div>
@@ -90,6 +88,8 @@ const ProjectStyle = styled.div`
   .projects__searchBar input {
     width: 100%;
     font-size: 2rem;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
     padding: 0.8rem;
     border-radius: 1px;
     outline: none;

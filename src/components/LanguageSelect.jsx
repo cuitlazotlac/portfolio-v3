@@ -23,11 +23,11 @@ export default function LanguageSelect() {
 
 const LanguageSelectStyle = styled.div`
   .select {
-    background-color: ${(props) =>
-      props.outline ? "transperant" : "var(--secondary-color)"};
+    background-color: var(--secondary-color);
     padding: 0.35em 1.5em;
     border: 1px solid var(--font-color);
-    font-size: 1.6rem;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
     border-radius: 1px;
   }
   @media only screen and (max-width: 768px) {

@@ -9,6 +9,8 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
+import Typical from "../components/shared/Typical";
+
 import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
@@ -19,7 +21,17 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>{t("Hero.SubTitle")}</span>
+            <span>
+              <Typical
+                as="h4"
+                main_title={t("Hero.Headline0")}
+                title_1={t("Hero.Headline1")}
+                title_2={t("Hero.Headline2")}
+                title_3={t("Hero.Headline3")}
+                title_4={t("Hero.Headline4")}
+                title_5={t("Hero.Headline5")}
+              />
+            </span>
             <span className="hero__name">{t("Hero.Title")}</span>
           </h1>
           <div className="hero__info">

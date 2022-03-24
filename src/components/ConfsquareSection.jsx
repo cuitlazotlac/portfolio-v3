@@ -4,7 +4,7 @@ import Button from "./Button";
 import PText from "./PText";
 import SectionTitle from "./SectionTitle";
 
-import ConfsquareLogo from "../assets/images/avatar.svg";
+import ConfsquareLogo from "../assets/images/confsquare/confsquare.svg";
 
 import { useTranslation } from "react-i18next";
 
@@ -47,9 +47,11 @@ const ConfsquareSectionStyles = styled.div`
     justify-content: flex-start;
     text-align: left;
   }
-  .confsquareSection__left,
+  .confsquareSection__left {
+    flex: 4;
+  }
   .confsquareSection__right {
-    flex: 1;
+    flex: 3;
   }
   .section-title {
     text-align: left;
@@ -65,12 +67,18 @@ const ConfsquareSectionStyles = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
+  .confsquareImg {
+    width: 80%;
+  }
   @media only screen and (max-width: 950px) {
     .confsquareSection__left {
       flex: 4;
     }
     .confsquareSection__right {
       flex: 3;
+    }
+    .confsquareImg {
+      width: 50%;
     }
   }
   @media only screen and (max-width: 768px) {
@@ -91,6 +99,9 @@ const ConfsquareSectionStyles = styled.div`
     .para {
       margin: 0 auto;
       margin-top: 2rem;
+    }
+    .confsquareImg {
+      width: 50%;
     }
     .confsquareSection__buttons {
       flex-direction: column;

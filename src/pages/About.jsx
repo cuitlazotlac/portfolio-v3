@@ -5,8 +5,8 @@ import Button from "../components/Button";
 import CredlyButton from "../components/CredlyButton";
 
 import Avatar from "../assets/images/avatar.svg";
-
 import AboutInfoItem from "../components/AboutInfoItem";
+import SectionTitle from "../components/SectionTitle";
 
 import { useTranslation } from "react-i18next";
 
@@ -17,6 +17,11 @@ export default function About() {
     <>
       <AboutPageStyles>
         <div className="container">
+          <SectionTitle
+            subheading={t("About.SectionDescription")}
+            heading={t("About.SectionTitle")}
+          />
+          <br />
           <div className="top-section">
             <div className="left">
               <h4 className="about__heading">{t("About.Title")}</h4>
@@ -32,7 +37,7 @@ export default function About() {
                 </PText>
               </div>
               <div className="button_row">
-                <Button btnText="Download CV" btnLink="#" id="btn1" />
+                <Button btnText={t("About.Button")} btnLink="#" id="btn1" />
                 <CredlyButton btnText="Download CV" btnLink="#" id="btn2" />
               </div>
             </div>
@@ -123,15 +128,16 @@ export default function About() {
 }
 
 const AboutPageStyles = styled.div`
-  padding: 20rem 0 10rem 0;
+  padding: 10rem 0;
   .top-section {
+    padding: 5rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
   }
   .left {
-    flex: 3;
+    flex: 4;
   }
   .right {
     flex: 2;
@@ -162,11 +168,12 @@ const AboutPageStyles = styled.div`
   }
   .right {
     img {
-      border: 2px solid var(--font-color);
+      width: 100%;
+      // border: 2px solid var(--font-color);
     }
   }
   .about__info__items {
-    margin-top: 15rem;
+    margin-top: 5rem;
   }
   .about__info__item {
     margin-bottom: 10rem;

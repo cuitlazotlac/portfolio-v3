@@ -4,7 +4,12 @@
     "Description": "Bitcoin PM"
   },
   "Hero": {
-    "SubTitle": "Hello, This is",
+    "Headline0": "Hello, This is",
+    "Headline1": "A Technical Product Manager",
+    "Headline2": "A passionate about Data Analysis",
+    "Headline3": "Someone always looking for new challenges",
+    "Headline4": "Currently building the infrastructure for digital assets",
+    "Headline5": "In love with beautiful interfaces",
     "Title": "Hey there I'm Hayssem 👋",
     "Description_Part1": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
     "Description_Part2": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
@@ -21,7 +26,7 @@
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
     "Description": "Product Manager currently building the infrastructure of digital assets",
-    "Section": "Section",
+    "Section": "Sections",
     "Social Links": "Social Links",
     "English": "English 🇨🇦",
     "French": "French 🇫🇷",
@@ -46,6 +51,8 @@
     "Description3": "Lorem Ipsum."
   },
   "About": {
+    "SectionTitle": "About",
+    "SectionDescription": "Just a little bit about myself",
     "Title": "Just a Product Manager currently building the infrastructure of digital assets",
     "Paragraph1": "Product Management",
     "Paragraph2": "Lorem Ipsum.",
@@ -55,6 +62,10 @@
     "Experience": "Experiences",
     "Certification": "Certifications",
     "Education": "Education"
+  },
+  "ProjectSwiper": {
+    "SectionTitle": "Projects",
+    "SectionDescription": "Some of my recent works"
   },
   "Project": {
     "SectionTitle": "DApps & Smart Contracts",
@@ -66,7 +77,7 @@
     "SectionDescription": "Side development"
   },
   "Contact": {
-    "SectionTitle": "Let's catchup",
+    "SectionTitle": "Let's catchup 🍻",
     "SectionDescription": "Let's get to know about each others",
     "Button": "Contact Me !"
   }
