@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { MdWbSunny } from "react-icons/md";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState("light-theme");
+  const [theme, setTheme] = useState("dark-theme");
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {

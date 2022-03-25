@@ -33,9 +33,6 @@ export default function NavMenu() {
         >
           <MdClose />
         </div>
-        <li className="logo">
-          <img src={logo} />
-        </li>
         <li>
           <NavLink
             to="/"
@@ -105,9 +102,6 @@ const NavStyles = styled.nav`
   width: 100%;
   padding: 1rem 0;
   background-color: var(--background-color);
-  .logo {
-    width: 5%;
-  }
   ul {
     max-width: 1200px;
     margin: 0 auto;

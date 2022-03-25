@@ -32,8 +32,6 @@ export default function About() {
                   <br />
                   {t("About.Paragraph2")}
                   <br />
-                  <br />
-                  {t("About.Paragraph3")}
                 </PText>
               </div>
               <div className="button_row">
@@ -52,19 +50,24 @@ export default function About() {
 
               <AboutInfoItem
                 title="Coding"
-                items={["React", "CSS", "JavaScript"]}
+                items={["JavaScript", "React", "CSS"]}
               />
               <AboutInfoItem
                 title="Data"
-                items={["React", "CSS", "JavaScript"]}
+                items={[
+                  "Postgres",
+                  "Microsft SQL Server",
+                  "PowerBI",
+                  "Grafana",
+                ]}
               />
               <AboutInfoItem
                 title="Blockchain"
-                items={["Node", "Express", "PHP"]}
+                items={["Solidity", "Truffle", "Ganache"]}
               />
               <AboutInfoItem
                 title="Design"
-                items={["Figma", "After Effects", "Figma"]}
+                items={["Figma", "After Effects", "Adobe Illustrator"]}
               />
             </div>
             {/* // EXPERIENCE SECTION */}
@@ -72,16 +75,20 @@ export default function About() {
               <h1 className="about__info__heading">{t("About.Experience")}</h1>
 
               <AboutInfoItem
-                title="2010-2012"
-                items={["junior developer at web Cifar"]}
+                title="10/2018 -"
+                items={[
+                  "Product Manager | Société Générale Corporate & Investment Banking | Montréal - CANADA",
+                ]}
               />
               <AboutInfoItem
-                title="2012-2016"
-                items={["Front end developer at web Cifar "]}
+                title="10/2017 - 10/2018"
+                items={[
+                  "Technical Project Manager | BNP Paribas Cardif | Paris - FRANCE",
+                ]}
               />
               <AboutInfoItem
-                title="2016-"
-                items={["Freelance web Developer"]}
+                title="07/2016 - 10/2017"
+                items={["Business Analyst | Société Générale | Paris - FRANCE"]}
               />
             </div>
             {/* // CERTIFICATION SECTION */}
@@ -91,16 +98,16 @@ export default function About() {
               </h1>
 
               <AboutInfoItem
-                title="2010-2012"
-                items={["junior developer at web Cifar"]}
+                title="10/2021"
+                items={["IBM Blockchain Foundation Developer V2"]}
               />
               <AboutInfoItem
-                title="2012-2016"
-                items={["Front end developer at web Cifar "]}
+                title="10/2021"
+                items={["IBM Blockchain Foundation Essentials V2"]}
               />
               <AboutInfoItem
-                title="2016-"
-                items={["Freelance web Developer"]}
+                title="09/2021"
+                items={["Certified Blockchain Expert"]}
               />
             </div>
             {/* // EDUCATION SECTION */}
@@ -108,16 +115,10 @@ export default function About() {
               <h1 className="about__info__heading">{t("About.Education")}</h1>
 
               <AboutInfoItem
-                title="School"
-                items={["Nasirabad Govt. High School, Chattogram"]}
-              />
-              <AboutInfoItem
-                title="Collage"
-                items={["BAF Shaheen College Chattogram"]}
-              />
-              <AboutInfoItem
-                title="Varsity"
-                items={["University Of Chitiagong"]}
+                title="Master's degree"
+                items={[
+                  "Master’s degree IT Project and Business Strategy | Paris 7 Diderot University - Paris, FRA",
+                ]}
               />
             </div>
           </div>

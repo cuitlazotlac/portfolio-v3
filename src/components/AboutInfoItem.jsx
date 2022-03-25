@@ -32,13 +32,16 @@ const AboutItemStyles = styled.div`
     gap: 1rem;
     position: absolute;
     left: 18rem;
-    font-weight: 200;
   }
   .item {
+    font-weight: 100;
+    p {
+      font-size: 1.3rem;
+    }
     border: 1px solid var(--font-color);
-    background-color: var(--primary-color);
-    border-radius: 1px;
-    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    padding: 0.75rem;
     transition: all 0.3s ease-in-out;
     transform-style: preserve-3d;
     overflow: hidden;

@@ -20,16 +20,17 @@ export default function CredlyButton() {
 
 const CredlyButtonStyled = styled.button`
   margin-top: 2rem;
-  padding: 1rem;
-  background-color: #fac3a1;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
   width: 160px;
-  height: 45.95px;
+  height: 42.95px;
   border: 1px solid var(--font-color);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
   img {
     max-width: 36%;
   }
   &:hover {
+    background-color: #fac3a1;
     transform: scale(1.1);
     transform: translate(7px, -7px);
     transform-style: preserve-3d;

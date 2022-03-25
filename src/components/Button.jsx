@@ -15,19 +15,21 @@ export default function Button({ btnText, btnLink, outline = false }) {
 const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
-    font-size: 2rem;
-    background-color: ${(props) =>
-      props.outline ? "transperant" : "var(--secondary-color)"};
-    border: 1px solid var(--font-color);
+    font-size: 1.7rem;
+    font-weight: 400;
+    background-color: var(--brand-color);
+    border: 1px solid var(--btn-border-color);
     border-radius: 1px;
     display: inline-block;
-    color: var(--font-color);
+    color: var(--btn-color);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;
     padding: 1rem;
     overflow: hidden;
     &:hover {
+      color: var(--font-color);
+      background-color: var(--primary-color);
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;
