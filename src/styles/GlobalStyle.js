@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
   --shadow-color: #3C3C3C;
   --font-color: #000000;
   --brand-color: #01E3B4;
+  --btn-color: #EDF2F6;
+  --btn-border-color: #CCD0D3;
 }
 .dark-theme{
   --background-color: #001421;
@@ -16,6 +18,8 @@ const GlobalStyles = createGlobalStyle`
   --shadow-color: #4D638D;
   --font-color: #EDF2F6;
   --brand-color: #01E3B4;
+  --btn-color: #001421;
+  --btn-border-color: #CCD0D3;
 }
 
 *{

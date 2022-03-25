@@ -11,10 +11,11 @@
     "Headline4": "Currently building the infrastructure for digital assets",
     "Headline5": "In love with beautiful interfaces",
     "Title": "Hey there I'm Hayssem 👋",
-    "Description_Part1": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
-    "Description_Part2": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
+    "Description_Part1": "Professional Technical Product Manager with a passion for Data Analysis, Design, and Web development. I like to build ( and occasionally develop ) astounding digital experiences with excitement for helping, guiding, and aligning requirements to deliver meaningful results.",
+    "Description_Part2": "Currently, I'm working at Société Générale Investment Banking focused on building internal and innovative products. Additionally, I’m the Co-Founder of Confsquare, a new way to organize your event and gather with your community!",
     "Connect": "Connect",
-    "Scroll": "Scroll"
+    "Scroll": "Scroll",
+    "WorksButton": "Check my work"
   },
   "Navigation": {
     "Home": "Home",
@@ -35,10 +36,10 @@
   "Confsquare": {
     "SectionTitle": "Confsquare",
     "SectionDescription": "Let's Gather",
-    "Description_Part1": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
-    "Description_Part2": "I am working as a product manager for 5 years. I'm working on the blockchain infrastructure. I love to build and design new product to help people.",
+    "Description_Part1": "Confsquare is a startup project :",
+    "Description_Part2": "This new event platform enable you to build more connection between you and your community throught the concept of `Rooms`.",
     "ReadMore": "Check website",
-    "Works": "Side hustle"
+    "Works": "Other side projects"
   },
   "Expertise": {
     "SectionTitle": "Expertise",
@@ -53,9 +54,9 @@
   "About": {
     "SectionTitle": "About",
     "SectionDescription": "Just a little bit about myself",
-    "Title": "Just a Product Manager currently building the infrastructure of digital assets",
-    "Paragraph1": "Product Management",
-    "Paragraph2": "Lorem Ipsum.",
+    "Title": "Technical Product Manager + Product Owner & Scrum Master Certified",
+    "Paragraph1": "Passionate Technical Product Manager with over six years of hands-on experience leading successful features, products, and digital initiatives by leading projects, sprints, ensuring high-quality delivery, exercising collaborative team and stakeholder management. I strive to always be up to speed on different topics including coding and design to be able to deliver and discuss with all stakeholders.",
+    "Paragraph2": "I fled from a traditional path and explored my creativity, by trying my hands on various techniques and technologies. Product Management is more than just a profession for me, and I try to dig deep into it. Today, I like to use my skills for critical thinking, empathy, and creativity to create viable and impactful solutions.",
     "Paragraph3": "Interface Design",
     "Button": "Check Resume",
     "Skill": "Skills",

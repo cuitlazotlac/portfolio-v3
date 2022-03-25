@@ -38,7 +38,9 @@ export default function HeroSection() {
             <h3>{t("Hero.Description_Part1")}</h3>
             <br />
             <h3>{t("Hero.Description_Part2")}</h3>
-            <Button btnText="see my works" btnLink="/projects" />
+            <br />
+
+            <Button btnText={t("Hero.WorksButton")} btnLink="/projects" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
@@ -121,9 +123,10 @@ const HeroStyles = styled.div`
     }
   }
   .hero__info {
-    margin-top: 1rem;
+    margin-top: 5rem;
     display: block;
     font-size: 2rem;
+    font-weight: 400;
     text-align: left;
   }
   .hero__social,
@@ -181,7 +184,7 @@ const HeroStyles = styled.div`
       min-height: 750px;
     }
     .hero__heading {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       margin-bottom: -3rem;
       .hero__name {
         font-size: 4.5rem;
