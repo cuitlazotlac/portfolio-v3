@@ -7,6 +7,8 @@ import CredlyButton from "../components/CredlyButton";
 import Avatar from "../assets/images/avatar.svg";
 import AboutInfoItem from "../components/AboutInfoItem";
 import SectionTitle from "../components/SectionTitle";
+import ExperienceInfoItem from "../components/ExperienceInfoItem";
+import CertificationInfoItem from "../components/CertificationInfoItem";
 
 import { useTranslation } from "react-i18next";
 
@@ -45,9 +47,8 @@ export default function About() {
           </div>
           <div className="about__info__items">
             {/* // SKILLS SECTION */}
+            <h1 className="about__info__heading">{t("About.Skill")}</h1>
             <div className="about__info__item">
-              <h1 className="about__info__heading">{t("About.Skill")}</h1>
-
               <AboutInfoItem
                 title="Coding"
                 items={["JavaScript", "React", "CSS"]}
@@ -71,54 +72,118 @@ export default function About() {
               />
             </div>
             {/* // EXPERIENCE SECTION */}
+            <h1 className="about__info__heading">{t("About.Experience")}</h1>
             <div className="about__info__item">
-              <h1 className="about__info__heading">{t("About.Experience")}</h1>
-
-              <AboutInfoItem
-                title="10/2018 -"
-                items={[
-                  "Product Manager | Société Générale Corporate & Investment Banking | Montréal - CANADA",
-                ]}
+              <ExperienceInfoItem
+                title={t("Experience4.Title")}
+                company={t("Experience4.Company")}
+                period={t("Experience4.Period")}
+                desc1={t("Experience4.Desc1")}
+                desc2={t("Experience4.Desc2")}
+                desc3={t("Experience4.Desc3")}
+                desc4={t("Experience4.Desc4")}
+                desc5={t("Experience4.Desc5")}
+                stacks={t("Experience4.Stacks")}
               />
-              <AboutInfoItem
-                title="10/2017 - 10/2018"
-                items={[
-                  "Technical Project Manager | BNP Paribas Cardif | Paris - FRANCE",
-                ]}
+              <ExperienceInfoItem
+                title={t("Experience3.Title")}
+                company={t("Experience3.Company")}
+                period={t("Experience3.Period")}
+                desc1={t("Experience3.Desc1")}
+                desc2={t("Experience3.Desc2")}
+                desc3={t("Experience3.Desc3")}
+                desc4={t("Experience3.Desc4")}
+                desc5={t("Experience3.Desc5")}
+                stacks={t("Experience3.Stacks")}
+              />{" "}
+              <ExperienceInfoItem
+                title={t("Experience2.Title")}
+                company={t("Experience2.Company")}
+                period={t("Experience2.Period")}
+                desc1={t("Experience2.Desc1")}
+                desc2={t("Experience2.Desc2")}
+                desc3={t("Experience2.Desc3")}
+                desc4={t("Experience2.Desc4")}
+                desc5={t("Experience2.Desc5")}
+                stacks={t("Experience2.Stacks")}
+              />{" "}
+              <ExperienceInfoItem
+                title={t("Experience1.Title")}
+                company={t("Experience1.Company")}
+                period={t("Experience1.Period")}
+                desc1={t("Experience1.Desc1")}
+                desc2={t("Experience1.Desc2")}
+                desc3={t("Experience1.Desc3")}
+                desc4={t("Experience1.Desc4")}
+                desc5={t("Experience1.Desc5")}
+                stacks={t("Experience1.Stacks")}
               />
-              <AboutInfoItem
-                title="07/2016 - 10/2017"
-                items={["Business Analyst | Société Générale | Paris - FRANCE"]}
-              />
-            </div>
-            {/* // CERTIFICATION SECTION */}
-            <div className="about__info__item">
-              <h1 className="about__info__heading">
-                {t("About.Certification")}
-              </h1>
-
-              <AboutInfoItem
-                title="10/2021"
-                items={["IBM Blockchain Foundation Developer V2"]}
-              />
-              <AboutInfoItem
-                title="10/2021"
-                items={["IBM Blockchain Foundation Essentials V2"]}
-              />
-              <AboutInfoItem
-                title="09/2021"
-                items={["Certified Blockchain Expert"]}
+              <ExperienceInfoItem
+                title={t("Experience0.Title")}
+                company={t("Experience0.Company")}
+                period={t("Experience0.Period")}
+                desc1={t("Experience0.Desc1")}
+                desc2={t("Experience0.Desc2")}
+                desc3={t("Experience0.Desc3")}
+                desc4={t("Experience0.Desc4")}
+                desc5={t("Experience0.Desc5")}
+                stacks={t("Experience0.Stacks")}
               />
             </div>
             {/* // EDUCATION SECTION */}
+            <h1 className="about__info__heading">{t("About.Education")}</h1>
             <div className="about__info__item">
-              <h1 className="about__info__heading">{t("About.Education")}</h1>
-
-              <AboutInfoItem
-                title="Master's degree"
-                items={[
-                  "Master’s degree IT Project and Business Strategy | Paris 7 Diderot University - Paris, FRA",
-                ]}
+              <CertificationInfoItem
+                title={t("Education1.Title")}
+                company={t("Education1.Company")}
+              />
+            </div>
+            {/* // CERTIFICATION SECTION */}
+            <h1 className="about__info__heading">{t("About.Certification")}</h1>
+            <div className="certification__info__items">
+              <CertificationInfoItem
+                title={t("Certification.Title10")}
+                company={t("Certification.Company10")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title9")}
+                company={t("Certification.Company9")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title8")}
+                company={t("Certification.Company8")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title7")}
+                company={t("Certification.Company7")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title6")}
+                company={t("Certification.Company6")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title5")}
+                company={t("Certification.Company5")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title4")}
+                company={t("Certification.Company4")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title3")}
+                company={t("Certification.Company3")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title2")}
+                company={t("Certification.Company2")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title1")}
+                company={t("Certification.Company1")}
+              />{" "}
+              <CertificationInfoItem
+                title={t("Certification.Title0")}
+                company={t("Certification.Company0")}
               />
             </div>
           </div>
@@ -170,16 +235,20 @@ const AboutPageStyles = styled.div`
   .right {
     img {
       width: 100%;
-      // border: 2px solid var(--font-color);
     }
   }
   .about__info__items {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
-  .about__info__item {
-    margin-bottom: 10rem;
+  @media only screen and (min-width: 892px) {
+    .certification__info__items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
   }
   .about__info__heading {
+    margin-top: 4rem;
     font-size: 3.6rem;
     text-transform: uppercase;
   }

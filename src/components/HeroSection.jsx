@@ -40,7 +40,7 @@ export default function HeroSection() {
             <h3>{t("Hero.Description_Part2")}</h3>
             <br />
 
-            <Button btnText={t("Hero.WorksButton")} btnLink="/projects" />
+            {/* <Button btnText={t("Hero.WorksButton")} btnLink="/projects" /> */}
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
@@ -177,6 +177,11 @@ const HeroStyles = styled.div`
           margin-bottom: 1rem;
         }
       }
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .hero__social {
+      left: -5px;
     }
   }
   @media only screen and (max-width: 768px) {
