@@ -22,7 +22,9 @@ export default function ConfsquareSection() {
           <PText>{t("Confsquare.Description_Part1")}</PText>
           <PText>{t("Confsquare.Description_Part2")}</PText>
           <div className="confsquareSection__buttons">
-            <Button btnText={t("Confsquare.ReadMore")} btnLink="/projects" />
+            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+              <Button btnText={t("Confsquare.ReadMore")} />
+            </a>
             <Button
               btnText={t("Confsquare.Works")}
               btnLink="/projects"

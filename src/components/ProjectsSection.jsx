@@ -7,6 +7,8 @@ import SwiperCore, { Navigation } from "swiper";
 
 import ProjectItem from "./ProjectItem";
 import SectionTitle from "./SectionTitle";
+import Button from "./Button";
+
 import projects from "../assets/data/projects";
 
 import { useTranslation } from "react-i18next";
@@ -61,6 +63,7 @@ export default function ProjectsSection() {
             })}
           </Swiper>
         </div>
+        <Button btnText={t("Portfolio.Button")} btnLink="/portfolio" outline />
       </div>
     </ProjectSectionStyle>
   );
