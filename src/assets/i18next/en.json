@@ -11,8 +11,8 @@
     "Headline4": "Currently building the infrastructure for digital assets",
     "Headline5": "In love with beautiful interfaces",
     "Title": "Hey there I'm Hayssem 👋",
-    "Description_Part1": "Professional Technical Product Manager with a passion for Data Analysis, Design, and Web development. I like to build ( and occasionally develop ) astounding digital experiences with excitement for helping, guiding, and aligning requirements to deliver meaningful results.",
-    "Description_Part2": "Currently, I'm working at Société Générale Investment Banking focused on building internal and innovative products. Additionally, I’m the Co-Founder of Confsquare, a new way to organize your event and gather with your community!",
+    "Description_Part1": "Professional Technical Product Manager with a passion for  Web development, Data Analysis and Design. I love to build ( and occasionally develop ) astounding digital experiences with excitement for helping and aligning requirements to deliver meaningful results.",
+    "Description_Part2": "Currently, I'm working at Société Générale Investment Banking focused on building internal and innovative web products. Additionally, I’m the Co-Founder of Confsquare, a new way to organize your event and gather with your community!",
     "Connect": "Connect",
     "Scroll": "Scroll",
     "WorksButton": "Check my work"
@@ -20,7 +20,7 @@
   "Navigation": {
     "Home": "Home",
     "About": "About",
-    "Projects": "Smart Contracts",
+    "Projects": "Blockchain/Web3.0",
     "Portfolio": "Portfolio",
     "Contact": "Contact"
   },
@@ -36,8 +36,8 @@
   "Confsquare": {
     "SectionTitle": "Confsquare",
     "SectionDescription": "Let's Gather",
-    "Description_Part1": "Confsquare is a startup project :",
-    "Description_Part2": "This new event platform enable you to build more connection between you and your community throught the concept of `Rooms`.",
+    "Description_Part1": "Confsquare is a startup project, focus on event organization and management.",
+    "Description_Part2": "We are building a new event platform enabling our users to create more connections with their community through the in-house concept of `Rooms`.",
     "ReadMore": "Check website",
     "Works": "Other side projects"
   },
@@ -45,11 +45,11 @@
     "SectionTitle": "Expertise",
     "SectionDescription": "What I've learn long the way",
     "Title1": "Product Management",
-    "Description1": "Lorem Ipsum.",
+    "Description1": "6+ years experience working on high-impact user and developer-facing products including multiple web applications, APIs, or platforms.",
     "Title2": "Interface Design",
-    "Description2": "Lorem Ipsum.",
+    "Description2": "I'm eager to interact with my customers to gather feedback, to build design concept ideas through sketches, prototypes, and wireframes.",
     "Title3": "Data Analysis",
-    "Description3": "Lorem Ipsum."
+    "Description3": "Throughout my passion for databases and data models, I've built fluency with qualitative and quantitative data collection and decision-making methodologies."
   },
   "About": {
     "SectionTitle": "About",
@@ -70,8 +70,8 @@
   },
   "Project": {
     "SectionTitle": "DApps & Smart Contracts",
-    "SectionDescription": "Development related to blockchain field",
-    "Placeholder": "Project Name..."
+    "SectionDescription": "Development related to the blockchain field",
+    "Placeholder": "Search for a project..."
   },
   "Portfolio": {
     "Button": "All my projects",
@@ -162,6 +162,8 @@
     "Company0": "UIPath | 06/2019"
   },
   "Contact": {
+    "MainTitle": "Contact",
+    "SubsectionTitle": "Get in touch",
     "SectionTitle": "Let's catchup 🍻",
     "SectionDescription": "Let's get to know about each others",
     "Button": "Contact Me !"

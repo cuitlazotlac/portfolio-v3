@@ -32,7 +32,7 @@ const SectionTitleStyle = styled.div`
       font-size: 3.6rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 `;

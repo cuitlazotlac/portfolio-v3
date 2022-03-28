@@ -1,7 +1,7 @@
 import React from "react";
 import ConfsquareSection from "../components/ConfsquareSection";
 import ServicesSection from "../components/ServicesSection";
-import ProjectsSection from "../components/ProjectsSection";
+import ProjectsCarouselSection from "../components/ProjectsCarouselSection";
 // import TestimonialsSection from '../components/TestimonialsSection';
 import ContactBanner from "../components/ContactBanner";
 import HeroSection from "../components/HeroSection";
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <ConfsquareSection />
       <ServicesSection />
-      <ProjectsSection />
+      <ProjectsCarouselSection />
       {/* <TestimonialsSection /> */}
       <ContactBanner />
     </div>

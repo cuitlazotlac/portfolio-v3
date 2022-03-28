@@ -53,6 +53,8 @@ export default function ProjectsSection() {
                   <div className="item">
                     <ProjectItem
                       title={project.name}
+                      link1={project.link1}
+                      link2={project.link2}
                       img={project.img}
                       desc={project.desc}
                       stacks={project.stacks}

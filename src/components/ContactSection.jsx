@@ -12,34 +12,41 @@ import { FaCodepen } from "react-icons/fa";
 import { FaAngellist } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
+import { useTranslation } from "react-i18next";
+
 export default function ContactSection() {
+  const { t } = useTranslation();
+
   return (
     <ContactSectionStyle>
       <div className="container">
-        <SectionTitle heading="contact" subheading="get in touch" />
+        <SectionTitle
+          heading={t("Contact.MainTitle")}
+          subheading={t("Contact.SubsectionTitle")}
+        />
         <div className="contactSection__wrapper">
           <div className="left">
             <ContactInfoItem
               icon={<FaGithub />}
               text="github.com/cuitlazotlac"
-              cardLink="https://www.freefonts.io/geomanist-font-family/"
+              cardLink="https://github.com/cuitlazotlac"
             />
             <ContactInfoItem
               icon={<FaLinkedin />}
               text="linkedin.com/in/hayssem-elsayed"
-              cardLink="https://www.freefonts.io/geomanist-font-family/"
+              cardLink="https://www.linkedin.com/in/hayssem-elsayed/"
             />
             <ContactInfoItem
               icon={<FaBehance />}
               text="behance.net/cuitlazotlac"
-              cardLink="https://www.freefonts.io/geomanist-font-family/"
+              cardLink="https://www.behance.net/cuitlazotlac"
             />
           </div>
           <div className="right">
             <ContactInfoItem
               icon={<FaCodepen />}
               text="codepen.io/cuitlazotlac"
-              cardLink="https://www.freefonts.io/geomanist-font-family/"
+              cardLink="https://codepen.io/cuitlazotlac"
             />
             <ContactInfoItem
               icon={<FaAngellist />}
@@ -49,7 +56,7 @@ export default function ContactSection() {
             <ContactInfoItem
               icon={<FaMailBulk />}
               text="heyhayssem@gmail.com"
-              cardLink="https://www.freefonts.io/geomanist-font-family/"
+              cardLink="mailto:heyhayssem@gmail.com"
             />
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PText from "./PText";
+import PText from "./shared/PText";
 
 export default function AboutInfoItem({ title = "", items = [""] }) {
   return (

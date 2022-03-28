@@ -19,7 +19,7 @@ export default function CredlyButton() {
 }
 
 const CredlyButtonStyled = styled.button`
-  margin-top: 2rem;
+  margin-top: 0rem;
   padding: 0.8rem;
   background-color: var(--primary-color);
   width: 160px;

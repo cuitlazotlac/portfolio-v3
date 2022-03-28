@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { FaGithub } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
-
 export default function ExperienceInfoItem({
   title,
   company,
