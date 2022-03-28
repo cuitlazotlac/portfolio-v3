@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
-import PText from "./PText";
+import PText from "./shared/PText";
 
 import { useTranslation } from "react-i18next";
 
@@ -13,7 +13,9 @@ export default function ContactBanner() {
       <div className="container">
         <div className="contactBanner__wrapper">
           <PText>{t("Contact.SectionDescription")}</PText>
-          <h3 className="contactBanner__heading">{t("Contact.SectionTitle")}</h3>
+          <h3 className="contactBanner__heading">
+            {t("Contact.SectionTitle")}
+          </h3>
           <Button btnText={t("Contact.Button")} btnLink="/contact" />
         </div>
       </div>

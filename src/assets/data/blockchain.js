@@ -10,12 +10,12 @@ const blockchain = [
   },
   {
     id: 2,
-    category: "Python",
-    link1: "https://github.com/cuitlazotlac/pygamon",
-    link2: "https://www.google.com",
-    title: "PyGamon",
-    desc: "👾 🎮 16-bit inspired 2-D Adventure RPG Python game",
-    stack: "python, pygame, tiled",
+    category: "Web3.0",
+    link1: "https://github.com/cuitlazotlac/eth-sign-in",
+    // link2: "https://www.google.com",
+    title: "ETH SignIn",
+    desc: "🛂 ⛓ I followed and customized a tutorial to build out an identity management system for creating, reading, and updating a user's profile using their Ethereum wallet.",
+    stack: "react, ceramic, idx, dids, ethers",
   },
 ];
 

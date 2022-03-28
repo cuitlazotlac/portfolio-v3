@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PText from "./PText";
+import PText from "./shared/PText";
 
 export default function ContactInfoItem({ icon, text, cardLink }) {
   return (
@@ -46,5 +46,10 @@ const ItemStyles = styled.div`
   }
   svg {
     width: 3.5rem;
+  }
+  @media only screen and (max-width: 768px) {
+    svg {
+      width: 2rem;
+    }
   }
 `;

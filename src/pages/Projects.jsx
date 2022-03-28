@@ -17,7 +17,7 @@ export default function Projects() {
     if (searchText === "") return;
     setProjectsData(() =>
       ProjectsInfo.filter((item) =>
-        item.name.toLowerCase().match(searchText.toLowerCase())
+        item.title.toLowerCase().match(searchText.toLowerCase())
       )
     );
   }, [searchText]);
@@ -56,6 +56,8 @@ export default function Projects() {
                 title={item.title}
                 desc={item.desc}
                 stacks={item.stack}
+                link1={item.link1}
+                link2={item.link2}
               />
             ))}
           </div>
@@ -87,6 +89,7 @@ const ProjectStyle = styled.div`
   }
   .projects__searchBar input {
     width: 100%;
+    color: #22272e;
     font-size: 2rem;
     font-family: var(--main-font);
     font-size: 1.5rem;

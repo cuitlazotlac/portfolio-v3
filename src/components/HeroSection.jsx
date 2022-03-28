@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./Button";
+// import Button from "./Button";
 // import SocialMediaArrow from "../assets/images/scroll-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 
@@ -34,6 +34,7 @@ export default function HeroSection() {
             </span>
             <span className="hero__name">{t("Hero.Title")}</span>
           </h1>
+          <br />
           <div className="hero__info">
             <h3>{t("Hero.Description_Part1")}</h3>
             <br />
@@ -51,7 +52,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="https://www.google.com/"
+                    href="https://github.com/cuitlazotlac"
                     target="_blank"
                     rel="noreferrer"
                     className="icon"
@@ -61,7 +62,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.google.com/"
+                    href="https://www.linkedin.com/in/hayssem-elsayed/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -70,7 +71,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.google.com/"
+                    href="https://www.behance.net/cuitlazotlac"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -79,7 +80,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.google.com/"
+                    href="mailto:heyhayssem@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -180,11 +181,7 @@ const HeroStyles = styled.div`
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 1400px) {
-    .hero__social {
-      left: -5px;
-    }
-  }
-  @media only screen and (max-width: 768px) {
+    padding: 10rem 0;
     .hero {
       min-height: 750px;
     }
@@ -200,6 +197,62 @@ const HeroStyles = styled.div`
     }
     .hero__info {
       margin-top: 3rem;
+    }
+    .hero__social {
+      left: -5px;
+      bottom: -15%;
+      width: 20px;
+      .hero__social__indicator {
+        width: 20px;
+        p {
+          font-size: 1.2rem;
+        }
+        img {
+          max-height: 22px;
+        }
+      }
+      .hero__social__text {
+        ul {
+          li {
+            a {
+              font-size: 1.8rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .hero__scrollDown {
+      right: 0;
+      width: 20px;
+      gap: 1rem;
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10rem 0;
+    .hero {
+      min-height: 750px;
+    }
+    .hero__heading {
+      font-size: 1.7rem;
+      margin-bottom: -3rem;
+      .hero__name {
+        font-size: 3.5rem;
+      }
+    }
+    .hero__img {
+      height: 300px;
+    }
+    .hero__info {
+      margin-top: 7rem;
+      h3 {
+        font-size: 1.9rem;
+        font-weight: 500;
+      }
     }
     .hero__social {
       left: 0px;
