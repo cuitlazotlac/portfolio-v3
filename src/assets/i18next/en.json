@@ -4,11 +4,11 @@
     "Description": "Bitcoin PM"
   },
   "Hero": {
-    "Headline0": "Hello, This is",
+    "Headline0": "A little bit about myself..",
     "Headline1": "A Technical Product Manager",
-    "Headline2": "A passionate about Data Analysis",
-    "Headline3": "Someone always looking for new challenges",
-    "Headline4": "Currently building the infrastructure for digital assets",
+    "Headline2": "Currently building the infrastructure for Digital Assets",
+    "Headline3": "Learning and excited about Web3.0",
+    "Headline4": "Passionate about Data Analysis",
     "Headline5": "In love with beautiful interfaces",
     "Title": "Hey there I'm Hayssem 👋",
     "Description_Part1": "Professional Technical Product Manager with a passion for  Web development, Data Analysis and Design. I love to build ( and occasionally develop ) astounding digital experiences with excitement for helping and aligning requirements to deliver meaningful results.",
@@ -26,7 +26,7 @@
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
-    "Description": "Product Manager currently building the infrastructure of digital assets",
+    "Description": "Technical Product Manager currently building the infrastructure of digital assets and learning about Web3.0 tools.",
     "Section": "Sections",
     "Social Links": "Social Links",
     "English": "English 🇨🇦",
@@ -43,9 +43,9 @@
   },
   "Expertise": {
     "SectionTitle": "Expertise",
-    "SectionDescription": "What I've learn long the way",
+    "SectionDescription": "Things I've learned along the way",
     "Title1": "Product Management",
-    "Description1": "6+ years experience working on high-impact user and developer-facing products including multiple web applications, APIs, or platforms.",
+    "Description1": "6+ years of experience working on high-impact user and developer-facing products including multiple web applications, APIs, and platforms.",
     "Title2": "Interface Design",
     "Description2": "I'm eager to interact with my customers to gather feedback, to build design concept ideas through sketches, prototypes, and wireframes.",
     "Title3": "Data Analysis",
@@ -53,10 +53,10 @@
   },
   "About": {
     "SectionTitle": "About",
-    "SectionDescription": "Just a little bit about myself",
+    "SectionDescription": "Few words about me and my journey",
     "Title": "Technical Product Manager + Product Owner & Scrum Master Certified",
-    "Paragraph1": "Passionate Technical Product Manager with over six years of hands-on experience leading successful features, products, and digital initiatives by leading projects, sprints, ensuring high-quality delivery, exercising collaborative team and stakeholder management. I strive to always be up to speed on different topics including coding and design to be able to deliver and discuss with all stakeholders.",
-    "Paragraph2": "I fled from a traditional path and explored my creativity, by trying my hands on various techniques and technologies. Product Management is more than just a profession for me, and I try to dig deep into it. Today, I like to use my skills for critical thinking, empathy, and creativity to create viable and impactful solutions.",
+    "Paragraph1": "Passionate Technical Product Manager with over six years of hands-on experience leading successful features, products, and digital initiatives. I lead projects, sprints, ensuring high-quality delivery, exercising collaborative team and stakeholder management. I strive to always be up to speed on different topics including coding and design to be able to deliver and discuss with all stakeholders.",
+    "Paragraph2": "I fled from a traditional path and explored my creativity, by trying my hands on various techniques and technologies. Product Management is more than just a profession for me, and I try to dig deep into it. Today, I like to use my skills in critical thinking, empathy, and creativity to create viable and impactful solutions.",
     "Paragraph3": "Interface Design",
     "Button": "Check Resume",
     "Skill": "Skills",
@@ -70,13 +70,13 @@
   },
   "Project": {
     "SectionTitle": "DApps & Smart Contracts",
-    "SectionDescription": "Development related to the blockchain field",
+    "SectionDescription": "Small developments built learn about Bslockchain and Web3.0",
     "Placeholder": "Search for a project..."
   },
   "Portfolio": {
     "Button": "All my projects",
     "SectionTitle": "Web development",
-    "SectionDescription": "Side development"
+    "SectionDescription": "Few small applications to practice web development"
   },
   "Experience0": {
     "Title": "Business Analyst",
@@ -118,7 +118,7 @@
     "Desc1": "• Managed a portfolio of 4 products from ideation to launch.",
     "Desc2": "• Gathered metrics before and after product launch, visible through dashboards.",
     "Desc3": "• Designed wireframes and built prototypes of web applications.",
-    "Desc4": "• Unlocked the budget for 2 new products by successfully pitched execs.",
+    "Desc4": "• Unlocked the budget for 2 new products by successfully pitching top execs.",
     "Desc5": "• Decreased feature deployment time by 33% by building CI/CD pipelines.",
     "Stacks": "React, Python, Kubernetes, Jenkins,  Grafana"
   },
@@ -163,9 +163,12 @@
   },
   "Contact": {
     "MainTitle": "Contact",
-    "SubsectionTitle": "Get in touch",
-    "SectionTitle": "Let's catchup 🍻",
-    "SectionDescription": "Let's get to know about each others",
-    "Button": "Contact Me !"
+    "SubsectionTitle": "My other contributions",
+    "SectionTitle": "Go check my Social Media",
+    "SectionDescription": "",
+    "Button": "Contact Me !",
+    "Headline1": "Let's go grab a 🧋",
+    "Headline2": "or maybe you prefer a 🍜",
+    "Headline3": "okay, let's just chat (not even a 🥡 ?)"
   }
 }

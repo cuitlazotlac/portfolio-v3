@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   --font-color: #000000;
   --brand-color: #01E3B4;
   --btn-color: #EDF2F6;
-  --btn-border-color: #CCD0D3;
+  --btn-border-color: #000000;
 }
 .dark-theme{
   --background-color: #001421;

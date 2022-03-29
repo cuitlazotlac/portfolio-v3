@@ -38,7 +38,7 @@ const CertificationInfoItemStyles = styled.div`
   }
   .experienceItem__company {
     border-top: 1px solid var(--font-color);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 300;
     padding-top: 1rem;
     padding-bottom: 1rem;
