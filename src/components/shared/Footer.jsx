@@ -51,20 +51,20 @@ export default function Footer() {
             heading={t("Footer.Social Links")}
             links={[
               {
-                title: "LinkedIn",
-                path: "http://facebook.com",
+                title: "Github",
+                path: "https://github.com/cuitlazotlac",
               },
               {
-                title: "Github",
-                path: "http://twitter.com",
+                title: "LinkedIn",
+                path: "https://www.linkedin.com/in/hayssem-elsayed/",
               },
               {
                 title: "Behance",
-                path: "http://instagram.com",
+                path: "https://www.behance.net/cuitlazotlac",
               },
               {
                 title: "Codepen",
-                path: "http://instagram.com",
+                path: "https://codepen.io/cuitlazotlac",
               },
             ]}
           />

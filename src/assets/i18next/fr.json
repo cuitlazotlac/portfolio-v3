@@ -1,6 +1,175 @@
 {
   "Home": {
-    "Title": "Je suis Hayssem",
+    "Title": "Salut! Moi c'est Hayssem",
     "Description": "Bitcoin PM"
+  },
+  "Hero": {
+    "Headline0": "A little bit about myself..",
+    "Headline1": "A Technical Product Manager",
+    "Headline2": "Je travaille en ce moment sur l'infrastructure pour la monnaie virtuelle",
+    "Headline3": "J'apprends et suis pas mal interessé par le Web3.0",
+    "Headline4": "Passioné par l'analyse de données",
+    "Headline5": "Toujours en admiration de belle interfaces",
+    "Title": "Salut! Moi c'est Hayssem 👋",
+    "Description_Part1": "Product Manager Technique avec une passion pour le développement web, l'analyse de donnée et le design. J'adore élaborer ( et parfois développer ) de nouvelles expérience digital avec une passion pour aider et aligner les besoins et ainsi délivrer des produits qui font du sens.",
+    "Description_Part2": "En ce moment, je suis à la Société Générale Banque d'Investissement, je construit des produits internes innovants, particulièrement des applications web. Je suis aussi le co-fondateur de Confsquare, une plateforme d'organisation d'événement.",
+    "Connect": "Connect",
+    "Scroll": "Scroll",
+    "WorksButton": "Voir mes travaux"
+  },
+  "Navigation": {
+    "Home": "Home",
+    "About": "A propos",
+    "Projects": "Blockchain/Web3.0",
+    "Portfolio": "Portfolio",
+    "Contact": "Contacts"
+  },
+  "Footer": {
+    "Title": "Hayssem Vazquez-Elsayed",
+    "Description": "Product Manager Technique en train de développer l'infrastrure des monnaies virtuelles et interessé par tous les outils et développement autout du Web3.",
+    "Section": "Sections",
+    "Social Links": "Social Links",
+    "English": "English 🇨🇦",
+    "French": "French 🇫🇷",
+    "Spanish": "Spanish 🇲🇽"
+  },
+  "Confsquare": {
+    "SectionTitle": "Confsquare",
+    "SectionDescription": "Let's Gather",
+    "Description_Part1": "Confsquare c'est une startup, focus sur la création et l'organisation d'événement virtuelle.",
+    "Description_Part2": "On construit une nouvelle plateforme offrant la possibilité et créer un meilleur lien avec votre communauté grâce à notre concept de `Rooms`.",
+    "ReadMore": "Confsquare Website",
+    "Works": "Autres projets"
+  },
+  "Expertise": {
+    "SectionTitle": "Expertise",
+    "SectionDescription": "Ce que j'ai développé au long de mon parcours",
+    "Title1": "Product Management",
+    "Description1": "A travers mes 6 ans d'expérience, j'ai travaillé sur des produits à forte visibilité, aussi bien des produits web, que des APIs pour developpeurs et acteurs non-technique.",
+    "Title2": "Design d'interface",
+    "Description2": "Je suis toujours à la recherche de retour utilisatuer, comprendre leur besoin et ainisi produire des wireframes et autres prototypes.",
+    "Title3": "Analyse de données",
+    "Description3": "A travers cet intérêt pour les bases de données et les modèles de données, j'ai pu acquérir une aisance dans la récupération et le traitement de données, qui m'aide ensuite à indentifier les tendances."
+  },
+  "About": {
+    "SectionTitle": "A propos",
+    "SectionDescription": "Quelques mots sur moi et mon parcours",
+    "Title": "Technical Product Manager + Product Owner & Scrum Master certifié",
+    "Paragraph1": "Product Manager technique, passionné, avec plus de six ans d'expérience dans la gestion de produits, la création de fonctionnalité et d'initiatives numériques. Je dirige des projets, des sprints, en assurant une livraison de qualité, en exerçant une gestion collaborative au sein de l'équipe et des parties prenantes. Je m'efforce de toujours être à jour sur différents sujets, y compris le développement et la conception, afin de pouvoir délivrer et échanger avec toutes les parties prenantes.",
+    "Paragraph2": "Je me suis éloigné d'une voie traditionnelle et j'ai exploré ma créativité, en m'essayant à diverses techniques et technologies. Pour moi, la gestion de produits est plus qu'une simple profession et j'essaie de l'approfondir. Aujourd'hui, j'aime utiliser mes compétences en matière de pensée critique, d'empathie et de créativité pour créer des solutions viables et percutantes.",
+    "Paragraph3": "",
+    "Button": "Voir mon CV",
+    "Skill": "Compétences",
+    "Experience": "Expériences",
+    "Certification": "Certifications",
+    "Education": "Diplome"
+  },
+  "ProjectSwiper": {
+    "SectionTitle": "Projets",
+    "SectionDescription": "Quelques-uns des mes récents travaux"
+  },
+  "Project": {
+    "SectionTitle": "DApps & Smart Contracts",
+    "SectionDescription": "Des petits développements qui me permette de pratique sur des sujets comme la Blockchain et Web3.0",
+    "Placeholder": "Rechercher..."
+  },
+  "Portfolio": {
+    "Button": "Tous mes projets",
+    "SectionTitle": "Developpement Web",
+    "SectionDescription": "Des cours développement pour pratiquer le développement web"
+  },
+  "Experience0": {
+    "Title": "Business Analyst",
+    "Company": "Société Générale | Paris, FRANCE",
+    "Period": "07/2016/10/2017",
+    "Desc1": "• Coordinated with business owners to define, track, build new reports and KPI’s.",
+    "Desc2": "• Decided which metrics would most likely help the sales teams in their activity and increase their performance.",
+    "Desc3": "",
+    "Desc4": "",
+    "Desc5": "",
+    "Stacks": "SAP Business Object, Trade Finance, Apache Spark, Hadoop"
+  },
+  "Experience1": {
+    "Title": "Technical Project Manager",
+    "Company": "BNP Paribas Cardif | Paris, FRANCE",
+    "Period": "10/2017 - 10/2018",
+    "Desc1": "• Designed and led a team of 3 engineers to develop and deploy a data warehouse.",
+    "Desc2": "• Deployed to new web product within 7 months, reducing TTM by 21% over reviewing the infrastructure architecture and software deployment process.",
+    "Desc3": "",
+    "Desc4": "",
+    "Desc5": "",
+    "Stacks": "Angular 5, Java Spring, SAP Business Object"
+  },
+  "Experience2": {
+    "Title": "Product Manager | Security & Facilities System",
+    "Company": "Société Générale Corporate & Investment Banking | Montréal, CANADA",
+    "Period": "10/2018 - 10/2019",
+    "Desc1": "• Designed and led the division’s new product strategy (with around $1M budget).",
+    "Desc2": "• Introduced Scrum and led daily meetings of five people.",
+    "Desc3": "• Deployed API that increased consumption of data by 48%.",
+    "Desc4": "• Designed the perimeter architecture that resulted in a 56% infrastructure costs reduction.",
+    "Desc5": "",
+    "Stacks": "Angular, Java Spring, Docker, Kubernetes, Jenkins, PowerBI, SRSS, Microsoft SQL Server"
+  },
+  "Experience3": {
+    "Title": "Product Manager | Innovation & New Products",
+    "Company": "Société Générale Corporate & Investment Banking | Montréal, CANADA",
+    "Period": "10/2019 - Current",
+    "Desc1": "• Managed a portfolio of 4 products from ideation to launch.",
+    "Desc2": "• Gathered metrics before and after product launch, visible through dashboards.",
+    "Desc3": "• Designed wireframes and built prototypes of web applications.",
+    "Desc4": "• Unlocked the budget for 2 new products by successfully pitching top execs.",
+    "Desc5": "• Decreased feature deployment time by 33% by building CI/CD pipelines.",
+    "Stacks": "React, Python, Kubernetes, Jenkins,  Grafana"
+  },
+  "Experience4": {
+    "Title": "IT & Operations Manager",
+    "Company": "Talan Conseil Canada | Montreal, CAN",
+    "Period": "10/2020 - Current",
+    "Desc1": "• Defined a global consultant follow-up strategy for the company's most important client.",
+    "Desc2": "• Designed a personalized career plan for each of the resources (+30 consultants).",
+    "Desc3": "• Reached business objectives by becoming the second most important supplier for our customers.",
+    "Desc4": "",
+    "Desc5": "",
+    "Stacks": ""
+  },
+  "Education1": {
+    "Title": "Master's degree - Computer Science Project & Software Development",
+    "Company": "Université de Paris VII - Denis Diderot | 2016-2017"
+  },
+  "Certification": {
+    "Title10": "IBM Blockchain Foundation Developer V2",
+    "Company10": "IBM | 10/2021",
+    "Title9": "IBM Blockchain Essentials V2",
+    "Company9": "IBM | 10/2021",
+    "Title8": "Certified Blockchain Expert",
+    "Company8": "Blockchain Council | 09/2021",
+    "Title7": "Certified Cryptocurrency Expert",
+    "Company7": "Blockchain Council | 08/2021",
+    "Title6": "Foundations of User Experience (UX) Design",
+    "Company6": "Google | 08/2021",
+    "Title5": "Professional Scrum Product Owner II (PSPO2)",
+    "Company5": "Scrum.org | 03/2021",
+    "Title4": "ITIL v4 Foundation",
+    "Company4": "PeopleCert/Axelos | 01/2021",
+    "Title3": "Professional Scrum Product Owner I (PSPO1)",
+    "Company3": "Scrum.org | 11/2020",
+    "Title2": "Professional Scrum Master I (PSM1)",
+    "Company2": "Scrum.org | 10/2020",
+    "Title1": "RPA Developer Level 2 - Orchestrator",
+    "Company1": "UIPath | 06/2019",
+    "Title0": "RPA Developer Foundation Training",
+    "Company0": "UIPath | 06/2019"
+  },
+  "Contact": {
+    "MainTitle": "Contact",
+    "SubsectionTitle": "Mes autres pages & contributions",
+    "SectionTitle": "Allez voir mes autres pages",
+    "SectionDescription": "",
+    "Button": "Contact Me !",
+    "Headline0": "Let's go grab a 🧋",
+    "Headline1": "Allons prendre un 🧋",
+    "Headline2": "ou même une 🍜",
+    "Headline3": "okay, on peut juste échanger (même pas un 🥡 ?)"
   }
 }

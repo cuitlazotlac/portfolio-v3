@@ -23,7 +23,7 @@ export default function HeroSection() {
           <h1 className="hero__heading">
             <span>
               <Typical
-                as="h4"
+                as="h1"
                 main_title={t("Hero.Headline0")}
                 title_1={t("Hero.Headline1")}
                 title_2={t("Hero.Headline2")}

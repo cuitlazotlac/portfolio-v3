@@ -21,16 +21,6 @@ const portfolios = [
   },
   {
     id: 2,
-    category: "DApp",
-    image: dapp_farmer,
-    link1: "https://github.com/cuitlazotlac/defi_app",
-    link2: "https://defi-dapp-token-farm.herokuapp.com/",
-    title: "DeFi DApp Token Farm",
-    desc: "👨🏽‍🌾🪙 DeFi App - reproducing a Digital bank where we can earn interest for depositing cryptocurrency",
-    stack: "react, ethereum, smart-contracts, truffle, solidity, web3js",
-  },
-  {
-    id: 3,
     category: "React",
     image: weather_tracker,
     link1: "https://github.com/cuitlazotlac/WeatherChecker",
@@ -40,7 +30,7 @@ const portfolios = [
     stack: "react, scss, openweathermap-api",
   },
   {
-    id: 4,
+    id: 3,
     category: "API",
     image: mex_mtl,
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
@@ -50,7 +40,7 @@ const portfolios = [
     stack: "javascript, heroku, jsondb",
   },
   {
-    id: 5,
+    id: 4,
     category: "React",
     image: anime_library,
     link1: "https://github.com/cuitlazotlac/anime-library",
@@ -60,7 +50,7 @@ const portfolios = [
     stack: "react, api, scss",
   },
   {
-    id: 6,
+    id: 5,
     category: "Vue",
     image: what_movie,
     link1: "https://github.com/cuitlazotlac/what-movie",
@@ -70,7 +60,7 @@ const portfolios = [
     stack: "vuejs, api, javascript",
   },
   {
-    id: 7,
+    id: 6,
     category: "React",
     image: covid_dashboard,
     link1: "https://github.com/cuitlazotlac/covid-tracker-dashboard",
@@ -80,7 +70,7 @@ const portfolios = [
     stack: "react, api",
   },
   {
-    id: 8,
+    id: 7,
     category: "Open Source Project",
     image: carb_one,
     link1: "https://github.com/climate-stuff/carbon-calculator",
@@ -90,7 +80,7 @@ const portfolios = [
     stack: "react, javascript",
   },
   {
-    id: 9,
+    id: 8,
     category: "Python",
     image: pygame,
     link1: "https://github.com/cuitlazotlac/pygamon",
