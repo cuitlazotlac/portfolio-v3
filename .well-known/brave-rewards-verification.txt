@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: heyhayssem.dev
+Token: f15152294a23360b659e9a180dc9b378fe78e86656dd4dd5f65d245e8d2b3f4f
