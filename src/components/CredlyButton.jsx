@@ -22,6 +22,7 @@ const CredlyButtonStyled = styled.button`
   margin-top: 0rem;
   padding: 0.8rem;
   background-color: var(--primary-color);
+  color: var(--black);
   width: 160px;
   height: 42.95px;
   border: 1px solid var(--font-color);

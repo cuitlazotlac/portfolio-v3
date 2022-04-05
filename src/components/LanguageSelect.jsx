@@ -12,7 +12,12 @@ export default function LanguageSelect() {
 
   return (
     <LanguageSelectStyle>
-      <select className="select" name="language" onChange={onChange}>
+      <select
+        className="select"
+        name="language"
+        selected="en"
+        onChange={onChange}
+      >
         <option value="en">{t("Footer.English")}</option>
         <option value="fr">{t("Footer.French")}</option>
         <option value="es">{t("Footer.Spanish")}</option>
