@@ -83,7 +83,7 @@ const ConfsquareSectionStyles = styled.div`
     border: 1px solid var(--btn-border-color);
     border-radius: 1px;
     display: inline-block;
-    color: var(--font-color);
+    color: var(--black);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;

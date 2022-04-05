@@ -231,13 +231,13 @@ const AboutPageStyles = styled.div`
   }
   .confsquare-btn {
     font-family: var(--main-font);
+    color: var(--black);
     font-size: 1.7rem;
     font-weight: 400;
     background-color: var(--brand-color);
     border: 1px solid var(--btn-border-color);
     border-radius: 1px;
     display: inline-block;
-    color: var(--font-color);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;
