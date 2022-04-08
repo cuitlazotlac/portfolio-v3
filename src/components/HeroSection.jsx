@@ -36,9 +36,9 @@ export default function HeroSection() {
           </h1>
           <br />
           <div className="hero__info">
-            <h3>{t("Hero.Description_Part1")}</h3>
+            <p>{t("Hero.Description_Part1")}</p>
             <br />
-            <h3>{t("Hero.Description_Part2")}</h3>
+            <p>{t("Hero.Description_Part2")}</p>
             <br />
 
             {/* <Button btnText={t("Hero.WorksButton")} btnLink="/projects" /> */}
@@ -148,6 +148,7 @@ const HeroStyles = styled.div`
   .hero__social__indicator,
   .hero__scrollDown {
     width: 50px;
+    font-family: var(--secondary-font);
     p {
       font-size: 1.6rem;
       transform: translateY(-70px) rotate(90deg);

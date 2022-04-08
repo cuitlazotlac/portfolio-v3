@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
   --brand-color: #01E3B4;
   --btn-color: #EDF2F6;
   --btn-border-color: #000000;
+  --icon-color: #000000;
 }
 .dark-theme{
   --background-color: #001421;
@@ -20,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
   --brand-color: #01E3B4;
   --btn-color: #001421;
   --btn-border-color: #CCD0D3;
+  --icon-color: #000000;
 }
 
 *{
@@ -37,8 +39,8 @@ const GlobalStyles = createGlobalStyle`
   }
   html{
     --main-font: 'Raleway', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
-    --stacks-font: monospace;
+    --secondary-font: 'Roboto Mono', sans-serif;
+    --stacks-font: 'Roboto Mono';
 
     font-size: 10px;
     font-family:  var(--main-font);
