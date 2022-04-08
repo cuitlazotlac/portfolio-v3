@@ -96,6 +96,7 @@ export default function NavMenu() {
 
 const NavStyles = styled.nav`
   text-transform: uppercase;
+  font-family: var(--secondary-font);
   position: fixed;
   z-index: 100;
   top: 0;

@@ -46,6 +46,7 @@ const ItemStyles = styled.div`
   }
   svg {
     width: 3.5rem;
+    color: var(--icon-color);
   }
   @media only screen and (max-width: 768px) {
     svg {

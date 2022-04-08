@@ -37,4 +37,5 @@ export default function BannerText({
 const TypicalStyles = styled.div`
   display: inline-block;
   width: 100%;
+  font-family: var(--secondary-font);
 `;
