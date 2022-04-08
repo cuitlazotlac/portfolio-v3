@@ -10,6 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
 import Typical from "../components/shared/Typical";
+import Particle from "../components/Particles";
 
 import { useTranslation } from "react-i18next";
 
@@ -21,6 +22,9 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
+            {/* <div className="particle-con">
+              <Particle />
+            </div> */}
             <span>
               <Typical
                 as="h1"
@@ -101,6 +105,11 @@ export default function HeroSection() {
 }
 
 const HeroStyles = styled.div`
+  .particle-con {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
   .hero {
     height: 100vh;
     min-height: 1000px;
