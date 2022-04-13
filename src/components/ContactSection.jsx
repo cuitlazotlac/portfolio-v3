@@ -67,11 +67,14 @@ export default function ContactSection() {
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
+  svg {
+    fill: var(--secondary-color);
+  }
   .contactSection__wrapper {
     display: flex;
     gap: 1rem;
     margin-top: 7rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
   }
   .contactSection__wrapper::after {

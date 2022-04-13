@@ -10,6 +10,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
+    // TODO: tes todo
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">

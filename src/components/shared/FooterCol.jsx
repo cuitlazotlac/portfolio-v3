@@ -45,9 +45,16 @@ const ColStyle = styled.div`
   }
   li {
     margin-bottom: 1rem;
+    &:hover {
+      color: var(--brand-color);
+      font-weight: 900;
+    }
   }
   a {
     font-size: 1.5rem;
     font-weight: 200;
+    &:hover {
+      color: var(--brand-color);
+    }
   }
 `;
