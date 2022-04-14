@@ -206,6 +206,10 @@ const HeroStyles = styled.div`
       height: 300px;
     }
     .hero__info {
+      p {
+        font-size: 1.8rem;
+      }
+      font-size: 1.6rem;
       margin-top: 3rem;
     }
     .hero__social {
@@ -259,8 +263,11 @@ const HeroStyles = styled.div`
     }
     .hero__info {
       margin-top: 7rem;
+      p {
+        font-size: 1.6rem;
+      }
       h3 {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         font-weight: 500;
       }
     }
