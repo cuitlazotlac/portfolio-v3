@@ -18,6 +18,7 @@ export default function AboutInfoItem({ title = "", items = [""] }) {
 }
 
 const AboutItemStyles = styled.div`
+  font-family: var(--stacks-font);
   display: flex;
   align-items: center;
   justify-content: flex-start;
