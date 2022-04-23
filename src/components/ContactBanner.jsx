@@ -36,7 +36,7 @@ export default function ContactBanner() {
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
   .contactBanner__wrapper {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     border-radius: 1px;
     padding: 5rem 0rem;
     text-align: center;

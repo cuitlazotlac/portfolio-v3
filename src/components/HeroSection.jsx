@@ -10,7 +10,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
 import Typical from "../components/shared/Typical";
-import Particle from "../components/Particles";
 
 import { useTranslation } from "react-i18next";
 
@@ -186,6 +185,11 @@ const HeroStyles = styled.div`
           transform: rotate(360deg);
           letter-spacing: 3px;
           margin-bottom: 1rem;
+        }
+        &:hover {
+          svg {
+            fill: var(--brand-color);
+          }
         }
       }
     }

@@ -34,6 +34,7 @@ const ItemStyles = styled.div`
       transform-style: preserve-3d;
       transition: all 0.2s ease-in-out;
       box-shadow: 5px 10px var(--shadow-color);
+      background-color: var(--secondary-color);
     }
   }
   .icon {

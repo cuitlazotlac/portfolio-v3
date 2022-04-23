@@ -97,6 +97,7 @@ const FooterStyle = styled.div`
     flex: 1;
   }
   .footer__col1__title {
+    color: var(--brand-color);
     font-size: 3rem;
     margin-bottom: 1rem;
   }

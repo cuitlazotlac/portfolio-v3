@@ -45,9 +45,6 @@ export default function ServicesSection() {
 const ServicesItemsStyles = styled.div`
   padding-top: 2rem;
   padding-bottom: 10rem;
-  svg {
-    fill: var(--brand-color);
-  }
   .services__allItems {
     display: flex;
     gap: 2rem;
