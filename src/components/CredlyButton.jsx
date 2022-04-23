@@ -22,10 +22,10 @@ const CredlyButtonStyled = styled.button`
   margin-top: 0rem;
   padding: 0.8rem;
   background-color: var(--primary-color);
+  border: 1px solid var(--brand-color);
   color: var(--black);
   width: 160px;
   height: 42.95px;
-  border: 1px solid var(--font-color);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
   img {
     max-width: 36%;
@@ -37,6 +37,7 @@ const CredlyButtonStyled = styled.button`
     transform-style: preserve-3d;
     transition: all 0.2s ease-in-out;
     box-shadow: 5px 10px var(--shadow-color);
+    border: 1px solid #fac3a1;
   }
   @media only screen and (max-width: 768px) {
     .button {

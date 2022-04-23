@@ -33,11 +33,13 @@ const FilterStyled = styled.button`
   &:active,
   &:focus {
     background-color: var(--secondary-color);
+    border: 1px solid var(--brand-color);
     color: var(--brand-color);
   }
 
   &:hover {
     background-color: var(--secondary-color);
+    border: 1px solid var(--brand-color);
     color: var(--brand-color);
     transform: scale(1.1);
     transform: translate(7px, -7px);

@@ -49,6 +49,9 @@ const ExperienceInfoItemStyles = styled.div`
       transform-style: preserve-3d;
       transition: all 0.2s ease-in-out;
       box-shadow: 5px 10px var(--shadow-color);
+      .experienceItem__title {
+        color: var(--brand-color);
+      }
     }
   }
   .experienceItem__title {

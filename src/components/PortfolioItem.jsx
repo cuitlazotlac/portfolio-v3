@@ -23,10 +23,20 @@ export default function PortfolioItem({ portfolioItem }) {
                   <p className="projectItem__stacks">{item.stack}</p>
                 </div>
                 <div className="projectItem__links__section">
-                  <a href={item.link1} target="_blank" rel="noreferrer">
+                  <a
+                    href={item.link1}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon"
+                  >
                     <FaGithub />
                   </a>
-                  <a href={item.link2} target="_blank" rel="noreferrer">
+                  <a
+                    href={item.link2}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon"
+                  >
                     <FaExternalLinkAlt />
                   </a>
                 </div>
@@ -55,6 +65,9 @@ const ProjectItemStyles = styled.div`
       transform-style: preserve-3d;
       transition: all 0.2s ease-in-out;
       box-shadow: 5px 10px var(--shadow-color);
+      .projectItem__title {
+        color: var(--brand-color);
+      }
     }
   }
   .projectItem__img {
@@ -89,6 +102,13 @@ const ProjectItemStyles = styled.div`
       max-width: 6%;
       margin-top: 1rem;
       margin-left: 1rem;
+    }
+    .icon {
+      &:hover {
+        svg {
+          fill: var(--brand-color);
+        }
+      }
     }
   }
   .projectItem__stacks {

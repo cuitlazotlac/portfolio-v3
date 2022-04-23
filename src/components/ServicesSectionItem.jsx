@@ -42,6 +42,7 @@ const ItemStyles = styled.div`
   }
   .servicesItem__title {
     font-size: 2rem;
+    /* color: var(--brand-color); */
     font-weight: 700;
     margin-top: 2rem;
     text-transform: uppercase;
