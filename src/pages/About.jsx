@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import PText from "../components/shared/PText";
-import Button from "../components/Button";
 import CredlyButton from "../components/CredlyButton";
 
 import Avatar from "../assets/images/avatar.svg";
@@ -12,8 +11,15 @@ import CertificationInfoItem from "../components/CertificationInfoItem";
 
 import { useTranslation } from "react-i18next";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function About() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <>
@@ -56,7 +62,7 @@ export default function About() {
           <div className="about__info__items">
             {/* // SKILLS SECTION */}
             <h1 className="about__info__heading">{t("About.Skill")}</h1>
-            <div className="about__info__item">
+            <div className="about__info__item" data-aos="fade-right">
               <AboutInfoItem
                 title="Coding"
                 items={["JavaScript", "React", "CSS"]}
@@ -81,7 +87,7 @@ export default function About() {
             </div>
             {/* // EXPERIENCE SECTION */}
             <h1 className="about__info__heading">{t("About.Experience")}</h1>
-            <div className="about__info__item">
+            <div className="about__info__item" data-aos="fade-left">
               <ExperienceInfoItem
                 title={t("Experience4.Title")}
                 company={t("Experience4.Company")}
@@ -140,7 +146,7 @@ export default function About() {
             </div>
             {/* // EDUCATION SECTION */}
             <h1 className="about__info__heading">{t("About.Education")}</h1>
-            <div className="about__info__item">
+            <div className="about__info__item" data-aos="fade-right">
               <CertificationInfoItem
                 title={t("Education1.Title")}
                 company={t("Education1.Company")}
@@ -148,7 +154,7 @@ export default function About() {
             </div>
             {/* // CERTIFICATION SECTION */}
             <h1 className="about__info__heading">{t("About.Certification")}</h1>
-            <div className="certification__info__items">
+            <div className="certification__info__items" data-aos="fade-left">
               <CertificationInfoItem
                 title={t("Certification.Title10")}
                 company={t("Certification.Company10")}
@@ -255,7 +261,6 @@ const AboutPageStyles = styled.div`
     }
   }
   .about__heading {
-    color: var(--brand-color);
     font-size: 3.6rem;
     margin-bottom: 3rem;
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import PText from "./shared/PText";
@@ -6,14 +6,21 @@ import SectionTitle from "./SectionTitle";
 
 import ConfsquareLogo from "../assets/images/confsquare/confsquare.svg";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import { useTranslation } from "react-i18next";
 
 export default function ConfsquareSection() {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <ConfsquareSectionStyles>
-      <div className="container">
+      <div className="container" data-aos="fade-right">
         <div className="confsquareSection__left">
           <SectionTitle
             subheading={t("Confsquare.SectionDescription")}

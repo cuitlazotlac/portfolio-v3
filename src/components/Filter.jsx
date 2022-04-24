@@ -20,8 +20,8 @@ const FilterStyled = styled.button`
   border: 1px solid var(--font-color);
   background-color: var(--background-color);
   padding: 0.35em 1.5em;
-  font-size: 1.6rem;
-  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-family: var(--stacks-font);
   border-radius: 1px;
   box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
   transition: all 0.4s ease-in-out;
@@ -29,7 +29,6 @@ const FilterStyled = styled.button`
   margin-bottom: 0.6rem;
   transform-style: preserve-3d;
   overflow: hidden;
-
   &:active,
   &:focus {
     background-color: var(--secondary-color);
