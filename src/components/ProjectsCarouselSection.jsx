@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import "swiper/swiper-bundle.min.css";
 
@@ -11,6 +11,9 @@ import Button from "./Button";
 
 import projects from "../assets/data/projects";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import { useTranslation } from "react-i18next";
 
 // install Swiper modules
@@ -19,9 +22,13 @@ SwiperCore.use([Navigation]);
 export default function ProjectsSection() {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <ProjectSectionStyle>
-      <div className="container">
+      <div className="container" data-aos="fade-right">
         <SectionTitle
           subheading={t("ProjectSwiper.SectionDescription")}
           heading={t("ProjectSwiper.SectionTitle")}

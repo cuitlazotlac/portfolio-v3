@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { FaDharmachakra } from "react-icons/fa";
 import { FaBezierCurve } from "react-icons/fa";
@@ -8,14 +8,21 @@ import styled from "styled-components";
 import SectionTitle from "./SectionTitle";
 import ServicesSectionItem from "./ServicesSectionItem";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import { useTranslation } from "react-i18next";
 
 export default function ServicesSection() {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <ServicesItemsStyles>
-      <div className="container">
+      <div className="container" data-aos="fade-left">
         <SectionTitle
           subheading={t("Expertise.SectionDescription")}
           heading={t("Expertise.SectionTitle")}

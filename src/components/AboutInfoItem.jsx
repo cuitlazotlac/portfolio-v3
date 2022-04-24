@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PText from "./shared/PText";
+// import PText from "./shared/PText";
 
 export default function AboutInfoItem({ title = "", items = [""] }) {
   return (
@@ -9,7 +9,7 @@ export default function AboutInfoItem({ title = "", items = [""] }) {
       <div className="items">
         {items.map((item, index) => (
           <div className="item" key={index}>
-            <PText>{item}</PText>
+            <p>{item}</p>
           </div>
         ))}
       </div>
@@ -40,6 +40,7 @@ const AboutItemStyles = styled.div`
       font-size: 1.5rem;
     }
     border: 1px solid var(--font-color);
+    background-color: var(--background-color);
     padding: 1rem;
     border-radius: 1px;
     overflow: hidden;
@@ -51,6 +52,11 @@ const AboutItemStyles = styled.div`
       transform-style: preserve-3d;
       transition: all 0.2s ease-in-out;
       box-shadow: 5px 10px var(--shadow-color);
+      background-color: var(--secondary-color);
+      border: 1px solid var(--brand-color);
+      p {
+        color: var(--brand-color);
+      }
     }
   }
   @media only screen and (max-width: 768px) {
