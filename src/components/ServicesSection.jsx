@@ -17,7 +17,7 @@ export default function ServicesSection() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    Aos.init({ disable: "mobile", duration: 1000 });
+    Aos.init({ offset: 400, duration: 1000 });
   }, []);
 
   return (
