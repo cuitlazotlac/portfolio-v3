@@ -15,7 +15,8 @@ export default function ConfsquareSection() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    // Aos.init({ disable: "mobile", duration: 1000 });
+    Aos.init({ offset: 200, duration: 100 });
   }, []);
 
   return (

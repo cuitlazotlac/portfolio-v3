@@ -23,7 +23,7 @@ export default function ProjectsSection() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ offset: 200, duration: 100 });
   }, []);
 
   return (

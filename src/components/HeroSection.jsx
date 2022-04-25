@@ -3,9 +3,6 @@ import styled from "styled-components";
 
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 import { FaBehanceSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -17,10 +14,6 @@ import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
   const { t } = useTranslation();
-
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
 
   return (
     <HeroStyles>
