@@ -16,6 +16,7 @@ export default function ConfsquareSection() {
 
   useEffect(() => {
     Aos.init({ offset: 400, duration: 1000 });
+    // Aos.init({ delay: 0, duration: 1000 });
   }, []);
 
   return (
@@ -38,11 +39,11 @@ export default function ConfsquareSection() {
                 <button className="confsquare-btn">Confsquare Website</button>
               </a>
             </div>
-            <Button
+            {/* <Button
               btnText={t("Confsquare.Works")}
               btnLink="/projects"
               outline
-            ></Button>
+            ></Button> */}
           </div>
         </div>
         <div className="confsquareSection__right">

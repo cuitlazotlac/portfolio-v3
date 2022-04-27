@@ -24,6 +24,7 @@ export default function ProjectsSection() {
 
   useEffect(() => {
     Aos.init({ offset: 400, duration: 1000 });
+    // Aos.init({ delay: 0, duration: 1000 });
   }, []);
 
   return (
@@ -72,7 +73,18 @@ export default function ProjectsSection() {
             })}
           </Swiper>
         </div>
-        <Button btnText={t("Portfolio.Button")} btnLink="/portfolio" outline />
+        <div className="buttons-row">
+          <Button
+            btnText={t("ProjectSwiper.WebDev")}
+            btnLink="/portfolio"
+            outline
+          />
+          <Button
+            btnText={t("ProjectSwiper.Web3")}
+            btnLink="/projects"
+            outline
+          ></Button>
+        </div>
       </div>
     </ProjectSectionStyle>
   );
@@ -111,6 +123,11 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 2rem;
+  }
+  .buttons-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
   }
   @media only screen and (max-width: 768px) {
     .projects__allItems {
