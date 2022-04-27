@@ -46,7 +46,7 @@ export default function About() {
               </div>
               <div className="button_row">
                 <a
-                  href="https://drive.google.com/file/d/1nKJ2GnAp4rbTzTzqOpNOyxkNpaxsfFk8/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VQqx2OW1BDLoNPo6yx48FjIPPVfmoFka/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
