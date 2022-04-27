@@ -6,7 +6,7 @@
   "Hero": {
     "Headline0": "A little bit about myself..",
     "Headline1": "A Technical Product Manager",
-    "Headline2": "Currently building the infrastructure for Digital Assets",
+    "Headline2": "Currently working on the infrastructure for Cryptocurrencies",
     "Headline3": "Learning and excited about Web3.0",
     "Headline4": "Passionate about Data Analysis",
     "Headline5": "In love with beautiful interfaces",
@@ -26,7 +26,7 @@
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
-    "Description": "Technical Product Manager currently building the infrastructure of digital assets and learning about Web3.0 tools.",
+    "Description": "Technical Product Manager currently building the infrastructure for cryptocurrencies and learning about Web3.0 tools.",
     "Section": "Sections",
     "Social Links": "Social Links",
     "English": "English 🇨🇦",
@@ -36,10 +36,9 @@
   "Confsquare": {
     "SectionTitle": "Confsquare",
     "SectionDescription": "Let's Gather",
-    "Description_Part1": "Confsquare is a startup project, focus on event organization and management.",
+    "Description_Part1": "Confsquare is a startup, focus on building better experience event organization and management.",
     "Description_Part2": "We are building a new event platform enabling our users to create more connections with their community through the in-house concept of `Rooms`.",
-    "ReadMore": "Check website",
-    "Works": "Other side projects"
+    "ReadMore": "Check website"
   },
   "Expertise": {
     "SectionTitle": "Expertise",
@@ -66,7 +65,9 @@
   },
   "ProjectSwiper": {
     "SectionTitle": "Projects",
-    "SectionDescription": "Some of my recent works"
+    "SectionDescription": "Some of my recent works",
+    "WebDev": "Web 2.0 projects",
+    "Web3": "Web 3.0 projects"
   },
   "Project": {
     "SectionTitle": "DApps & Smart Contracts",
@@ -74,7 +75,6 @@
     "Placeholder": "Search for a project..."
   },
   "Portfolio": {
-    "Button": "All my projects",
     "SectionTitle": "Web development",
     "SectionDescription": "Few small applications to practice web development"
   },
@@ -164,9 +164,9 @@
   "Contact": {
     "MainTitle": "Contact",
     "SubsectionTitle": "My other contributions",
-    "SectionTitle": "Go check my Social Media",
+    "SectionTitle": "Get in Touch !",
     "SectionDescription": "",
-    "Button": "Contact Me !",
+    "Button": "Say Hi !",
     "Headline1": "Let's go grab a 🧋",
     "Headline2": "or maybe you prefer a 🍜",
     "Headline3": "okay, let's just chat (not even a 🥡 ?)"

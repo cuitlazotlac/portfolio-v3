@@ -18,6 +18,7 @@ export default function ServicesSection() {
 
   useEffect(() => {
     Aos.init({ offset: 400, duration: 1000 });
+    // Aos.init({ delay: 0, duration: 1000 });
   }, []);
 
   return (

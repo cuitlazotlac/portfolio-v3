@@ -20,6 +20,7 @@ export default function About() {
   useEffect(() => {
     // Aos.init({ disable: "mobile", duration: 1000 });
     Aos.init({ offset: 400, duration: 1000 });
+    // Aos.init({ delay: 0, duration: 1000 });
   }, []);
 
   return (
