@@ -1,3 +1,4 @@
+// BLOCKCHAIN WEB3.0 PROJECTS
 const blockchain = [
   {
     id: 1,
@@ -25,6 +26,15 @@ const blockchain = [
     title: "NFT Mint Website",
     desc: "🖼 🤖 very simple NFT Mint Website where we can connect our wallet and mint a digital asset. Built to practice connect smartcontract with UI and enable interaction between them.",
     stack: "react, Solidity, ethers, hardhat, chakraUI, Infura",
+  },
+  {
+    id: 4,
+    category: "Analytics",
+    link1: "",
+    link2: "https://dune.com/cuitlazotlac",
+    title: "Dune Dashboards and Data Analysis",
+    desc: "👨🏽‍💻 📈 Using the crypto analytics by and for the community in order to practice building dashboards create and share crypto analytics.",
+    stack: "SQL",
   },
 ];
 
