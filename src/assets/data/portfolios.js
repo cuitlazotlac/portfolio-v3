@@ -8,6 +8,7 @@ import covid_dashboard from "../images/portfolios/covid_dashboard.svg";
 import carb_one from "../images/portfolios/carb_one.svg";
 import pygame from "../images/portfolios/pygame.svg";
 
+//PORTFOLIO PAGE PROJECTS
 const portfolios = [
   {
     id: 1,

@@ -1,10 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import ProjectImg from "../images/projects/img1.jpg";
 import UTrackerImg from "../images/projects/img1.svg";
-// import GreenCtgImg from '../images/greenctg.jpg';
-// import CoinTrackerImg from '../images/cointracker.jpg';
-// import CavinImg from '../images/cavinimg.jpg';
 
+//CAROUSSEL PROJECTS
 const projects = [
   {
     id: uuidv4(),
