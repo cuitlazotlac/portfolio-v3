@@ -36,7 +36,7 @@ const projects = [
     name: "MTL Mex API",
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
     link2: "https://mtlmex-api.herokuapp.com/",
-    desc: "🇲🇽🌮 An API of the Mexican restaurants in Montréal 🇨🇦 This need to be constantly updated with the best addresses that you know so do not hesitate to contribute 🤠.",
+    desc: "🇲🇽🌮 An API of the Mexican restaurants in Montréal. This need to be constantly updated with the best addresses that I know, hear about or discover.",
     stacks: "javascript, heroku, jsondb",
     img: UTrackerImg,
   },

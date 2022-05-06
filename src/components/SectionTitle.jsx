@@ -21,7 +21,7 @@ const SectionTitleStyle = styled.div`
     text-transform: uppercase;
   }
   p {
-    font-family: var(--btn-font);
+    font-family: var(--stacks-font);
     font-weight: 200;
     font-size: 1.8rem;
   }

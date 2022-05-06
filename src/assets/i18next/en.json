@@ -20,7 +20,7 @@
   "Navigation": {
     "Home": "Home",
     "About": "About",
-    "Projects": "Blockchain/Web3.0",
+    "Projects": "Projects",
     "Portfolio": "Portfolio",
     "Contact": "Contact"
   },
@@ -61,17 +61,18 @@
     "Skill": "Skills",
     "Experience": "Experiences",
     "Certification": "Certifications",
-    "Education": "Education"
+    "Education": "Education",
+    "ProductSkills": "What I've learn building products :",
+    "TechSkills": "Technologies I've been working with"
   },
   "ProjectSwiper": {
     "SectionTitle": "Projects",
     "SectionDescription": "Some of my recent works",
-    "WebDev": "Web 2.0 projects",
-    "Web3": "Web 3.0 projects"
+    "More": "See more projects.."
   },
   "Project": {
-    "SectionTitle": "DApps & Smart Contracts",
-    "SectionDescription": "Small developments built learn about Bslockchain and Web3.0",
+    "SectionTitle": "Projects",
+    "SectionDescription": "Built to practice Web development focusing on Web3.0",
     "Placeholder": "Search for a project..."
   },
   "Portfolio": {

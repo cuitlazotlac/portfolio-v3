@@ -75,12 +75,7 @@ export default function ProjectsSection() {
         </div>
         <div className="buttons-row">
           <Button
-            btnText={t("ProjectSwiper.WebDev")}
-            btnLink="/portfolio"
-            outline
-          />
-          <Button
-            btnText={t("ProjectSwiper.Web3")}
+            btnText={t("ProjectSwiper.More")}
             btnLink="/projects"
             outline
           ></Button>
@@ -97,7 +92,7 @@ const ProjectSectionStyle = styled.div`
   .projects__allItems {
     display: grid;
     gap: 3rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
   .swiper-container {
     padding-top: 8rem;
