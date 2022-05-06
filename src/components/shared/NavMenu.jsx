@@ -67,7 +67,7 @@ export default function NavMenu() {
             {t("Navigation.Projects")}
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/portfolio"
             onClick={() => setShowNav(!showNav)}
@@ -77,7 +77,7 @@ export default function NavMenu() {
           >
             {t("Navigation.Portfolio")}
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/contact"

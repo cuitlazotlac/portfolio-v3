@@ -3,16 +3,24 @@ import styled from "styled-components";
 import { MdSearch } from "react-icons/md";
 import SectionTitle from "../components/SectionTitle";
 import ProjectItem from "../components/ProjectItem";
+import Filter from "../components/Filter";
 
 import ProjectsInfo from "../assets/data/blockchain";
 
 import { useTranslation } from "react-i18next";
+
+const allButtons = [
+  "All",
+  ...new Set(ProjectsInfo.map((item) => item.category)),
+];
 
 export default function Projects() {
   const { t } = useTranslation();
 
   const [searchText, setSearchText] = useState("");
   const [projectsData, setProjectsData] = useState(ProjectsInfo);
+  const [button] = useState(allButtons);
+
   useEffect(() => {
     if (searchText === "") return;
     setProjectsData(() =>
@@ -21,6 +29,7 @@ export default function Projects() {
       )
     );
   }, [searchText]);
+
   const handleChange = (e) => {
     e.preventDefault();
     setSearchText(e.target.value);
@@ -28,6 +37,19 @@ export default function Projects() {
       setProjectsData(ProjectsInfo);
     }
   };
+
+  const filter = (button) => {
+    if (button === "All") {
+      setProjectsData(ProjectsInfo);
+      return;
+    }
+
+    const filteredData = ProjectsInfo.filter(
+      (item) => item.category === button
+    );
+    setProjectsData(filteredData);
+  };
+
   return (
     <>
       <ProjectStyle>
@@ -47,6 +69,9 @@ export default function Projects() {
               <MdSearch className="searchIcon" />
             </form>
           </div>
+          <br />
+          <Filter filter={filter} button={button} />
+
           <br />
           <br />
           <div className="projects__allItems">

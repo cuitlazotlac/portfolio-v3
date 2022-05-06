@@ -2,7 +2,7 @@
 const blockchain = [
   {
     id: 1,
-    category: "DApp",
+    category: "DeFi",
     link1: "https://github.com/cuitlazotlac/defi_app",
     link2: "https://defi-dapp-token-farm.herokuapp.com/",
     title: "DeFi DApp Token Farm",
@@ -11,7 +11,7 @@ const blockchain = [
   },
   {
     id: 2,
-    category: "Web3.0",
+    category: "React",
     link1: "https://github.com/cuitlazotlac/eth-sign-in",
     link2: "https://cuitlazotlac.github.io/eth-sign-in/",
     title: "ETH SignIn",
@@ -20,7 +20,7 @@ const blockchain = [
   },
   {
     id: 3,
-    category: "Web3.0",
+    category: "React",
     link1: "https://github.com/cuitlazotlac/full-mint-website",
     link2: "https://cuitlazotlac.github.io/full-mint-website/",
     title: "NFT Mint Website",
@@ -36,6 +36,60 @@ const blockchain = [
     desc: "👨🏽‍💻 📈 Using the crypto analytics by and for the community in order to practice building dashboards create and share crypto analytics.",
     stack: "SQL",
   },
+  {
+    id: 5,
+    category: "React",
+    link1: "https://github.com/cuitlazotlac/WeatherChecker",
+    link2: "https://weatherchecker1.herokuapp.com/",
+    title: "Weather Checker",
+    desc: "🌤 🌦 Responsive web application to check to detailed weather. Built-in React + SCSS and using OpenWeatherMap API (https://openweathermap.org/)",
+    stack: "react, scss, openweathermap-api",
+  },
+  {
+    id: 6,
+    category: "API",
+    link1: "https://github.com/cuitlazotlac/mtlmex-api",
+    link2: "https://mtlmex-api.herokuapp.com/",
+    title: "MTL Mex API",
+    desc: "🇲🇽🌮 An API of the Mexican restaurants in Montréal 🇨🇦 This need to be constantly updated with the best addresses that you know so do not hesitate to contribute 🤠",
+    stack: "javascript, heroku, jsondb",
+  },
+  {
+    id: 7,
+    category: "React",
+    link1: "https://github.com/cuitlazotlac/anime-library",
+    link2: "https://anime-library1.herokuapp.com/",
+    title: "Anime Library",
+    desc: "⛩ 🏮 Simple Web application to display your favorite animes - manga.. information using the Unofficial MYANIMELIST API (https://jikan.moe/)",
+    stack: "react, api, scss",
+  },
+  {
+    id: 8,
+    category: "Vue",
+    link1: "https://github.com/cuitlazotlac/what-movie",
+    link2: "https://what-movies.herokuapp.com/",
+    title: "What Movie ?",
+    desc: "🎥 🍿 A very simple web application displaying movies information using the OMDB API (https://www.omdbapi.com/)",
+    stack: "vuejs, api, javascript",
+  },
+  {
+    id: 9,
+    category: "React",
+    link1: "https://github.com/cuitlazotlac/covid-tracker-dashboard",
+    link2: "https://www.google.com",
+    title: "Covid Tracker Dashboard",
+    desc: "covid dashboard using https://covidtracking.com/data api",
+    stack: "react, api",
+  },
+  {
+    id: 10,
+    category: "React",
+    link1: "https://github.com/climate-stuff/carbon-calculator",
+    link2: "",
+    title: "Carb One Caculator",
+    desc: "🪴👨🏽‍💻👨🏻‍💻 This is the story of two guys interested in environmental topics, building a carbon footprint calculator",
+    stack: "react, javascript",
+  }
 ];
 
 export default blockchain;

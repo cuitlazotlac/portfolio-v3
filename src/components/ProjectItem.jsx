@@ -63,7 +63,7 @@ const ProjectItemStyles = styled.div`
   .projectItem__links__section {
     border-top: 1px solid var(--font-color);
     svg {
-      max-width: 6%;
+      max-width: 4%;
       margin-top: 1rem;
       margin-left: 1rem;
     }

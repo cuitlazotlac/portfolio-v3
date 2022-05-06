@@ -43,6 +43,36 @@ export default function About() {
                   {t("About.Paragraph2")}
                   <br />
                 </PText>
+                <br />
+                <br />
+                <PText>
+                  <p className="paragraph">{t("About.ProductSkills")}</p>
+                  <div className="about-info">
+                    <div className="info-title">
+                      <p>• Product Strategy</p>
+                      <p>• User Interface Design</p>
+                      <p>• Stakeholder Management</p>
+                    </div>
+                    <div className="info">
+                      <p>• Data Analysis</p>
+                      <p>• A/B Testing</p>
+                      <p>• Cross-functional Team Leadership</p>
+                    </div>
+                  </div>
+                  <p className="paragraph">{t("About.TechSkills")}</p>
+                  <div className="about-info">
+                    <div className="info-title">
+                      <p>• HTML/CSS/Javascript</p>
+                      <p>• React</p>
+                      <p>• SQL</p>
+                    </div>
+                    <div className="info">
+                      <p>• Docker/Kubernetes</p>
+                      <p>• PowerBI</p>
+                      <p>• Git</p>
+                    </div>
+                  </div>
+                </PText>
               </div>
               <div className="button_row">
                 <a
@@ -59,148 +89,6 @@ export default function About() {
             </div>
             <div className="right">
               <img src={Avatar} alt="avatar" />
-            </div>
-          </div>
-          <div className="about__info__items">
-            {/* // SKILLS SECTION */}
-            <h1 className="about__info__heading">{t("About.Skill")}</h1>
-            <div className="about__info__item" data-aos="fade-right">
-              <AboutInfoItem
-                title="Coding"
-                items={["JavaScript", "React", "CSS"]}
-              />
-              <AboutInfoItem
-                title="Data"
-                items={[
-                  "Postgres",
-                  "Microsft SQL Server",
-                  "PowerBI",
-                  "Grafana",
-                ]}
-              />
-              <AboutInfoItem
-                title="Blockchain"
-                items={["Solidity", "Truffle", "Ganache"]}
-              />
-              <AboutInfoItem
-                title="Design"
-                items={["Figma", "After Effects", "Adobe Illustrator"]}
-              />
-            </div>
-            {/* // EXPERIENCE SECTION */}
-            <h1 className="about__info__heading">{t("About.Experience")}</h1>
-            <div className="about__info__item" data-aos="fade-left">
-              <ExperienceInfoItem
-                title={t("Experience4.Title")}
-                company={t("Experience4.Company")}
-                period={t("Experience4.Period")}
-                desc1={t("Experience4.Desc1")}
-                desc2={t("Experience4.Desc2")}
-                desc3={t("Experience4.Desc3")}
-                desc4={t("Experience4.Desc4")}
-                desc5={t("Experience4.Desc5")}
-                stacks={t("Experience4.Stacks")}
-              />
-              <ExperienceInfoItem
-                title={t("Experience3.Title")}
-                company={t("Experience3.Company")}
-                period={t("Experience3.Period")}
-                desc1={t("Experience3.Desc1")}
-                desc2={t("Experience3.Desc2")}
-                desc3={t("Experience3.Desc3")}
-                desc4={t("Experience3.Desc4")}
-                desc5={t("Experience3.Desc5")}
-                stacks={t("Experience3.Stacks")}
-              />{" "}
-              <ExperienceInfoItem
-                title={t("Experience2.Title")}
-                company={t("Experience2.Company")}
-                period={t("Experience2.Period")}
-                desc1={t("Experience2.Desc1")}
-                desc2={t("Experience2.Desc2")}
-                desc3={t("Experience2.Desc3")}
-                desc4={t("Experience2.Desc4")}
-                desc5={t("Experience2.Desc5")}
-                stacks={t("Experience2.Stacks")}
-              />{" "}
-              <ExperienceInfoItem
-                title={t("Experience1.Title")}
-                company={t("Experience1.Company")}
-                period={t("Experience1.Period")}
-                desc1={t("Experience1.Desc1")}
-                desc2={t("Experience1.Desc2")}
-                desc3={t("Experience1.Desc3")}
-                desc4={t("Experience1.Desc4")}
-                desc5={t("Experience1.Desc5")}
-                stacks={t("Experience1.Stacks")}
-              />
-              <ExperienceInfoItem
-                title={t("Experience0.Title")}
-                company={t("Experience0.Company")}
-                period={t("Experience0.Period")}
-                desc1={t("Experience0.Desc1")}
-                desc2={t("Experience0.Desc2")}
-                desc3={t("Experience0.Desc3")}
-                desc4={t("Experience0.Desc4")}
-                desc5={t("Experience0.Desc5")}
-                stacks={t("Experience0.Stacks")}
-              />
-            </div>
-            {/* // EDUCATION SECTION */}
-            <h1 className="about__info__heading">{t("About.Education")}</h1>
-            <div className="about__info__item" data-aos="fade-right">
-              <CertificationInfoItem
-                title={t("Education1.Title")}
-                company={t("Education1.Company")}
-              />
-            </div>
-            {/* // CERTIFICATION SECTION */}
-            <h1 className="about__info__heading">{t("About.Certification")}</h1>
-            <div className="certification__info__items" data-aos="fade-left">
-              <CertificationInfoItem
-                title={t("Certification.Title10")}
-                company={t("Certification.Company10")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title9")}
-                company={t("Certification.Company9")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title8")}
-                company={t("Certification.Company8")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title7")}
-                company={t("Certification.Company7")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title6")}
-                company={t("Certification.Company6")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title5")}
-                company={t("Certification.Company5")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title4")}
-                company={t("Certification.Company4")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title3")}
-                company={t("Certification.Company3")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title2")}
-                company={t("Certification.Company2")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title1")}
-                company={t("Certification.Company1")}
-              />{" "}
-              <CertificationInfoItem
-                title={t("Certification.Title0")}
-                company={t("Certification.Company0")}
-              />
             </div>
           </div>
         </div>
@@ -236,6 +124,32 @@ const AboutPageStyles = styled.div`
   .button_row {
     display: flex;
     gap: 2rem;
+  }
+  .paragraph {
+    padding: 1rem 0;
+    @media screen and (max-width: 670px) {
+      font-size: 1.6rem;
+    }
+  }
+  .about-info {
+    display: flex;
+    padding-bottom: 1.4rem;
+
+    .info-title {
+      padding-right: 3rem;
+      p {
+        font-weight: 400;
+      }
+    }
+    .info-title,
+    .info {
+      p {
+        font-weight: 200;
+        @media screen and (max-width: 670px) {
+          font-size: 1.6rem;
+        }
+      }
+    }
   }
   .confsquare-btn {
     font-family: var(--main-font);
