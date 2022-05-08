@@ -1,6 +1,15 @@
 // BLOCKCHAIN WEB3.0 PROJECTS
 const blockchain = [
   {
+    id: 0,
+    category: "React",
+    link1: "https://github.com/cuitlazotlac/crypto-watcher-v2",
+    link2: "https://cuitlazotlac.github.io/crypto-watcher-v2/",
+    title: "Crypto Watcher",
+    desc: "💱 👓 CryptoWatcher is a price-tracking website for cryptocurrencies. This web application is getting Crypto infos from CoinGeckoApi",
+    stack: "react, styled-components, react-bootstrap, bootstrap4, axios",
+  },
+  {
     id: 1,
     category: "DeFi",
     link1: "https://github.com/cuitlazotlac/defi_app",
@@ -89,7 +98,7 @@ const blockchain = [
     title: "Carb One Caculator",
     desc: "🪴👨🏽‍💻👨🏻‍💻 This is the story of two guys interested in environmental topics, building a carbon footprint calculator",
     stack: "react, javascript",
-  }
+  },
 ];
 
 export default blockchain;

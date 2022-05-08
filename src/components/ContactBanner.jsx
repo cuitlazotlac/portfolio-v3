@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
-import PText from "./shared/PText";
+// import PText from "./shared/PText";
 
 import { useTranslation } from "react-i18next";
 
-import Typical from "../components/shared/Typical";
+// import Typical from "../components/shared/Typical";
 
 export default function ContactBanner() {
   const { t } = useTranslation();
@@ -27,6 +27,7 @@ export default function ContactBanner() {
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
+
   .contactBanner__subheading {
     font-family: var(--btn-font);
     font-weight: 200;
@@ -34,7 +35,8 @@ const ContactBannerStyles = styled.div`
     color: var(--brand-color);
   }
   .contactBanner__wrapper {
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
+
     border-radius: 1px;
     padding: 5rem 0rem;
     text-align: center;
