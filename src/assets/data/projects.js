@@ -15,11 +15,12 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: "DeFi DApp Token Farm",
-    link1: "https://github.com/cuitlazotlac/defi_app",
-    link2: "https://defi-dapp-token-farm.herokuapp.com/",
-    desc: "👨🏽‍🌾🪙 DeFi App - reproducing a Digital bank where we can earn interest for depositing cryptocurrency",
-    stacks: "react, ethereum, smart-contracts, truffle, solidity, web3js",
+    name: "Spread",
+    link1: "https://github.com/cuitlazotlac/twitter-clone",
+    link2:
+      "https://ipfs.fleek.co/ipfs/QmcFvYSMft7okugk5KarYf8Muw2jECThoEcUhruvEzvg7Q/",
+    desc: " 📨 ⛓ Spread is a Twitter Clone using Web3 technologies, wallet connection and solidity smart contract.",
+    stacks: "react, ipfs, hardhat, solidity, nodejs, react-bootstrap",
     img: UTrackerImg,
   },
   {
