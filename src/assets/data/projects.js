@@ -9,7 +9,7 @@ const projects = [
     name: "Crypto Watcher",
     link1: "https://github.com/cuitlazotlac/crypto-watcher-v2",
     link2: "https://cuitlazotlac.github.io/crypto-watcher-v2/",
-    desc: "💱 👓 CryptoWatcher is a price-tracking website for cryptocurrencies. This web application is getting Crypto infos from CoinGeckoApi",
+    desc: "💱 👓 CryptoWatcher is a price-tracking website for cryptocurrencies. Thisƒ application is getting crypto data from an API.",
     stacks: "react, styled-components, react-bootstrap, axios",
     img: ProjectImg,
   },
