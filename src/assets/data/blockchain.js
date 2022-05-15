@@ -1,7 +1,7 @@
 // BLOCKCHAIN WEB3.0 PROJECTS
 const blockchain = [
   {
-    id: 0,
+    id: 1,
     category: "React",
     link1: "https://github.com/cuitlazotlac/crypto-watcher-v2",
     link2: "https://cuitlazotlac.github.io/crypto-watcher-v2/",
@@ -10,16 +10,26 @@ const blockchain = [
     stack: "react, styled-components, react-bootstrap, bootstrap4, axios",
   },
   {
-    id: 1,
+    id: 2,
+    category: "React",
+    link1: "https://github.com/cuitlazotlac/twitter-clone",
+    link2:
+      "https://ipfs.fleek.co/ipfs/QmcFvYSMft7okugk5KarYf8Muw2jECThoEcUhruvEzvg7Q/",
+    title: "Spread",
+    desc: " 📨 ⛓ Spread is a Twitter Clone using Web3 technologies, wallet connection and solidity smart contract.",
+    stack: "react, ipfs, hardhat, solidity, nodejs, react-bootstrap",
+  },
+  {
+    id: 3,
     category: "DeFi",
     link1: "https://github.com/cuitlazotlac/defi_app",
     link2: "https://defi-dapp-token-farm.herokuapp.com/",
     title: "DeFi DApp Token Farm",
     desc: "👨🏽‍🌾🪙 DeFi App - reproducing a Digital bank where we can earn interest for depositing cryptocurrency",
-    stack: "react, ethereum, smart-contracts, truffle, solidity, web3js",
+    stack: "react, ethereum, truffle, solidity, web3js",
   },
   {
-    id: 2,
+    id: 4,
     category: "React",
     link1: "https://github.com/cuitlazotlac/eth-sign-in",
     link2: "https://cuitlazotlac.github.io/eth-sign-in/",
@@ -28,7 +38,7 @@ const blockchain = [
     stack: "react, ceramic, idx, dids, ethers",
   },
   {
-    id: 3,
+    id: 5,
     category: "React",
     link1: "https://github.com/cuitlazotlac/full-mint-website",
     link2: "https://cuitlazotlac.github.io/full-mint-website/",
@@ -37,7 +47,7 @@ const blockchain = [
     stack: "react, Solidity, ethers, hardhat, chakraUI, Infura",
   },
   {
-    id: 4,
+    id: 6,
     category: "Analytics",
     link1: "",
     link2: "https://dune.com/cuitlazotlac",
@@ -46,7 +56,7 @@ const blockchain = [
     stack: "SQL",
   },
   {
-    id: 5,
+    id: 7,
     category: "React",
     link1: "https://github.com/cuitlazotlac/WeatherChecker",
     link2: "https://weatherchecker1.herokuapp.com/",
@@ -55,7 +65,7 @@ const blockchain = [
     stack: "react, scss, openweathermap-api",
   },
   {
-    id: 6,
+    id: 8,
     category: "API",
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
     link2: "https://mtlmex-api.herokuapp.com/",
@@ -64,7 +74,7 @@ const blockchain = [
     stack: "javascript, heroku, jsondb",
   },
   {
-    id: 7,
+    id: 9,
     category: "React",
     link1: "https://github.com/cuitlazotlac/anime-library",
     link2: "https://anime-library1.herokuapp.com/",
@@ -73,7 +83,7 @@ const blockchain = [
     stack: "react, api, scss",
   },
   {
-    id: 8,
+    id: 10,
     category: "Vue",
     link1: "https://github.com/cuitlazotlac/what-movie",
     link2: "https://what-movies.herokuapp.com/",
@@ -82,7 +92,7 @@ const blockchain = [
     stack: "vuejs, api, javascript",
   },
   {
-    id: 9,
+    id: 11,
     category: "React",
     link1: "https://github.com/cuitlazotlac/covid-tracker-dashboard",
     link2: "https://www.google.com",
@@ -91,7 +101,7 @@ const blockchain = [
     stack: "react, api",
   },
   {
-    id: 10,
+    id: 12,
     category: "React",
     link1: "https://github.com/climate-stuff/carbon-calculator",
     link2: "",
