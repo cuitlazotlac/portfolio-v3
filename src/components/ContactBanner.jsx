@@ -29,10 +29,10 @@ const ContactBannerStyles = styled.div`
   padding: 5rem 0;
 
   .contactBanner__subheading {
-    font-family: var(--btn-font);
+    font-family: var(--stacks-font);
     font-weight: 200;
     font-size: 1.8rem;
-    color: var(--brand-color);
+    /* color: var(--brand-color); */
   }
   .contactBanner__wrapper {
     background-color: var(--secondary-color);
