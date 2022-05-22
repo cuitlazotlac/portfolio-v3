@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
-import PText from "./shared/PText";
-import SectionTitle from "./SectionTitle";
+import PText from "../components/shared/PText";
+import SectionTitle from "../components/shared/SectionTitle";
 import testimonials from "../assets/data/testimonials";
 
 export default function TestimonialsSection() {
