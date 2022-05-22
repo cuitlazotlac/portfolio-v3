@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import SectionTitle from "../components/SectionTitle";
+import SectionTitle from "../components/shared/SectionTitle";
 import PortfolioItem from "../components/PortfolioItem";
 import Filter from "../components/Filter";
 

@@ -5,7 +5,7 @@ import { FaBezierCurve } from "react-icons/fa";
 import { FaLayerGroup } from "react-icons/fa";
 
 import styled from "styled-components";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "./shared/SectionTitle";
 import ServicesSectionItem from "./ServicesSectionItem";
 
 import Aos from "aos";

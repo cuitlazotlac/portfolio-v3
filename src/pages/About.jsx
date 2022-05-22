@@ -5,7 +5,7 @@ import CredlyButton from "../components/CredlyButton";
 
 import Avatar from "../assets/images/avatar.svg";
 import AboutInfoItem from "../components/AboutInfoItem";
-import SectionTitle from "../components/SectionTitle";
+import SectionTitle from "../components/shared/SectionTitle";
 import ExperienceInfoItem from "../components/ExperienceInfoItem";
 import CertificationInfoItem from "../components/CertificationInfoItem";
 

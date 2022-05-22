@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { MdSearch } from "react-icons/md";
-import SectionTitle from "../components/SectionTitle";
+import SectionTitle from "../components/shared/SectionTitle";
 import ProjectItem from "../components/ProjectItem";
 import Filter from "../components/Filter";
 

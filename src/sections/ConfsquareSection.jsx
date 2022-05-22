@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import Button from "./Button";
-import PText from "./shared/PText";
-import SectionTitle from "./SectionTitle";
+import Button from "../components/Button";
+import PText from "../components/shared/PText";
+import SectionTitle from "../components/shared/SectionTitle";
 
 import ConfsquareLogo from "../assets/images/confsquare/confsquare.svg";
 
