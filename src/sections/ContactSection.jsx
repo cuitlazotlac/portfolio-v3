@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import ContactInfoItem from "./ContactInfoItem";
-import SectionTitle from "./shared/SectionTitle";
+import ContactInfoItem from "../components/ContactInfoItem";
+import SectionTitle from "../components/shared/SectionTitle";
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
