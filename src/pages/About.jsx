@@ -8,6 +8,7 @@ import AboutInfoItem from "../components/AboutInfoItem";
 import SectionTitle from "../components/shared/SectionTitle";
 import ExperienceInfoItem from "../components/ExperienceInfoItem";
 import CertificationInfoItem from "../components/CertificationInfoItem";
+import WorkExperienceSection from "../sections/WorkExperienceSection";
 
 import { useTranslation } from "react-i18next";
 
@@ -73,6 +74,7 @@ export default function About() {
                     </div>
                   </div>
                 </PText>
+                <WorkExperienceSection />
               </div>
               <div className="button_row">
                 <a
