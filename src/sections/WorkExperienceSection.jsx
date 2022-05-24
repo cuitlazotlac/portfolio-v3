@@ -38,7 +38,6 @@ export default function WorkExperiencesSection() {
           <a class="tab tab-3" href="#" data-tab="3">
             Tab 3
           </a>
-
           <span class="highlighter"></span>
         </div>
 
@@ -83,7 +82,7 @@ export default function WorkExperiencesSection() {
 const WorkExperiencesStyles = styled.div`
   .container {
     position: relative;
-    margin: 20px auto;
+    margin: 0px;
     padding: 20px;
     display: flex;
     align-items: flex-start;
