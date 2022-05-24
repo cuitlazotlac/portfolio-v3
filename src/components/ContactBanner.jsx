@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./Button";
+import Button from "./ButtonSection";
 import { useTranslation } from "react-i18next";
 
 export default function ContactBanner() {
@@ -15,7 +15,11 @@ export default function ContactBanner() {
           <h3 className="contactBanner__heading">
             {t("Contact.SectionTitle")}
           </h3>
-          <Button btnText={t("Contact.Button")} btnLink="/contact" />
+          <Button
+            className="button-section"
+            btnText={t("Contact.Button")}
+            btnLink="/contact"
+          />
         </div>
       </div>
     </ContactBannerStyles>
@@ -39,7 +43,7 @@ const ContactBannerStyles = styled.div`
 
     &::before {
       content: "";
-      background-image: url("https://media.giphy.com/media/2XrLfX86d7Nok/giphy.gif");
+      background-image: url("https://feature.undp.org/beyond-bitcoin/assets/ahbYpiFf0Q/block4.gif");
       background-size: cover;
       background-position: center;
       position: absolute;

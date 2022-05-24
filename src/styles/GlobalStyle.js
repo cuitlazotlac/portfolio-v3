@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
   --btn-color: #EDF2F6;
   --btn-border-color: #000000;
   --icon-color: #000000;
+  --white : white;
 }
 .dark-theme{
   --background-color: #001421;
@@ -22,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
   --btn-color: #001421;
   --btn-border-color: #CCD0D3;
   --icon-color: #000000;
+  --white : white;
 }
 
 *{
@@ -34,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
     // --gray-1: #BCB4B4;
     // --deep-dark: #082235;
     // --gray-2: #363636;
-    --white : #FFFFF;
+    --white : white;
     --black: black;
   }
   html{

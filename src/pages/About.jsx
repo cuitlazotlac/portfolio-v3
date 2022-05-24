@@ -74,7 +74,7 @@ export default function About() {
                     </div>
                   </div>
                 </PText>
-                <WorkExperienceSection />
+                {/* <WorkExperienceSection /> */}
               </div>
               <div className="button_row">
                 <a
