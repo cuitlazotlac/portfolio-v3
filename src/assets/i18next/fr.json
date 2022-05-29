@@ -5,28 +5,28 @@
   },
   "Hero": {
     "Headline0": "A little bit about myself..",
-    "Headline1": "Un Chef de Produit Technique",
+    "Headline1": "Un Chef de Produit",
     "Headline2": "Je travaille en ce moment sur des produits pour les mineurs de cryptomonnaie",
     "Headline3": "Tout en apprenant davantage sur la Blockchain",
     "Headline4": "Passioné par l'analyse de données",
-    "Headline5": "et par les interfaces web bien pensée",
-    "Title": "Salut! Moi c'est Hayssem 👋",
-    "Description_Part1": "Chef de Produit Technique avec une passion pour le développement web, l'analyse de donnée et le design. J'adore élaborer ( et parfois développer ) de nouvelles expérience digital pour aider, aligner les besoins et ainsi délivrer des produits qui ont du sens.",
-    "Description_Part2": "En ce moment, je suis à la Société Générale Banque d'Investissement, je travaille sur des produits internes innovants, plus particulièrement des applications web. Je suis aussi le co-fondateur de Confsquare, une plateforme d'organisation d'événement.",
+    "Headline5": "et par les interfaces bien pensée",
+    "Title": "Salut! C'est Hayssem 👋",
+    "Description_Part1": "Chef de Produit avec une passion pour le développement web, l'analyse de données et le design. J'adore élaborer ( et parfois développer ) de nouvelles expériences digitale pour aider, aligner les besoins et ainsi délivrer des produits qui ont du sens.",
+    "Description_Part2": "En ce moment, je suis à la Société Générale Corporate & Investment Banking, je travaille sur des produits internes innovants, plus particulièrement des applications web. Je suis aussi le co-fondateur de Confsquare, une plateforme d'organisation d'événement.",
     "Connect": "Connect",
     "Scroll": "Scroll",
-    "WorksButton": "Voir mes travaux"
+    "WorksButton": "Voir mes projets"
   },
   "Navigation": {
     "Home": "Home",
     "About": "A propos",
-    "Projects": "Blockchain/Web3.0",
+    "Projects": "Projets",
     "Portfolio": "Portfolio",
     "Contact": "Contacts"
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
-    "Description": "Product Manager Technique travaillant sur des produits pour les mineurs de cryptomonnaie et avec un fort intérêt pour la blockchain.",
+    "Description": "Chef de Produit travaillant en ce moment sur des produits pour les mineurs de cryptomonnaie.",
     "Section": "Sections",
     "Social Links": "Social Links",
     "English": "Anglais 🇨🇦",
@@ -36,9 +36,9 @@
   "Confsquare": {
     "SectionTitle": "Confsquare",
     "SectionDescription": "Let's Gather",
-    "Description_Part1": "Confsquare c'est une startup, focus sur la création et l'organisation d'événement virtuelle.",
-    "Description_Part2": "On construit une nouvelle plateforme offrant la possibilité de créer un meilleur lien avec la communauté grâce à notre concept de `Rooms`.",
-    "ReadMore": "Site Confsquare",
+    "Description_Part1": "Confsquare c'est une startup, qui se concentre sur la création et l'organisation d'événement virtuel.",
+    "Description_Part2": "On construit une nouvelle plateforme offrant la possibilité de créer un meilleur lien avec la communauté et ceux grâce à notre concept de `Rooms`.",
+    "ReadMore": "En savoir plus",
     "Works": "Autres projets"
   },
   "Expertise": {
@@ -47,15 +47,15 @@
     "Title1": "Product Management",
     "Description1": "A travers mes six ans d'expérience, j'ai travaillé sur des produits à forte visibilité, aussi bien des produits web, que des APIs pour développeurs et acteurs non-technique.",
     "Title2": "Design d'Interface",
-    "Description2": "Je suis toujours à la recherche de retour utilisateur, comprendre leur besoin et ainsi produire des wireframes et autres prototypes en adéquation.",
+    "Description2": "Je suis toujours à la recherche d'un retour utilisateur, comprendre leur besoin et ainsi produire des wireframes et autres prototypes en adéquation.",
     "Title3": "Analyse de données",
-    "Description3": "J'ai toujours eu un intéret fort pour les modèles de données, j'ai pu acquérir une aisance dans la récupération, le traitement et l'analyse de données, qui m'aide ensuite à identifier les tendances."
+    "Description3": "J'ai toujours eu un intéret fort pour les modèles de données, j'ai pu acquérir une aisance dans la récupération, le traitement et l'analyse de données, qui m'aide à identifier les tendances."
   },
   "About": {
     "SectionTitle": "A propos",
     "SectionDescription": "Quelques mots sur moi et mon parcours",
-    "Title": "Chef de Produit technique + certifié Product Owner & Scrum Master",
-    "Paragraph1": "Chef de Produit technique passionné, avec plus de six ans d'expérience dans la gestion de produits. J'ai dévelopé une expertise dans la création de fonctionnalité et d'initiatives numériques. Je dirige des projets, des sprints, en assurant une livraison de qualité, en exerçant une gestion collaborative au sein de l'équipe et des parties prenantes. Je m'efforce de toujours être à jour sur différents sujets, y compris le développement et la conception, afin de pouvoir délivrer et échanger au mieux.",
+    "Title": "Chef de Produit + certifié Product Owner II & Scrum Master I",
+    "Paragraph1": "Chef de Produit passionné, avec plus de six ans d'expérience. J'ai dévelopé une expertise dans la création de fonctionnalité et d'initiatives numériques. Je dirige des projets, des sprints, en assurant une livraison de qualité, en exerçant une gestion collaborative au sein de l'équipe et des parties prenantes. Je m'efforce de toujours être à jour sur différents sujets, y compris le développement et la conception, afin de pouvoir délivrer et échanger au mieux.",
     "Paragraph2": "Je n'ai pas réellement suivi une voie traditionnelle, j'ai plutôt cherché à explorer ma créativité, en m'essayant à diverses techniques et technologies. Aujourd'hui, j'aime utiliser mes compétences en matière de pensée critique, d'empathie et de créativité pour créer des solutions viables et percutantes.",
     "Paragraph3": "",
     "Button": "Voir mon CV",
@@ -164,9 +164,9 @@
   "Contact": {
     "MainTitle": "Contact",
     "SubsectionTitle": "Mes autres pages & contributions",
-    "SectionTitle": "Allez voir mes autres pages",
+    "SectionTitle": "Prendre contact avec moi",
     "SectionDescription": "",
-    "Button": "Contact Me !",
+    "Button": "Me contactez",
     "Headline0": "Let's go grab a 🧋",
     "Headline1": "Allons prendre un 🧋",
     "Headline2": "ou même une 🍜",
