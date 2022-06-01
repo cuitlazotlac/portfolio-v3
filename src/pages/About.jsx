@@ -2,13 +2,14 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import PText from "../components/shared/PText";
 import CredlyButton from "../components/CredlyButton";
+import SectionTitle from "../components/shared/SectionTitle";
 
 import Avatar from "../assets/images/avatar.svg";
-import AboutInfoItem from "../components/AboutInfoItem";
-import SectionTitle from "../components/shared/SectionTitle";
-import ExperienceInfoItem from "../components/ExperienceInfoItem";
-import CertificationInfoItem from "../components/CertificationInfoItem";
-import WorkExperienceSection from "../sections/WorkExperienceSection";
+
+// import AboutInfoItem from "../components/AboutInfoItem";
+// import ExperienceInfoItem from "../components/ExperienceInfoItem";
+// import CertificationInfoItem from "../components/CertificationInfoItem";
+// import WorkExperienceSection from "../sections/WorkExperienceSection";
 
 import { useTranslation } from "react-i18next";
 

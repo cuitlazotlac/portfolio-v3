@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 export default function WorkExperiencesSection() {
@@ -28,7 +28,7 @@ export default function WorkExperiencesSection() {
   return (
     <WorkExperiencesStyles>
       <div class="container">
-        <div class="tabs">
+        {/* <div class="tabs">
           <a class="tab tab-1 active" href="#" data-tab="1">
             Tab 1
           </a>
@@ -39,7 +39,7 @@ export default function WorkExperiencesSection() {
             Tab 3
           </a>
           <span class="highlighter"></span>
-        </div>
+        </div> */}
 
         <div class="content">
           <div class="content__section visible" data-tab="1">

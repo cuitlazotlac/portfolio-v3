@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import Button from "../components/Button";
 import PText from "../components/shared/PText";
 import SectionTitle from "../components/shared/SectionTitle";
 

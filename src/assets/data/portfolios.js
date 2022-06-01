@@ -1,5 +1,5 @@
 import crypto_watcher from "../images/portfolios/crypto_watcher.svg";
-import dapp_farmer from "../images/portfolios/dapp_farmer.svg";
+// import dapp_farmer from "../images/portfolios/dapp_farmer.svg";
 import weather_tracker from "../images/portfolios/weather_tracker.svg";
 import mex_mtl from "../images/portfolios/mex_mtl.svg";
 import anime_library from "../images/portfolios/anime_library.svg";
