@@ -5,7 +5,7 @@ import { MdClose, MdMenu } from "react-icons/md";
 
 import { useTranslation } from "react-i18next";
 
-import logo from "../../assets/images/favicon.svg";
+// import logo from "../../assets/images/favicon.svg";
 
 export default function NavMenu() {
   const { t } = useTranslation();
