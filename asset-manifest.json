@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.304f34a1.chunk.js",
-    "main.js.map": "/static/js/main.304f34a1.chunk.js.map",
+    "main.js": "/static/js/main.fedb5f5f.chunk.js",
+    "main.js.map": "/static/js/main.fedb5f5f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0876572f.js",
     "runtime-main.js.map": "/static/js/runtime-main.0876572f.js.map",
     "static/css/2.9a40be86.chunk.css": "/static/css/2.9a40be86.chunk.css",
@@ -17,8 +17,6 @@
     "static/media/covid_dashboard.3ede73dd.svg": "/static/media/covid_dashboard.3ede73dd.svg",
     "static/media/credly.109e4a09.png": "/static/media/credly.109e4a09.png",
     "static/media/crypto_watcher.dde1bca8.svg": "/static/media/crypto_watcher.dde1bca8.svg",
-    "static/media/dapp_farmer.5570d88d.svg": "/static/media/dapp_farmer.5570d88d.svg",
-    "static/media/favicon.427a733a.svg": "/static/media/favicon.427a733a.svg",
     "static/media/getFetch.cjs": "/static/media/getFetch.582d29c4.cjs",
     "static/media/img1.7032f015.svg": "/static/media/img1.7032f015.svg",
     "static/media/img1.fcd8cd4d.jpg": "/static/media/img1.fcd8cd4d.jpg",
@@ -32,6 +30,6 @@
     "static/js/runtime-main.0876572f.js",
     "static/css/2.9a40be86.chunk.css",
     "static/js/2.e73502ee.chunk.js",
-    "static/js/main.304f34a1.chunk.js"
+    "static/js/main.fedb5f5f.chunk.js"
   ]
 }
