@@ -79,7 +79,7 @@ export default function About() {
               </div>
               <div className="button_row">
                 <a
-                  href="https://drive.google.com/file/d/1VQqx2OW1BDLoNPo6yx48FjIPPVfmoFka/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1HSewOU27E72BaV8rY1L3AgEocDc1R9y-/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
