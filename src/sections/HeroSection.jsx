@@ -206,7 +206,7 @@ const HeroStyles = styled.div`
       margin-top: 3rem;
     }
     .hero__social {
-      left: -5px;
+      left: 15px;
       bottom: -15%;
       width: 20px;
       .hero__social__indicator {
@@ -230,7 +230,7 @@ const HeroStyles = styled.div`
       }
     }
     .hero__scrollDown {
-      right: 0;
+      right: 20px;
       width: 20px;
       gap: 1rem;
       p {
@@ -240,7 +240,7 @@ const HeroStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10rem 0;
+    padding: 3rem 0;
     .hero {
       min-height: 750px;
     }
@@ -265,8 +265,8 @@ const HeroStyles = styled.div`
       }
     }
     .hero__social {
-      left: 0px;
-      bottom: -15%;
+      left: 20px;
+      bottom: -12%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -289,7 +289,7 @@ const HeroStyles = styled.div`
       }
     }
     .hero__scrollDown {
-      right: 0;
+      right: 10px;
       width: 20px;
       gap: 1rem;
       p {

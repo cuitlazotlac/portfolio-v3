@@ -35,7 +35,7 @@ export default function ConfsquareSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="confsquare-btn">Confsquare Website</button>
+                <button className="confsquare-btn">Learn More</button>
               </a>
             </div>
             {/* <Button
@@ -88,7 +88,7 @@ const ConfsquareSectionStyles = styled.div`
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 1px;
+    border-radius: 3px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;
