@@ -33,7 +33,7 @@ const LanguageSelectStyle = styled.div`
     border: 1px solid var(--font-color);
     font-family: var(--main-font);
     font-size: 1.5rem;
-    border-radius: 1px;
+    border-radius: 3px;
   }
   @media only screen and (max-width: 768px) {
     .button {

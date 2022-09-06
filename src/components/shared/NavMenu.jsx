@@ -111,7 +111,7 @@ const NavStyles = styled.nav`
     text-align: center;
     li {
       display: inline-block;
-      border-radius: 1px;
+      border-radius: 2px;
       transition: 0.3s ease background-color;
       &:hover {
         background-color: var(--brand-color);

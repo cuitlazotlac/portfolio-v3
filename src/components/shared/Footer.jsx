@@ -19,6 +19,7 @@ export default function Footer() {
           <LanguageSelect />
           <ThemeToggle />
         </div>
+        {/* <div className="website__plan"> */}
         <div className="footer__col2">
           <FooterCol
             heading={t("Footer.Section")}
@@ -70,6 +71,7 @@ export default function Footer() {
           />
         </div>
       </div>
+      {/* </div> */}
     </FooterStyle>
   );
 }
@@ -101,6 +103,9 @@ const FooterStyle = styled.div`
     margin-bottom: 1rem;
   }
   @media only screen and (max-width: 768px) {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+
     .container {
       flex-direction: column;
       gap: 0rem;
@@ -110,6 +115,15 @@ const FooterStyle = styled.div`
     }
     .footer__col1 .para {
       max-width: 100%;
+    }
+    .footer__col2 {
+      background-color: red;
+      display: none;
+    }
+
+    .footer__col3 {
+      background-color: red;
+      display: none;
     }
   }
 `;

@@ -17,13 +17,15 @@ const SectionTitleStyle = styled.div`
   text-align: left;
   h2 {
     font-size: 6rem;
+    color: var(--brand-color);
     font-weight: 900;
     text-transform: uppercase;
   }
   p {
     font-family: var(--stacks-font);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.8rem;
+    margin-bottom: 4px;
   }
 
   @media only screen and (max-width: 768px) {

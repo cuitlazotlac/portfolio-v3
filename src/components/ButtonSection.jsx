@@ -20,7 +20,7 @@ const ButtonSectionStyle = styled.div`
     border: 1px solid var(--white);
     color: var(--white);
     background-color: #4dbca8;
-    border-radius: 1px;
+    border-radius: 3px;
     display: inline-block;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
