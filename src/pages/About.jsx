@@ -44,6 +44,9 @@ export default function About() {
                   <br />
                   {t("About.Paragraph2")}
                   <br />
+                  <br />
+                  {t("About.Paragraph2bis")}
+                  <br />
                 </PText>
                 <br />
                 <br />
