@@ -11,7 +11,7 @@
     "Headline4": "Passionate about Data Analysis",
     "Headline5": "Love well-tought interfaces",
     "Title": "Hey there I'm Hayssem 👋",
-    "Description_Part1": "Professional Technical Product Manager with a passion for  Web development, Data Analysis and Design. I love to build ( and occasionally develop ) astounding digital experiences with excitement for helping and aligning requirements to deliver meaningful results.",
+    "Description_Part1": "Professional Technical Product Manager with a passion for  Web development, Data Analysis, and Product Design. I love to build ( and occasionally develop ) astounding digital experiences with excitement for helping and aligning requirements to deliver meaningful results.",
     "Description_Part2": "Currently, I'm working at Société Générale Investment Banking focused on building internal and innovative web products. Additionally, I’m the Co-Founder of Confsquare, a new way to organize your event and gather with your community!",
     "Connect": "Connect",
     "Scroll": "Scroll",
@@ -36,8 +36,8 @@
   "Confsquare": {
     "SectionTitle": "Confsquare",
     "SectionDescription": "Let's Gather",
-    "Description_Part1": "Confsquare is a startup, focus on building better experience event organization and management.",
-    "Description_Part2": "We are building a new event platform enabling our users to create more connections with their community through the in-house concept of `Rooms`.",
+    "Description_Part1": "Confsquare is a startup, focus on building better experience for event organization and management.",
+    "Description_Part2": "We are building a new event platform enabling our users to create more connections with their community through the in-house concept of Rooms.",
     "ReadMore": "Check website"
   },
   "Expertise": {
@@ -54,8 +54,9 @@
     "SectionTitle": "About",
     "SectionDescription": "Few words about me and my journey",
     "Title": "Technical Product Manager + Product Owner & Scrum Master Certified",
-    "Paragraph1": "Passionate Technical Product Manager with over six years of hands-on experience leading successful features, products, and digital initiatives. I lead projects, sprints, ensuring high-quality delivery, exercising collaborative team and stakeholder management. I strive to always be up to speed on different topics including coding and design to be able to deliver and discuss with all stakeholders.",
-    "Paragraph2": "I fled from a traditional path and explored my creativity, by trying my hands on various techniques and technologies. Product Management is more than just a profession for me, and I try to dig deep into it. Today, I like to use my skills in critical thinking, empathy, and creativity to create viable and impactful solutions.",
+    "Paragraph1": "I lead products, projects, and sprints, ensuring high-quality delivery as well as exercising collaborative team and stakeholder management.",
+    "Paragraph2": "I strive to always be up to speed on different topics including coding and design to be able to deliver and discuss with all stakeholders.",
+    "Paragraph2bis": "I fled from a traditional path and explored my creativity. I was researching and trying various techniques and technologies. Product Management is more than just a career for me, and I try to dig deep into it.",
     "Paragraph3": "Interface Design",
     "Button": "Check Resume",
     "Skill": "Skills",
