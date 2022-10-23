@@ -23,7 +23,7 @@ const CredlyButtonStyled = styled.button`
   padding: 0.8rem;
   background-color: var(--primary-color);
   border: 1px solid #f37021;
-  border-radius: 3px;
+  border-radius: 0.5px;
   color: var(--black);
   width: 160px;
   height: 42.95px;

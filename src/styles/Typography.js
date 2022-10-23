@@ -2,11 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: 'Raleway';
+    font-family: 'Inter';
     font-style: normal;
   }
   html{
-    font-family: 'Raleway';
+    font-family: 'Inter Tight';
     color: var(--font-color);
   }
   *{

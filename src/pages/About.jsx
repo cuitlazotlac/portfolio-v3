@@ -5,6 +5,7 @@ import CredlyButton from "../components/CredlyButton";
 import SectionTitle from "../components/shared/SectionTitle";
 
 import Avatar from "../assets/images/avatar.svg";
+import Emoji from "../assets/emoji_avatar.mp4";
 
 // import AboutInfoItem from "../components/AboutInfoItem";
 // import ExperienceInfoItem from "../components/ExperienceInfoItem";
@@ -82,7 +83,7 @@ export default function About() {
               </div>
               <div className="button_row">
                 <a
-                  href="https://drive.google.com/file/d/12Qh0Q2oEcfTmzaI3tDXXfJzmjzvoGc-0/view?usp=sharing"
+                  href="https://read.cv/hayssem_ve"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -94,7 +95,14 @@ export default function About() {
               </div>
             </div>
             <div className="right">
-              <img src={Avatar} alt="avatar" />
+              <video
+                src={Emoji}
+                loop
+                autoPlay
+                className="video"
+                // name="Video Namse"
+              ></video>
+              {/* <img src={Avatar} alt="avatar" /> */}
             </div>
           </div>
         </div>
@@ -117,6 +125,18 @@ const AboutPageStyles = styled.div`
   }
   .right {
     flex: 2;
+  }
+  .video {
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    display: block;
+    object-fit: contain;
+    /* background-color: var(
+      --token-444af1a9-093e-44b7-a4b0-bfe18cae8f73,
+      rgb(255, 255, 255)
+    ); */
+    object-position: 50% 50%;
   }
   .about__subheading {
     font-size: 2.2rem;
@@ -150,7 +170,7 @@ const AboutPageStyles = styled.div`
     .info-title,
     .info {
       p {
-        font-weight: 200;
+        font-weight: 300;
         @media screen and (max-width: 670px) {
           font-size: 1.6rem;
         }
@@ -164,7 +184,7 @@ const AboutPageStyles = styled.div`
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 3px;
+    border-radius: 0.5px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;
@@ -174,7 +194,7 @@ const AboutPageStyles = styled.div`
     overflow: hidden;
     &:hover {
       color: var(--black);
-      background-color: var(--brand-color);
+      /* background-color: var(--shadow-color); */
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;

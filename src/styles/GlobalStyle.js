@@ -2,12 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 .light-theme{
-  --background-color: #FFFFF;
-  --secondary-color: #F5EFEB;
+  --background-color: #F3F2F3;
+  --secondary-color: #F2EFEE;
   --third-color: #1F2124;
   --shadow-color: #3C3C3C;
   --font-color: #000000;
-  --brand-color: #01E3B4;
+  --brand-color: #000000;
   --btn-color: #EDF2F6;
   --btn-border-color: #000000;
   --icon-color: #000000;
@@ -32,16 +32,12 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    // --dark-bg: #001321;
-    // --gray-1: #BCB4B4;
-    // --deep-dark: #082235;
-    // --gray-2: #363636;
     --white : white;
     --black: black;
   }
   html{
-    --main-font: 'Raleway', sans-serif;
-    --secondary-font: 'Roboto Mono', sans-serif;
+    --main-font: 'Inter Tight', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
     --stacks-font: 'Roboto Mono';
 
     font-size: 10px;
