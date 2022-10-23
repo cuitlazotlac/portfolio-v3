@@ -96,7 +96,8 @@ export default function NavMenu() {
 
 const NavStyles = styled.nav`
   text-transform: uppercase;
-  font-family: var(--secondary-font);
+  font-family: var(--main-font);
+  font-weight: bolder;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -114,8 +115,10 @@ const NavStyles = styled.nav`
       border-radius: 2px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--brand-color);
-        color: var(--font-color);
+        /* text-decoration: underline 1px solid var(--brand-color); */
+        border-bottom: 2.5px solid var(--brand-color);
+        /* background-color: var(--brand-color); */
+        /* color: var(--font-color); */
       }
     }
     a {
@@ -127,7 +130,7 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
-      color: var(--brand-color);
+      color: var(--shadow-color);
       &:hover {
         color: var(--font-color);
       }

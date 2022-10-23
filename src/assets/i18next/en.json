@@ -1,6 +1,6 @@
 {
   "Home": {
-    "Title": "Hey I'm Hayssem",
+    "Title": "Hey I'm Hayssem, Senior Product Manager",
     "Description": "Bitcoin PM"
   },
   "Hero": {
@@ -10,8 +10,9 @@
     "Headline3": "Learning and excited about Web3.0",
     "Headline4": "Passionate about Data Analysis",
     "Headline5": "Love well-tought interfaces",
-    "Title": "Hey there I'm Hayssem 👋",
-    "Description_Part1": "Professional Technical Product Manager with a passion for  Web development, Data Analysis, and Product Design. I love to build ( and occasionally develop ) astounding digital experiences with excitement for helping and aligning requirements to deliver meaningful results.",
+    "Title": "Hey, I'm Hayssem",
+    "SubTitle": "Senior Product Manager 👋",
+    "Description_Part1": "I'm passionate about Web development, Data Analysis, and Product Design. I love to build ( and occasionally develop ) astounding digital experiences with excitement for helping and aligning requirements to deliver meaningful results.",
     "Description_Part2": "Currently, I'm working at Société Générale Investment Banking focused on building internal and innovative web products. Additionally, I’m the Co-Founder of Confsquare, a new way to organize your event and gather with your community!",
     "Connect": "Connect",
     "Scroll": "Scroll",
@@ -166,8 +167,8 @@
   "Contact": {
     "MainTitle": "Contact",
     "SubsectionTitle": "My other contributions",
-    "SectionTitle": "Get in Touch !",
-    "SectionDescription": "",
+    "SectionTitle": "Question about my work ?",
+    "SectionDescription": "Let's chat 🐱",
     "Button": "Say Hi !",
     "Headline1": "",
     "Headline2": "or maybe you prefer a 🍜",

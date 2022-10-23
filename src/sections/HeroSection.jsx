@@ -32,6 +32,7 @@ export default function HeroSection() {
               />
             </span>
             <span className="hero__name">{t("Hero.Title")}</span>
+            <span className="hero__name">{t("Hero.SubTitle")}</span>
           </h1>
           <br />
           <div className="hero__info">
@@ -111,9 +112,11 @@ const HeroStyles = styled.div`
   .hero__heading {
     text-align: left;
     font-size: 2.4rem;
+    font-weight: 400;
     span {
       display: inline-block;
       width: 100%;
+      color: red;
     }
     .hero__name {
       font-size: 5rem;
@@ -177,7 +180,7 @@ const HeroStyles = styled.div`
         }
         &:hover {
           svg {
-            fill: var(--brand-color);
+            fill: var(--shadow-color);
           }
         }
       }
@@ -189,10 +192,11 @@ const HeroStyles = styled.div`
       min-height: 750px;
     }
     .hero__heading {
-      font-size: 1.7rem;
+      font-size: 2.3rem;
       margin-bottom: -3rem;
       .hero__name {
-        font-size: 4.5rem;
+        font-size: 8.5rem;
+        font-weight: 700;
       }
     }
     .hero__img {

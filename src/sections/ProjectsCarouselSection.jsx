@@ -63,7 +63,7 @@ export default function ProjectsSection() {
                       title={project.name}
                       link1={project.link1}
                       link2={project.link2}
-                      img={project.img}
+                      image={project.image}
                       desc={project.desc}
                       stacks={project.stacks}
                     />
@@ -89,6 +89,10 @@ const ProjectSectionStyle = styled.div`
   padding: 2rem 0;
   width: 100%;
   display: grid;
+  .swiper-wrapper {
+    /* background-color: blue; */
+    /* grid-gap: 100px; */
+  }
   .projects__allItems {
     display: grid;
     gap: 3rem;
@@ -103,7 +107,7 @@ const ProjectSectionStyle = styled.div`
     position: absolute;
     height: 50px;
     width: 50px;
-    background-color: var(--brand-color);
+    background-color: var(--secondary-color);
     z-index: 10;
     right: 60px;
     left: auto;

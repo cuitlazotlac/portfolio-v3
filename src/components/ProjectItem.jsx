@@ -3,11 +3,37 @@ import styled from "styled-components";
 
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-export default function ProjectItem({ title, desc, stacks, link1, link2 }) {
+export default function ProjectItem({
+  title,
+  desc,
+  stacks,
+  link1,
+  link2,
+  image,
+}) {
+  
+  function hover(element) {
+    element.setAttribute("src", "http://dummyimage.com/100x100/eb00eb/fff");
+  }
+
+  function unhover(element) {
+    element.setAttribute("src", "http://dummyimage.com/100x100/000/fff");
+  }
   return (
     <ProjectItemStyles>
       <div className="projectItem__info">
+        <Link to="/projects" className="projectItem__img">
+          {/* <img src={image} alt="project_img" /> */}
+          <img
+            id="my-img"
+            src="http://dummyimage.com/100x100/000/fff"
+            onmouseover="hover(this);"
+            onmouseout="unhover(this);"
+            alt="change"
+          />
+        </Link>
         <h3 className="projectItem__title">{title}</h3>
         <div className="projectItem__desc__section">
           <p className="projectItem__desc">{desc}</p>
@@ -60,6 +86,17 @@ const ProjectItemStyles = styled.div`
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
+  .projectItem__img {
+    width: 100%;
+    /* height: 100px; */
+    border-radius: 12px;
+    overflow: hidden;
+    display: inline-block;
+    border: 3px solid var(--gray-2);
+    img {
+      /* max-height: 100%; */
+    }
+  }
   .projectItem__links__section {
     border-top: 1px solid var(--font-color);
     svg {
@@ -83,7 +120,7 @@ const ProjectItemStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
-      height: 350px;
+      /* height: 350px; */
     }
   }
 `;

@@ -88,7 +88,7 @@ const ConfsquareSectionStyles = styled.div`
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 3px;
+    border-radius: 0.5px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;
@@ -97,8 +97,8 @@ const ConfsquareSectionStyles = styled.div`
     padding: 1rem;
     overflow: hidden;
     &:hover {
-      color: var(--black);
-      background-color: var(--brand-color);
+      /* color: var(--black); */
+      /* background-color: var(--brand-color); */
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;

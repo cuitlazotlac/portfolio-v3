@@ -1,8 +1,19 @@
+import crypto_watcher from "../images/test.gif";
+// import dapp_farmer from "../images/portfolios/dapp_farmer.svg";
+import weather_tracker from "../images/portfolios/carb_one.svg";
+import mex_mtl from "../images/test.gif";
+import anime_library from "../images/test.gif";
+import what_movie from "../images/test.gif";
+import covid_dashboard from "../images/test.gif";
+import carb_one from "../images/test.gif";
+import pygame from "../images/test.gif";
+
 // BLOCKCHAIN WEB3.0 PROJECTS
 const blockchain = [
   {
     id: 1,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/crypto-watcher-v2",
     link2: "https://cuitlazotlac.github.io/crypto-watcher-v2/",
     title: "Crypto Watcher",
@@ -12,6 +23,7 @@ const blockchain = [
   {
     id: 2,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/twitter-clone",
     link2:
       "https://ipfs.fleek.co/ipfs/QmcFvYSMft7okugk5KarYf8Muw2jECThoEcUhruvEzvg7Q/",
@@ -22,6 +34,7 @@ const blockchain = [
   {
     id: 3,
     category: "DeFi",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/defi_app",
     link2: "https://defi-dapp-token-farm.herokuapp.com/",
     title: "DeFi DApp Token Farm",
@@ -31,6 +44,7 @@ const blockchain = [
   {
     id: 4,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/eth-sign-in",
     link2: "https://cuitlazotlac.github.io/eth-sign-in/",
     title: "ETH SignIn",
@@ -40,6 +54,7 @@ const blockchain = [
   {
     id: 5,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/full-mint-website",
     link2: "https://cuitlazotlac.github.io/full-mint-website/",
     title: "NFT Mint Website",
@@ -49,6 +64,7 @@ const blockchain = [
   {
     id: 6,
     category: "Analytics",
+    image: crypto_watcher,
     link1: "",
     link2: "https://dune.com/cuitlazotlac",
     title: "Dune Dashboards and Data Analysis",
@@ -58,6 +74,7 @@ const blockchain = [
   {
     id: 7,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/WeatherChecker",
     link2: "https://weatherchecker1.herokuapp.com/",
     title: "Weather Checker",
@@ -67,6 +84,7 @@ const blockchain = [
   {
     id: 8,
     category: "API",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
     link2: "https://mtlmex-api.herokuapp.com/",
     title: "MTL Mex API",
@@ -76,6 +94,7 @@ const blockchain = [
   {
     id: 9,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/anime-library",
     link2: "https://anime-library1.herokuapp.com/",
     title: "Anime Library",
@@ -85,6 +104,7 @@ const blockchain = [
   {
     id: 10,
     category: "Vue",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/what-movie",
     link2: "https://what-movies.herokuapp.com/",
     title: "What Movie ?",
@@ -94,6 +114,7 @@ const blockchain = [
   {
     id: 11,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/covid-tracker-dashboard",
     link2: "https://www.google.com",
     title: "Covid Tracker Dashboard",
@@ -103,6 +124,7 @@ const blockchain = [
   {
     id: 12,
     category: "React",
+    image: crypto_watcher,
     link1: "https://github.com/climate-stuff/carbon-calculator",
     link2: "",
     title: "Carb One Caculator",

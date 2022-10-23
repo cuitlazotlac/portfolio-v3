@@ -15,11 +15,14 @@ export default function ContactBanner() {
           <h3 className="contactBanner__heading">
             {t("Contact.SectionTitle")}
           </h3>
-          <ContactButton
+          <p className="contactBanner__subheading">
+            {t("Contact.SectionDescription")}{" "}
+          </p>
+          {/* <ContactButton
             className="button-section"
             btnText={t("Contact.Button")}
             btnLink="/contact"
-          />
+          /> */}
         </div>
       </div>
     </ContactBannerStyles>
@@ -32,28 +35,29 @@ const ContactBannerStyles = styled.div`
   .contactBanner__heading {
     font-size: 4rem;
     margin-bottom: 2rem;
-    position: relative;
-    color: #256456;
+    /* position: relative; */
+    /* color: #256456; */
   }
 
   .contactBanner__subheading {
-    position: relative;
+    /* position: relative; */
     font-family: var(--stacks-font);
     font-weight: 200;
     font-size: 1.8rem;
-    color: #256456;
+    /* color: #256456; */
   }
 
   .contactBanner__wrapper {
-    border-radius: 8px;
+    border-radius: 2px;
     padding: 5rem 0rem;
     text-align: center;
     position: relative;
 
     &::before {
       content: "";
-      border-radius: 8px;
-      background-image: url("https://feature.undp.org/beyond-bitcoin/assets/ahbYpiFf0Q/block4.gif");
+      border-radius: 2px;
+      /* background-image: url("https://feature.undp.org/beyond-bitcoin/assets/ahbYpiFf0Q/block4.gif"); */
+      border: 1px solid var(--brand-color);
       background-size: cover;
       background-position: center;
       position: absolute;
@@ -63,8 +67,18 @@ const ContactBannerStyles = styled.div`
       left: 0px;
       opacity: 0.75;
     }
+
+    &:hover {
+      /* color: var(--black); */
+      /* background-color: var(--brand-color); */
+      transform: scale(1.1);
+      transform: translate(7px, -7px);
+      transform-style: preserve-3d;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 5px 10px var(--shadow-color);
+    }
   }
-  .layer {
+  /* .layer {
     border-radius: 8px;
     background-color: rgba(1, 227, 180, 0.37);
     position: absolute;
@@ -72,7 +86,7 @@ const ContactBannerStyles = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-  }
+  } */
 
   @media only screen and (max-width: 768px) {
     .contactBanner__heading {
