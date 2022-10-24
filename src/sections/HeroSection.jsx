@@ -111,15 +111,15 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     text-align: left;
-    font-size: 2.4rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 700;
     span {
       display: inline-block;
       width: 100%;
       color: red;
     }
     .hero__name {
-      font-size: 5rem;
+      font-size: 8rem;
       color: var(--brand-color);
     }
   }

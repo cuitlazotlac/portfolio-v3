@@ -5,6 +5,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+import HoverImage from "react-hover-image";
+
 export default function ProjectItem({
   title,
   desc,
@@ -12,28 +14,16 @@ export default function ProjectItem({
   link1,
   link2,
   image,
+  animation,
 }) {
-  
-  function hover(element) {
-    element.setAttribute("src", "http://dummyimage.com/100x100/eb00eb/fff");
-  }
-
-  function unhover(element) {
-    element.setAttribute("src", "http://dummyimage.com/100x100/000/fff");
-  }
   return (
     <ProjectItemStyles>
       <div className="projectItem__info">
         <Link to="/projects" className="projectItem__img">
           {/* <img src={image} alt="project_img" /> */}
-          <img
-            id="my-img"
-            src="http://dummyimage.com/100x100/000/fff"
-            onmouseover="hover(this);"
-            onmouseout="unhover(this);"
-            alt="change"
-          />
+          <HoverImage src={image} hoverSrc={animation} />
         </Link>
+
         <h3 className="projectItem__title">{title}</h3>
         <div className="projectItem__desc__section">
           <p className="projectItem__desc">{desc}</p>
@@ -92,7 +82,7 @@ const ProjectItemStyles = styled.div`
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid var(--gray-2);
+    /* border: 3px solid var(--gray-2); */
     img {
       /* max-height: 100%; */
     }
