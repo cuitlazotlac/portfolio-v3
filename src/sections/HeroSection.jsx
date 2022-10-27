@@ -11,6 +11,7 @@ import { FaMailBulk } from "react-icons/fa";
 import Typical from "../components/shared/Typical";
 
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion/dist/framer-motion";
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -19,28 +20,43 @@ export default function HeroSection() {
     <HeroStyles>
       <div className="hero">
         <div className="container">
-          <h1 className="hero__heading">
-            <span>
-              <Typical
-                as="h1"
-                main_title={t("Hero.Headline0")}
-                title_1={t("Hero.Headline1")}
-                title_2={t("Hero.Headline2")}
-                title_3={t("Hero.Headline3")}
-                title_4={t("Hero.Headline4")}
-                title_5={t("Hero.Headline5")}
-              />
-            </span>
-            <span className="hero__name">{t("Hero.Title")}</span>
-            <span className="hero__name">{t("Hero.SubTitle")}</span>
-          </h1>
+          <motion.div
+            initial={{ y: "100%", opacity: 1 }}
+            animate={{ y: "0%", opacity: 1 }}
+            transition={{ duration: 0.77, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
+          >
+            <h1 className="hero__heading">
+              <span>
+                <Typical
+                  as="h1"
+                  main_title={t("Hero.Headline0")}
+                  title_1={t("Hero.Headline1")}
+                  title_2={t("Hero.Headline2")}
+                  title_3={t("Hero.Headline3")}
+                  title_4={t("Hero.Headline4")}
+                  title_5={t("Hero.Headline5")}
+                />
+              </span>
+              <span className="hero__name">{t("Hero.Title")}</span>
+              <span className="hero__name">{t("Hero.SubTitle")}</span>
+            </h1>
+          </motion.div>
           <br />
-          <div className="hero__info">
-            <p>{t("Hero.Description_Part1")}</p>
-            <br />
-            <p>{t("Hero.Description_Part2")}</p>
-            <br />
-          </div>
+          <motion.div
+            initial={{ y: "100%", opacity: 1 }}
+            animate={{ y: "0%", opacity: 1 }}
+            transition={{ duration: 0.79, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
+          >
+            <div className="hero__info">
+              <p>{t("Hero.Description_Part1")}</p>
+              <br />
+              <p>{t("Hero.Description_Part2")}</p>
+              <br />
+            </div>
+          </motion.div>
+
           <div className="hero__social">
             <div className="hero__social__indicator">
               <p>{t("Hero.Connect")}</p>
