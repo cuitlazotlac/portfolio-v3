@@ -12,7 +12,6 @@ import Portfolios from "./pages/Portfolios";
 import ReactGA from "react-ga";
 
 export default function App() {
-  
   ReactGA.initialize("UA-208876305-1");
   //to report page view
   ReactGA.pageview(window.location.pathname + window.location.search);

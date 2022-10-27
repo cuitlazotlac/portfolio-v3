@@ -13,6 +13,7 @@ import { FaAngellist } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion/dist/framer-motion";
 
 export default function ContactSection() {
   const { t } = useTranslation();
@@ -20,46 +21,60 @@ export default function ContactSection() {
   return (
     <ContactSectionStyle>
       <div className="container">
-        <SectionTitle
-          heading={t("Contact.MainTitle")}
-          subheading={t("Contact.SubsectionTitle")}
-        />
-        <div className="contactSection__wrapper">
-          <div className="left">
-            <ContactInfoItem
-              icon={<FaGithub />}
-              text="github.com/cuitlazotlac"
-              cardLink="https://github.com/cuitlazotlac"
-            />
-            <ContactInfoItem
-              icon={<FaLinkedin />}
-              text="linkedin.com/in/hayssem-elsayed"
-              cardLink="https://www.linkedin.com/in/hayssem-elsayed/"
-            />
-            <ContactInfoItem
-              icon={<FaBehance />}
-              text="behance.net/cuitlazotlac"
-              cardLink="https://www.behance.net/cuitlazotlac"
-            />
+        <motion.div
+          initial={{ y: "100%", opacity: 1 }}
+          animate={{ y: "0%", opacity: 1 }}
+          transition={{ duration: 0.77, ease: "easeOut" }}
+          exit={{ opacity: 1 }}
+        >
+          <SectionTitle
+            heading={t("Contact.MainTitle")}
+            subheading={t("Contact.SubsectionTitle")}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ y: "100%", opacity: 1 }}
+          animate={{ y: "0%", opacity: 1 }}
+          transition={{ duration: 0.79, ease: "easeOut" }}
+          exit={{ opacity: 1 }}
+        >
+          <div className="contactSection__wrapper">
+            <div className="left">
+              <ContactInfoItem
+                icon={<FaGithub />}
+                text="github.com/cuitlazotlac"
+                cardLink="https://github.com/cuitlazotlac"
+              />
+              <ContactInfoItem
+                icon={<FaLinkedin />}
+                text="linkedin.com/in/hayssem-elsayed"
+                cardLink="https://www.linkedin.com/in/hayssem-elsayed/"
+              />
+              <ContactInfoItem
+                icon={<FaBehance />}
+                text="behance.net/cuitlazotlac"
+                cardLink="https://www.behance.net/cuitlazotlac"
+              />
+            </div>
+            <div className="right">
+              <ContactInfoItem
+                icon={<FaCodepen />}
+                text="codepen.io/cuitlazotlac"
+                cardLink="https://codepen.io/cuitlazotlac"
+              />
+              <ContactInfoItem
+                icon={<FaAngellist />}
+                text="angel.co/u/hayssem-elsayed"
+                cardLink="https://angel.co/u/hayssem-elsayed"
+              />
+              <ContactInfoItem
+                icon={<FaMailBulk />}
+                text="heyhayssem@gmail.com"
+                cardLink="mailto:heyhayssem@gmail.com"
+              />
+            </div>
           </div>
-          <div className="right">
-            <ContactInfoItem
-              icon={<FaCodepen />}
-              text="codepen.io/cuitlazotlac"
-              cardLink="https://codepen.io/cuitlazotlac"
-            />
-            <ContactInfoItem
-              icon={<FaAngellist />}
-              text="angel.co/u/hayssem-elsayed"
-              cardLink="https://angel.co/u/hayssem-elsayed"
-            />
-            <ContactInfoItem
-              icon={<FaMailBulk />}
-              text="heyhayssem@gmail.com"
-              cardLink="mailto:heyhayssem@gmail.com"
-            />
-          </div>
-        </div>
+        </motion.div>
       </div>
     </ContactSectionStyle>
   );

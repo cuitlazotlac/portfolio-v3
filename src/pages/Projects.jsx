@@ -8,6 +8,7 @@ import Filter from "../components/Filter";
 import ProjectsInfo from "../assets/data/blockchain";
 
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const allButtons = [
   "All",
@@ -54,40 +55,54 @@ export default function Projects() {
     <>
       <ProjectStyle>
         <div className="container">
-          <SectionTitle
-            heading={t("Project.SectionTitle")}
-            subheading={t("Project.SectionDescription")}
-          />
-          <div className="projects__searchBar">
-            <form>
-              <input
-                type="text"
-                value={searchText}
-                onChange={handleChange}
-                placeholder={t("Project.Placeholder")}
-              />
-              <MdSearch className="searchIcon" />
-            </form>
-          </div>
-          <br />
-          <Filter filter={filter} button={button} />
+          <motion.div
+            initial={{ y: "100%", opacity: 1 }}
+            animate={{ y: "0%", opacity: 1 }}
+            transition={{ duration: 0.77, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
+          >
+            <SectionTitle
+              heading={t("Project.SectionTitle")}
+              subheading={t("Project.SectionDescription")}
+            />
+            <div className="projects__searchBar">
+              <form>
+                <input
+                  type="text"
+                  value={searchText}
+                  onChange={handleChange}
+                  placeholder={t("Project.Placeholder")}
+                />
+                <MdSearch className="searchIcon" />
+              </form>
+            </div>
+            <br />
+            <Filter filter={filter} button={button} />
+          </motion.div>
 
           <br />
           <br />
-          <div className="projects__allItems">
-            {projectsData.map((item) => (
-              <ProjectItem
-                key={item.id}
-                title={item.title}
-                desc={item.desc}
-                stacks={item.stack}
-                link1={item.link1}
-                link2={item.link2}
-                image={item.image}
-                animation={item.animatation}
-              />
-            ))}
-          </div>
+          <motion.div
+            initial={{ y: "100%", opacity: 1 }}
+            animate={{ y: "0%", opacity: 1 }}
+            transition={{ duration: 0.79, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
+          >
+            <div className="projects__allItems">
+              {projectsData.map((item) => (
+                <ProjectItem
+                  key={item.id}
+                  title={item.title}
+                  desc={item.desc}
+                  stacks={item.stack}
+                  link1={item.link1}
+                  link2={item.link2}
+                  image={item.image}
+                  animation={item.animatation}
+                />
+              ))}
+            </div>
+          </motion.div>
         </div>
       </ProjectStyle>
     </>

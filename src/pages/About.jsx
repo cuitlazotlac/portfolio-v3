@@ -4,8 +4,9 @@ import PText from "../components/shared/PText";
 import CredlyButton from "../components/CredlyButton";
 import SectionTitle from "../components/shared/SectionTitle";
 
-import Avatar from "../assets/images/avatar.svg";
 import Emoji from "../assets/emoji_avatar.mp4";
+
+import { motion } from "framer-motion/dist/framer-motion";
 
 // import AboutInfoItem from "../components/AboutInfoItem";
 // import ExperienceInfoItem from "../components/ExperienceInfoItem";
@@ -29,83 +30,104 @@ export default function About() {
   return (
     <>
       <AboutPageStyles>
-        <div className="container">
-          <SectionTitle
-            subheading={t("About.SectionDescription")}
-            heading={t("About.SectionTitle")}
-          />
-          <br />
-          <div className="top-section">
-            <div className="left">
-              <h4 className="about__heading">{t("About.Title")}</h4>
-              <div className="about__info">
-                <PText>
-                  {t("About.Paragraph1")}
-                  <br />
-                  <br />
-                  {t("About.Paragraph2")}
-                  <br />
-                  <br />
-                  {t("About.Paragraph2bis")}
-                  <br />
-                </PText>
-                <br />
-                <br />
-                <PText>
-                  <p className="paragraph">{t("About.ProductSkills")}</p>
-                  <div className="about-info">
-                    <div className="info-title">
-                      <p>• Product Strategy</p>
-                      <p>• User Interface Design</p>
-                      <p>• Stakeholder Management</p>
-                    </div>
-                    <div className="info">
-                      <p>• Data Analysis</p>
-                      <p>• A/B Testing</p>
-                      <p>• Cross-functional Team Leadership</p>
-                    </div>
-                  </div>
-                  <p className="paragraph">{t("About.TechSkills")}</p>
-                  <div className="about-info">
-                    <div className="info-title">
-                      <p>• HTML/CSS/Javascript</p>
-                      <p>• React</p>
-                      <p>• SQL</p>
-                    </div>
-                    <div className="info">
-                      <p>• Docker/Kubernetes</p>
-                      <p>• PowerBI</p>
-                      <p>• Git</p>
-                    </div>
-                  </div>
-                </PText>
-                {/* <WorkExperienceSection /> */}
-              </div>
-              <div className="button_row">
-                <a
-                  href="https://read.cv/hayssem_ve"
-                  target="_blank"
-                  rel="noreferrer"
+        <motion.div
+          initial={{ y: "100%", opacity: 1 }}
+          animate={{ y: "0%", opacity: 1 }}
+          transition={{ duration: 0.77, ease: "easeOut" }}
+          exit={{ opacity: 1 }}
+        >
+          <div className="container">
+            <SectionTitle
+              subheading={t("About.SectionDescription")}
+              heading={t("About.SectionTitle")}
+            />
+            <br />
+            <div className="top-section">
+              <div className="left">
+                <motion.div
+                  initial={{ y: "100%", opacity: 1 }}
+                  animate={{ y: "0%", opacity: 1 }}
+                  transition={{ duration: 0.79, ease: "easeOut" }}
+                  exit={{ opacity: 1 }}
                 >
-                  <button className="confsquare-btn">
-                    {t("About.Button")}
-                  </button>
-                </a>
-                <CredlyButton btnText="Download CV" btnLink="#" id="btn2" />
+                  <h4 className="about__heading">{t("About.Title")}</h4>
+                  <div className="about__info">
+                    <PText>
+                      {t("About.Paragraph1")}
+                      <br />
+                      <br />
+                      {t("About.Paragraph2")}
+                      <br />
+                      <br />
+                      {t("About.Paragraph2bis")}
+                      <br />
+                    </PText>
+                    <br />
+                    <br />
+                    <PText>
+                      <p className="paragraph">{t("About.ProductSkills")}</p>
+                      <div className="about-info">
+                        <div className="info-title">
+                          <p>• Product Strategy</p>
+                          <p>• User Interface Design</p>
+                          <p>• Stakeholder Management</p>
+                        </div>
+                        <div className="info">
+                          <p>• Data Analysis</p>
+                          <p>• A/B Testing</p>
+                          <p>• Cross-functional Team Leadership</p>
+                        </div>
+                      </div>
+                      <p className="paragraph">{t("About.TechSkills")}</p>
+                      <div className="about-info">
+                        <div className="info-title">
+                          <p>• HTML/CSS/Javascript</p>
+                          <p>• React</p>
+                          <p>• SQL</p>
+                        </div>
+                        <div className="info">
+                          <p>• Docker/Kubernetes</p>
+                          <p>• PowerBI</p>
+                          <p>• Git</p>
+                        </div>
+                      </div>
+                    </PText>
+                    {/* <WorkExperienceSection /> */}
+                  </div>
+                </motion.div>
+                <motion.div
+                  initial={{ y: "100%", opacity: 1 }}
+                  animate={{ y: "0%", opacity: 1 }}
+                  transition={{ duration: 0.83, ease: "easeOut" }}
+                  exit={{ opacity: 1 }}
+                >
+                  <div className="button_row">
+                    <a
+                      href="https://read.cv/hayssem_ve"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button className="confsquare-btn">
+                        {t("About.Button")}
+                      </button>
+                    </a>
+                    <CredlyButton btnText="Download CV" btnLink="#" id="btn2" />
+                  </div>
+                </motion.div>
               </div>
-            </div>
-            <div className="right">
-              <video
-                src={Emoji}
-                loop
-                autoPlay
-                className="video"
-                // name="Video Namse"
-              ></video>
-              {/* <img src={Avatar} alt="avatar" /> */}
+              <div className="right">
+                <video
+                  src={Emoji}
+                  loop
+                  autoPlay
+                  className="video"
+                  // name="Video Namse"
+                ></video>
+                {/* <img src={Avatar} alt="avatar" /> */}
+              </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </AboutPageStyles>
     </>
   );
