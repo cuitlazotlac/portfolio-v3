@@ -9,21 +9,25 @@ export default function ContactBanner() {
   return (
     <ContactBannerStyles>
       <div className="container">
-        <div className="contactBanner__wrapper">
-          <div className="layer"></div>
-          <p className="contactBanner__subheading">{t("Contact.Headline1")}</p>
-          <h3 className="contactBanner__heading">
-            {t("Contact.SectionTitle")}
-          </h3>
-          <p className="contactBanner__subheading">
-            {t("Contact.SectionDescription")}{" "}
-          </p>
-          {/* <ContactButton
+        <a href="/contact">
+          <div className="contactBanner__wrapper">
+            <div className="layer"></div>
+            <p className="contactBanner__subheading">
+              {t("Contact.Headline1")}
+            </p>
+            <h3 className="contactBanner__heading">
+              {t("Contact.SectionTitle")}
+            </h3>
+            <p className="contactBanner__subheading">
+              {t("Contact.SectionDescription")}{" "}
+            </p>
+            {/* <ContactButton
             className="button-section"
             btnText={t("Contact.Button")}
             btnLink="/contact"
           /> */}
-        </div>
+          </div>
+        </a>
       </div>
     </ContactBannerStyles>
   );

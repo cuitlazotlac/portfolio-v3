@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
   --background-color: #F3F2F3;
   --secondary-color: #F2EFEE;
   --third-color: #1F2124;
+  --fourth-color: #000000;
   --shadow-color: #3C3C3C;
   --font-color: #000000;
   --brand-color: #000000;
@@ -12,11 +13,13 @@ const GlobalStyles = createGlobalStyle`
   --btn-border-color: #000000;
   --icon-color: #000000;
   --white : white;
+  --footer-text-color: white;
 }
 .dark-theme{
   --background-color: #001421;
   --secondary-color: #082235;
   --third-color: #5B5C5D;
+  --fourth-color: #082235;
   --shadow-color: #4D638D;
   --font-color: #EDF2F6;
   --brand-color: #01E3B4;

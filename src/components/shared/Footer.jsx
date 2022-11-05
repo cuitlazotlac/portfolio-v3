@@ -77,7 +77,7 @@ export default function Footer() {
 }
 
 const FooterStyle = styled.div`
-  background-color: var(--secondary-color);
+  background-color: var(--fourth-color);
   // background-image: url("https://drive.google.com/file/d/1rerm1A_hlBCtEcayZP7vnHkSfjWYHaLS/view?usp=sharing");
   // background-image: url(${"logo"});
   background-position: center;
@@ -85,6 +85,9 @@ const FooterStyle = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
   font-size: 1.5rem;
+  p, h2, ul, li, a, svg {
+    color: var(--footer-text-color);
+  }
   .container {
     display: flex;
     gap: 3rem;
@@ -96,9 +99,10 @@ const FooterStyle = styled.div`
   .footer__col3,
   .footer__col4 {
     flex: 1;
+    color: var(--footer-text-color);
   }
   .footer__col1__title {
-    color: var(--brand-color);
+    color: var(--footer-text-color);
     font-size: 3rem;
     margin-bottom: 1rem;
   }
