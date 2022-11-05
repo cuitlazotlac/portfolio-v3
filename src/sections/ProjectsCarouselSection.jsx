@@ -64,6 +64,7 @@ export default function ProjectsSection() {
                       link1={project.link1}
                       link2={project.link2}
                       image={project.image}
+                      animation={project.animatation}
                       desc={project.desc}
                       stacks={project.stacks}
                     />

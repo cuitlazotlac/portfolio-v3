@@ -55,4 +55,7 @@ const NavigationStyled = styled.nav`
     width: 53px;
     transform: scale(1);
   }
+  svg {
+    fill: var(--white);
+  }
 `;
