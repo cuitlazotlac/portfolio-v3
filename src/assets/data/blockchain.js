@@ -7,12 +7,15 @@ import ethsignin from "../images/portfolios/ethsignin.png";
 import nftmint from "../images/portfolios/nftmint.png";
 import weatherchecker from "../images/portfolios/weatherchecker.png";
 import dune_analytics from "../images/portfolios/dune_analytics.png";
+import katakomb from "../images/portfolios/katakomb.png";
+import spread from "../images/portfolios/spread.png";
 
 // gif
 import cryptowatcher_gif from "../images/portfolios/cryptowatcher.gif";
 import nftmint_gif from "../images/portfolios/nftmint.gif";
 import weatherchecker_gif from "../images/portfolios/weatherchecker.gif";
 import dune_analytics_gif from "../images/portfolios/dune_analytics.gif";
+import katakomb_gif from "../images/portfolios/katakomb.gif";
 
 
 
@@ -32,8 +35,8 @@ const blockchain = [
   {
     id: 2,
     category: "React",
-    image: weather_tracker,
-    animatation: crypto_watcher,
+    image: spread,
+    animatation: spread,
     link1: "https://github.com/cuitlazotlac/twitter-clone",
     link2:
       "https://ipfs.fleek.co/ipfs/QmcFvYSMft7okugk5KarYf8Muw2jECThoEcUhruvEzvg7Q/",
@@ -56,7 +59,7 @@ const blockchain = [
     id: 4,
     category: "React",
     image: ethsignin,
-    animatation: crypto_watcher,
+    animatation: ethsignin,
     link1: "https://github.com/cuitlazotlac/eth-sign-in",
     link2: "https://cuitlazotlac.github.io/eth-sign-in/",
     title: "ETH SignIn",
@@ -103,7 +106,7 @@ const blockchain = [
     animatation: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
     link2: "https://mtlmex-api.herokuapp.com/",
-    title: "MTL Mex API",
+    title: "MTL MEX Restaurant API",
     desc: "🇲🇽🌮 An API of the Mexican restaurants in Montréal 🇨🇦 This need to be constantly updated with the best addresses that you know so do not hesitate to contribute 🤠",
     stack: "javascript, heroku, jsondb",
   },
@@ -120,14 +123,14 @@ const blockchain = [
   },
   {
     id: 10,
-    category: "Vue",
-    image: weather_tracker,
-    animatation: crypto_watcher,
-    link1: "https://github.com/cuitlazotlac/what-movie",
-    link2: "https://what-movies.herokuapp.com/",
-    title: "What Movie ?",
-    desc: "🎥 🍿 A very simple web application displaying movies information using the OMDB API (https://www.omdbapi.com/)",
-    stack: "vuejs, api, javascript",
+    category: "DApp",
+    image: katakomb,
+    animatation: katakomb_gif,
+    link1: "https://github.com/cuitlazotlac/katakomb",
+    link2: "https://mtlmex-api.herokuapp.com/",
+    title: "Katakomb",
+    desc: "🪦⛓️ This is a full stack DApp allowing ETH transactions (Goerli) just to interact with smart contract and wallets.",
+    stack: "react, vite, ethers, solidity",
   },
   {
     id: 11,

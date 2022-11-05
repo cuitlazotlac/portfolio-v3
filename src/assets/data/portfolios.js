@@ -1,12 +1,4 @@
-import crypto_watcher from "../images/portfolios/crypto_watcher.svg";
-// import dapp_farmer from "../images/portfolios/dapp_farmer.svg";
-import weather_tracker from "../images/portfolios/weather_tracker.svg";
-import mex_mtl from "../images/portfolios/mex_mtl.svg";
-import anime_library from "../images/portfolios/anime_library.svg";
-import what_movie from "../images/portfolios/what_movie.svg";
-import covid_dashboard from "../images/portfolios/covid_dashboard.svg";
-import carb_one from "../images/portfolios/carb_one.svg";
-import pygame from "../images/portfolios/pygame.svg";
+import crypto_watcher from "../images/portfolios/cryptowatcher.png";
 
 //PORTFOLIO PAGE PROJECTS
 const portfolios = [
@@ -23,7 +15,7 @@ const portfolios = [
   {
     id: 2,
     category: "React",
-    image: weather_tracker,
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/WeatherChecker",
     link2: "https://weatherchecker1.herokuapp.com/",
     title: "Weather Checker",
@@ -33,7 +25,7 @@ const portfolios = [
   {
     id: 3,
     category: "API",
-    image: mex_mtl,
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
     link2: "https://mtlmex-api.herokuapp.com/",
     title: "MTL Mex API",
@@ -43,7 +35,7 @@ const portfolios = [
   {
     id: 4,
     category: "React",
-    image: anime_library,
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/anime-library",
     link2: "https://anime-library1.herokuapp.com/",
     title: "Anime Library",
@@ -53,7 +45,7 @@ const portfolios = [
   {
     id: 5,
     category: "Vue",
-    image: what_movie,
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/what-movie",
     link2: "https://what-movies.herokuapp.com/",
     title: "What Movie ?",
@@ -63,7 +55,7 @@ const portfolios = [
   {
     id: 6,
     category: "React",
-    image: covid_dashboard,
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/covid-tracker-dashboard",
     link2: "https://www.google.com",
     title: "Covid Tracker Dashboard",
@@ -73,7 +65,7 @@ const portfolios = [
   {
     id: 7,
     category: "Open Source Project",
-    image: carb_one,
+    image: crypto_watcher,
     link1: "https://github.com/climate-stuff/carbon-calculator",
     link2: "https://www.google.com",
     title: "Carb One Caculator",
@@ -83,7 +75,7 @@ const portfolios = [
   {
     id: 8,
     category: "Python",
-    image: pygame,
+    image: crypto_watcher,
     link1: "https://github.com/cuitlazotlac/pygamon",
     link2: "https://www.google.com",
     title: "PyGamon",

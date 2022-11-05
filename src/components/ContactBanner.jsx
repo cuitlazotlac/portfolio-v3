@@ -46,7 +46,7 @@ const ContactBannerStyles = styled.div`
   .contactBanner__subheading {
     /* position: relative; */
     font-family: var(--stacks-font);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.8rem;
     /* color: #256456; */
   }

@@ -116,7 +116,7 @@ export default function About() {
                 </motion.div>
               </div>
               <div className="right">
-                <video
+                <video muted
                   src={Emoji}
                   loop
                   autoPlay
@@ -192,7 +192,7 @@ const AboutPageStyles = styled.div`
     .info-title,
     .info {
       p {
-        font-weight: 300;
+        font-weight: 400;
         @media screen and (max-width: 670px) {
           font-size: 1.6rem;
         }
