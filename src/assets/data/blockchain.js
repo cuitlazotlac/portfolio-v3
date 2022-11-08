@@ -9,6 +9,9 @@ import weatherchecker from "../images/portfolios/weatherchecker.png";
 import dune_analytics from "../images/portfolios/dune_analytics.png";
 import katakomb from "../images/portfolios/katakomb.png";
 import spread from "../images/portfolios/spread.png";
+import animelibrary from "../images/portfolios/animelibrary.png";
+import dbapi from "../images/portfolios/dbapi.png";
+import defi_farm from "../images/portfolios/defi_farm.png";
 
 // gif
 import cryptowatcher_gif from "../images/portfolios/cryptowatcher.gif";
@@ -16,8 +19,6 @@ import nftmint_gif from "../images/portfolios/nftmint.gif";
 import weatherchecker_gif from "../images/portfolios/weatherchecker.gif";
 import dune_analytics_gif from "../images/portfolios/dune_analytics.gif";
 import katakomb_gif from "../images/portfolios/katakomb.gif";
-
-
 
 // BLOCKCHAIN WEB3.0 PROJECTS
 const blockchain = [
@@ -47,8 +48,8 @@ const blockchain = [
   {
     id: 3,
     category: "DeFi",
-    image: weather_tracker,
-    animatation: crypto_watcher,
+    image: defi_farm,
+    animatation: defi_farm,
     link1: "https://github.com/cuitlazotlac/defi_app",
     link2: "https://defi-dapp-token-farm.herokuapp.com/",
     title: "DeFi DApp Token Farm",
@@ -102,8 +103,8 @@ const blockchain = [
   {
     id: 8,
     category: "API",
-    image: weather_tracker,
-    animatation: crypto_watcher,
+    image: dbapi,
+    animatation: dbapi,
     link1: "https://github.com/cuitlazotlac/mtlmex-api",
     link2: "https://mtlmex-api.herokuapp.com/",
     title: "MTL MEX Restaurant API",
@@ -113,8 +114,8 @@ const blockchain = [
   {
     id: 9,
     category: "React",
-    image: weather_tracker,
-    animatation: crypto_watcher,
+    image: animelibrary,
+    animatation: animelibrary,
     link1: "https://github.com/cuitlazotlac/anime-library",
     link2: "https://anime-library1.herokuapp.com/",
     title: "Anime Library",
@@ -131,28 +132,6 @@ const blockchain = [
     title: "Katakomb",
     desc: "🪦⛓️ This is a full stack DApp allowing ETH transactions (Goerli) just to interact with smart contract and wallets.",
     stack: "react, vite, ethers, solidity",
-  },
-  {
-    id: 11,
-    category: "React",
-    image: weather_tracker,
-    animatation: crypto_watcher,
-    link1: "https://github.com/cuitlazotlac/covid-tracker-dashboard",
-    link2: "https://www.google.com",
-    title: "Covid Tracker Dashboard",
-    desc: "covid dashboard using https://covidtracking.com/data api",
-    stack: "react, api",
-  },
-  {
-    id: 12,
-    category: "React",
-    image: weather_tracker,
-    animatation: crypto_watcher,
-    link1: "https://github.com/climate-stuff/carbon-calculator",
-    link2: "",
-    title: "Carb One Caculator",
-    desc: "🪴👨🏽‍💻👨🏻‍💻 This is the story of two guys interested in environmental topics, building a carbon footprint calculator",
-    stack: "react, javascript",
   },
 ];
 
