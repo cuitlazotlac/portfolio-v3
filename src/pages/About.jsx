@@ -116,11 +116,15 @@ export default function About() {
                 </motion.div>
               </div>
               <div className="right">
-                <video muted
+                <video
+                  muted
                   src={Emoji}
                   loop
                   autoPlay
                   className="video"
+                  data-allowfullscreen="false"
+                  webkit-playsinline
+                  playsinline
                   // name="Video Namse"
                 ></video>
                 {/* <img src={Avatar} alt="avatar" /> */}

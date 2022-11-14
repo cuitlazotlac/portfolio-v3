@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import ContactButton from "./ContactButton";
+// import ContactButton from "./ContactButton";
 
 export default function ContactBanner() {
   const { t } = useTranslation();
@@ -12,9 +12,6 @@ export default function ContactBanner() {
         <a href="/contact">
           <div className="contactBanner__wrapper">
             <div className="layer"></div>
-            <p className="contactBanner__subheading">
-              {t("Contact.Headline1")}
-            </p>
             <h3 className="contactBanner__heading">
               {t("Contact.SectionTitle")}
             </h3>

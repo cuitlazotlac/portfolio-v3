@@ -1,7 +1,4 @@
 // images
-import crypto_watcher from "../images/test.gif";
-import weather_tracker from "../images/test.gif";
-
 import cryptowatcher from "../images/portfolios/cryptowatcher.png";
 import ethsignin from "../images/portfolios/ethsignin.png";
 import nftmint from "../images/portfolios/nftmint.png";
@@ -35,6 +32,17 @@ const blockchain = [
   },
   {
     id: 2,
+    category: "DApp",
+    image: katakomb,
+    animatation: katakomb_gif,
+    link1: "https://github.com/cuitlazotlac/katakomb",
+    link2: "https://mtlmex-api.herokuapp.com/",
+    title: "Katakomb",
+    desc: "🪦⛓️ This is a full stack DApp allowing ETH transactions (Goerli) just to interact with smart contract and wallets.",
+    stack: "react, vite, ethers, solidity",
+  },
+  {
+    id: 3,
     category: "React",
     image: spread,
     animatation: spread,
@@ -46,7 +54,7 @@ const blockchain = [
     stack: "react, ipfs, hardhat, solidity, nodejs, react-bootstrap",
   },
   {
-    id: 3,
+    id: 4,
     category: "DeFi",
     image: defi_farm,
     animatation: defi_farm,
@@ -57,7 +65,7 @@ const blockchain = [
     stack: "react, ethereum, truffle, solidity, web3js",
   },
   {
-    id: 4,
+    id: 5,
     category: "React",
     image: ethsignin,
     animatation: ethsignin,
@@ -68,7 +76,7 @@ const blockchain = [
     stack: "react, ceramic, idx, dids, ethers",
   },
   {
-    id: 5,
+    id: 6,
     category: "React",
     image: nftmint,
     animatation: nftmint_gif,
@@ -79,7 +87,7 @@ const blockchain = [
     stack: "react, Solidity, ethers, hardhat, chakraUI, Infura",
   },
   {
-    id: 6,
+    id: 7,
     category: "Analytics",
     image: dune_analytics,
     animatation: dune_analytics_gif,
@@ -90,7 +98,7 @@ const blockchain = [
     stack: "SQL",
   },
   {
-    id: 7,
+    id: 8,
     category: "React",
     image: weatherchecker,
     animatation: weatherchecker_gif,
@@ -101,7 +109,7 @@ const blockchain = [
     stack: "react, scss, openweathermap-api",
   },
   {
-    id: 8,
+    id: 9,
     category: "API",
     image: dbapi,
     animatation: dbapi,
@@ -112,7 +120,7 @@ const blockchain = [
     stack: "javascript, heroku, jsondb",
   },
   {
-    id: 9,
+    id: 10,
     category: "React",
     image: animelibrary,
     animatation: animelibrary,
@@ -121,17 +129,6 @@ const blockchain = [
     title: "Anime Library",
     desc: "⛩ 🏮 Simple Web application to display your favorite animes - manga.. information using the Unofficial MYANIMELIST API (https://jikan.moe/)",
     stack: "react, api, scss",
-  },
-  {
-    id: 10,
-    category: "DApp",
-    image: katakomb,
-    animatation: katakomb_gif,
-    link1: "https://github.com/cuitlazotlac/katakomb",
-    link2: "https://mtlmex-api.herokuapp.com/",
-    title: "Katakomb",
-    desc: "🪦⛓️ This is a full stack DApp allowing ETH transactions (Goerli) just to interact with smart contract and wallets.",
-    stack: "react, vite, ethers, solidity",
   },
 ];
 
