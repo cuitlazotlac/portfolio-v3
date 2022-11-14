@@ -247,6 +247,9 @@ const AboutPageStyles = styled.div`
     margin-top: 1rem;
   }
   @media only screen and (min-width: 892px) {
+    .right {
+      display: none;
+    }
     .certification__info__items {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -259,6 +262,9 @@ const AboutPageStyles = styled.div`
     text-transform: uppercase;
   }
   @media only screen and (max-width: 768px) {
+    .right {
+      display: none;
+    }
     padding: 10rem 0;
     .top-section {
       flex-direction: column;
