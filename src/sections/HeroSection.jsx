@@ -34,8 +34,6 @@ export default function HeroSection() {
                   title_1={t("Hero.Headline1")}
                   title_2={t("Hero.Headline2")}
                   title_3={t("Hero.Headline3")}
-                  title_4={t("Hero.Headline4")}
-                  title_5={t("Hero.Headline5")}
                 />
               </span>
               <span className="hero__name">{t("Hero.Title")}</span>

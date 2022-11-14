@@ -1,18 +1,12 @@
 {
-  "Home": {
-    "Title": "Hey soy Hayssem",
-    "Description": "Bitcoin PM"
-  },
   "Hero": {
     "Headline0": "Un poco sobre mí...",
-    "Headline1": "A Technical Product Manager",
-    "Headline2": "Actualmente construyendo la infraestructura para las criptomonedas",
-    "Headline3": "Aprender y entusiasmarse con la Web3.0",
-    "Headline4": "Apasionado del análisis de datas",
-    "Headline5": "In love with beautiful interfaces",
+    "Headline1": "Actualmente construyendo productos para los mineros de criptomonedas",
+    "Headline2": "Aprender y entusiasmarse de la Web3",
+    "Headline3": "Apasionado del análisis de datas",
     "Title": "Hey soy Hayssem 👋",
-    "Description_Part1": "Director técnico de productos con pasión por el web development, el análisis de datass y el diseño. Me encanta construir ( y ocasionalmente develop ) experiencias digitales asombrosas con entusiasmo por ayudar y alinear los requisitos para ofrecer resultados significativos.",
-    "Description_Part2": "Actualmente, estoy trabajando en Société Générale Investment Banking centrado en la construcción de productos web internos e innovadores. Además, soy el cofundador de Confsquare, una nueva forma de organizar tu evento y reunirte con tu comunidad.",
+    "Description_Part1": "Me apasiona el desarrollo web, el análisis de datos y el diseño de productos. Me encanta construir ( y ocasionalmente desarrollar) experiencias digitales asombrosas con la motivación de ayudar y alinear los requisitos para ofrecer resultados significativos.",
+    "Description_Part2": "Actualmente, estoy trabajando en Société Générale Investment Banking enfocada en la construcción de productos web internos e innovadores. Además, soy el cofundador de Confsquare, una nueva forma de organizar tu evento y reunirte con tu comunidad.",
     "Connect": "Connect",
     "Scroll": "Scroll",
     "WorksButton": "Revisa mi trabajo"
@@ -26,7 +20,7 @@
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
-    "Description": "Technical Product Manager actualmente construyendo productos para mineros de criptomonedas y aprendiendo sobre herramientas Web3.0.",
+    "Description": "Technical Product Manager actualmente construyendo productos para mineros de criptomonedas y aprendiendo sobre herramientas Web3.",
     "Section": "Sections",
     "Social Links": "Social Links",
     "English": "Ingles 🇨🇦",
@@ -45,130 +39,36 @@
     "SectionTitle": "Experiencia",
     "SectionDescription": "Cosas que he aprendido en el camino",
     "Title1": "Product Management",
-    "Description1": "Más de 6 años de experiencia trabajando en productos de alto impacto para usuarios y desarrolladores, incluyendo múltiples aplicaciones web, APIs y plataformas.",
+    "Description1": "Más de 6 años de experiencia trabajando en productos de alto impacto para usuarios y desarrolladores, incluyendo aplicaciones web, APIs y SDKs.",
     "Title2": "Interface Design",
-    "Description2": "Tengo ganas de interactuar con mis clientes para recoger sus opiniones, para construir ideas de concepto de diseño a través de bocetos, prototipos y wireframes.",
+    "Description2": "Tengo ganas de interactuar con mis clientes para recoger sus opiniones, para construir ideas de conceptos de diseño a través de bocetos, prototipos y wireframes.",
     "Title3": "Data Analysis",
-    "Description3": "A lo largo de mi pasión por las bases de datos y los modelos de datos, he adquirido fluidez con la recopilación de datos cualitativos y cuantitativos y las metodologías de toma de decisiones."
+    "Description3": "A lo largo de mi pasión por las bases de datos y los modelos de datos, he adquirido soltura con la recopilación de datos cualitativos y cuantitativos y las metodologías de toma de decisiones."
   },
   "About": {
     "SectionTitle": "About",
     "SectionDescription": "Algunas palabras sobre mí y mi journey",
     "Title": "Technical Product Manager + Product Owner & Scrum Master Certified",
-    "Paragraph1": "Director de productos apasionado con más de seis años de experiencia práctica liderando funciones, productos e iniciativas digitales de éxito. Dirijo proyectos, sprints, asegurando la entrega de alta calidad, ejerciendo la gestión del equipo de colaboración y de las partes interesadas. Me esfuerzo por estar siempre al día en diferentes temas, incluyendo la codificación y el diseño, para poder entregar y discutir con todas las partes interesadas.",
-    "Paragraph2": "Me alejé de un camino tradicional y exploré mi creatividad, probando mis manos en varias técnicas y tecnologías. Para mí, la gestión de productos es algo más que una profesión y trato de profundizar en ella. Hoy en día, me gusta utilizar mis habilidades de pensamiento crítico, empatía y creatividad para crear soluciones viables e impactantes.",
-    "Paragraph3": "Interface Design",
-    "Button": "Comprobar el currículum",
-    "Skill": "Skills",
-    "Experience": "Experiences",
-    "Certification": "Certifications",
-    "Education": "Education"
+    "Paragraph1": "Dirijo productos, proyectos y sprints, asegurando una entrega de alta calidad, así como ejerciendo una gestión colaborativa del equipo y de las partes interesadas.",
+    "Paragraph2": "Me esfuerzo por estar siempre al día en diferentes temas, incluyendo la codificación y el diseño, para poder entregar y discutir con todas las partes interesadas.",
+    "Paragraph2bis": "Si avanzamos hasta hoy, he tenido el privilegio de trabajar en un banco corporativo y de inversión internacional, en una compañía de seguros francesa, en un banco privado y en mi propia empresa. En la actualidad me dedico a crear productos y experiencias digitales accesibles e inclusivos en una empresa emergente de criptomonedas.",
+    "ProductSkills": "Lo que he aprendido creando productos :",
+    "TechSkills": "Tecnologías con las que he trabajado :"
   },
   "ProjectSwiper": {
-    "SectionTitle": "Projects",
-    "SectionDescription": "Some of my recent works"
+    "SectionTitle": "Proyectos",
+    "SectionDescription": "Algunos de mis trabajos recientes",
+    "More": "Ver más proyectos.."
   },
   "Project": {
-    "SectionTitle": "DApps & Smart Contracts",
-    "SectionDescription": "Small developments built learn about Bslockchain and Web3.0",
-    "Placeholder": "Search for a project..."
-  },
-  "Portfolio": {
-    "Button": "All my projects",
-    "SectionTitle": "Web development",
-    "SectionDescription": "Few small applications to practice web development"
-  },
-  "Experience0": {
-    "Title": "Business Analyst",
-    "Company": "Société Générale | Paris, FRANCE",
-    "Period": "07/2016/10/2017",
-    "Desc1": "• Coordinated with business owners to define, track, build new reports and KPI’s.",
-    "Desc2": "• Decided which metrics would most likely help the sales teams in their activity and increase their performance.",
-    "Desc3": "",
-    "Desc4": "",
-    "Desc5": "",
-    "Stacks": "SAP Business Object, Trade Finance, Apache Spark, Hadoop"
-  },
-  "Experience1": {
-    "Title": "Technical Project Manager",
-    "Company": "BNP Paribas Cardif | Paris, FRANCE",
-    "Period": "10/2017 - 10/2018",
-    "Desc1": "• Designed and led a team of 3 engineers to develop and deploy a data warehouse.",
-    "Desc2": "• Deployed to new web product within 7 months, reducing TTM by 21% over reviewing the infrastructure architecture and software deployment process.",
-    "Desc3": "",
-    "Desc4": "",
-    "Desc5": "",
-    "Stacks": "Angular 5, Java Spring, SAP Business Object"
-  },
-  "Experience2": {
-    "Title": "Product Manager | Security & Facilities System",
-    "Company": "Société Générale Corporate & Investment Banking | Montréal, CANADA",
-    "Period": "10/2018 - 10/2019",
-    "Desc1": "• Designed and led the division’s new product strategy (with around $1M budget).",
-    "Desc2": "• Introduced Scrum and led daily meetings of five people.",
-    "Desc3": "• Deployed API that increased consumption of data by 48%.",
-    "Desc4": "• Designed the perimeter architecture that resulted in a 56% infrastructure costs reduction.",
-    "Desc5": "",
-    "Stacks": "Angular, Java Spring, Docker, Kubernetes, Jenkins, PowerBI, SRSS, Microsoft SQL Server"
-  },
-  "Experience3": {
-    "Title": "Product Manager | Innovation & New Products",
-    "Company": "Société Générale Corporate & Investment Banking | Montréal, CANADA",
-    "Period": "10/2019 - Current",
-    "Desc1": "• Managed a portfolio of 4 products from ideation to launch.",
-    "Desc2": "• Gathered metrics before and after product launch, visible through dashboards.",
-    "Desc3": "• Designed wireframes and built prototypes of web applications.",
-    "Desc4": "• Unlocked the budget for 2 new products by successfully pitching top execs.",
-    "Desc5": "• Decreased feature deployment time by 33% by building CI/CD pipelines.",
-    "Stacks": "React, Python, Kubernetes, Jenkins,  Grafana"
-  },
-  "Experience4": {
-    "Title": "IT & Operations Manager",
-    "Company": "Talan Conseil Canada | Montreal, CAN",
-    "Period": "10/2020 - Current",
-    "Desc1": "• Defined a global consultant follow-up strategy for the company's most important client.",
-    "Desc2": "• Designed a personalized career plan for each of the resources (+30 consultants).",
-    "Desc3": "• Reached business objectives by becoming the second most important supplier for our customers.",
-    "Desc4": "",
-    "Desc5": "",
-    "Stacks": ""
-  },
-  "Education1": {
-    "Title": "Master's degree - Computer Science Project & Software Development",
-    "Company": "Université de Paris VII - Denis Diderot | 2016-2017"
-  },
-  "Certification": {
-    "Title10": "IBM Blockchain Foundation Developer V2",
-    "Company10": "IBM | 10/2021",
-    "Title9": "IBM Blockchain Essentials V2",
-    "Company9": "IBM | 10/2021",
-    "Title8": "Certified Blockchain Expert",
-    "Company8": "Blockchain Council | 09/2021",
-    "Title7": "Certified Cryptocurrency Expert",
-    "Company7": "Blockchain Council | 08/2021",
-    "Title6": "Foundations of User Experience (UX) Design",
-    "Company6": "Google | 08/2021",
-    "Title5": "Professional Scrum Product Owner II (PSPO2)",
-    "Company5": "Scrum.org | 03/2021",
-    "Title4": "ITIL v4 Foundation",
-    "Company4": "PeopleCert/Axelos | 01/2021",
-    "Title3": "Professional Scrum Product Owner I (PSPO1)",
-    "Company3": "Scrum.org | 11/2020",
-    "Title2": "Professional Scrum Master I (PSM1)",
-    "Company2": "Scrum.org | 10/2020",
-    "Title1": "RPA Developer Level 2 - Orchestrator",
-    "Company1": "UIPath | 06/2019",
-    "Title0": "RPA Developer Foundation Training",
-    "Company0": "UIPath | 06/2019"
+    "SectionTitle": "Proyectos",
+    "SectionDescription": "Construido para practicar el desarrollo web centrado en la Web3",
+    "Placeholder": "Buscar un proyecto..."
   },
   "Contact": {
     "MainTitle": "Contact",
-    "SubsectionTitle": "My other contributions",
-    "SectionTitle": "Go check my Social Media",
-    "SectionDescription": "",
-    "Button": "Contact Me !",
-    "Headline1": "",
-    "Headline2": "or maybe you prefer a 🍜",
-    "Headline3": "okay, let's just chat (not even a 🥡 ?)"
+    "SubsectionTitle": "Pongámonos en contacto",
+    "SectionTitle": "¿Preguntas sobre mi trabajo?",
+    "SectionDescription": "Let's chat 🐱"
   }
 }

@@ -1,24 +1,14 @@
 import { v4 as uuidv4 } from "uuid";
-import test_image from "../images/test.gif";
 
 // images
-import crypto_watcher from "../images/test.gif";
-import weather_tracker from "../images/test.gif";
-
 import cryptowatcher from "../images/portfolios/cryptowatcher.png";
 import ethsignin from "../images/portfolios/ethsignin.png";
 import nftmint from "../images/portfolios/nftmint.png";
-import weatherchecker from "../images/portfolios/weatherchecker.png";
-import dune_analytics from "../images/portfolios/dune_analytics.png";
-import katakomb from "../images/portfolios/katakomb.png";
 import spread from "../images/portfolios/spread.png";
 
 // gif
 import cryptowatcher_gif from "../images/portfolios/cryptowatcher.gif";
 import nftmint_gif from "../images/portfolios/nftmint.gif";
-import weatherchecker_gif from "../images/portfolios/weatherchecker.gif";
-import dune_analytics_gif from "../images/portfolios/dune_analytics.gif";
-import katakomb_gif from "../images/portfolios/katakomb.gif";
 
 //CAROUSSEL PROJECTS
 const projects = [

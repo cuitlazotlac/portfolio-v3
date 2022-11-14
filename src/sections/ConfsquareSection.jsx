@@ -35,7 +35,7 @@ export default function ConfsquareSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="confsquare-btn">Learn More</button>
+                <button className="confsquare-btn">{t("Confsquare.ReadMore")}</button>
               </a>
             </div>
             {/* <Button
