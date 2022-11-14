@@ -117,17 +117,21 @@ export default function About() {
               </div>
               <div className="right">
                 <video
-                  muted
-                  src={Emoji}
+                  // muted
+                  // src={Emoji}
+                  // loop
+                  // autoPlay
+                  // className="video"
+                  // webkit-playsinline
+                  // playsinline
+                  // allowFullscreen="false"
+                  autoplay
                   loop
-                  autoPlay
-                  className="video"
-                  data-allowfullscreen="false"
+                  muted
+                  controls
                   webkit-playsinline
                   playsinline
-                  // name="Video Namse"
                 ></video>
-                {/* <img src={Avatar} alt="avatar" /> */}
               </div>
             </div>
           </div>
@@ -247,9 +251,6 @@ const AboutPageStyles = styled.div`
     margin-top: 1rem;
   }
   @media only screen and (min-width: 892px) {
-    .right {
-      display: none;
-    }
     .certification__info__items {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -262,9 +263,6 @@ const AboutPageStyles = styled.div`
     text-transform: uppercase;
   }
   @media only screen and (max-width: 768px) {
-    .right {
-      display: none;
-    }
     padding: 10rem 0;
     .top-section {
       flex-direction: column;
