@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.8fe270ed.chunk.js",
-    "main.js.map": "/static/js/main.8fe270ed.chunk.js.map",
+    "main.js": "/static/js/main.1c97c826.chunk.js",
+    "main.js.map": "/static/js/main.1c97c826.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0876572f.js",
     "runtime-main.js.map": "/static/js/runtime-main.0876572f.js.map",
     "static/css/2.9a40be86.chunk.css": "/static/css/2.9a40be86.chunk.css",
@@ -11,7 +11,7 @@
     "static/css/2.9a40be86.chunk.css.map": "/static/css/2.9a40be86.chunk.css.map",
     "static/js/2.c02cf0e4.chunk.js.LICENSE.txt": "/static/js/2.c02cf0e4.chunk.js.LICENSE.txt",
     "static/media/animelibrary.dfbe48e4.png": "/static/media/animelibrary.dfbe48e4.png",
-    "static/media/confsquare.7e673b42.svg": "/static/media/confsquare.7e673b42.svg",
+    "static/media/confsquare.8bab75db.svg": "/static/media/confsquare.8bab75db.svg",
     "static/media/credly.109e4a09.png": "/static/media/credly.109e4a09.png",
     "static/media/cryptowatcher.20a1fd44.gif": "/static/media/cryptowatcher.20a1fd44.gif",
     "static/media/cryptowatcher.cd0f01d0.png": "/static/media/cryptowatcher.cd0f01d0.png",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.0876572f.js",
     "static/css/2.9a40be86.chunk.css",
     "static/js/2.c02cf0e4.chunk.js",
-    "static/js/main.8fe270ed.chunk.js"
+    "static/js/main.1c97c826.chunk.js"
   ]
 }
