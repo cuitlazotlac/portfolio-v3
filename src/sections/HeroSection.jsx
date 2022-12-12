@@ -37,7 +37,14 @@ export default function HeroSection() {
                 />
               </span>
               <span className="hero__name">{t("Hero.Title")}</span>
-              <span className="hero__name">{t("Hero.SubTitle")}</span>
+              <span className="hero__name">
+                {t("Hero.SubTitle")}
+                {/* <span
+                  class="emoji moon"
+                  role="img"
+                  aria-label="moon phases"
+                ></span> */}
+              </span>
             </h1>
           </motion.div>
           <br />
@@ -143,6 +150,44 @@ const HeroStyles = styled.div`
     font-size: 2rem;
     font-weight: 400;
     text-align: left;
+  }
+  .emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .moon::after {
+    content: "🌕";
+    animation-name: moon;
+    animation-duration: 1s;
+  }
+  @keyframes moon {
+    12.5% {
+      content: "🌖";
+    }
+
+    25% {
+      content: "🌗";
+    }
+
+    37.5% {
+      content: "🌘 ";
+    }
+
+    50% {
+      content: "🌑";
+    }
+
+    62.5% {
+      content: "🌒";
+    }
+
+    75% {
+      content: "🌓";
+    }
+
+    87.5% {
+      content: "🌔";
+    }
   }
   .hero__social,
   .hero__scrollDown {

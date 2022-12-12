@@ -54,7 +54,7 @@ const ColStyle = styled.div`
     font-size: 1.5rem;
     font-weight: 200;
     &:hover {
-      color: var(--brand-color);
+      font-weight: bold;
     }
   }
 `;

@@ -92,7 +92,6 @@ export default function About() {
                         </div>
                       </div>
                     </PText>
-                    {/* <WorkExperienceSection /> */}
                   </div>
                 </motion.div>
                 <motion.div
@@ -117,20 +116,20 @@ export default function About() {
               </div>
               <div className="right">
                 <video
-                  // muted
-                  // src={Emoji}
-                  // loop
-                  // autoPlay
-                  // className="video"
-                  // webkit-playsinline
-                  // playsinline
-                  // allowFullscreen="false"
-                  autoplay
-                  loop
                   muted
-                  controls
+                  src={Emoji}
+                  loop
+                  autoPlay
+                  className="video"
                   webkit-playsinline
                   playsinline
+                  allowFullscreen="false"
+                  // autoplay
+                  // loop
+                  // muted
+                  // controls
+                  // webkit-playsinline
+                  // playsinline
                 ></video>
               </div>
             </div>
@@ -162,10 +161,6 @@ const AboutPageStyles = styled.div`
     border-radius: 300px;
     display: block;
     object-fit: contain;
-    /* background-color: var(
-      --token-444af1a9-093e-44b7-a4b0-bfe18cae8f73,
-      rgb(255, 255, 255)
-    ); */
     object-position: 50% 50%;
   }
   .about__subheading {
@@ -224,7 +219,6 @@ const AboutPageStyles = styled.div`
     overflow: hidden;
     &:hover {
       color: var(--black);
-      /* background-color: var(--shadow-color); */
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;
@@ -261,6 +255,9 @@ const AboutPageStyles = styled.div`
     margin-top: 4rem;
     font-size: 3.6rem;
     text-transform: uppercase;
+    .right {
+      display: none;
+    }
   }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
@@ -276,6 +273,9 @@ const AboutPageStyles = styled.div`
     }
     .about__info__heading {
       font-size: 3rem;
+    }
+    .right {
+      display: none;
     }
   }
 `;
