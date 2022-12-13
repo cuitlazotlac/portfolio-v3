@@ -22,7 +22,7 @@ const FilterStyled = styled.button`
   padding: 0.35em 1.5em;
   font-size: 1.5rem;
   font-family: var(--stacks-font);
-  border-radius: 2.5px;
+  border-radius: 1px;
   box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
   transition: all 0.4s ease-in-out;
   margin-right: 1.4rem;
