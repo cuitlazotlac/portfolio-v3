@@ -115,7 +115,7 @@ export default function About() {
                 </motion.div>
               </div>
               <div className="right">
-                <video
+                {/* <video
                   muted
                   src={Emoji}
                   loop
@@ -124,13 +124,7 @@ export default function About() {
                   webkit-playsinline
                   playsinline
                   allowFullscreen="false"
-                  // autoplay
-                  // loop
-                  // muted
-                  // controls
-                  // webkit-playsinline
-                  // playsinline
-                ></video>
+                ></video> */}
               </div>
             </div>
           </div>
@@ -203,13 +197,13 @@ const AboutPageStyles = styled.div`
     }
   }
   .confsquare-btn {
-    font-family: var(--main-font);
+    font-family: var(--stacks-font);
     color: var(--black);
     font-size: 1.7rem;
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 0.5px;
+    border-radius: 4px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;
