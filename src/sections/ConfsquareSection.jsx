@@ -83,12 +83,12 @@ const ConfsquareSectionStyles = styled.div`
     margin-top: 2rem;
   }
   .confsquare-btn {
-    font-family: var(--main-font);
+    font-family: var(--stacks-font);
     font-size: 1.7rem;
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 0.5px;
+    border-radius: 4px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;
