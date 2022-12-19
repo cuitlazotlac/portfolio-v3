@@ -9,6 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
 import Typical from "../components/shared/Typical";
+import Button from "../components/Button";
 
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion/dist/framer-motion";
@@ -59,6 +60,20 @@ export default function HeroSection() {
               <br />
               <p>{t("Hero.Description_Part2")}</p>
               <br />
+            </div>
+            <div>
+              <div className="buttons-row">
+                <Button
+                  btnText={t("Hero.ContactButton")}
+                  btnLink="/contact"
+                  outline
+                ></Button>
+                <Button
+                  btnText={t("Hero.ProjectButton")}
+                  btnLink="/projects"
+                  outline
+                ></Button>
+              </div>{" "}
             </div>
           </motion.div>
 
@@ -121,7 +136,7 @@ export default function HeroSection() {
 
 const HeroStyles = styled.div`
   .hero {
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 1000px;
     width: 100%;
     text-align: center;
@@ -225,6 +240,11 @@ const HeroStyles = styled.div`
     img {
       max-height: 70px;
     }
+  }
+  .buttons-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   .hero__social__text {
     ul {

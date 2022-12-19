@@ -10,7 +10,9 @@
     "Description_Part2": "Currently, I'm working at Société Générale Investment Banking focused on building internal and innovative web products. Additionally, I’m the Co-Founder of Confsquare, a new way to organize your event and gather with your community!",
     "Connect": "Connect",
     "Scroll": "Scroll",
-    "WorksButton": "Check my work"
+    "WorksButton": "Check my work",
+    "ContactButton": "Contact Me",
+    "ProjectButton": "Check my work"
   },
   "Navigation": {
     "Home": "Home",
