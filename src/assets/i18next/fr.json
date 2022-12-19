@@ -1,7 +1,7 @@
 {
   "Hero": {
     "Headline0": "A propos de moi..",
-    "Headline1": "Travaillant sur des produits pour les mineurs de crypto",
+    "Headline1": "Travaille sur des produits pour les mineurs de crypto",
     "Headline2": "Apprend à connaître le Web3",
     "Headline3": "Passioné d'analyse de donnée",
     "Title": "Salut, moi c'est Hayssem",
@@ -10,7 +10,9 @@
     "Description_Part2": "Actuellement, je travaille à la Société Générale Investment Banking où je me concentre sur la création de produits web internes et innovants. En outre, je suis le cofondateur de Confsquare, une nouvelle façon d'organiser vos événements et de vous réunir avec votre communauté!",
     "Connect": "Connect",
     "Scroll": "Scroll",
-    "WorksButton": "Voir mes travaux"
+    "WorksButton": "Voir mes travaux",
+    "ContactButton": "Me contacter",
+    "ProjectButton": "Voir mes projets"
   },
   "Navigation": {
     "Home": "Home",
