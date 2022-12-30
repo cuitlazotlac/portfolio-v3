@@ -26,7 +26,8 @@ export default function ContactBanner() {
               </div>
               <div className="right">
                 {" "}
-                <HoverImage src={contact_avatar} hoverSrc={avatar} />
+                {/* <HoverImage src={contact_avatar} hoverSrc={avatar} /> */}
+                <img src={contact_avatar} alt="avatar" />
               </div>
             </div>
           </div>

@@ -85,7 +85,13 @@ const FooterStyle = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
   font-size: 1.5rem;
-  p, h2, ul, li, a, svg {
+
+  p,
+  h2,
+  ul,
+  li,
+  a,
+  svg {
     font-weight: 300;
     color: var(--footer-text-color);
   }
