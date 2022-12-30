@@ -5,6 +5,8 @@ import CredlyButton from "../components/CredlyButton";
 import SectionTitle from "../components/shared/SectionTitle";
 
 import Emoji from "../assets/emoji_avatar.mp4";
+import Avatar from "../assets/images/avatar.svg";
+
 
 import { motion } from "framer-motion/dist/framer-motion";
 
@@ -115,16 +117,7 @@ export default function About() {
                 </motion.div>
               </div>
               <div className="right">
-                {/* <video
-                  muted
-                  src={Emoji}
-                  loop
-                  autoPlay
-                  className="video"
-                  webkit-playsinline
-                  playsinline
-                  allowFullscreen="false"
-                ></video> */}
+                <img src={Avatar} alt="avatar" />
               </div>
             </div>
           </div>
