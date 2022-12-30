@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 // import ContactButton from "./ContactButton";
+import contact_avatar from "../assets/images/contact_avatar.svg";
+import avatar from "../assets/images/avatar.svg";
+
+import HoverImage from "react-hover-image";
 
 export default function ContactBanner() {
   const { t } = useTranslation();
@@ -11,18 +15,20 @@ export default function ContactBanner() {
       <div className="container">
         <a href="/contact">
           <div className="contactBanner__wrapper">
-            <div className="layer"></div>
-            <h3 className="contactBanner__heading">
-              {t("Contact.SectionTitle")}
-            </h3>
-            <p className="contactBanner__subheading">
-              {t("Contact.SectionDescription")}{" "}
-            </p>
-            {/* <ContactButton
-            className="button-section"
-            btnText={t("Contact.Button")}
-            btnLink="/contact"
-          /> */}
+            <div className="top-section">
+              <div className="left">
+                <h3 className="contactBanner__heading">
+                  {t("Contact.SectionTitle")}
+                </h3>
+                <p className="contactBanner__subheading">
+                  {t("Contact.SectionDescription")}{" "}
+                </p>
+              </div>
+              <div className="right">
+                {" "}
+                <HoverImage src={contact_avatar} hoverSrc={avatar} />
+              </div>
+            </div>
           </div>
         </a>
       </div>
@@ -36,21 +42,39 @@ const ContactBannerStyles = styled.div`
   .contactBanner__heading {
     font-size: 4rem;
     margin-bottom: 2rem;
-    /* position: relative; */
-    /* color: #256456; */
+    text-align: center;
+  }
+
+  .top-section {
+    /* padding: 5rem 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .left {
+    padding-left: 5%;
+    flex: 4;
+  }
+  .right {
+    flex: 2;
+    padding-right: 5%;
+    img {
+      max-width: 40%;
+    }
   }
 
   .contactBanner__subheading {
-    /* position: relative; */
+    position: relative;
     font-family: var(--stacks-font);
     font-weight: 400;
     font-size: 1.8rem;
-    /* color: #256456; */
+    text-align: center;
   }
 
   .contactBanner__wrapper {
     border-radius: 2px;
-    padding: 5rem 0rem;
+    padding: 2rem 0rem;
     text-align: center;
     position: relative;
 
@@ -92,6 +116,10 @@ const ContactBannerStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .contactBanner__heading {
       font-size: 2.8rem;
+    }
+    .top-section {
+      flex-direction: column;
+      gap: 0rem;
     }
   }
 `;
