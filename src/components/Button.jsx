@@ -19,7 +19,7 @@ const ButtonStyle = styled.div`
     font-weight: 400;
     border: 1px solid var(--brand-color);
     color: var(--brand-color);
-    font-family: var(--stacks-font);
+    /* font-family: var(--stacks-font); */
     border-radius: 4px;
     display: inline-block;
     transition: all 0.3s ease-in-out;

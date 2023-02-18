@@ -190,7 +190,7 @@ const AboutPageStyles = styled.div`
     }
   }
   .confsquare-btn {
-    font-family: var(--stacks-font);
+    /* font-family: var(--stacks-font); */
     color: var(--black);
     font-size: 1.7rem;
     font-weight: 400;
