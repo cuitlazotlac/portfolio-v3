@@ -83,7 +83,7 @@ const ConfsquareSectionStyles = styled.div`
     margin-top: 2rem;
   }
   .confsquare-btn {
-    font-family: var(--stacks-font);
+    /* font-family: var(--stacks-font); */
     font-size: 1.7rem;
     font-weight: 400;
     background-color: var(--primary-color);
