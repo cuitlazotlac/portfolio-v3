@@ -64,5 +64,6 @@ const CertificationInfoItemStyles = styled.div`
     margin-top: 1rem;
     font-size: 1.4rem;
     font-family: var(--stacks-font);
+    text-transform: uppercase;
   }
 `;

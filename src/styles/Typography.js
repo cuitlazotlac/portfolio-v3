@@ -6,7 +6,7 @@ const Typography = createGlobalStyle`
     font-style: normal;
   }
   html{
-    font-family: 'Inter Tight';
+    font-family: 'Inter';
     color: var(--font-color);
   }
   *{

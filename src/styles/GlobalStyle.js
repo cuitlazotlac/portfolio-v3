@@ -8,12 +8,13 @@ const GlobalStyles = createGlobalStyle`
   --fourth-color: #000000;
   --shadow-color: #3C3C3C;
   --font-color: #000000;
-  --brand-color: #000000;
+  --brand-color: #1F1D1C;
   --btn-color: #EDF2F6;
   --btn-border-color: #000000;
   --icon-color: #000000;
   --white : white;
   --footer-text-color: white;
+  --bg-button-color: #D1D1D1;
 }
 .dark-theme{
   --background-color: #001421;
@@ -27,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
   --btn-border-color: #CCD0D3;
   --icon-color: #000000;
   --white : white;
+  --bg-button-color: #ebfef7;
 }
 
 *{
@@ -39,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
     --black: black;
   }
   html{
-    --main-font: 'Inter Tight', sans-serif;
+    --main-font: 'Inter', sans-serif;
     --secondary-font: 'Inter', sans-serif;
     --stacks-font: 'Roboto Mono';
 

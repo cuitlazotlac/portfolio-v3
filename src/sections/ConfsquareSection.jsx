@@ -35,7 +35,9 @@ export default function ConfsquareSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="confsquare-btn">{t("Confsquare.ReadMore")}</button>
+                <button className="confsquare-btn">
+                  {t("Confsquare.ReadMore")}
+                </button>
               </a>
             </div>
             {/* <Button
@@ -88,17 +90,18 @@ const ConfsquareSectionStyles = styled.div`
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 4px;
+    border-radius: 2px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;
-    padding: 1rem;
+    padding: 1.2rem 3rem 1.2rem 3rem;
     overflow: hidden;
     &:hover {
       /* color: var(--black); */
-      /* background-color: var(--brand-color); */
+      background-color: var(--bg-button-color);
+      font-weight: 500;
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;

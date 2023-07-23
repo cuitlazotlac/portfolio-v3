@@ -29,13 +29,14 @@ export default function HeroSection() {
           >
             <h1 className="hero__heading">
               <span>
-                <Typical
+                {/* <Typical
                   as="h1"
                   main_title={t("Hero.Headline0")}
                   title_1={t("Hero.Headline1")}
                   title_2={t("Hero.Headline2")}
                   title_3={t("Hero.Headline3")}
-                />
+                /> */}
+                <p className="home__desc">{t("Hero.Description_Part1")}</p>
               </span>
               <span className="hero__name">{t("Hero.Title")}</span>
               <span className="hero__name">
@@ -246,6 +247,9 @@ const HeroStyles = styled.div`
     flex-wrap: wrap;
     gap: 20px;
   }
+  .home__desc{
+    
+  }
   .hero__social__text {
     ul {
       li {
@@ -274,7 +278,7 @@ const HeroStyles = styled.div`
       font-size: 2.3rem;
       margin-bottom: -3rem;
       .hero__name {
-        font-size: 8.5rem;
+        font-size: 9.1rem;
         font-weight: 700;
       }
     }
