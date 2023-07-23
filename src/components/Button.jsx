@@ -16,20 +16,22 @@ const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
     font-size: 1.7rem;
-    font-weight: 400;
+    font-weight: 200;
+    background-color: #33302F;
     border: 1px solid var(--brand-color);
-    color: var(--brand-color);
+    color: white;
     /* font-family: var(--stacks-font); */
-    border-radius: 4px;
+    border-radius: 2px;
     display: inline-block;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;
-    padding: 1rem;
+    padding: 1.2rem 3rem 1.2rem 3rem;
     overflow: hidden;
     &:hover {
       /* color: var(--white); */
-      /* background-color: var(--shadow-color); */
+      /* background-color: var(--bg-button-color); */
+      font-weight: 400;
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;
