@@ -12,8 +12,9 @@ export default function PText({ children }) {
 const PStyle = styled.div`
   max-width: 500px;
   margin: 0 auto;
-  font-size: 2.1rem;
+  font-size: 2rem;
   line-height: 1.3em;
+  font-weight: 300;
   @media only screen and (max-width: 768px) {
     font-size: 1.6rem;
     /* font-weight: 500; */

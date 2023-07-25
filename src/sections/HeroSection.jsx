@@ -1,18 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion/dist/framer-motion";
+
+import Button from "../components/Button";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 
 import { FaBehanceSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
-
-import Typical from "../components/shared/Typical";
-import Button from "../components/Button";
-
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion/dist/framer-motion";
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -29,24 +27,10 @@ export default function HeroSection() {
           >
             <h1 className="hero__heading">
               <span>
-                {/* <Typical
-                  as="h1"
-                  main_title={t("Hero.Headline0")}
-                  title_1={t("Hero.Headline1")}
-                  title_2={t("Hero.Headline2")}
-                  title_3={t("Hero.Headline3")}
-                /> */}
-                <p className="home__desc">{t("Hero.Description_Part1")}</p>
+                <p className="home__desc">{t("Hero.Headline0")}</p>
               </span>
               <span className="hero__name">{t("Hero.Title")}</span>
-              <span className="hero__name">
-                {t("Hero.SubTitle")}
-                {/* <span
-                  class="emoji moon"
-                  role="img"
-                  aria-label="moon phases"
-                ></span> */}
-              </span>
+              <span className="hero__name">{t("Hero.SubTitle")}</span>
             </h1>
           </motion.div>
           <br />
@@ -138,7 +122,7 @@ export default function HeroSection() {
 const HeroStyles = styled.div`
   .hero {
     /* height: 100vh; */
-    min-height: 1000px;
+    /* min-height: 100px; */
     width: 100%;
     text-align: center;
     display: flex;
@@ -164,7 +148,7 @@ const HeroStyles = styled.div`
     margin-top: 5rem;
     display: block;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
   }
   .emoji::after {
@@ -247,8 +231,15 @@ const HeroStyles = styled.div`
     flex-wrap: wrap;
     gap: 20px;
   }
-  .home__desc{
-    
+  .home__desc {
+    font-family: var(--stacks-font);
+    color: #ff8c02;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.8rem;
+    line-height: 14px;
+    margin-bottom: 4px;
   }
   .hero__social__text {
     ul {
@@ -272,13 +263,13 @@ const HeroStyles = styled.div`
   @media only screen and (min-width: 768px) and (max-width: 1400px) {
     padding: 10rem 0;
     .hero {
-      min-height: 750px;
+      min-height: 550px;
     }
     .hero__heading {
       font-size: 2.3rem;
       margin-bottom: -3rem;
       .hero__name {
-        font-size: 9.1rem;
+        font-size: 11rem;
         font-weight: 700;
       }
     }
@@ -287,7 +278,7 @@ const HeroStyles = styled.div`
     }
     .hero__info {
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
       font-size: 1.6rem;
       margin-top: 3rem;
