@@ -182,7 +182,7 @@ const AboutPageStyles = styled.div`
     .info-title,
     .info {
       p {
-        font-weight: 400;
+        font-weight: 300;
         @media screen and (max-width: 670px) {
           font-size: 1.6rem;
         }
