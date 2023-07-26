@@ -40,11 +40,6 @@ export default function ConfsquareSection() {
                 </button>
               </a>
             </div>
-            {/* <Button
-              btnText={t("Confsquare.Works")}
-              btnLink="/projects"
-              outline
-            ></Button> */}
           </div>
         </div>
         <div className="confsquareSection__right">
@@ -101,7 +96,7 @@ const ConfsquareSectionStyles = styled.div`
     &:hover {
       /* color: var(--black); */
       background-color: var(--bg-button-color);
-      font-weight: 500;
+      /* font-weight: 500; */
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;

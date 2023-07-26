@@ -121,7 +121,8 @@ export default function HeroSection() {
 
 const HeroStyles = styled.div`
   .hero {
-    /* height: 100vh; */
+    color: #1f1d1c;
+    height: 80vh;
     /* min-height: 100px; */
     width: 100%;
     text-align: center;
@@ -132,62 +133,27 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     text-align: left;
-    font-size: 2.5rem;
     font-weight: 700;
     span {
       display: inline-block;
       width: 100%;
-      color: red;
     }
     .hero__name {
-      font-size: 8rem;
-      color: var(--brand-color);
+      font-size: 12rem;
+      line-height: 148px;
+      color: var(--brand-scolor);
     }
   }
   .hero__info {
     margin-top: 5rem;
     display: block;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
   }
   .emoji::after {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  }
-  .moon::after {
-    content: "🌕";
-    animation-name: moon;
-    animation-duration: 1s;
-  }
-  @keyframes moon {
-    12.5% {
-      content: "🌖";
-    }
-
-    25% {
-      content: "🌗";
-    }
-
-    37.5% {
-      content: "🌘 ";
-    }
-
-    50% {
-      content: "🌑";
-    }
-
-    62.5% {
-      content: "🌒";
-    }
-
-    75% {
-      content: "🌓";
-    }
-
-    87.5% {
-      content: "🌔";
-    }
   }
   .hero__social,
   .hero__scrollDown {
@@ -269,8 +235,9 @@ const HeroStyles = styled.div`
       font-size: 2.3rem;
       margin-bottom: -3rem;
       .hero__name {
-        font-size: 11rem;
-        font-weight: 700;
+        font-size: 12rem;
+        line-height: 128px;
+        font-weight: 800;
       }
     }
     .hero__img {
@@ -281,7 +248,7 @@ const HeroStyles = styled.div`
         font-size: 2rem;
       }
       font-size: 1.6rem;
-      margin-top: 3rem;
+      margin-top: 6rem;
     }
     .hero__social {
       left: 15px;
