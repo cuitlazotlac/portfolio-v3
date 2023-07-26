@@ -39,8 +39,8 @@ export default function FooterCol({
 
 const ColStyle = styled.div`
   .heading {
-    font-size: 2.1rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 500;
     margin-bottom: 2rem;
   }
   li {

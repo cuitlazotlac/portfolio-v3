@@ -19,10 +19,11 @@ export default function Filter({ filter, button }) {
 const FilterStyled = styled.button`
   border: 1px solid var(--font-color);
   background-color: var(--background-color);
-  padding: 0.35em 1.5em;
-  font-size: 1.5rem;
+  color: var(--brand-color);
+  padding: 0.45em 1.7em;
+  font-size: 1.6rem;
   font-family: var(--stacks-font);
-  border-radius: 2.5px;
+  border-radius: 2px;
   box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
   transition: all 0.4s ease-in-out;
   margin-right: 1.4rem;
@@ -31,7 +32,7 @@ const FilterStyled = styled.button`
   overflow: hidden;
   &:active,
   &:focus {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-button-color);
     border: 1px solid var(--brand-color);
     color: var(--brand-color);
   }

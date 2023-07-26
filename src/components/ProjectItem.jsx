@@ -49,7 +49,7 @@ const ProjectItemStyles = styled.div`
   .projectItem__info {
     border: 1px solid var(--font-color);
     padding: 1rem;
-    border-radius: 1px;
+    border-radius: 2px;
     overflow: hidden;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;
@@ -65,21 +65,24 @@ const ProjectItemStyles = styled.div`
     }
   }
   .projectItem__title {
+    padding-top: 3%;
     font-size: 2.2rem;
+    font-weight: 600;
     padding-bottom: 1rem;
   }
   .projectItem__desc__section {
     border-top: 1px solid var(--font-color);
   }
   .projectItem__desc {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
   .projectItem__img {
     width: 100%;
     /* height: 100px; */
-    border-radius: 12px;
+    border-radius: 5px;
     overflow: hidden;
     display: inline-block;
     /* border: 3px solid var(--gray-2); */

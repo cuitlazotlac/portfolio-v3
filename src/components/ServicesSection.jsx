@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 
 import { FaDharmachakra } from "react-icons/fa";
-import { FaBezierCurve } from "react-icons/fa";
+import { MdOutlineDesignServices } from "react-icons/md";
 import { FaLayerGroup } from "react-icons/fa";
+
+import { FiMap } from "react-icons/fi";
+import { FiEdit3 } from "react-icons/fi";
+import { FiDatabase } from "react-icons/fi";
 
 import styled from "styled-components";
 import SectionTitle from "./shared/SectionTitle";
@@ -30,17 +34,17 @@ export default function ServicesSection() {
         />
         <div className="services__allItems">
           <ServicesSectionItem
-            icon={<FaDharmachakra />}
+            icon={<FiMap />}
             title={t("Expertise.Title1")}
             desc={t("Expertise.Description1")}
           />
           <ServicesSectionItem
-            icon={<FaBezierCurve />}
+            icon={<FiEdit3 />}
             title={t("Expertise.Title2")}
             desc={t("Expertise.Description2")}
           />
           <ServicesSectionItem
-            icon={<FaLayerGroup />}
+            icon={<FiDatabase />}
             title={t("Expertise.Title3")}
             desc={t("Expertise.Description3")}
           />

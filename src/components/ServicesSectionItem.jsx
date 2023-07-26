@@ -20,6 +20,7 @@ export default function ServicesSectionItem({
 const ItemStyles = styled.div`
   text-align: center;
   border: 1px solid var(--font-color);
+  border-radius: 2px;
   width: 100%;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
@@ -37,17 +38,18 @@ const ItemStyles = styled.div`
   .servicesItem__icon {
     margin-top: 1rem;
     svg {
-      width: 4rem;
+      width: 3.5rem;
+      stroke-width: 1.55px;
     }
   }
   .servicesItem__title {
     font-size: 2rem;
-    /* color: var(--brand-color); */
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 2rem;
     text-transform: uppercase;
   }
   .para {
     margin-top: 2rem;
+    font-size: 1.8rem;
   }
 `;

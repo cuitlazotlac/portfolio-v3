@@ -7,7 +7,6 @@ import SectionTitle from "../components/shared/SectionTitle";
 import Emoji from "../assets/emoji_avatar.mp4";
 import Avatar from "../assets/images/avatar.svg";
 
-
 import { motion } from "framer-motion/dist/framer-motion";
 
 // import AboutInfoItem from "../components/AboutInfoItem";
@@ -182,7 +181,7 @@ const AboutPageStyles = styled.div`
     .info-title,
     .info {
       p {
-        font-weight: 300;
+        font-weight: 400;
         @media screen and (max-width: 670px) {
           font-size: 1.6rem;
         }
@@ -190,22 +189,22 @@ const AboutPageStyles = styled.div`
     }
   }
   .confsquare-btn {
-    /* font-family: var(--stacks-font); */
-    color: var(--black);
     font-size: 1.7rem;
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 4px;
+    border-radius: 2px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
     transform-style: preserve-3d;
-    padding: 1rem;
+    padding: 1.2rem 3rem 1.2rem 3rem;
     overflow: hidden;
     &:hover {
-      color: var(--black);
+      /* color: var(--black); */
+      background-color: var(--bg-button-color);
+      /* font-weight: 500; */
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;
