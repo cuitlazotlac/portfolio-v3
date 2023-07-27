@@ -22,13 +22,25 @@ const CredlyButtonStyled = styled.button`
   margin-top: 0rem;
   padding: 0.8rem;
   background-color: var(--primary-color);
-  /* font-family: var(--stacks-font); */
   border: 1px solid #f37021;
-  border-radius: 4px;
+  border-radius: 2px;
   color: var(--black);
-  width: 160px;
-  height: 42.95px;
+  width: 190px;
+  height: 45.35px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
+  
+  /* font-size: 1.7rem;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    border: 1px solid var(--brand-color);
+    border-radius: 2px;
+    display: inline-block;
+    color: var(--brand-color);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
+    transform-style: preserve-3d;
+    padding: 1.2rem 3rem 1.2rem 3rem;
+    overflow: hidden; */
   img {
     max-width: 36%;
   }

@@ -123,7 +123,7 @@ const HeroStyles = styled.div`
   .hero {
     color: #1f1d1c;
     height: 80vh;
-    /* min-height: 100px; */
+    min-height: 100px;
     width: 100%;
     text-align: center;
     display: flex;
