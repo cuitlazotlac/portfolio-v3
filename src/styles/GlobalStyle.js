@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
   --fourth-color: #082235;
   --shadow-color: #4D638D;
   --font-color: #EDF2F6;
-  --brand-color: #01E3B4;
+  --brand-color: #D37716;
   --btn-color: #001421;
   --btn-border-color: #CCD0D3;
   --icon-color: #000000;
