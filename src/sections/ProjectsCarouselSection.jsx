@@ -81,13 +81,14 @@ export default function ProjectsSection() {
             outline
           ></Button>
         </div>
+        <br />
       </div>
     </ProjectSectionStyle>
   );
 }
 
 const ProjectSectionStyle = styled.div`
-  padding: 2rem 0;
+  padding: 2rem 0 10rem 0;
   width: 100%;
   display: grid;
   .swiper-wrapper {
