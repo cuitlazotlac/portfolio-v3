@@ -115,8 +115,9 @@ const NavStyles = styled.nav`
       border-radius: 2px;
       transition: 0.3s ease background-color;
       &:hover {
-        /* text-decoration: underline 1px solid var(--brand-color); */
-        border-bottom: 2.5px solid var(--brand-color);
+        /* text-decoration: underline 1px solid red; */
+        border-bottom: 1.5px solid var(--brand-color);
+        padding-top: -10rem;
         /* background-color: var(--brand-color); */
         /* color: var(--font-color); */
       }
@@ -130,9 +131,9 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
-      color: var(--shadow-color);
+      color: var(--active-color);
       &:hover {
-        color: var(--font-color);
+        color: var(--active-color);
       }
     }
   }
