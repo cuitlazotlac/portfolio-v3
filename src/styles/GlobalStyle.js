@@ -15,20 +15,22 @@ const GlobalStyles = createGlobalStyle`
   --white : white;
   --footer-text-color: white;
   --bg-button-color: #D1D1D1;
+  --active-color: #F09236;
 }
 .dark-theme{
   --background-color: #001421;
   --secondary-color: #082235;
   --third-color: #5B5C5D;
   --fourth-color: #082235;
-  --shadow-color: #4D638D;
+  --shadow-color: #3C3C3C;
   --font-color: #EDF2F6;
-  --brand-color: #D37716;
+  --brand-color: #FFFFFF;
   --btn-color: #001421;
   --btn-border-color: #CCD0D3;
   --icon-color: #000000;
   --white : white;
-  --bg-button-color: #ebfef7;
+  --bg-button-color: #51628A;
+  --active-color: #5A5A48;
 }
 
 *{
