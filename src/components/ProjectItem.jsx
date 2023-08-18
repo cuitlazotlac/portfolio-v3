@@ -74,7 +74,7 @@ const ProjectItemStyles = styled.div`
     border-top: 1px solid var(--font-color);
   }
   .projectItem__desc {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin-top: 1rem;
     padding-bottom: 1rem;
@@ -107,8 +107,8 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__stacks {
     border-top: 1px solid var(--font-color);
-    padding: 1rem;
-    font-size: 1.3rem;
+    padding: 1rem 1rem 1rem 0rem;
+    font-size: 1.2rem;
     font-family: var(--stacks-font);
   }
   @media only screen and (max-width: 768px) {
