@@ -150,7 +150,7 @@ const AboutPageStyles = styled.div`
     object-position: 50% 50%;
   }
   .about__subheading {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
     span {
       background-color: var(--secondary-color);
@@ -171,6 +171,7 @@ const AboutPageStyles = styled.div`
   .about-info {
     display: flex;
     padding-bottom: 1.4rem;
+    font-size: 1.6rem;
 
     .info-title {
       padding-right: 3rem;
