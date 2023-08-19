@@ -2,11 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: 'Inter';
+    font-family: 'Bricolage Grotesque';
     font-style: normal;
   }
   html{
-    font-family: 'Inter';
+    font-family: 'Bricolage Grotesque';
     color: var(--font-color);
   }
   *{

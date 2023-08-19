@@ -23,26 +23,14 @@ const CredlyButtonStyled = styled.button`
   padding: 0.8rem;
   background-color: var(--primary-color);
   border: 1px solid #f37021;
-  border-radius: 2px;
+  border-radius: 2.5px;
   color: var(--black);
-  width: 190px;
-  height: 45.35px;
+  width: 170px;
+  height: 42.15px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
-  
-  /* font-size: 1.7rem;
-    font-weight: 400;
-    background-color: var(--primary-color);
-    border: 1px solid var(--brand-color);
-    border-radius: 2px;
-    display: inline-block;
-    color: var(--brand-color);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
-    transform-style: preserve-3d;
-    padding: 1.2rem 3rem 1.2rem 3rem;
-    overflow: hidden; */
+
   img {
-    max-width: 36%;
+    max-width: 34%;
   }
   &:hover {
     background-color: #fac3a1;
@@ -51,7 +39,7 @@ const CredlyButtonStyled = styled.button`
     transform-style: preserve-3d;
     transition: all 0.2s ease-in-out;
     box-shadow: 5px 10px var(--shadow-color);
-    border: 1px solid #fac3a1;
+    border: 1px solid #f37021;
   }
   @media only screen and (max-width: 768px) {
     .button {

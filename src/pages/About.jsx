@@ -190,11 +190,11 @@ const AboutPageStyles = styled.div`
     }
   }
   .confsquare-btn {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 2px;
+    border-radius: 2.5px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;

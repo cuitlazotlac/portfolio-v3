@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 
-import { FaDharmachakra } from "react-icons/fa";
-import { MdOutlineDesignServices } from "react-icons/md";
-import { FaLayerGroup } from "react-icons/fa";
-
 import { FiMap } from "react-icons/fi";
 import { FiEdit3 } from "react-icons/fi";
 import { FiDatabase } from "react-icons/fi";
+
+import safety_vest from "../assets/images/safety_vest.png";
+import flashlight from "../assets/images/flashlight.png";
+import artist_palette from "../assets/images/artist_palette.png";
 
 import styled from "styled-components";
 import SectionTitle from "./shared/SectionTitle";
@@ -34,17 +34,17 @@ export default function ServicesSection() {
         />
         <div className="services__allItems">
           <ServicesSectionItem
-            icon={<FiMap />}
+            icon={safety_vest}
             title={t("Expertise.Title1")}
             desc={t("Expertise.Description1")}
           />
           <ServicesSectionItem
-            icon={<FiEdit3 />}
+            icon={artist_palette}
             title={t("Expertise.Title2")}
             desc={t("Expertise.Description2")}
           />
           <ServicesSectionItem
-            icon={<FiDatabase />}
+            icon={flashlight}
             title={t("Expertise.Title3")}
             desc={t("Expertise.Description3")}
           />
