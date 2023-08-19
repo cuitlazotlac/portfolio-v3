@@ -15,11 +15,11 @@ export default function Button({ btnText, btnLink, outline = false }) {
 const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
-    border-radius: 2px;
+    border-radius: 2.5px;
     display: inline-block;
     color: var(--brand-color);
     transition: all 0.3s ease-in-out;

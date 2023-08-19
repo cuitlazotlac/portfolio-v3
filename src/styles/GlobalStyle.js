@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
   --footer-text-color: white;
   --bg-button-color: #D1D1D1;
   --active-color: #F09236;
+  --grey-description: #777;
 }
 .dark-theme{
   --background-color: #001421;
@@ -43,8 +44,6 @@ const GlobalStyles = createGlobalStyle`
     --black: black;
   }
   html{
-    /* --main-font: 'Inter', sans-serif; */
-    /* --secondary-font: 'Inter', sans-serif; */
     --main-font: 'Bricolage Grotesque', sans-serif;
     --secondary-font: 'Bricolage Grotesque', sans-serif;
     --stacks-font: 'Roboto Mono';

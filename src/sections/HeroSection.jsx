@@ -34,14 +34,7 @@ export default function HeroSection() {
                 />
               </span>
               <span className="hero__name">{t("Hero.Title")}</span>
-              <span className="hero__name">
-                {t("Hero.SubTitle")}
-                {/* <span
-                  class="emoji moon"
-                  role="img"
-                  aria-label="moon phases"
-                ></span> */}
-              </span>
+              <span className="hero__name">{t("Hero.SubTitle")}</span>
             </h1>
           </motion.div>
           <br />
@@ -159,7 +152,7 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: 5rem;
     display: block;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-align: left;
   }

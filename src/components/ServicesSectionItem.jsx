@@ -9,7 +9,9 @@ export default function ServicesSectionItem({
 }) {
   return (
     <ItemStyles className="servicesItem">
-      <div className="servicesItem__icon">{icon}</div>
+      <div className="servicesItem__icon">
+        <img src={icon} alt="project_img" />
+      </div>
       <div className="servicesItem__title">{title}</div>
       <PText>{desc}</PText>
       <br />
@@ -28,6 +30,9 @@ const ItemStyles = styled.div`
   width: 100%;
   padding: 1rem;
   overflow: hidden;
+  img {
+    max-width: 50px;
+  }
   &:hover {
     transform: scale(1.1);
     transform: translate(7px, -7px);
@@ -43,13 +48,13 @@ const ItemStyles = styled.div`
     }
   }
   .servicesItem__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-top: 2rem;
     text-transform: uppercase;
   }
   .para {
     margin-top: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 `;
