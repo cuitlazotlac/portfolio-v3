@@ -17,6 +17,8 @@ const GlobalStyles = createGlobalStyle`
   --bg-button-color: #D1D1D1;
   --active-color: #F09236;
   --grey-description: #777;
+  --filter-text: #0A84FF;
+  --filter-background: #092240;
 }
 .dark-theme{
   --background-color: #001421;

@@ -23,11 +23,11 @@ const SectionTitleStyle = styled.div`
   }
   p {
     font-family: var(--stacks-font);
-    color: #ff8c02;
+    color: var(--brand-color);
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: 1.8rem;
+    letter-spacing: 1.4rem;
     line-height: 14px;
     margin-bottom: 4px;
   }

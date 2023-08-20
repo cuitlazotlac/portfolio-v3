@@ -33,13 +33,13 @@ const ItemStyles = styled.div`
   img {
     max-width: 50px;
   }
-  &:hover {
+  /* &:hover {
     transform: scale(1.1);
     transform: translate(7px, -7px);
     transform-style: preserve-3d;
     transition: all 0.2s ease-in-out;
     box-shadow: 5px 10px var(--shadow-color);
-  }
+  } */
   .servicesItem__icon {
     margin-top: 1rem;
     svg {

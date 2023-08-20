@@ -17,13 +17,13 @@ export default function Filter({ filter, button }) {
 }
 
 const FilterStyled = styled.button`
-  border: 1px solid var(--font-color);
-  background-color: var(--background-color);
-  color: var(--brand-color);
+  border: 1px solid var(--filter-text);
+  color: var(--filter-background);
+  background-color: var(--filter-text);
   padding: 0.45em 1.7em;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: var(--stacks-font);
-  border-radius: 2px;
+  border-radius: 20px;
   box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0);
   transition: all 0.4s ease-in-out;
   margin-right: 1.4rem;
@@ -32,19 +32,19 @@ const FilterStyled = styled.button`
   overflow: hidden;
   &:active,
   &:focus {
-    background-color: var(--bg-button-color);
-    border: 1px solid var(--brand-color);
-    color: var(--brand-color);
+    border: 1px solid var(--filter-background);
+    color: var(--filter-text);
+    background-color: var(--filter-background);
   }
 
   &:hover {
     background-color: var(--secondary-color);
     border: 1px solid var(--brand-color);
     color: var(--brand-color);
-    transform: scale(1.1);
-    transform: translate(7px, -7px);
+    transform: scale(0.1);
+    transform: translate(1px, -1px);
     transform-style: preserve-3d;
     transition: all 0.2s ease-in-out;
-    box-shadow: 5px 10px var(--shadow-color);
+    box-shadow: 2px 5px var(--shadow-color);
   }
 `;

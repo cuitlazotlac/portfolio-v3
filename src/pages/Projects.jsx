@@ -125,7 +125,7 @@ const ProjectStyle = styled.div`
   }
   .projects__searchBar {
     position: relative;
-    width: 300px;
+    width: 500px;
     border: 1px solid var(--font-color);
     margin-top: 5rem;
   }
