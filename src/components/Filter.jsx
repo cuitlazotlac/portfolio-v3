@@ -18,8 +18,8 @@ export default function Filter({ filter, button }) {
 
 const FilterStyled = styled.button`
   border: 1px solid var(--filter-text);
-  color: var(--filter-background);
-  background-color: var(--filter-text);
+  color: var(--filter-text);
+  /* background-color: var(--white); */
   padding: 0.45em 1.7em;
   font-size: 1.2rem;
   font-family: var(--stacks-font);
@@ -38,9 +38,9 @@ const FilterStyled = styled.button`
   }
 
   &:hover {
-    background-color: var(--secondary-color);
-    border: 1px solid var(--brand-color);
-    color: var(--brand-color);
+    background-color: var(--filter-background);
+    border: 1px solid var(--filter-background);
+    color: var(--filter-text);
     transform: scale(0.1);
     transform: translate(1px, -1px);
     transform-style: preserve-3d;

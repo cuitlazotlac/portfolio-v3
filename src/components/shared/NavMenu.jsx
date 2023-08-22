@@ -95,9 +95,9 @@ export default function NavMenu() {
 }
 
 const NavStyles = styled.nav`
-  text-transform: uppercase;
-  font-family: var(--main-font);
-  font-weight: bolder;
+  /* text-transform: uppercase; */
+  /* font-family: var(--main-font); */
+  /* font-weight: bolder; */
   position: fixed;
   z-index: 100;
   top: 0;
@@ -115,11 +115,11 @@ const NavStyles = styled.nav`
       border-radius: 2px;
       transition: 0.3s ease background-color;
       &:hover {
-        /* text-decoration: underline 1px solid red; */
-        border-bottom: 1.5px solid var(--brand-color);
         padding-top: -10rem;
-        /* background-color: var(--brand-color); */
-        /* color: var(--font-color); */
+        transform: scale(1.1);
+        transform: translateY(-3px);
+        transform-style: preserve-3d;
+        transition: all 0.2s ease-in-out;
       }
     }
     a {

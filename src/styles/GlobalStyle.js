@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
   --active-color: #F09236;
   --grey-description: #777;
   --filter-text: #0A84FF;
-  --filter-background: #092240;
+  --filter-background: #88daff;
 }
 .dark-theme{
   --background-color: #001421;
