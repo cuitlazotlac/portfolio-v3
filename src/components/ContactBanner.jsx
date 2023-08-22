@@ -67,10 +67,10 @@ const ContactBannerStyles = styled.div`
 
   .contactBanner__subheading {
     position: relative;
-    font-family: var(--stacks-font);
-    text-transform: uppercase;
+    /* font-family: var(--stacks-font); */
+    /* text-transform: uppercase; */
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
   }
 

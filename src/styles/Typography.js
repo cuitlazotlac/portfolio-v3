@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+
 const Typography = createGlobalStyle`
   @font-face {
     font-family: 'Bricolage Grotesque';
