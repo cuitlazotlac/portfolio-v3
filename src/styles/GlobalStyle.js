@@ -46,8 +46,8 @@ const GlobalStyles = createGlobalStyle`
     --black: black;
   }
   html{
-    --main-font: 'Bricolage Grotesque', sans-serif;
-    --secondary-font: 'Bricolage Grotesque', sans-serif;
+    --main-font: 'League Spartan', sans-serif;
+    --secondary-font: 'League Spartan', sans-serif;
     --stacks-font: 'Roboto Mono';
 
     font-size: 10px;
