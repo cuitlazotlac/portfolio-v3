@@ -3,11 +3,11 @@ import { createGlobalStyle } from "styled-components";
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: 'Bricolage Grotesque';
+    font-family: 'League Spartan';
     font-style: normal;
   }
   html{
-    font-family: 'Bricolage Grotesque';
+    font-family: 'League Spartan';
     color: var(--font-color);
   }
   *{

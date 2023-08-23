@@ -126,7 +126,7 @@ const NavStyles = styled.nav`
       display: inline-block;
       padding: 1rem 2rem;
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 500;
       color: var(--font-color);
       outline: none;
     }

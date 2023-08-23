@@ -24,7 +24,7 @@ export default function HeroSection() {
             exit={{ opacity: 1 }}
           >
             <h1 className="hero__heading">
-              <span>
+              <p>
                 <Typical
                   as="h1"
                   main_title={t("Hero.Headline0")}
@@ -32,7 +32,7 @@ export default function HeroSection() {
                   title_2={t("Hero.Headline2")}
                   title_3={t("Hero.Headline3")}
                 />
-              </span>
+              </p>
               <span className="hero__name">{t("Hero.Title")}</span>
               <span className="hero__name">{t("Hero.SubTitle")}</span>
             </h1>
@@ -138,7 +138,7 @@ const HeroStyles = styled.div`
   .hero__heading {
     text-align: left;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 900;
     span {
       display: inline-block;
       width: 100%;
