@@ -24,7 +24,7 @@ export default function HeroSection() {
             exit={{ opacity: 1 }}
           >
             <h1 className="hero__heading">
-              <p>
+              {/* <p>
                 <Typical
                   as="h1"
                   main_title={t("Hero.Headline0")}
@@ -32,9 +32,10 @@ export default function HeroSection() {
                   title_2={t("Hero.Headline2")}
                   title_3={t("Hero.Headline3")}
                 />
-              </p>
-              <span className="hero__name">{t("Hero.Title")}</span>
-              <span className="hero__name">{t("Hero.SubTitle")}</span>
+              </p> */}
+              <span className="hero__name">{t("Hero.Title1")}</span>
+              <span className="hero__name">{t("Hero.Title2")}</span>
+              <span className="hero__name">{t("Hero.Title3")}</span>
             </h1>
           </motion.div>
           <br />
@@ -146,6 +147,7 @@ const HeroStyles = styled.div`
     }
     .hero__name {
       font-size: 8rem;
+      font-family: Roboto;
       color: var(--brand-color);
     }
   }

@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   --fourth-color: #000000;
   --shadow-color: #3C3C3C;
   --font-color: #000000;
-  --brand-color: #1F1D1C;
+  --brand-color: #000000;
   --btn-color: #EDF2F6;
   --btn-border-color: #000000;
   --icon-color: #000000;
@@ -46,8 +46,8 @@ const GlobalStyles = createGlobalStyle`
     --black: black;
   }
   html{
-    --main-font: 'League Spartan', sans-serif;
-    --secondary-font: 'League Spartan', sans-serif;
+    --main-font: 'Noto Sans', sans-serif;
+    --secondary-font: 'Noto Sans', sans-serif;
     --stacks-font: 'Roboto Mono';
 
     font-size: 10px;
