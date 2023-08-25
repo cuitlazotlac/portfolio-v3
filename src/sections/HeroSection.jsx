@@ -49,6 +49,13 @@ export default function HeroSection() {
               <p>{t("Hero.Description_Part1")}</p>
               <br />
               <p>{t("Hero.Description_Part2")}</p>
+
+              <br />
+              <span>{t("Hero.Description_Part3")}</span>
+              <a href="google.com">{t("Hero.Link1")}</a>
+              <span>{t("Hero.Description_Part4")}</span>
+              <a href="google.com">{t("Hero.Link2")}</a>
+              <span>{t("Hero.Description_Part5")}</span>
               <br />
             </div>
             <div>
@@ -138,7 +145,6 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     text-align: left;
-    font-size: 2.5rem;
     font-weight: 900;
     span {
       display: inline-block;
@@ -146,7 +152,7 @@ const HeroStyles = styled.div`
       color: red;
     }
     .hero__name {
-      font-size: 8rem;
+      font-size: 8.2rem;
       font-family: Roboto;
       color: var(--brand-color);
     }
@@ -154,40 +160,16 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: 5rem;
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 400;
     text-align: left;
-  }
-  .emoji::after {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  .moon::after {
-    content: "🌕";
-    animation-name: moon;
-    animation-duration: 1s;
-  }
-  @keyframes moon {
-    12.5% {
-      content: "🌖";
-    }
-    25% {
-      content: "🌗";
-    }
-    37.5% {
-      content: "🌘 ";
-    }
-    50% {
-      content: "🌑";
-    }
-    62.5% {
-      content: "🌒";
-    }
-    75% {
-      content: "🌓";
-    }
-    87.5% {
-      content: "🌔";
+    a {
+      color: var(--brand-color);
+      font-weight: 500;
+      &:hover {
+        color: var(--brand-color);
+        background-color: coral;
+      }
     }
   }
   .hero__social,
