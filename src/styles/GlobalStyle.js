@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 .light-theme{
+  --primary-color : #00db83;
   --background-color: #F3F2F3;
   --secondary-color: #F2EFEE;
   --third-color: #1F2124;

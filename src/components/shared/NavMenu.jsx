@@ -67,17 +67,11 @@ export default function NavMenu() {
             {t("Navigation.Projects")}
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink
-            to="/portfolio"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            {t("Navigation.Portfolio")}
-          </NavLink>
-        </li> */}
+        <li>
+          <a href="https://read.cv/hayssem_ve" target="_blank" rel="noreferrer">
+            {t("Navigation.Resume")}
+          </a>
+        </li>
         <li>
           <NavLink
             to="/contact"
@@ -125,7 +119,7 @@ const NavStyles = styled.nav`
     a {
       display: inline-block;
       padding: 1rem 2rem;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 500;
       color: var(--font-color);
       outline: none;
