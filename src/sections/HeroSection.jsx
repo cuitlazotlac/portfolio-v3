@@ -160,7 +160,7 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: 5rem;
     display: block;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-align: left;
     a {
@@ -210,6 +210,7 @@ const HeroStyles = styled.div`
     }
   }
   .buttons-row {
+    padding-top: 2rem;
     display: inline-flex;
     flex-wrap: wrap;
     gap: 20px;

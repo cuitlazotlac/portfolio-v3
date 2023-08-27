@@ -4,7 +4,10 @@ import PText from "../components/shared/PText";
 import CredlyButton from "../components/CredlyButton";
 import SectionTitle from "../components/shared/SectionTitle";
 
-import Emoji from "../assets/emoji_avatar.mp4";
+// import Emoji from "../assets/emoji_avatar.mp4";
+
+import { FaBitcoin, FaLinkedin } from "react-icons/fa";
+
 import Avatar from "../assets/images/avatar.svg";
 
 import { motion } from "framer-motion/dist/framer-motion";
@@ -82,7 +85,7 @@ export default function About() {
                       <p className="paragraph">{t("About.TechSkills")}</p>
                       <div className="about-info">
                         <div className="info-title">
-                          <p>• HTML/CSS/Javascript</p>
+                          <p>• HTML/CSS/Javascript</p><i class="fa-brands fa-bitcoin"></i>
                           <p>• React</p>
                           <p>• SQL</p>
                         </div>
