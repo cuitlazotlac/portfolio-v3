@@ -58,6 +58,8 @@ export default function About() {
                   <div className="about__info">
                     <PText>
                       {t("About.Paragraph1")}
+                      <FaBitcoin></FaBitcoin>
+                      {t("About.Paragraph1a")}
                       <br />
                       <br />
                       {t("About.Paragraph2")}
@@ -85,7 +87,7 @@ export default function About() {
                       <p className="paragraph">{t("About.TechSkills")}</p>
                       <div className="about-info">
                         <div className="info-title">
-                          <p>• HTML/CSS/Javascript</p><i class="fa-brands fa-bitcoin"></i>
+                          <p>• HTML/CSS/Javascript</p>
                           <p>• React</p>
                           <p>• SQL</p>
                         </div>
@@ -233,6 +235,11 @@ const AboutPageStyles = styled.div`
   }
   .about__info__items {
     margin-top: 1rem;
+  }
+  svg {
+    max-width: 17px;
+    fill: #f79413;
+    margin-right: 4px;
   }
   @media only screen and (min-width: 892px) {
     .certification__info__items {

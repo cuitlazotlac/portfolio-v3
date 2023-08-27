@@ -24,7 +24,7 @@
     "Home": "Home",
     "About": "About",
     "Projects": "Projects",
-    "Portfolio": "Portfolio",
+    "Resume": "Resume",
     "Contact": "Contact"
   },
   "Footer": {
@@ -57,9 +57,10 @@
     "SectionTitle": "About",
     "SectionDescription": "Few words about me and my journey",
     "Title": "Technical Product Manager + Product Owner & Scrum Master Certified",
-    "Paragraph1": "I am Hayssem Vazquez-Elsayed, a product manager building products to help bitcoin miners maximizing their hashrate. I'm also building a online event platform : Confsquare.",
+    "Paragraph1": "I am Hayssem Vazquez-Elsayed, a product manager building products to help bitcoin miners ",
+    "Paragraph1a": "maximizing their hashrate. I'm also building a online event platform : Confsquare.",
     "Paragraph2": "Before this I worked at Societe Generale Corporate and Investment Banking building products and experience for developers as well as being part of the innovation center and doing product exploration.",
-    "Paragraph2bis": "More than anything, I thrive amidst ambition, passionate curiosity, humility and joy. I seek adventurous teams where, together, we can create meaningful impact on people's lives, the society, and the world we live in.",
+    "Paragraph2bis": "Environments that foster ambition, curiosity, humility, and happiness are where I excel. I'm drawn to teams that share a goal of creating substantial change for individuals, society, and our global community.",
     "ProductSkills": "What I've learn building products :",
     "TechSkills": "Technologies I've been working with :",
     "Button": "Check my resume"
