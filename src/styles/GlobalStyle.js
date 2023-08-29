@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 .light-theme{
-  --primary-color : #00db83;
+  --primary-color : #f6f6f6;
   --background-color: #F3F2F3;
   --secondary-color: #F2EFEE;
   --third-color: #1F2124;
@@ -16,20 +16,20 @@ const GlobalStyles = createGlobalStyle`
   --white : white;
   --footer-text-color: white;
   --bg-button-color: #D1D1D1;
-  --active-color: #F09236;
+  --active-color: #c435b4;
   --grey-description: #777;
-  --filter-text: #0A84FF;
-  --filter-background: #88daff;
+  --filter-text: #3B82F7;
+  --filter-background: #92c5fe;
 }
 .dark-theme{
-  --background-color: #001421;
-  --secondary-color: #082235;
+  --background-color: #171717;
+  --secondary-color: #171717;
   --third-color: #5B5C5D;
-  --fourth-color: #082235;
+  --fourth-color: #3d3d3d;
   --shadow-color: #3C3C3C;
   --font-color: #EDF2F6;
   --brand-color: #FFFFFF;
-  --btn-color: #001421;
+  --btn-color: #171717;
   --btn-border-color: #CCD0D3;
   --icon-color: #000000;
   --white : white;

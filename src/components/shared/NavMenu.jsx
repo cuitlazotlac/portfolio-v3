@@ -89,9 +89,6 @@ export default function NavMenu() {
 }
 
 const NavStyles = styled.nav`
-  /* text-transform: uppercase; */
-  /* font-family: var(--main-font); */
-  /* font-weight: bolder; */
   position: fixed;
   z-index: 100;
   top: 0;
@@ -121,14 +118,17 @@ const NavStyles = styled.nav`
       padding: 1rem 2rem;
       font-size: 1.6rem;
       font-weight: 500;
-      color: var(--font-color);
+      color: #605e5a;
       outline: none;
+      &:hover {
+        color: var(--font-color);
+      }
     }
     .active {
-      color: var(--active-color);
-      &:hover {
-        color: var(--active-color);
-      }
+      color: var(--font-color);
+      /* &:hover {
+        color: var(--font-color);
+      } */
     }
   }
   .mobile-menu-icon {
