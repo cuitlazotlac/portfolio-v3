@@ -77,7 +77,7 @@ export default function About() {
                         <div className="info-title">
                           <p>• Product Strategy</p>
                           <p>• User Interface Design</p>
-                          <p>• Stakeholder Management</p>
+                          <p>• 0 to 1 Product Launch</p>
                         </div>
                         <div className="info">
                           <p>• Data Analysis</p>
@@ -109,7 +109,7 @@ export default function About() {
                 >
                   <div className="button_row">
                     <a
-                      href="https://read.cv/hayssem_ve"
+                      href="https://drive.google.com/file/d/12Qh0Q2oEcfTmzaI3tDXXfJzmjzvoGc-0/view?usp=sharing"
                       target="_blank"
                       rel="noreferrer"
                     >
