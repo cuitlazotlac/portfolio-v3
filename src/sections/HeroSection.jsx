@@ -34,8 +34,8 @@ export default function HeroSection() {
                 />
               </p> */}
               <span className="hero__name">{t("Hero.Title1")}</span>
-              <span className="hero__name">{t("Hero.Title2")}</span>
-              <span className="hero__name">{t("Hero.Title3")}</span>
+              {/* <span className="hero__name">{t("Hero.Title2")}</span>
+              <span className="hero__name">{t("Hero.Title3")}</span> */}
             </h1>
           </motion.div>
           <br />
@@ -145,7 +145,7 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     text-align: left;
-    font-weight: 900;
+    font-weight: 700;
     span {
       display: inline-block;
       width: 100%;
@@ -160,12 +160,13 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: 5rem;
     display: block;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 400;
     text-align: left;
     a {
       color: var(--brand-color);
       font-weight: 500;
+      background-color: #fde572;
       &:hover {
         color: var(--brand-color);
         background-color: coral;

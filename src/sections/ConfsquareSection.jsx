@@ -59,6 +59,10 @@ const ConfsquareSectionStyles = styled.div`
     justify-content: flex-start;
     text-align: left;
   }
+
+  svg {
+    max-height: 16px;
+  }
   .confsquareSection__left {
     flex: 4;
   }
