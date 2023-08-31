@@ -68,7 +68,7 @@ export default function NavMenu() {
           </NavLink>
         </li>
         <li>
-          <a href="https://read.cv/hayssem_ve" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/12Qh0Q2oEcfTmzaI3tDXXfJzmjzvoGc-0/view?usp=sharing" target="_blank" rel="noreferrer">
             {t("Navigation.Resume")}
           </a>
         </li>

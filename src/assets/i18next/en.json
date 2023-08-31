@@ -55,7 +55,7 @@
   },
   "About": {
     "SectionTitle": "About",
-    "SectionDescription": "Few words about me and my journey",
+    "SectionDescription": "Few words about my journey",
     "Title": "Product Manager + Product Owner (PSPO) & Scrum Master Certified (PSM)",
     "Paragraph1": "I am Hayssem Vazquez-Elsayed, a product manager building products to help bitcoin miners ",
     "Paragraph1a": "maximizing their hashrate. I'm also building a online event platform : Confsquare.",
@@ -72,7 +72,7 @@
   },
   "Project": {
     "SectionTitle": "Projects",
-    "SectionDescription": "Built to practice Web development focusing on Web3",
+    "SectionDescription": "Built to practice web development skills",
     "Placeholder": "Search for a project..."
   },
   "Contact": {
