@@ -5,10 +5,11 @@ import CredlyButton from "../components/CredlyButton";
 import SectionTitle from "../components/shared/SectionTitle";
 
 // import Emoji from "../assets/emoji_avatar.mp4";
-
-import { FaBitcoin, FaLinkedin } from "react-icons/fa";
-
 import Avatar from "../assets/images/avatar.svg";
+
+
+import { FaBitcoin } from "react-icons/fa";
+
 
 import { motion } from "framer-motion/dist/framer-motion";
 
@@ -87,8 +88,8 @@ export default function About() {
                       <p className="paragraph">{t("About.TechSkills")}</p>
                       <div className="about-info">
                         <div className="info-title">
-                          <p>• HTML/CSS/Javascript</p>
                           <p>• React</p>
+                          <p>• REST/GraphQL</p>
                           <p>• SQL</p>
                         </div>
                         <div className="info">
@@ -197,6 +198,7 @@ const AboutPageStyles = styled.div`
   .confsquare-btn {
     font-size: 1.4rem;
     font-weight: 400;
+    font-family: var(--main-font);
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
     border-radius: 2.5px;

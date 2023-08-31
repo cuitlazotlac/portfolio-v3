@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
   --fourth-color: #3d3d3d;
   --shadow-color: #3C3C3C;
   --font-color: #EDF2F6;
-  --brand-color: #FFFFFF;
+  --brand-color: #6F6F6F;
   --btn-color: #171717;
   --btn-border-color: #CCD0D3;
   --icon-color: #000000;
