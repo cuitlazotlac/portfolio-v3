@@ -92,7 +92,7 @@ const ProjectItemStyles = styled.div`
     border-top: 1px solid var(--font-color);
   }
   .projectItem__desc {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 1rem;
     padding-bottom: 1rem;
   }

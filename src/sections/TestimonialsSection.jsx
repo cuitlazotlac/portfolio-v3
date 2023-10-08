@@ -101,7 +101,7 @@ const TestimonialSectionStyles = styled.div`
     font-size: 2.2rem;
   }
   .testimonial__title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 0.3rem;
   }
   .arrows {

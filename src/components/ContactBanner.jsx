@@ -70,7 +70,7 @@ const ContactBannerStyles = styled.div`
     /* font-family: var(--stacks-font); */
     /* text-transform: uppercase; */
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 

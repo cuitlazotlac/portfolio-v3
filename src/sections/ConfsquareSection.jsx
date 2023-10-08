@@ -85,7 +85,7 @@ const ConfsquareSectionStyles = styled.div`
   }
   .confsquare-btn {
     font-family: var(--main-font);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);
