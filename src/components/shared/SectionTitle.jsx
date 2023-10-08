@@ -25,7 +25,7 @@ const SectionTitleStyle = styled.div`
     font-family: var(--stacks-font);
     color: var(--brand-color);
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 1.4rem;
     line-height: 14px;

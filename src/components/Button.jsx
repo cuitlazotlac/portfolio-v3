@@ -15,7 +15,7 @@ export default function Button({ btnText, btnLink, outline = false }) {
 const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     background-color: var(--primary-color);
     border: 1px solid var(--brand-color);

@@ -116,9 +116,9 @@ const NavStyles = styled.nav`
     a {
       display: inline-block;
       padding: 1rem 2rem;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 500;
-      color: #605e5a;
+      color: var(--nav-color);
       outline: none;
       &:hover {
         color: var(--font-color);

@@ -83,7 +83,7 @@ const ExperienceInfoItemStyles = styled.div`
   }
   .experienceItem__stacks {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: var(--stacks-font);
   }
 `;

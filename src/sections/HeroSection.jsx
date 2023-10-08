@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 import { FaBehanceSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
-import Typical from "../components/shared/Typical";
 import Button from "../components/Button";
 
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion/dist/framer-motion";
+
 export default function HeroSection() {
   const { t } = useTranslation();
   return (
@@ -24,18 +25,7 @@ export default function HeroSection() {
             exit={{ opacity: 1 }}
           >
             <h1 className="hero__heading">
-              {/* <p>
-                <Typical
-                  as="h1"
-                  main_title={t("Hero.Headline0")}
-                  title_1={t("Hero.Headline1")}
-                  title_2={t("Hero.Headline2")}
-                  title_3={t("Hero.Headline3")}
-                />
-              </p> */}
               <span className="hero__name">{t("Hero.Title1")}</span>
-              {/* <span className="hero__name">{t("Hero.Title2")}</span>
-              <span className="hero__name">{t("Hero.Title3")}</span> */}
             </h1>
           </motion.div>
           <br />
@@ -160,7 +150,7 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: 5rem;
     display: block;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 400;
     text-align: left;
     a {
@@ -181,6 +171,7 @@ const HeroStyles = styled.div`
     position: absolute;
     bottom: 20px;
     width: 50px;
+    color: red;
   }
   .hero__social {
     left: 50px;
@@ -193,7 +184,7 @@ const HeroStyles = styled.div`
     width: 50px;
     font-family: var(--secondary-font);
     p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       transform: translateY(-70px) rotate(90deg);
       letter-spacing: 0.7rem;
       text-transform: uppercase;
@@ -255,7 +246,7 @@ const HeroStyles = styled.div`
       p {
         font-size: 1.8rem;
       }
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       margin-top: 3rem;
     }
     .hero__social {
@@ -309,10 +300,10 @@ const HeroStyles = styled.div`
     .hero__info {
       margin-top: 7rem;
       p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
       h3 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 500;
       }
     }

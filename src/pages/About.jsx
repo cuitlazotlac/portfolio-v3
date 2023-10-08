@@ -156,7 +156,7 @@ const AboutPageStyles = styled.div`
     object-position: 50% 50%;
   }
   .about__subheading {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     span {
       background-color: var(--secondary-color);
@@ -171,13 +171,13 @@ const AboutPageStyles = styled.div`
   .paragraph {
     padding: 1rem 0;
     @media screen and (max-width: 670px) {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
   .about-info {
     display: flex;
     padding-bottom: 1.4rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 
     .info-title {
       padding-right: 3rem;
@@ -190,13 +190,13 @@ const AboutPageStyles = styled.div`
       p {
         font-weight: 400;
         @media screen and (max-width: 670px) {
-          font-size: 1.6rem;
+          font-size: 1.8rem;
         }
       }
     }
   }
   .confsquare-btn {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     font-family: var(--main-font);
     background-color: var(--primary-color);
