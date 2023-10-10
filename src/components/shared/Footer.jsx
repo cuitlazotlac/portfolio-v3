@@ -93,7 +93,7 @@ const FooterStyle = styled.div`
   a,
   svg {
     font-weight: 300;
-    color: var(--footer-text-color);
+    color: var(--white);
   }
   .container {
     display: flex;
@@ -106,10 +106,10 @@ const FooterStyle = styled.div`
   .footer__col3,
   .footer__col4 {
     flex: 1;
-    color: var(--footer-text-color);
+    color: var(--white);
   }
   .footer__col1__title {
-    color: var(--footer-text-color);
+    color: var(--white);
     font-size: 3rem;
     margin-bottom: 1rem;
   }

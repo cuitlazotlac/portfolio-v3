@@ -5,38 +5,26 @@ const GlobalStyles = createGlobalStyle`
   --primary-color : #f6f6f6;
   --background-color: #F3F2F3;
   --secondary-color: #F2EFEE;
-  --third-color: #1F2124;
   --fourth-color: #000000;
   --shadow-color: #3C3C3C;
   --font-color: #000000;
   --brand-color: #000000;
-  --btn-color: #EDF2F6;
-  --btn-border-color: #000000;
-  --icon-color: #000000;
   --white : white;
-  --footer-text-color: white;
   --bg-button-color: #D1D1D1;
-  --active-color: #c435b4;
-  --grey-description: #777;
   --filter-text: #3B82F7;
   --filter-background: #92c5fe;
-  /* COLORS USED */
-  --nav-color: #605e5a;
 }
 .dark-theme{
   --background-color: #171717;
   --secondary-color: #171717;
-  --third-color: #5B5C5D;
   --fourth-color: #3d3d3d;
   --shadow-color: #3C3C3C;
   --font-color: #EDF2F6;
   --brand-color: #85939F;
-  --btn-color: #171717;
-  --btn-border-color: #CCD0D3;
-  --icon-color: #000000;
   --white : white;
   --bg-button-color: #51628A;
-  --active-color: #5A5A48;
+  --filter-text: #3B82F7;
+  --filter-background: #92c5fe;
 }
 
 *{
