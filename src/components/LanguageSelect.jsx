@@ -29,7 +29,7 @@ export default function LanguageSelect() {
 const LanguageSelectStyle = styled.div`
   .select {
     background-color: var(--fourth-color);
-    color: var(--footer-text-color);
+    color: var(--white);
     padding: 0.35em 1.5em;
     border: 1px solid var(--white);
     font-family: var(--main-font);
