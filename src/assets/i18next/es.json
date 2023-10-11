@@ -1,78 +1,77 @@
 {
   "Hero": {
     "Title1": "Hey there, 👋",
-    "Description_Part1": "My name is Hayssem Vazquez-Elsayed, and I'm a Product Manager.",
-    "Description_Part2": "Coupled with my 6+ years of experience in building B2B and B2C products, I'm passionate about web development, data analysis, and product design. I love to build ( and occasionally develop ) astounding digital experiences.",
-    "Description_Part3": "I currently work as Senior Product Manager at ",
+    "Description_Part1": "Me llamo Hayssem Vazquez-Elsayed y soy Responsable de Producto.",
+    "Description_Part2": "Junto con mis más de 6 años de experiencia en la creación de productos B2B y B2C, me apasiona el desarrollo web, el análisis de datos y el diseño de productos. Me encanta construir ( y ocasionalmente desarrollar) experiencias digitales asombrosas.",
+    "Description_Part3": "Actualmente trabajo como Senior Product Manager en",
     "Link1": "Luxor Technologies",
-    "Description_Part4": ", building products to help bitcoin miners to maximize their hashrate. Additionally, I’m the ",
-    "Link2": "Co-Founder of Confsquare",
-    "Description_Part5": ", a new way to organize your event and gather with your community.",
-    "Connect": "Connect",
+    "Description_Part4": ", construyendo productos para ayudar a los mineros de bitcoin a maximizar su hashrate. Además, soy el",
+    "Link2": "Confsquare Co-Founder",
+    "Description_Part5": "una nueva forma de organizar tu evento y reunirte con tu comunidad.",
+    "Connect": "Conectar",
     "Scroll": "Scroll",
-    "WorksButton": "Check my work",
-    "ContactButton": "Contact Me ⌨️",
-    "ProjectButton": "Check my work 🛠️"
+    "ContactButton": "Contacto ⌨️",
+    "ProjectButton": "Compruebe mi trabajo 🛠️"
   },
   "Navigation": {
     "Home": "Home",
-    "About": "About",
-    "Projects": "Projects",
-    "Resume": "Resume",
-    "Contact": "Contact"
+    "About": "Información",
+    "Projects": "Proyectos",
+    "Resume": "Currículum",
+    "Contact": "Contacto"
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
-    "Description": "Technical Product Manager currently building the infrastructure for cryptocurrencies and learning about Web3 tools.",
-    "Section": "Sections",
-    "Social Links": "Social Links",
-    "English": "English 🇨🇦",
-    "French": "French 🇫🇷",
-    "Spanish": "Spanish 🇲🇽"
+    "Description": "Gestor de productos sénior que crea productos para ayudar a los mineros de bitcoins a maximizar su hashrate.",
+    "Section": "Secciones",
+    "Social Links": "Enlaces sociales",
+    "English": "Inglés 🇨🇦",
+    "French": "Francés 🇫🇷",
+    "Spanish": "Español 🇲🇽"
   },
   "Confsquare": {
     "SectionTitle": "Confsquare",
     "SectionDescription": "Let's Gather",
-    "Description_Part1": "I'm the co-founder of Confsquare: a startup focus on building better experience for event organization and management.",
-    "Description_Part2": "We are building a new event platform enabling our users to create more connections with their community through the in-house concept of Rooms.",
-    "ReadMore": "Learn more"
+    "Description_Part1": "Soy el cofundador de Confsquare: una startup centrada en crear una mejor experiencia para la organización y gestión de eventos.",
+    "Description_Part2": "Estamos construyendo una nueva plataforma de eventos que permita a nuestros usuarios crear más conexiones con su comunidad a través del concepto interno de Rooms.",
+    "ReadMore": "Más información"
   },
   "Expertise": {
-    "SectionTitle": "Expertise",
-    "SectionDescription": "Things I've learned along the way",
-    "Title1": "Product Management",
-    "Description1": "6+ years of experience working on high-impact user and developer-facing products including web applications, APIs, and SDKs.",
-    "Title2": "Interface Design",
-    "Description2": "I'm eager to interact with my users to gather feedback, to build design concept ideas through sketches, prototypes, and wireframes.",
-    "Title3": "Data Analysis",
-    "Description3": "Throughout my passion for databases and data models, I've built fluency with qualitative and quantitative data collection and decision-making methodologies."
+    "SectionTitle": "Experiencia",
+    "SectionDescription": "Cosas que he aprendido en el camino",
+    "Title1": "Gestión de productos",
+    "Description1": "Más de 6 años de experiencia trabajando en productos de gran impacto para usuarios y desarrolladores, incluidas aplicaciones web, API y SDK.",
+    "Title2": "Diseño de interfaces",
+    "Description2": "Estoy ansioso por interactuar con mis usuarios para obtener retroalimentación, para construir ideas de concepto de diseño a través de bocetos, prototipos y wireframes.",
+    "Title3": "Análisis de datos",
+    "Description3": "Gracias a mi pasión por las bases de datos y los modelos de datos, he adquirido soltura con las metodologías cualitativas y cuantitativas de recopilación de datos y toma de decisiones."
   },
   "About": {
-    "SectionTitle": "About",
-    "SectionDescription": "Few words about my journey",
+    "SectionTitle": "Información",
+    "SectionDescription": "Unas palabras sobre mi experiencia",
     "Title": "Product Manager + Product Owner (PSPO) & Scrum Master Certified (PSM)",
-    "Paragraph1": "I am Hayssem Vazquez-Elsayed, a product manager building products to help bitcoin miners ",
-    "Paragraph1a": "maximizing their hashrate. I'm also building a online event platform : Confsquare.",
-    "Paragraph2": "Before that, I worked at Societe Generale Corporate and Investment Banking building products and experience for developers as well as being part of the innovation center and doing product exploration.",
-    "Paragraph2bis": "Environments that foster ambition, curiosity, humility, and happiness are where I excel. I'm drawn to teams that share a goal of creating substantial change for individuals, society, and our global community.",
-    "ProductSkills": "What I've learn building products :",
-    "TechSkills": "Technologies I've been working with :",
-    "Button": "Check my resume"
+    "Paragraph1": "Soy Hayssem Vazquez-Elsayed, un gestor de productos que crea productos para ayudar a los mineros de bitcoin ",
+    "Paragraph1a": "maximizando su hashrate. También estoy construyendo una plataforma de eventos en línea : Confsquare.",
+    "Paragraph2": "Antes de eso, trabajé en Societe Generale Corporate and Investment Banking creando productos y experiencias para desarrolladores, además de formar parte del centro de innovación y explorar productos.",
+    "Paragraph2bis": "Destaco en los entornos que fomentan la ambición, la curiosidad, la humildad y la felicidad. Me atraen los equipos que comparten el objetivo de crear un cambio sustancial para las personas, la sociedad y nuestra comunidad global.",
+    "ProductSkills": "Lo que he aprendido construyendo productos :",
+    "TechSkills": "Tecnologías con las que he estado trabajando :",
+    "Button": "Consulta mi currículum"
   },
   "ProjectSwiper": {
-    "SectionTitle": "Projects",
-    "SectionDescription": "Some of my recent works",
-    "More": "See more projects.."
+    "SectionTitle": "Proyectos",
+    "SectionDescription": "Algunos de mis trabajos recientes",
+    "More": "Ver más proyectos.."
   },
   "Project": {
-    "SectionTitle": "Projects",
-    "SectionDescription": "Built to practice web development skills",
-    "Placeholder": "Search for a project..."
+    "SectionTitle": "Proyectos",
+    "SectionDescription": "Construido para practicar habilidades de desarrollo web",
+    "Placeholder": "Buscar un proyecto..."
   },
   "Contact": {
-    "MainTitle": "Contact",
-    "SubsectionTitle": "Let's get in touch",
-    "SectionTitle": "Question about my work ?",
-    "SectionDescription": "Let's chat 🐱"
+    "MainTitle": "Contacto",
+    "SubsectionTitle": "Pongámonos en contacto",
+    "SectionTitle": "¿Preguntas sobre mi trabajo?",
+    "SectionDescription": "Hablemos !"
   }
 }
