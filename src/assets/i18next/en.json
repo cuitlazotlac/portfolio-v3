@@ -10,7 +10,6 @@
     "Description_Part5": ", a new way to organize your event and gather with your community.",
     "Connect": "Connect",
     "Scroll": "Scroll",
-    "WorksButton": "Check my work",
     "ContactButton": "Contact Me ⌨️",
     "ProjectButton": "Check my work 🛠️"
   },
@@ -23,7 +22,7 @@
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
-    "Description": "Technical Product Manager currently building the infrastructure for cryptocurrencies and learning about Web3 tools.",
+    "Description": "Senior Product Manager building products to help bitcoin miners maximize their hashrate.",
     "Section": "Sections",
     "Social Links": "Social Links",
     "English": "English 🇨🇦",

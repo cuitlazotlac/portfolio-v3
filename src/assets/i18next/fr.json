@@ -1,77 +1,77 @@
 {
   "Hero": {
-    "Headline0": "A propos de moi..",
-    "Headline1": "Travaille sur des produits pour les mineurs de crypto",
-    "Headline2": "Apprend à connaître le Web3",
-    "Headline3": "Passioné d'analyse de donnée",
-    "Title": "Salut, moi c'est Hayssem",
-    "SubTitle": "Senior Product Manager 👋",
-    "Description_Part1": "Je suis passionné par le développement Web, l'analyse de données et la conception de produits. J'aime planifier ( et occasionnellement développer ) des expériences numériques innovante avec l'envie d'aider et d'aligner les exigences pour obtenir des résultats pertinents.",
-    "Description_Part2": "Actuellement, je travaille à la Société Générale Investment Banking où je me concentre sur la création de produits web internes et innovants. En outre, je suis le cofondateur de Confsquare, une nouvelle façon d'organiser vos événements et de vous réunir avec votre communauté!",
+    "Title1": "Salut ! 👋",
+    "Description_Part1": "Moi c'est Hayssem Vazquez-Elsayed et je suis un Product Manager.",
+    "Description_Part2": "Avec plus de 6 ans d'expérience dans la création de produits B2B et B2C, je suis passionné par le développement web, l'analyse de données et la conception de produits. J'aime construire (et occasionnellement développer) des produits innovant.",
+    "Description_Part3": "En ce moment, je suis un Product Manager sénior à ",
+    "Link1": "Luxor Technologies",
+    "Description_Part4": "Je suis responsable de la conception et de la fabrication de produits destinés à aider les mineurs de bitcoins à maximiser leur hashrate. En plus de cela, je suis le",
+    "Link2": "Cofondateur de Confsquare",
+    "Description_Part5": ", un nouveau moyen d'organiser ses événements et rassembler sa communauté.",
     "Connect": "Connect",
     "Scroll": "Scroll",
-    "WorksButton": "Voir mes travaux",
-    "ContactButton": "Me contacter",
-    "ProjectButton": "Voir mes projets"
+    "ContactButton": "Me contacter ⌨️",
+    "ProjectButton": "Voir mes projets 🛠️"
   },
   "Navigation": {
     "Home": "Home",
     "About": "A propos",
     "Projects": "Projets",
-    "Portfolio": "Portfolio",
+    "Resume": "Curriculum",
     "Contact": "Contact"
   },
   "Footer": {
     "Title": "Hayssem Vazquez-Elsayed",
-    "Description": "Technical Product Manager travaillant sur des produits pour les mineurs de crypto et se familiarise avec les outils Web3.",
+    "Description": "Senior Product Manager développant des produits pour aider les mineurs de bitcoins à maximiser leur hashrate.",
     "Section": "Sections",
-    "Social Links": "Social Links",
-    "English": "English 🇨🇦",
-    "French": "French 🇫🇷",
-    "Spanish": "Spanish 🇲🇽"
+    "Social Links": "Sociaux",
+    "English": "Anglais 🇨🇦",
+    "French": "Français 🇫🇷",
+    "Spanish": "Espagnol 🇲🇽"
   },
   "Confsquare": {
     "SectionTitle": "Confsquare",
     "SectionDescription": "Let's Gather",
-    "Description_Part1": "Confsquare est une startup qui se concentre sur la création d'une meilleure expérience pour l'organisation et la gestion d'événements.",
-    "Description_Part2": "Nous construisons une nouvelle plateforme événementielle permettant à nos utilisateurs de créer davantage de liens avec leur communauté grâce au concept interne des Rooms.",
+    "Description_Part1": "Je suis le cofondateur de Confsquare : une startup qui se concentre sur la construction d'une meilleure expérience pour l'organisation et la gestion d'événements.",
+    "Description_Part2": "Nous construisons une nouvelle plateforme événementielle permettant à nos utilisateurs de créer plus de liens avec leur communauté grâce au concept interne de Rooms.",
     "ReadMore": "En savoir plus"
   },
   "Expertise": {
     "SectionTitle": "Expertise",
-    "SectionDescription": "Ce que j'ai appris au cours de mon parcours",
+    "SectionDescription": "Ce que j'ai appris en cours de route",
     "Title1": "Product Management",
-    "Description1": "Plus de 6 ans d'expérience sur des produits à fort impact pour les utilisateurs et les développeurs, notamment des applications web, des APIs et SDKs.",
-    "Title2": "Interface Design",
-    "Description2": "Toujours avec l'envie d'intéragir avec mes utilisateurs pour recueillir leurs commentaires et améliorer l'existant par le biais de prototypes et de session d'idéation.",
-    "Title3": "Data Analysis",
-    "Description3": "Avec une passion pour les bases de données et les modèles de données, j'ai acquis une certaine aisance dans la collecte de données qualitatives et quantitatives et dans leur utilisations pour mes prises de décision."
+    "Description1": "6 ans ou plus d'expérience dans la conception de produits à fort impact pour les utilisateurs et les développeurs, notamment des applications web, des API et des SDK.",
+    "Title2": "Design",
+    "Description2": "J'aime d'interagir avec mes utilisateurs afin de recueillir leurs commentaires et d'élaborer des produits, d'un idée à la conception par le biais de prototypes et de wireframes.",
+    "Title3": "Analyse de donées",
+    "Description3": "Avec ma passion pour les bases de données et les modèles de données, j'ai acquis une certaine aisance dans la collecte de données qualitatives et quantitatives et dans les méthodologies de prise de décision."
   },
   "About": {
     "SectionTitle": "A propos",
-    "SectionDescription": "Quelques mots à propos de mon parcours",
-    "Title": "Technical Product Manager + Certifié Product Owner & Scrum Master",
-    "Paragraph1": "J'établi une stratégie produit, coordonne des projets et des sprints, en veillant à la qualité des délivrables et à la gestion collaborative des équipes et des parties prenantes.",
-    "Paragraph2": "Je m'efforce de toujours être à jour sur différents sujets, notamment le développement et la conception, afin d'être en mesure d'échanger avec toutes les parties prenantes.",
-    "Paragraph2bis": "J'ai eu le privilège de travailler dans une banque de financement et d'investissement internationale, une compagnie d'assurance française, une banque privée et ma propre start-up. Aujourd'hui, je me concentre sur la création de produits et d'expériences numériques accessibles et inclusifs dans une start-up de cryptomonnaie.",
-    "ProductSkills": "Ce que j'ai appris sur le cycle de vie produit :",
-    "TechSkills": "Technologie avec lesquelles j'ai travaillés :",
+    "SectionDescription": "Quelques mots sur mon parcours",
+    "Title": "Product Manager + Product Owner (PSPO) & Scrum Master (PSM)",
+    "Paragraph1": "Je suis Hayssem Vazquez-Elsayed, un Product Manager qui conçoit des produits pour aider les mineurs de bitcoins à ",
+    "Paragraph1a": "maximiser leur hashrate. Je suis également en train de construire une plateforme d'événements en ligne : Confsquare.",
+    "Paragraph2": "Avant cela, j'ai travaillé à la Société Générale Corporate and Investment Banking, où j'ai développé des produits et des expériences pour les développeurs, tout en faisant partie du centre d'innovation et en explorant des produits.",
+    "Paragraph2bis": "J'excelle dans les environnements qui favorisent l'ambition, la curiosité, l'humilité et le bonheur. Je suis attirée par les équipes qui partagent l'objectif de créer un changement substantiel pour les individus, la société et la communauté.",
+    "ProductSkills": "Ce que j'ai appris en construisant des produits :",
+    "TechSkills": "Technologies avec lesquelles j'ai travaillé :",
     "Button": "Voir mon CV"
   },
   "ProjectSwiper": {
     "SectionTitle": "Projets",
-    "SectionDescription": "Quelques-uns de mes travaux récents",
-    "More": "Voir davantage de projets.."
+    "SectionDescription": "Quelques récent projets",
+    "More": "Voir plus de projets.."
   },
   "Project": {
     "SectionTitle": "Projets",
-    "SectionDescription": "Construit pour pratiquer le développement Web en se concentrant sur le Web3",
-    "Placeholder": "Rechercher un projet..."
+    "SectionDescription": "Conçu pour pratiquer le dev web",
+    "Placeholder": "Chercher un projet.."
   },
   "Contact": {
     "MainTitle": "Contact",
-    "SubsectionTitle": "Prenons contact",
-    "SectionTitle": "Une question sur mon travail ?",
-    "SectionDescription": "Let's chat 🐱"
+    "SubsectionTitle": "Entrons en contact",
+    "SectionTitle": "Des questions sur mon travail ?",
+    "SectionDescription": "Discutons-en !"
   }
 }
