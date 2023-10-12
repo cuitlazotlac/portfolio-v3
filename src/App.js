@@ -9,12 +9,23 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Portfolios from "./pages/Portfolios";
 
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 export default function App() {
-  ReactGA.initialize("UA-208876305-1");
-  //to report page view
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.initialize("G-L6MW5B86QV");
+
+// Send pageview with a custom path
+// ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
+
+// Send a custom event
+// ReactGA.event({
+//   category: "your category",
+//   action: "your action",
+//   label: "your label", // optional
+//   value: 99, // optional, must be a number
+//   nonInteraction: true, // optional, true/false
+//   transport: "xhr", // optional, beacon/xhr/image
+// });
 
   return (
     <>
