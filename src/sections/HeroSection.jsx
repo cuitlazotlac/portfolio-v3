@@ -26,6 +26,7 @@ export default function HeroSection() {
           >
             <h1 className="hero__heading">
               <span className="hero__name">{t("Hero.Title1")}</span>
+              <span className="hero__name">{t("Hero.Title2")}</span>
             </h1>
           </motion.div>
           <br />
@@ -36,7 +37,7 @@ export default function HeroSection() {
             exit={{ opacity: 1 }}
           >
             <div className="hero__info">
-              <p>{t("Hero.Description_Part1")}</p>
+              {/* <p>{t("Hero.Description_Part1")}</p> */}
               <br />
               <p>{t("Hero.Description_Part2")}</p>
 
@@ -135,14 +136,14 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     text-align: left;
-    font-weight: 700;
+    font-weight: 800;
     span {
       display: inline-block;
       width: 100%;
       color: red;
     }
     .hero__name {
-      font-size: 8.2rem;
+      font-size: 8.5rem;
       font-family: Roboto;
       color: var(--brand-color);
     }
