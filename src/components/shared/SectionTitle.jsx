@@ -39,6 +39,7 @@ const SectionTitleStyle = styled.div`
     }
     p {
       font-size: 1.5rem;
+      line-height: 25px;
     }
   }
 `;

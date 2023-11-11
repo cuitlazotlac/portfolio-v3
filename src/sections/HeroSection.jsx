@@ -309,6 +309,7 @@ const HeroStyles = styled.div`
       }
     }
     .hero__social {
+      display: none;
       left: 20px;
       bottom: -20%;
       width: 20px;
@@ -333,12 +334,19 @@ const HeroStyles = styled.div`
       }
     }
     .hero__scrollDown {
+      display: none;
       right: 10px;
       width: 20px;
       gap: 1rem;
       p {
         font-size: 1.3rem;
       }
+    }
+    .buttons-row {
+      /* padding-top: 2rem; */
+      /* display: inline-flex; */
+      /* flex-wrap: wrap; */
+      gap: 1px;
     }
   }
 `;

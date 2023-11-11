@@ -158,7 +158,7 @@ const NavStyles = styled.nav`
       --top: 1rem;
       transition: 0.3s ease transform;
       background-color: var(--secondary-color);
-      opacity: 0.9;
+      opacity: 0.95;
       padding: 2rem;
       width: 90%;
       max-width: 300px;
