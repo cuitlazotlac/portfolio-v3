@@ -37,8 +37,8 @@ const GlobalStyles = createGlobalStyle`
     --black: black;
   }
   html{
-    --main-font: 'Noto Sans', sans-serif;
-    --secondary-font: 'Noto Sans', sans-serif;
+    --main-font: 'Onest', sans-serif;
+    --secondary-font: 'Onest', sans-serif;
     --stacks-font: 'Roboto Mono';
 
     font-size: 10px;

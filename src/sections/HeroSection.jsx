@@ -144,7 +144,6 @@ const HeroStyles = styled.div`
     }
     .hero__name {
       font-size: 8.5rem;
-      font-family: Roboto;
       color: var(--brand-color);
     }
   }

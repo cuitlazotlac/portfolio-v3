@@ -3,11 +3,11 @@ import { createGlobalStyle } from "styled-components";
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: 'Noto Sans';
+    font-family: 'Onest';
     font-style: normal;
   }
   html{
-    font-family: 'Noto Sans';
+    font-family: 'Onest';
     color: var(--font-color);
   }
   *{
