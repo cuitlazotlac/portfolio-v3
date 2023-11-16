@@ -154,12 +154,14 @@ const HeroStyles = styled.div`
     font-weight: 400;
     text-align: left;
     a {
-      color: var(--brand-color);
+      color: var(--highlight-color);
       font-weight: 500;
-      background-color: #fde572;
+      background-color: #fdd84c;
       &:hover {
-        color: var(--brand-color);
-        background-color: coral;
+        color: var(--highlight-color);
+        text-decoration: underline;
+        font-weight: 400;
+        background-color: #f6a40a;
       }
     }
   }
