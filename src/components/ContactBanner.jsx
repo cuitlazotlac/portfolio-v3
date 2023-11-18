@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 // import ContactButton from "./ContactButton";
 import contact_avatar from "../assets/images/contact_avatar.svg";
-import avatar from "../assets/images/avatar.svg";
-
-import HoverImage from "react-hover-image";
 
 export default function ContactBanner() {
   const { t } = useTranslation();
@@ -122,6 +119,9 @@ const ContactBannerStyles = styled.div`
     .top-section {
       flex-direction: column;
       gap: 0rem;
+    }
+    .left {
+      padding-right: 5%;
     }
   }
 `;

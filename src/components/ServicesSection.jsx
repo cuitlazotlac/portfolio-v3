@@ -1,9 +1,5 @@
 import React, { useEffect } from "react";
 
-import { FiMap } from "react-icons/fi";
-import { FiEdit3 } from "react-icons/fi";
-import { FiDatabase } from "react-icons/fi";
-
 import safety_vest from "../assets/images/safety_vest.png";
 import flashlight from "../assets/images/flashlight.png";
 import artist_palette from "../assets/images/artist_palette.png";
