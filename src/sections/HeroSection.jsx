@@ -347,6 +347,8 @@ const HeroStyles = styled.div`
       /* padding-top: 2rem; */
       /* display: inline-flex; */
       /* flex-wrap: wrap; */
+      display: inline-flex;
+      flex-wrap: wrap;
       gap: 1px;
     }
   }

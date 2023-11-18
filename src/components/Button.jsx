@@ -28,9 +28,7 @@ const ButtonStyle = styled.div`
     padding: 1.2rem 3rem 1.2rem 3rem;
     overflow: hidden;
     &:hover {
-      /* color: var(--black); */
       background-color: var(--bg-button-color);
-      /* font-weight: 500; */
       transform: scale(1.1);
       transform: translate(7px, -7px);
       transform-style: preserve-3d;
