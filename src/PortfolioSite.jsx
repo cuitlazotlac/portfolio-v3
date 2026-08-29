@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router";
 import cryptowatcher from "./assets/images/portfolios/cryptowatcher.png";
 import katakomb from "./assets/images/portfolios/katakomb.png";
 import spread from "./assets/images/portfolios/spread.png";
@@ -44,11 +44,11 @@ function Header({ light, onTheme }) {
       <div className="header-inner">
         <Link className="brand" to="/" aria-label="HVE — home">HVE<span>.</span></Link>
         <nav className={menuOpen ? "site-nav is-open" : "site-nav"} aria-label="Primary navigation">
-          <NavLink exact to="/" activeClassName="active">Welcome</NavLink>
-          <NavLink to="/work" activeClassName="active">Work</NavLink>
-          <NavLink to="/about" activeClassName="active">Profile</NavLink>
+          <NavLink end to="/" className={({ isActive }) => isActive ? "active" : undefined}>Welcome</NavLink>
+          <NavLink to="/work" className={({ isActive }) => isActive ? "active" : undefined}>Work</NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? "active" : undefined}>Profile</NavLink>
           <button className="theme-toggle" type="button" onClick={onTheme} aria-label={light ? "Switch to dark" : "Switch to light"}><span /></button>
-          <NavLink className="nav-contact" to="/contact" activeClassName="active">Contact</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "nav-contact active" : "nav-contact"} to="/contact">Contact</NavLink>
         </nav>
         <div className="mobile-controls">
           <button className="theme-toggle" type="button" onClick={onTheme} aria-label={light ? "Switch to dark" : "Switch to light"}><span /></button>
@@ -79,9 +79,11 @@ function Footer() {
 }
 
 export function SiteFrame({ children }) {
-  const [light, setLight] = useState(false);
+  const [light, setLight] = useState(true);
   const location = useLocation();
-  useEffect(() => window.scrollTo(0, 0), [location.pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return <div className={light ? "site-shell light" : "site-shell"}><Header light={light} onTheme={() => setLight((value) => !value)} /><main>{children}</main><Footer /></div>;
 }
 

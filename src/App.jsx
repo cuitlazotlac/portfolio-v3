@@ -1,0 +1,25 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import {
+  ContactPage,
+  HomePage,
+  ProfilePage,
+  SiteFrame,
+  WorkPage,
+} from "./PortfolioSite";
+import "./portfolio.css";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <SiteFrame>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/work" element={<WorkPage />} />
+          <Route path="/about" element={<ProfilePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<HomePage />} />
+        </Routes>
+      </SiteFrame>
+    </BrowserRouter>
+  );
+}
