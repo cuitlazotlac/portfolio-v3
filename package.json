@@ -38,10 +38,10 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node --openssl-legacy-provider ./node_modules/react-scripts/scripts/start.js",
+    "build": "node --openssl-legacy-provider ./node_modules/react-scripts/scripts/build.js",
+    "test": "node --openssl-legacy-provider ./node_modules/react-scripts/scripts/test.js",
+    "eject": "node --openssl-legacy-provider ./node_modules/react-scripts/scripts/eject.js"
   },
   "eslintConfig": {
     "extends": [
