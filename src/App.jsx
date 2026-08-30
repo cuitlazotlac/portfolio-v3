@@ -4,7 +4,6 @@ import {
   HomePage,
   ProfilePage,
   SiteFrame,
-  WorkPage,
 } from "./PortfolioSite";
 import "./portfolio.css";
 
@@ -14,7 +13,6 @@ export default function App() {
       <SiteFrame>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/work" element={<WorkPage />} />
           <Route path="/about" element={<ProfilePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<HomePage />} />
