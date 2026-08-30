@@ -13,12 +13,12 @@ const focusTracks = [
   { eyebrow: "03 · PRACTICE", title: "Product craft", copy: "Research, interface thinking, analytics, and prototypes that keep teams close to users.", nodes: [["INSIGHT", "CAPTURED"], ["PROTOTYPE", "V.04"], ["LEARN", "+18%"]] },
 ];
 
-function Arrow() { return <span aria-hidden="true">↗</span>; }
+function Arrow() { return <span className="arrow-icon" aria-hidden="true"><svg className="arrow-glyph" viewBox="0 0 16 16"><path d="M4 12 12 4M6 4h6v6" /></svg></span>; }
 
 function ContactIcon({ type }) {
-  if (type === "email") return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1" /><path d="m4 7 8 6 8-6" /></svg>;
-  if (type === "linkedin") return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1" /><path d="M8 10v7M8 7.5v.1M12 17v-4a3 3 0 0 1 6 0v4M12 10v7" /></svg>;
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 21v-3.5c0-1 .1-1.4-.5-2 3 0 6-1.5 6-6A4.6 4.6 0 0 0 19.3 6c.1-.8.1-1.8-.3-3 0 0-1 0-3.5 1.5a12 12 0 0 0-7 0C6 3 5 3 5 3c-.4 1.2-.4 2.2-.3 3a4.6 4.6 0 0 0-1.2 3.5c0 4.5 3 6 6 6-.6.6-.6 1.2-.5 2V21M9 19c-3 .9-3-1.5-4.5-2" /></svg>;
+  if (type === "email") return <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1" /><path d="m4 7 8 6 8-6" /></svg>;
+  if (type === "linkedin") return <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1" /><path d="M8 10v7M8 7.5v.1M12 17v-4a3 3 0 0 1 6 0v4M12 10v7" /></svg>;
+  return <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 21v-3.5c0-1 .1-1.4-.5-2 3 0 6-1.5 6-6A4.6 4.6 0 0 0 19.3 6c.1-.8.1-1.8-.3-3 0 0-1 0-3.5 1.5a12 12 0 0 0-7 0C6 3 5 3 5 3c-.4 1.2-.4 2.2-.3 3a4.6 4.6 0 0 0-1.2 3.5c0 4.5 3 6 6 6-.6.6-.6 1.2-.5 2V21M9 19c-3 .9-3-1.5-4.5-2" /></svg>;
 }
 
 function SectionRule({ label }) {
