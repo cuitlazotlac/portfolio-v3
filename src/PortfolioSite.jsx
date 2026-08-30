@@ -130,7 +130,7 @@ function FocusSection() {
   );
 }
 
-function AnimatedMetric({ value, suffix = "", label, size, solid }) {
+function AnimatedMetric({ value, suffix = "", label, index, size, detail, solid }) {
   const ref = useRef(null);
   const [display, setDisplay] = useState(0);
   useEffect(() => {
@@ -149,12 +149,12 @@ function AnimatedMetric({ value, suffix = "", label, size, solid }) {
     observer.observe(node);
     return () => observer.disconnect();
   }, [value]);
-  return <div className="metric" ref={ref}><strong>{display}{suffix}</strong><div className={solid ? "metric-bar solid" : "metric-bar"} style={{ "--metric-height": `${size}px` }} /><span>{label}</span></div>;
+  return <article className={`metric metric-${index}`} ref={ref}><div className="metric-head"><small>0{index + 1}</small><span>● ACTIVE</span></div><strong>{display}{suffix}</strong><div className="metric-bar" aria-hidden="true"><i className={solid ? "solid" : ""} style={{ "--metric-height": `${size}px` }} /><b /></div><p>{label}</p><small className="metric-detail">{detail}</small></article>;
 }
 
 function MetricsSection() {
-  const metrics = [{ value: 6, suffix: "+", label: "Years building products", size: 48, solid: true }, { value: 10, suffix: "+", label: "Public product builds", size: 84 }, { value: 3, label: "Core disciplines", size: 56 }, { value: 2, label: "B2B & B2C contexts", size: 46 }];
-  return <section className="metrics-section"><SectionRule label="By the numbers" /><div className="section-intro centered narrow"><h2>Product work,<br /><em>counted clearly.</em></h2><p>A practice built across strategy, delivery, technical systems, and hands-on experiments.</p><Link className="text-link" to="/about">Read the full profile →</Link></div><div className="metric-grid">{metrics.map((metric) => <AnimatedMetric {...metric} key={metric.label} />)}</div></section>;
+  const metrics = [{ value: 6, suffix: "+", label: "Years building products", size: 62, detail: "2018 → NOW", solid: true }, { value: 10, suffix: "+", label: "Public product builds", size: 102, detail: "REPOSITORIES / LIVE" }, { value: 3, label: "Core disciplines", size: 76, detail: "PRODUCT · DATA · CODE" }, { value: 2, label: "B2B & B2C contexts", size: 54, detail: "SYSTEMS ↔ PEOPLE" }];
+  return <section className="metrics-section"><SectionRule label="By the numbers" /><div className="section-intro centered narrow"><h2>Product work,<br /><em>counted clearly.</em></h2><p>A practice built across strategy, delivery, technical systems, and hands-on experiments.</p><Link className="text-link" to="/about">Read the full profile →</Link></div><div className="metric-grid">{metrics.map((metric, index) => <AnimatedMetric {...metric} index={index} key={metric.label} />)}</div></section>;
 }
 
 function ToolsSection() {

@@ -37,7 +37,24 @@ h2 { margin-bottom:17px; font-size:clamp(37px,3.1vw,44px); line-height:1.04; let
 .focus-section { margin-top:62px; min-height:680px; } .focus-stage { max-width:900px; margin:85px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; padding:0 40px; }
 .blueprint { width:310px; height:225px; margin:0 auto; position:relative; transform:skewY(-22deg) rotate(2deg); border:1px solid var(--line-strong); background:repeating-linear-gradient(90deg,transparent 0 28px,var(--line) 28px 29px); } .blueprint i { position:absolute; display:block; border:1px solid var(--line-strong); background:var(--panel-warm); box-shadow:12px 12px 0 rgba(0,0,0,.2); } .blueprint i:nth-child(1) { width:140px; height:90px; top:40px; left:60px; border-bottom:8px solid var(--amber); } .blueprint i:nth-child(2) { width:92px; height:52px; top:108px; left:170px; } .blueprint i:nth-child(3) { width:72px; height:42px; top:135px; left:80px; } .blueprint span { position:absolute; left:3px; bottom:-29px; font:8px var(--mono); color:var(--muted); }
 .focus-copy h3 { margin:0 0 4px; font-size:24px; font-weight:500; } .focus-copy small { font:9px var(--mono); color:var(--muted); } .focus-copy p { color:var(--muted); font-size:15px; margin-top:25px; } .stepper { display:flex; gap:7px; margin-top:28px; } .stepper button { width:46px; height:46px; background:transparent; border:1px solid var(--line); cursor:pointer; }
-.metrics-section { min-height:750px; border-bottom:1px solid var(--line); } .metric-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:22px; align-items:flex-end; padding:105px 24px 70px; } .metric strong { display:block; font-size:27px; font-weight:500; } .metric-bar { border:1px solid var(--line-strong); background:repeating-linear-gradient(135deg,transparent 0 4px,rgba(241,238,230,.09) 4px 5px); } .metric-bar.solid { background:var(--amber); border-color:var(--amber); } .metric span { display:block; margin-top:10px; color:var(--muted); font-size:11px; }
+.metrics-section { min-height:720px; padding-bottom:90px; border-bottom:1px solid var(--line); }
+.metric-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; align-items:end; padding:88px 24px 0; }
+.metric { position:relative; min-width:0; padding:14px 14px 16px; border-top:1px solid var(--line); transition:background .25s ease,transform .25s ease,border-color .25s ease; }
+.metric:hover { transform:translateY(-5px); border-color:var(--amber); background:rgba(137,33,60,.06); }
+.metric-head { display:flex; align-items:center; justify-content:space-between; color:var(--muted); font:7px var(--mono); letter-spacing:.12em; }
+.metric-head span { color:var(--status); }
+.metric>strong { display:block; margin-top:22px; font-size:33px; line-height:1; font-weight:500; letter-spacing:-.05em; transition:color .25s ease,transform .25s ease; }
+.metric:hover>strong { color:var(--amber); transform:translateX(3px); }
+.metric-bar { position:relative; height:112px; margin-top:14px; display:flex; align-items:flex-end; border-bottom:1px solid var(--line-strong); background:repeating-linear-gradient(90deg,transparent 0 18px,rgba(247,238,241,.045) 18px 19px); }
+.metric-bar i { display:block; width:100%; height:0; border:1px solid var(--line-strong); background:repeating-linear-gradient(135deg,transparent 0 4px,rgba(247,238,241,.09) 4px 5px); transition:height .9s cubic-bezier(.2,.9,.25,1),background .25s ease,transform .25s ease; }
+.metric-bar i.solid { background:var(--amber); border-color:var(--amber); }
+.metric-bar b { position:absolute; left:0; bottom:-3px; width:6px; height:6px; border-radius:50%; background:var(--status); box-shadow:0 0 10px var(--status); opacity:0; }
+.metrics-section.is-visible .metric-bar i { height:var(--metric-height); }
+.metrics-section.is-visible .metric-bar b { animation:metric-scan 2.8s .9s ease-in-out infinite; }
+.metric:hover .metric-bar i { transform:scaleX(.94); background:var(--amber); border-color:var(--amber); }
+.metric>p { margin:12px 0 3px; color:var(--text); font-size:12px; }
+.metric-detail { display:block; color:var(--muted); font:7px var(--mono); letter-spacing:.08em; }
+@keyframes metric-scan { 0%,100% { left:0; opacity:.2; } 50% { left:calc(100% - 6px); opacity:1; } }
 .tools-section { padding-bottom:110px; border-bottom:1px solid var(--line); overflow:hidden; } .tools-section .section-intro { padding-left:24px; }
 .tool-grid { margin:76px 24px 0; display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:10px; }
 .tool-card { min-width:0; }
@@ -102,11 +119,6 @@ h2 { margin-bottom:17px; font-size:clamp(37px,3.1vw,44px); line-height:1.04; let
 @keyframes cursor-run { 0%,100% { left:28px; } 50% { left:272px; } }
 @keyframes track-copy { from { opacity:0; transform:translateX(18px); } to { opacity:1; transform:none; } }
 
-.metric-bar { height:0; transition:height .8s cubic-bezier(.2,.9,.25,1),transform .25s ease,background .25s ease; }
-.metrics-section.is-visible .metric-bar { height:var(--metric-height); }
-.metric:hover .metric-bar { transform:translateY(-7px) scaleX(.94); background:var(--amber); border-color:var(--amber); }
-.metric strong { transition:color .2s ease,transform .25s ease; }
-.metric:hover strong { color:var(--amber); transform:translateX(5px) rotate(-3deg); }
 
 .contact-links a { grid-template-columns:46px 1fr auto; column-gap:14px; transition:background .25s ease,padding .25s ease,color .25s ease; }
 .contact-links a svg { grid-column:1; grid-row:1/3; align-self:center; width:28px; height:28px; fill:none; stroke:currentColor; stroke-width:1.5; }
@@ -275,7 +287,11 @@ h2 { margin-bottom:17px; font-size:clamp(37px,3.1vw,44px); line-height:1.04; let
   .focus-stage { margin-top:52px; padding:0 20px; gap:64px; }
   .blueprint,.focus-illustration { width:min(280px,84vw); }
   .metrics-section { min-height:auto; }
-  .metric-grid { padding:60px 20px 80px; }
+  .metric-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 10px; padding:60px 14px 0; }
+  .metric { padding:12px 8px 14px; }
+  .metric>strong { font-size:27px; }
+  .metric-bar { height:94px; }
+  .metric-head span { display:none; }
   .tools-section { min-height:auto; padding-top:0; padding-bottom:88px; }
   .tool-grid { margin:54px 20px 0; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 12px; }
   .tool-card>span { padding-top:9px; }
