@@ -169,6 +169,7 @@ function Footer() {
           {["DISCOVER", "FRAME", "BUILD", "SHIP", "LEARN"].map((item) => (
             <span key={item}>{item}</span>
           ))}
+          <div className="timeline-runner"><i /><i /><b /></div>
         </div>
       </div>
       <div className="footer-grid">
@@ -341,34 +342,43 @@ function ProductBench() {
             <svg viewBox="0 0 620 300" preserveAspectRatio="none">
               {item.topology === "funnel" && (
                 <>
-                  <path d="M95 62 C190 62 170 150 305 150" />
-                  <path d="M95 238 C190 238 170 150 305 150" />
-                  <path d="M305 150 C410 150 430 150 530 150" />
+                  <path d="M71 38 L294 146 L550 146" />
+                  <circle className="network-junction" cx="71" cy="38" r="7" />
+                  <circle className="network-junction" cx="294" cy="146" r="7" />
+                  <circle className="network-junction" cx="550" cy="146" r="7" />
+                  <circle className="path-pulse" r="6"><animateMotion dur="3.8s" repeatCount="indefinite" path="M71 38 L294 146 L550 146" /></circle>
                 </>
               )}
               {item.topology === "loop" && (
                 <>
-                  <path d="M105 80 C250 -10 465 15 515 128" />
-                  <path d="M515 128 C555 245 310 300 170 220" />
-                  <path d="M170 220 C72 170 46 110 105 80" />
+                  <path d="M89 44 L537 123 L219 265 Z" />
+                  <circle className="network-junction" cx="89" cy="44" r="7" />
+                  <circle className="network-junction" cx="537" cy="123" r="7" />
+                  <circle className="network-junction" cx="219" cy="265" r="7" />
+                  <circle className="path-pulse" r="6"><animateMotion dur="4.8s" repeatCount="indefinite" path="M89 44 L537 123 L219 265 Z" /></circle>
                 </>
               )}
               {item.topology === "pipeline" && (
                 <>
-                  <path d="M70 150 H190 L230 84 H370 L410 214 H548" />
-                  <path d="M190 150 L230 214 H360" />
+                  <path d="M58 117 L288 38 L562 262" />
+                  <circle className="network-junction" cx="58" cy="117" r="7" />
+                  <circle className="network-junction" cx="288" cy="38" r="7" />
+                  <circle className="network-junction" cx="562" cy="262" r="7" />
+                  <circle className="path-pulse" r="6"><animateMotion dur="4.2s" repeatCount="indefinite" path="M58 117 L288 38 L562 262" /></circle>
                 </>
               )}
               {item.topology === "stack" && (
                 <>
-                  <path d="M310 46 V98" />
-                  <path d="M310 138 V184" />
-                  <path d="M310 224 V267" />
-                  <path d="M132 202 H260 M360 202 H498" />
+                  <path d="M310 23 L310 103 L146 172" />
+                  <path d="M310 103 L473 172" />
+                  <circle className="network-junction" cx="310" cy="23" r="7" />
+                  <circle className="network-junction" cx="310" cy="103" r="7" />
+                  <circle className="network-junction" cx="146" cy="172" r="7" />
+                  <circle className="network-junction" cx="473" cy="172" r="7" />
+                  <circle className="path-pulse" r="6"><animateMotion dur="3.4s" repeatCount="indefinite" path="M310 23 L310 103 L146 172" /></circle>
                 </>
               )}
             </svg>
-            <div className="network-pulse" />
             {item.cards.map((card, index) => (
               <div className={`network-card network-${index + 1}`} key={card}>
                 <small>{card}</small>
@@ -376,9 +386,6 @@ function ProductBench() {
                 <span>{index === 1 ? "● PROCESSING" : "◆ CONNECTED"}</span>
               </div>
             ))}
-            <i className="network-node node-a" />
-            <i className="network-node node-b" />
-            <i className="network-node node-c" />
           </div>
           <div className="canvas-card">
             <small>NOW WORKING ON</small>
@@ -576,12 +583,13 @@ function AnimatedMetric({
         {display}
         {suffix}
       </strong>
-      <div className="metric-bar" aria-hidden="true">
+      <div className={`metric-bar${index === 3 ? " coffee-meter" : ""}`} aria-hidden="true">
         <i
           className={solid ? "solid" : ""}
           style={{ "--metric-height": `${size}px` }}
         />
         <b />
+        {index === 3 && <div className="coffee-steam"><span /><span /><span /></div>}
       </div>
       <p>{label}</p>
       <small className="metric-detail">{detail}</small>
@@ -615,7 +623,7 @@ function MetricsSection() {
     {
       value: 8918,
       label: "Liters of coffee, approximately",
-      size: 240,
+      size: 88,
       detail: "SOURCE: TRUST ME",
     },
   ];
@@ -760,58 +768,8 @@ export function ProfilePage() {
           teams to understand the problem, build something real, and keep
           improving it once it’s in users’ hands.
         </p>
-        <div className="profile-diagram terminal-graph" aria-hidden="true">
-          <div className="terminal-bar">
-            <span>● ● ●</span>
-            <b>hve://knowledge-graph</b>
-            <small>SYNCED / 24 NODES</small>
-          </div>
-          <svg viewBox="0 0 1000 390" preserveAspectRatio="none">
-            <path d="M500 176 C420 120 310 92 192 126" />
-            <path d="M500 176 C580 112 710 92 832 132" />
-            <path d="M500 176 C455 250 340 282 238 294" />
-            <path d="M500 176 C560 250 680 282 792 290" />
-            <path d="M192 126 L238 294 M832 132 L792 290" />
-          </svg>
-          <div className="terminal-core">
-            <small>~/profile/core</small>
-            <b>HVE</b>
-            <span>STATUS: BUILDING</span>
-          </div>
-          <div className="terminal-node graph-product">
-            <small>01 / PRODUCT</small>
-            <b>Outcome framing</b>
-            <code>$ discover → decide</code>
-          </div>
-          <div className="terminal-node graph-systems">
-            <small>02 / SYSTEMS</small>
-            <b>Technical clarity</b>
-            <code>$ map --dependencies</code>
-          </div>
-          <div className="terminal-node graph-people">
-            <small>03 / PEOPLE</small>
-            <b>User context</b>
-            <code>$ listen --closely</code>
-          </div>
-          <div className="terminal-node graph-delivery">
-            <small>04 / DELIVERY</small>
-            <b>Useful shipping</b>
-            <code>$ build && learn</code>
-          </div>
-          <div className="terminal-log">
-            <span>› connecting evidence...</span>
-            <span>› resolving constraints...</span>
-            <span>
-              › signal received <b>OK</b>
-            </span>
-          </div>
-          <i className="graph-dot dot-1" />
-          <i className="graph-dot dot-2" />
-          <i className="graph-dot dot-3" />
-          <strong>PRODUCT / SYSTEMS / PEOPLE / DELIVERY</strong>
-        </div>
       </section>
-      <section className="profile-story">
+      <section className="profile-story profile-combined">
         <SectionRule label="Profile" />
         <div className="story-grid">
           <h2>
@@ -825,8 +783,6 @@ export function ProfilePage() {
             the code and build the idea myself.
           </p>
         </div>
-      </section>
-      <section className="how-i-work">
         <SectionRule label="How I work" />
         <div className="how-grid">
           <div>
@@ -854,18 +810,6 @@ export function ProfilePage() {
         </div>
       </section>
       <ExperienceSection />
-      <section className="profile-cta">
-        <SectionRule label="Next" />
-        <div>
-          <h2>
-            Looking for a product leader who can move between strategy and the
-            system?
-          </h2>
-          <Link className="button button-amber" to="/contact">
-            Let&apos;s talk <Arrow />
-          </Link>
-        </div>
-      </section>
     </>
   );
 }

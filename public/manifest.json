@@ -3,7 +3,7 @@
   "name": "Hayssem Vazquez-Elsayed — Product Leadership",
   "icons": [
     {
-      "src": "/favicon.svg?v=garnet-2",
+      "src": "/favicon.svg?v=mono-1",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
@@ -11,6 +11,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#89213C",
-  "background_color": "#0D090B"
+  "theme_color": "#151515",
+  "background_color": "#151515"
 }
