@@ -110,19 +110,13 @@ function SectionRule({ label }) {
 }
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
-  useEffect(() => setMenuOpen(false), [location.pathname]);
   return (
     <header className="site-header">
       <div className="header-inner">
         <Link className="brand" to="/" aria-label="HVE — home">
           <img src="/hve-logo.svg" alt="" />
         </Link>
-        <nav
-          className={menuOpen ? "site-nav is-open" : "site-nav"}
-          aria-label="Primary navigation"
-        >
+        <nav className="site-nav" aria-label="Primary navigation">
           <NavLink
             to="/about"
             className={({ isActive }) => (isActive ? "active" : undefined)}
@@ -138,18 +132,6 @@ function Header() {
             Contact
           </NavLink>
         </nav>
-        <div className="mobile-controls">
-          <button
-            className="menu-toggle"
-            type="button"
-            aria-expanded={menuOpen}
-            aria-label="Open menu"
-            onClick={() => setMenuOpen((value) => !value)}
-          >
-            <i />
-            <i />
-          </button>
-        </div>
       </div>
     </header>
   );
@@ -169,7 +151,11 @@ function Footer() {
           {["DISCOVER", "FRAME", "BUILD", "SHIP", "LEARN"].map((item) => (
             <span key={item}>{item}</span>
           ))}
-          <div className="timeline-runner"><i /><i /><b /></div>
+          <svg className="timeline-runner" viewBox="0 0 48 48">
+            <path className="dino-body" d="M5 24h5v5h5v4h5v4h5v-5h5v-5h4V9h-4V5H17v4h-4v15H9v-5H5zm17-14h4v4h-4z" />
+            <path className="dino-leg dino-leg-a" d="M16 35h6v9h-5v-5h-4z" />
+            <path className="dino-leg dino-leg-b" d="M25 34h6v10h-5v-6h-4z" />
+          </svg>
         </div>
       </div>
       <div className="footer-grid">
@@ -308,7 +294,6 @@ function ProductBench() {
       <div className="bench-bar">
         <span>● ● ●</span>
         <strong>PORTFOLIO / PRODUCT / SYSTEMS</strong>
-        <small>● READY</small>
       </div>
       <div className="bench-layout">
         <div className="bench-tabs">
@@ -324,16 +309,11 @@ function ProductBench() {
               <span>{entry.meta}</span>
             </button>
           ))}
-          <div className="bench-count">
-            {active + 1} / {items.length} OPENED
-          </div>
         </div>
         <div className="bench-canvas">
           <div className="canvas-label">
             <span>WORKSPACE</span>
-            <span>BENCH · LIVE</span>
           </div>
-          <div className="canvas-note">HVE</div>
           <div
             className={`expertise-network topology-${item.topology}`}
             key={item.title}
@@ -392,24 +372,14 @@ function ProductBench() {
             <strong>{item.title}</strong>
             <p>{item.command}</p>
           </div>
-          <div className="canvas-tools">
-            <span>FIGMA</span>
-            <span>SQL</span>
-            <span>CODE</span>
-            <span>AI</span>
-          </div>
           <div className="bench-console">
             <span>❯</span>
             <div>
               <small>{item.command}</small>
-              <p>↳ {item.response}</p>
+              <p>{item.response}</p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="bench-caption">
-        FIG. 004 — FOUR TRACKS, ONE BENCH{" "}
-        <span>PRODUCT, DATA, SYSTEMS, DELIVERY</span>
       </div>
     </div>
   );
@@ -472,48 +442,27 @@ function FocusSection() {
           className={`focus-illustration track-network focus-${index}`}
           aria-hidden="true"
         >
-          <div className="track-bar">
-            <span>● ● ●</span>
-            <b>track_0{index + 1}.graph</b>
-          </div>
-          <svg viewBox="0 0 310 225">
+          <svg className="track-isometric" viewBox="0 0 310 225">
             {index === 0 && (
               <>
-                <path d="M46 75 C105 75 104 112 155 112" />
-                <path d="M46 164 C105 164 104 112 155 112" />
-                <path d="M155 112 C210 112 218 118 267 118" />
+                <path className="iso-wire" d="M47 139 143 84 263 140 166 196Z M143 84v-34m-96 89v-34m216 35v-34m-97 90v-34" />
+                <g className="iso-cube cube-a"><path className="iso-top" d="m62 91 43-25 43 21-44 26Z"/><path className="iso-left" d="m62 91 42 22v42l-42-22Z"/><path className="iso-right" d="m104 113 44-26v42l-44 26Z"/></g>
+                <g className="iso-cube cube-b"><path className="iso-top" d="m155 118 34-20 34 17-35 20Z"/><path className="iso-left" d="m155 118 33 17v31l-33-17Z"/><path className="iso-right" d="m188 135 35-20v31l-35 20Z"/></g>
               </>
             )}
             {index === 1 && (
               <>
-                <path d="M53 112 H108" />
-                <path d="M155 112 H205" />
-                <path d="M252 112 V169 H155" />
-                <path d="M155 169 V112" />
+                <path className="iso-wire" d="m45 153 110-64 110 55-110 65Zm55-32v-39m55 7V45m55 76V82" />
+                {[0,1,2].map((level)=><g className={`iso-layer layer-${level}`} key={level} transform={`translate(0 ${-level*24})`}><path className="iso-top" d="m76 129 79-46 79 39-79 47Z"/><path className="iso-left" d="m76 129 79 40v18l-79-40Z"/><path className="iso-right" d="m155 169 79-47v18l-79 47Z"/></g>)}
               </>
             )}
             {index === 2 && (
               <>
-                <path d="M155 54 C70 54 58 173 126 177" />
-                <path d="M126 177 C203 202 264 147 244 94" />
-                <path d="M244 94 C226 48 192 45 155 54" />
+                <path className="iso-wire" d="m39 164 54-31 58 29 58-34 62 31-119 55Zm54-31V75m58 87V48m58 80V82" />
+                {["93 75","151 48","209 82"].map((point,nodeIndex)=>{const [x,y]=point.split(" ").map(Number);return <g className={`iso-node node-${nodeIndex}`} key={point} transform={`translate(${x-25} ${y})`}><path className="iso-top" d="m0 14 25-14 25 13-25 14Z"/><path className="iso-left" d="m0 14 25 13v28L0 42Z"/><path className="iso-right" d="m25 27 25-14v28L25 55Z"/></g>})}
               </>
             )}
           </svg>
-          <div className="track-core">
-            <small>HVE</small>
-            <b>{index === 0 ? "DECIDE" : index === 1 ? "SYSTEM" : "ITERATE"}</b>
-          </div>
-          {track.nodes.map(([label, value], nodeIndex) => (
-            <div
-              className={`track-node track-node-${nodeIndex + 1}`}
-              key={label}
-            >
-              <small>{label}</small>
-              <b>{value}</b>
-            </div>
-          ))}
-          <div className="track-cursor">› _</div>
         </div>
         <div key={track.title} className="focus-copy track-enter">
           <h3>{track.title}</h3>
@@ -592,7 +541,7 @@ function AnimatedMetric({
         {index === 3 && <div className="coffee-steam"><span /><span /><span /></div>}
       </div>
       <p>{label}</p>
-      <small className="metric-detail">{detail}</small>
+      {detail && <small className="metric-detail">{detail}</small>}
     </article>
   );
 }
@@ -624,7 +573,7 @@ function MetricsSection() {
       value: 8918,
       label: "Liters of coffee, approximately",
       size: 88,
-      detail: "SOURCE: TRUST ME",
+      detail: "",
     },
   ];
   return (
@@ -653,17 +602,16 @@ function MetricsSection() {
   );
 }
 
+function CompanyLogo({ experience }) {
+  return (
+    <div className="company-logo" aria-label={`${experience.company} logo placeholder`}>
+      <span>{experience.logo}</span>
+    </div>
+  );
+}
+
 function ToolsSection() {
-  const tools = [
-    "React",
-    "SQL",
-    "APIs",
-    "Amplitude",
-    "PostHog",
-    "Figma",
-    "Claude",
-    "NotebookLM",
-  ];
+  const tools = ["React", "SQL", "APIs", "Amplitude", "PostHog", "Figma", "Claude", "NotebookLM"];
   return (
     <section className="tools-section">
       <SectionRule label="Working kit" />
@@ -679,17 +627,9 @@ function ToolsSection() {
         {tools.map((tool, index) => (
           <article className="tool-card" key={tool}>
             <div className="tool-mark">
-              <img
-                className="tool-image default"
-                src="/tool-placeholder.svg"
-                alt=""
-              />
-              <img
-                className="tool-image hover"
-                src="/tool-placeholder-hover.svg"
-                alt=""
-              />
               <b>{String(index + 1).padStart(2, "0")}</b>
+              <i aria-hidden="true" />
+              <small>YOUR LOGO</small>
             </div>
             <span>{tool}</span>
           </article>
@@ -716,12 +656,7 @@ function ExperienceSection() {
         {experiences.map((experience) => (
           <article key={experience.index}>
             <div className="experience-top">
-              <div
-                className="company-logo"
-                aria-label={`${experience.company} logo placeholder`}
-              >
-                {experience.logo}
-              </div>
+              <CompanyLogo experience={experience} />
               <small>{experience.index}</small>
             </div>
             <h3>{experience.company}</h3>
