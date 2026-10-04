@@ -245,7 +245,7 @@ function Footer() {
           <p>Ideas are better in production.</p>
           <p>Toronto · Eastern Time</p>
           <span className="footer-status-pill">
-            <i className="status-dot" /> AVAILABLE FOR SELECT ROLES
+            <i className="status-dot" /> OPEN FOR DISCUSSIONS
           </span>
         </div>
         <div className="footer-col">
