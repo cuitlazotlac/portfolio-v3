@@ -2,36 +2,52 @@ import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 const experiences = [
   {
-    index: "A1",
+    index: "01",
+    period: "2024 — NOW",
+    status: "CURRENT",
     logo: "TK",
+    defaultImage: "/TENKI-DARK.png",
+    hoverImage: "/TENKI-HOVER.png",
     company: "Tenki",
     role: "Senior Product Manager",
     copy: "Building developer infrastructure and products that make compute easier to access, run, and scale.",
-    tags: ["Developer Tools", "Infrastructure", "AI"],
+    tags: ["Dev Tools", "Infrastructure", "Compute & AI"],
   },
   {
-    index: "A2",
+    index: "02",
+    period: "2021 — 2024",
+    status: "COMPLETED",
     logo: "LX",
+    defaultImage: "/LUXOR-DARK.png",
+    hoverImage: "/LUXOR-HOVER.png",
     company: "Luxor Technology",
     role: "Senior Product Manager",
     copy: "Joined as the first PM, leading core products and launching new ones from 0→1, including ASIC firmware.",
-    tags: ["Bitcoin", "0→1", "B2BC"],
+    tags: ["Bitcoin", "0→1 Product", "B2B/B2C Platform"],
   },
   {
-    index: "A3",
+    index: "03",
+    period: "2019 — 2021",
+    status: "COMPLETED",
     logo: "SG",
+    defaultImage: "/SG-DARK.png",
+    hoverImage: "/SG-HOVER.png",
     company: "Société Générale CIB",
     role: "Product Manager",
     copy: "Built developer-facing products and experiences while contributing to product exploration inside the innovation center.",
-    tags: ["Fintech", "APIs", "Platform"],
+    tags: ["Fintech APIs", "Dev Platforms", "Innovation Center"],
   },
   {
-    index: "A4",
+    index: "04",
+    period: "2018 — 2019",
+    status: "COMPLETED",
     logo: "BNP",
+    defaultImage: "/BNP-DARK.png",
+    hoverImage: "/BNP-HOVER.png",
     company: "BNP Paribas Cardif",
     role: "Technical Project Manager",
     copy: "Built internal products and data systems to improve sales workflows and operational efficiency.",
-    tags: ["Insurance", "Data", "B2B"],
+    tags: ["Data Pipelines", "Internal Tools", "B2B Enterprise"],
   },
 ];
 
@@ -109,12 +125,44 @@ function SectionRule({ label }) {
   );
 }
 
+function HveLogo() {
+  return (
+    <svg
+      viewBox="0 0 110 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="HVE — Hayssem Vazquez-Elsayed"
+      className="hve-logo-svg"
+    >
+      <g className="hve-mark">
+        <line x1="5" y1="5" x2="5" y2="27" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="23" y1="5" x2="23" y2="27" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="5" y1="16" x2="23" y2="16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+        <polyline points="5,7 14,23 23,7" stroke="var(--amber)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="14" cy="16" r="2.2" fill="var(--amber)" />
+      </g>
+      <g className="hve-text" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="36" y1="7" x2="36" y2="25" />
+        <line x1="36" y1="16" x2="47" y2="16" />
+        <line x1="47" y1="7" x2="47" y2="25" />
+        <polyline points="54,7 62,25 70,7" />
+        <line x1="77" y1="7" x2="77" y2="25" />
+        <line x1="77" y1="7" x2="88" y2="7" />
+        <line x1="77" y1="16" x2="85" y2="16" />
+        <line x1="77" y1="25" x2="88" y2="25" />
+      </g>
+      <rect x="94" y="21" width="3.5" height="3.5" rx="0.75" fill="var(--amber)" />
+    </svg>
+  );
+}
+
 function Header() {
   return (
     <header className="site-header">
       <div className="header-inner">
         <Link className="brand" to="/" aria-label="HVE — home">
-          <img src="/hve-logo.svg" alt="" />
+          <HveLogo />
         </Link>
         <nav className="site-nav" aria-label="Primary navigation">
           <NavLink
@@ -140,73 +188,118 @@ function Header() {
 function Footer() {
   return (
     <footer className="site-footer">
+      <div className="footer-telemetry-bar">
+        <span className="telemetry-item">
+          <i className="status-dot" /> SYS_CHANNEL // DIRECT CONNECT
+        </span>
+        <span className="telemetry-item">TORONTO, CA [EASTERN TIME · UTC-4]</span>
+        <span className="telemetry-item">
+          <i className="status-dot" /> LIVE TELEMETRY · 24ms
+        </span>
+      </div>
+
       <div className="footer-stage">
-        <Link className="button button-amber" to="/contact">
-          Start a conversation <Arrow />
-        </Link>
-        <p className="footer-kit">
-          <span>HVE</span> Product · Systems · Delivery
-        </p>
+        <div className="footer-cta-wrap">
+          <h3>
+            Ideas are better in <em>production.</em>
+          </h3>
+          <p>
+            Open to high-impact product leadership, 0→1 platform initiatives, and
+            technical challenges.
+          </p>
+          <Link className="button button-amber footer-cta-btn" to="/contact">
+            Start a conversation <Arrow />
+          </Link>
+        </div>
         <div className="signal-line" aria-hidden="true">
-          {["DISCOVER", "FRAME", "BUILD", "SHIP", "LEARN"].map((item) => (
-            <span key={item}>{item}</span>
+          {[
+            { step: "01", label: "DISCOVER" },
+            { step: "02", label: "FRAME" },
+            { step: "03", label: "BUILD" },
+            { step: "04", label: "SHIP" },
+            { step: "05", label: "LEARN" },
+          ].map((item) => (
+            <span key={item.label} className="signal-step">
+              <small>{item.step}</small>
+              <b>{item.label}</b>
+            </span>
           ))}
           <svg className="timeline-runner" viewBox="0 0 48 48">
-            <path className="dino-body" d="M5 24h5v5h5v4h5v4h5v-5h5v-5h4V9h-4V5H17v4h-4v15H9v-5H5zm17-14h4v4h-4z" />
+            <path
+              className="dino-body"
+              d="M5 24h5v5h5v4h5v4h5v-5h5v-5h4V9h-4V5H17v4h-4v15H9v-5H5zm17-14h4v4h-4z"
+            />
             <path className="dino-leg dino-leg-a" d="M16 35h6v9h-5v-5h-4z" />
             <path className="dino-leg dino-leg-b" d="M25 34h6v10h-5v-6h-4z" />
           </svg>
         </div>
       </div>
+
       <div className="footer-grid">
-        <div>
+        <div className="footer-col">
+          <small className="footer-col-num">01 // DIRECT CONTACT</small>
           <h4>Contact</h4>
           <a className="footer-strong" href="mailto:heyhayssem@gmail.com">
             heyhayssem@gmail.com
           </a>
-          <p> Ideas are better in production.</p>
+          <p>Ideas are better in production.</p>
           <p>Toronto · Eastern Time</p>
+          <span className="footer-status-pill">
+            <i className="status-dot" /> AVAILABLE FOR SELECT ROLES
+          </span>
         </div>
-        <div>
+        <div className="footer-col">
+          <small className="footer-col-num">02 // ELSEWHERE</small>
           <h4>Elsewhere</h4>
-          <a
-            href="https://github.com/cuitlazotlac"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub <Arrow />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/hayssem-elsayed/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn <Arrow />
-          </a>
-          <a
-            href="https://www.behance.net/cuitlazotlac"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Behance <Arrow />
-          </a>
-          <a
-            href="https://codepen.io/cuitlazotlac"
-            target="_blank"
-            rel="noreferrer"
-          >
-            CodePen <Arrow />
-          </a>
+          <div className="footer-link-list">
+            <a
+              href="https://github.com/cuitlazotlac"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <Arrow />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hayssem-elsayed/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn <Arrow />
+            </a>
+            <a
+              href="https://www.behance.net/cuitlazotlac"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Behance <Arrow />
+            </a>
+            <a
+              href="https://codepen.io/cuitlazotlac"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CodePen <Arrow />
+            </a>
+          </div>
         </div>
-        <div>
+        <div className="footer-col">
+          <small className="footer-col-num">03 // DOMAIN &amp; PRACTICE</small>
           <h4>Practice</h4>
-          <p>Product management · Platforms</p>
-          <p>Data · Interfaces · AI</p>
+          <p>Technical Product Leadership</p>
+          <p>Platforms, Compute &amp; Developer Tools</p>
+          <div className="footer-tags">
+            <span>[PLATFORMS]</span>
+            <span>[APIs &amp; DATA]</span>
+            <span>[AI WORKFLOWS]</span>
+            <span>[0→1 PRODUCTS]</span>
+          </div>
         </div>
       </div>
+
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Hayssem Vazquez-Elsayed</span>
-        <span>Built with intention.</span>
+        <span>Senior Product Manager // Platforms</span>
+        <span>SYS_BUILD · 2026.09</span>
       </div>
     </footer>
   );
@@ -243,141 +336,145 @@ export function SiteFrame({ children }) {
   );
 }
 
-function ProductBench() {
-  const [active, setActive] = useState(0);
-  const items = [
-    {
-      title: "Product Strategy",
-      meta: "OUTCOMES · ROADMAP",
-      command: "find the right problem",
-      response:
-        "Turn user needs, business goals, and technical constraints into clear product bets.",
-      cards: ["USER SIGNAL", "OPPORTUNITY", "ROADMAP"],
-      values: ["42 INSIGHTS", "03 BETS", "Q3 / ACTIVE"],
-      topology: "funnel",
-    },
-    {
-      title: "Design Systems",
-      meta: "CLARITY · SCALE",
-      command: "create a consistent product",
-      response:
-        "Build reusable patterns that make the experience clearer and the product easier to scale.",
-      cards: ["TOKEN", "COMPONENT", "PRODUCT"],
-      values: ["CORAL / 500", "BUTTON / 04", "CONSISTENT"],
-      topology: "stack",
-    },
-    {
-      title: "AI & Automation",
-      meta: "WORKFLOWS · DAILY",
-      command: "automate the repetitive",
-      response:
-        "Use AI and automation to remove friction, shorten feedback loops, and keep humans in control.",
-      cards: ["TRIGGER", "AGENT LOOP", "HUMAN CHECK"],
-      values: ["EVENT / 08", "RUNNING", "APPROVED"],
-      topology: "loop",
-    },
+function HeroArchitecture() {
+  const [activeVector, setActiveVector] = useState(0);
 
+  const vectors = [
     {
-      title: "Data & Growth",
-      meta: "SIGNALS · LEARNING",
-      command: "turn signals into decisions",
-      response:
-        "Use behavior, feedback, and experiments to understand what changed and what to do next.",
-      cards: ["BEHAVIOR", "QUERY", "DECISION"],
-      values: ["+18.4%", "SQL / LIVE", "SHIP B"],
-      topology: "pipeline",
+      id: "01",
+      tag: "COMPUTE & CLOUD",
+      title: "Developer Infrastructure & Compute",
+      role: "Current Focus @ Tenki",
+      status: "PRODUCTION",
+      summary:
+        "Architecting developer platforms that transform complex bare-metal compute and AI workloads into intuitive APIs and automated scheduling surfaces.",
+      specs: [
+        { label: "LATENCY TARGET", value: "<15ms P99" },
+        { label: "ORCHESTRATION", value: "Distributed Clusters" },
+        { label: "SURFACE", value: "REST & GraphQL APIs" },
+        { label: "VELOCITY", value: "Continuous Delivery" },
+      ],
+      nodes: ["ORCHESTRATION", "API GATEWAY", "COMPUTE NODES", "TELEMETRY"],
+    },
+    {
+      id: "02",
+      tag: "0→1 HARDENED",
+      title: "From 0→1 to Hardened Systems",
+      role: "Senior PM @ Luxor Technology",
+      status: "DEPLOYED",
+      summary:
+        "First PM driving core products from blank page to global release, including custom ASIC firmware, enterprise hash rate management, and B2B telemetry.",
+      specs: [
+        { label: "SYSTEM TYPE", value: "Embedded + Cloud" },
+        { label: "SCALE", value: "Global Hashrate" },
+        { label: "DEVELOPMENT", value: "0→1 Green-field" },
+        { label: "SECURITY", value: "Hardened Cryptographic" },
+      ],
+      nodes: ["FIRMWARE", "INGESTION BUS", "TELEMETRY ENGINE", "ENTERPRISE B2B"],
+    },
+    {
+      id: "03",
+      tag: "FINTECH & APIS",
+      title: "Resilient Contracts & Financial Data",
+      role: "Product Manager @ SocGen & BNP",
+      status: "VERIFIED",
+      summary:
+        "Building developer-facing fintech products, internal data workflows, and strictly-typed API ecosystems where high-throughput reliability is mandatory.",
+      specs: [
+        { label: "INTEGRITY", value: "Audited Financials" },
+        { label: "DATA PIPELINE", value: "Event-Driven Streams" },
+        { label: "ARCHITECTURE", value: "Defensive Contracts" },
+        { label: "AVAILABILITY", value: "99.99% Enterprise" },
+      ],
+      nodes: ["EVENT STREAM", "CONTRACT VALIDATOR", "CORE LEDGER", "AUDIT PIPELINE"],
     },
   ];
-  const item = items[active];
+
+  const current = vectors[activeVector];
+
   return (
-    <div className="bench-window">
-      <div className="bench-bar">
-        <span>● ● ●</span>
-        <strong>PORTFOLIO / PRODUCT / SYSTEMS</strong>
+    <div className="hero-arch-board">
+      <div className="hero-arch-top">
+        <div className="arch-top-left">
+          <span className="arch-dots">● ● ●</span>
+          <span className="arch-system-title">SYSTEMS ARCHITECTURE // PRODUCT OPERATING MODEL</span>
+        </div>
+        <div className="arch-top-right">
+          <span className="arch-badge">
+            <i className="status-dot" /> LIVE PLATFORM TELEMETRY
+          </span>
+          <span className="arch-loc">TORONTO [EST]</span>
+        </div>
       </div>
-      <div className="bench-layout">
-        <div className="bench-tabs">
-          <small>EXPERTISE</small>
-          {items.map((entry, index) => (
+
+      <div className="hero-arch-body">
+        <div className="arch-selector" role="tablist" aria-label="Architecture Vectors">
+          {vectors.map((vec, idx) => (
             <button
-              key={entry.title}
-              className={active === index ? "active" : ""}
-              onClick={() => setActive(index)}
+              key={vec.id}
+              role="tab"
+              aria-selected={activeVector === idx}
+              className={`arch-tab ${activeVector === idx ? "active" : ""}`}
+              onClick={() => setActiveVector(idx)}
               type="button"
             >
-              <strong>{entry.title}</strong>
-              <span>{entry.meta}</span>
+              <div className="arch-tab-header">
+                <span className="arch-tab-num">{vec.id} // {vec.tag}</span>
+                <span className="arch-tab-status">{vec.status}</span>
+              </div>
+              <strong className="arch-tab-title">{vec.title}</strong>
+              <small className="arch-tab-role">{vec.role}</small>
             </button>
           ))}
         </div>
-        <div className="bench-canvas">
-          <div className="canvas-label">
-            <span>WORKSPACE</span>
+
+        <div className="arch-viewport">
+          <div className="viewport-banner">
+            <div className="viewport-meta">
+              <span className="viewport-vector-id">VECTOR_{current.id}</span>
+              <h4>{current.title}</h4>
+              <span className="viewport-role-tag">{current.role}</span>
+            </div>
+            <span className="viewport-status-pill">
+              <i className="status-dot" /> {current.status}
+            </span>
           </div>
-          <div
-            className={`expertise-network topology-${item.topology}`}
-            key={item.title}
-            aria-hidden="true"
-          >
-            <svg viewBox="0 0 620 300" preserveAspectRatio="none">
-              {item.topology === "funnel" && (
-                <>
-                  <path d="M71 38 L294 146 L550 146" />
-                  <circle className="network-junction" cx="71" cy="38" r="7" />
-                  <circle className="network-junction" cx="294" cy="146" r="7" />
-                  <circle className="network-junction" cx="550" cy="146" r="7" />
-                  <circle className="path-pulse" r="6"><animateMotion dur="3.8s" repeatCount="indefinite" path="M71 38 L294 146 L550 146" /></circle>
-                </>
-              )}
-              {item.topology === "loop" && (
-                <>
-                  <path d="M89 44 L537 123 L219 265 Z" />
-                  <circle className="network-junction" cx="89" cy="44" r="7" />
-                  <circle className="network-junction" cx="537" cy="123" r="7" />
-                  <circle className="network-junction" cx="219" cy="265" r="7" />
-                  <circle className="path-pulse" r="6"><animateMotion dur="4.8s" repeatCount="indefinite" path="M89 44 L537 123 L219 265 Z" /></circle>
-                </>
-              )}
-              {item.topology === "pipeline" && (
-                <>
-                  <path d="M58 117 L288 38 L562 262" />
-                  <circle className="network-junction" cx="58" cy="117" r="7" />
-                  <circle className="network-junction" cx="288" cy="38" r="7" />
-                  <circle className="network-junction" cx="562" cy="262" r="7" />
-                  <circle className="path-pulse" r="6"><animateMotion dur="4.2s" repeatCount="indefinite" path="M58 117 L288 38 L562 262" /></circle>
-                </>
-              )}
-              {item.topology === "stack" && (
-                <>
-                  <path d="M310 23 L310 103 L146 172" />
-                  <path d="M310 103 L473 172" />
-                  <circle className="network-junction" cx="310" cy="23" r="7" />
-                  <circle className="network-junction" cx="310" cy="103" r="7" />
-                  <circle className="network-junction" cx="146" cy="172" r="7" />
-                  <circle className="network-junction" cx="473" cy="172" r="7" />
-                  <circle className="path-pulse" r="6"><animateMotion dur="3.4s" repeatCount="indefinite" path="M310 23 L310 103 L146 172" /></circle>
-                </>
-              )}
+
+          <p className="viewport-summary">{current.summary}</p>
+
+          <div className="viewport-circuit" aria-hidden="true">
+            <svg viewBox="0 0 540 80" className="circuit-svg" preserveAspectRatio="none">
+              <path d="M40 40 L180 40 L340 40 L480 40" className="circuit-wire" />
+              <line x1="40" y1="40" x2="480" y2="40" className="circuit-pulse-line" />
+              <circle cx="40" cy="40" r="4" className="circuit-node" />
+              <circle cx="180" cy="40" r="4" className="circuit-node" />
+              <circle cx="340" cy="40" r="4" className="circuit-node" />
+              <circle cx="480" cy="40" r="4" className="circuit-node" />
+              <circle className="path-pulse" r="4">
+                <animateMotion
+                  dur="3.2s"
+                  repeatCount="indefinite"
+                  path="M40 40 L180 40 L340 40 L480 40"
+                />
+              </circle>
             </svg>
-            {item.cards.map((card, index) => (
-              <div className={`network-card network-${index + 1}`} key={card}>
-                <small>{card}</small>
-                <strong>{item.values[index]}</strong>
-                <span>{index === 1 ? "● PROCESSING" : "◆ CONNECTED"}</span>
+            <div className="circuit-labels">
+              {current.nodes.map((nodeName, nIdx) => (
+                <div className={`circuit-pill pill-${nIdx}`} key={nodeName}>
+                  <small>NODE 0{nIdx + 1}</small>
+                  <b>{nodeName}</b>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="viewport-specs">
+            {current.specs.map((spec) => (
+              <div className="spec-card" key={spec.label}>
+                <small>{spec.label}</small>
+                <strong>{spec.value}</strong>
               </div>
             ))}
-          </div>
-          <div className="canvas-card">
-            <small>NOW WORKING ON</small>
-            <strong>{item.title}</strong>
-            <p>{item.command}</p>
-          </div>
-          <div className="bench-console">
-            <span>❯</span>
-            <div>
-              <small>{item.command}</small>
-              <p>{item.response}</p>
-            </div>
           </div>
         </div>
       </div>
@@ -388,42 +485,41 @@ function ProductBench() {
 function Hero() {
   return (
     <section className="hero page-pad">
+      <div className="hero-status-strip">
+        <span className="status-item">
+          <i className="status-dot" /> ACTIVE ROLE: SENIOR PRODUCT MANAGER @ TENKI
+        </span>
+        <span className="status-item">DEVELOPER INFRASTRUCTURE &amp; COMPUTE</span>
+        <span className="status-item">TORONTO, CA [UTC-4]</span>
+      </div>
+
       <div className="hero-grid">
         <h1>
           I build products for people
           <br />
-          <em>and the systems behind them.</em>
+          <em>and the technical systems behind them.</em>
         </h1>
         <div className="hero-copy">
           <p>
-            Currently at Tenki, working on developer infrastructure and tools.
-            Previously across fintech, data, and Web3.
+            Senior Product Manager specializing in developer infrastructure, compute platforms, and 0→1 products. Grounded in technical architecture, clear evidence, and systems that scale.
           </p>
           <div className="button-row">
             <Link className="button button-amber" to="/about">
-              View my profile <Arrow />
+              Explore profile &amp; craft <Arrow />
             </Link>
             <Link className="button button-ghost" to="/contact">
-              Contact me <Arrow />
+              Start a conversation <Arrow />
             </Link>
           </div>
         </div>
       </div>
-      <div className="career-rail">
-        <span>01</span>
-        <strong>Tenki Cloud</strong>
-        <small>Senior Product Manager</small>
-        <i />
-        <small>-</small>
-      </div>
-      <ProductBench />
+
+      <HeroArchitecture />
     </section>
   );
 }
 
 function FocusSection() {
-  const [index, setIndex] = useState(0);
-  const track = focusTracks[index];
   return (
     <section className="focus-section">
       <SectionRule label="Tracks" />
@@ -436,57 +532,133 @@ function FocusSection() {
           people using what ships.
         </p>
       </div>
-      <div className="focus-stage">
-        <div
-          key={index}
-          className={`focus-illustration track-network focus-${index}`}
-          aria-hidden="true"
-        >
-          <svg className="track-isometric" viewBox="0 0 310 225">
-            {index === 0 && (
-              <>
-                <path className="iso-wire" d="M47 139 143 84 263 140 166 196Z M143 84v-34m-96 89v-34m216 35v-34m-97 90v-34" />
-                <g className="iso-cube cube-a"><path className="iso-top" d="m62 91 43-25 43 21-44 26Z"/><path className="iso-left" d="m62 91 42 22v42l-42-22Z"/><path className="iso-right" d="m104 113 44-26v42l-44 26Z"/></g>
-                <g className="iso-cube cube-b"><path className="iso-top" d="m155 118 34-20 34 17-35 20Z"/><path className="iso-left" d="m155 118 33 17v31l-33-17Z"/><path className="iso-right" d="m188 135 35-20v31l-35 20Z"/></g>
-              </>
-            )}
-            {index === 1 && (
-              <>
-                <path className="iso-wire" d="m45 153 110-64 110 55-110 65Zm55-32v-39m55 7V45m55 76V82" />
-                {[0,1,2].map((level)=><g className={`iso-layer layer-${level}`} key={level} transform={`translate(0 ${-level*24})`}><path className="iso-top" d="m76 129 79-46 79 39-79 47Z"/><path className="iso-left" d="m76 129 79 40v18l-79-40Z"/><path className="iso-right" d="m155 169 79-47v18l-79 47Z"/></g>)}
-              </>
-            )}
-            {index === 2 && (
-              <>
-                <path className="iso-wire" d="m39 164 54-31 58 29 58-34 62 31-119 55Zm54-31V75m58 87V48m58 80V82" />
-                {["93 75","151 48","209 82"].map((point,nodeIndex)=>{const [x,y]=point.split(" ").map(Number);return <g className={`iso-node node-${nodeIndex}`} key={point} transform={`translate(${x-25} ${y})`}><path className="iso-top" d="m0 14 25-14 25 13-25 14Z"/><path className="iso-left" d="m0 14 25 13v28L0 42Z"/><path className="iso-right" d="m25 27 25-14v28L25 55Z"/></g>})}
-              </>
-            )}
-          </svg>
-        </div>
-        <div key={track.title} className="focus-copy track-enter">
-          <h3>{track.title}</h3>
-          <small>{track.eyebrow}</small>
-          <p>{track.copy}</p>
-          <div className="stepper">
-            <button
-              type="button"
-              onClick={() =>
-                setIndex((index - 1 + focusTracks.length) % focusTracks.length)
-              }
-              aria-label="Previous track"
-            >
-              ←
-            </button>
-            <button
-              type="button"
-              onClick={() => setIndex((index + 1) % focusTracks.length)}
-              aria-label="Next track"
-            >
-              →
-            </button>
-          </div>
-        </div>
+      <div className="track-grid">
+        {focusTracks.map((track, trackIndex) => (
+          <article
+            className={`track-card track-card-${trackIndex}`}
+            key={track.title}
+          >
+            <div className="track-card-corner" aria-hidden="true" />
+            <div className="track-card-head">
+              <span className="track-eyebrow">{track.eyebrow}</span>
+              <span className="track-status">
+                <i className="track-status-dot" />
+                ACTIVE
+              </span>
+            </div>
+
+            <div className="track-card-canvas" aria-hidden="true">
+              <div className="track-canvas-bar">
+                <span className="bar-dots">● ● ●</span>
+                <span className="bar-title">track_0{trackIndex + 1}.graph</span>
+              </div>
+              <svg className="track-isometric" viewBox="0 0 310 225">
+                {trackIndex === 0 && (
+                  <>
+                    <path
+                      className="iso-wire"
+                      d="M47 139 143 84 263 140 166 196Z M143 84v-34m-96 89v-34m216 35v-34m-97 90v-34"
+                    />
+                    <circle className="path-pulse" r="4">
+                      <animateMotion
+                        dur="4s"
+                        repeatCount="indefinite"
+                        path="M47 139 L143 84 L263 140 L166 196 Z"
+                      />
+                    </circle>
+                    <g className="iso-cube cube-a">
+                      <path className="iso-top" d="m62 91 43-25 43 21-44 26Z" />
+                      <path className="iso-left" d="m62 91 42 22v42l-42-22Z" />
+                      <path className="iso-right" d="m104 113 44-26v42l-44 26Z" />
+                    </g>
+                    <g className="iso-cube cube-b">
+                      <path className="iso-top" d="m155 118 34-20 34 17-35 20Z" />
+                      <path className="iso-left" d="m155 118 33 17v31l-33-17Z" />
+                      <path className="iso-right" d="m188 135 35-20v31l-35 20Z" />
+                    </g>
+                  </>
+                )}
+                {trackIndex === 1 && (
+                  <>
+                    <path
+                      className="iso-wire"
+                      d="m45 153 110-64 110 55-110 65Zm55-32v-39m55 7V45m55 76V82"
+                    />
+                    <line
+                      className="iso-connector"
+                      x1="155"
+                      y1="45"
+                      x2="155"
+                      y2="169"
+                    />
+                    {[0, 1, 2].map((level) => (
+                      <g
+                        className={`iso-layer layer-${level}`}
+                        key={level}
+                        transform={`translate(0 ${-level * 24})`}
+                      >
+                        <path className="iso-top" d="m76 129 79-46 79 39-79 47Z" />
+                        <path className="iso-left" d="m76 129 79 40v18l-79-40Z" />
+                        <path className="iso-right" d="m155 169 79-47v18l-79 47Z" />
+                      </g>
+                    ))}
+                    <circle className="path-pulse" r="4">
+                      <animateMotion
+                        dur="3.4s"
+                        repeatCount="indefinite"
+                        path="m45 153 L155 89 L265 144 L155 209 Z"
+                      />
+                    </circle>
+                  </>
+                )}
+                {trackIndex === 2 && (
+                  <>
+                    <path
+                      className="iso-wire"
+                      d="m39 164 54-31 58 29 58-34 62 31-119 55Zm54-31V75m58 87V48m58 80V82"
+                    />
+                    <path className="iso-conduit" d="M93 75 L151 48 L209 82" />
+                    <circle className="path-pulse" r="4">
+                      <animateMotion
+                        dur="3.6s"
+                        repeatCount="indefinite"
+                        path="M93 75 L151 48 L209 82 L151 48 Z"
+                      />
+                    </circle>
+                    {["93 75", "151 48", "209 82"].map((point, nodeIndex) => {
+                      const [x, y] = point.split(" ").map(Number);
+                      return (
+                        <g
+                          className={`iso-node node-${nodeIndex}`}
+                          key={point}
+                          transform={`translate(${x - 25} ${y})`}
+                        >
+                          <path className="iso-top" d="m0 14 25-14 25 13-25 14Z" />
+                          <path className="iso-left" d="m0 14 25 13v28L0 42Z" />
+                          <path className="iso-right" d="m25 27 25-14v28L25 55Z" />
+                        </g>
+                      );
+                    })}
+                  </>
+                )}
+              </svg>
+            </div>
+
+            <div className="track-card-body">
+              <h3>{track.title}</h3>
+              <p>{track.copy}</p>
+            </div>
+
+            <div className="track-nodes">
+              {track.nodes.map(([label, value]) => (
+                <div className="track-node-badge" key={label}>
+                  <small>{label}</small>
+                  <b>{value}</b>
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
@@ -497,51 +669,149 @@ function AnimatedMetric({
   suffix = "",
   label,
   index,
-  size,
+  tag,
+  status,
   detail,
-  solid,
 }) {
   const ref = useRef(null);
   const [display, setDisplay] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
     const node = ref.current;
+    if (!node) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) return;
+        setIsVisible(true);
         const start = performance.now();
-        const tick = (now) => {
-          const progress = Math.min((now - start) / 900, 1);
-          setDisplay(Math.round(value * (1 - Math.pow(1 - progress, 3))));
-          if (progress < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
+        const duration = 1200;
+        const delay = index * 120;
+
+        const timer = setTimeout(() => {
+          const tick = (now) => {
+            const elapsed = now - (start + delay);
+            const progress = Math.min(Math.max(elapsed / duration, 0), 1);
+            const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+            setDisplay(Math.round(value * ease));
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }, delay);
+
         observer.disconnect();
+        return () => clearTimeout(timer);
       },
-      { threshold: 0.4 },
+      { threshold: 0.25 },
     );
     observer.observe(node);
     return () => observer.disconnect();
-  }, [value]);
+  }, [value, index]);
+
   return (
-    <article className={`metric metric-${index}`} ref={ref}>
+    <article
+      className={`metric metric-${index}${isVisible ? " is-visible" : ""}`}
+      ref={ref}
+      style={{ "--card-index": index }}
+    >
+      <div className="metric-corner" aria-hidden="true" />
       <div className="metric-head">
-        <small>0{index + 1}</small>
-        <span>● ACTIVE</span>
+        <span className="metric-tag">{tag}</span>
+        <span className="metric-status">
+          <i className="status-dot" />
+          {status}
+        </span>
       </div>
-      <strong>
-        {display}
-        {suffix}
-      </strong>
-      <div className={`metric-bar${index === 3 ? " coffee-meter" : ""}`} aria-hidden="true">
-        <i
-          className={solid ? "solid" : ""}
-          style={{ "--metric-height": `${size}px` }}
-        />
-        <b />
-        {index === 3 && <div className="coffee-steam"><span /><span /><span /></div>}
+
+      <div className="metric-value">
+        <strong>{display.toLocaleString()}</strong>
+        {suffix && <span className="metric-suffix">{suffix}</span>}
       </div>
-      <p>{label}</p>
-      {detail && <small className="metric-detail">{detail}</small>}
+
+      <div className="metric-telemetry" aria-hidden="true">
+        {index === 0 && (
+          <div className="telemetry-timeline">
+            <div className="timeline-blocks">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <span
+                  key={i}
+                  className={`timeline-segment${isVisible ? " is-filled" : ""}${i === 7 ? " is-current" : ""}`}
+                  style={{ "--seg-delay": `${0.12 + i * 0.07}s` }}
+                >
+                  {i === 7 && <b className="segment-pulse" />}
+                </span>
+              ))}
+            </div>
+            <div className="timeline-axis">
+              <small>2018</small>
+              <span className="axis-line" />
+              <small className="axis-now">NOW</small>
+            </div>
+          </div>
+        )}
+
+        {index === 1 && (
+          <div className="telemetry-spectrum">
+            <div className="spectrum-bars">
+              {[42, 68, 55, 90, 72, 85, 60, 95, 78, 100].map((height, i) => (
+                <span
+                  key={i}
+                  className={`spectrum-bar${isVisible ? " is-active" : ""}`}
+                  style={{
+                    "--bar-height": `${height}%`,
+                    "--bar-delay": `${0.1 + i * 0.05}s`,
+                  }}
+                />
+              ))}
+            </div>
+            <div className="spectrum-baseline" />
+          </div>
+        )}
+
+        {index === 2 && (
+          <div className="telemetry-triad">
+            <div className="triad-pills">
+              {["PRODUCT", "DATA", "CODE"].map((discipline, i) => (
+                <div
+                  key={discipline}
+                  className={`triad-pill${isVisible ? " is-active" : ""}`}
+                  style={{ "--pill-delay": `${0.15 + i * 0.1}s` }}
+                >
+                  <i className="triad-dot" />
+                  <span>{discipline}</span>
+                  <small className="triad-signal">ACTIVE</small>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {index === 3 && (
+          <div className="telemetry-coffee">
+            <div className="coffee-beaker">
+              <div className="coffee-steam-wrap">
+                <span className="steam-line s1" />
+                <span className="steam-line s2" />
+                <span className="steam-line s3" />
+              </div>
+              <div className="beaker-glass">
+                <div className={`beaker-fluid${isVisible ? " is-filled" : ""}`} />
+                <div className="beaker-ticks">
+                  <i />
+                  <i />
+                  <i />
+                </div>
+              </div>
+              <div className="beaker-handle" />
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="metric-bottom">
+        <p className="metric-label">{label}</p>
+        {detail && <small className="metric-detail">{detail}</small>}
+      </div>
     </article>
   );
 }
@@ -551,29 +821,32 @@ function MetricsSection() {
     {
       value: 8,
       suffix: "+",
+      tag: "01 // YEARS",
+      status: "CONTINUOUS",
       label: "Years building products",
-      size: 62,
-      detail: "2018 → NOW",
-      solid: true,
+      detail: "2018 → 2026",
     },
     {
       value: 10,
       suffix: "+",
+      tag: "02 // BUILDS",
+      status: "PRODUCTION",
       label: "Public product builds",
-      size: 102,
       detail: "REPOSITORIES / LIVE",
     },
     {
       value: 3,
+      tag: "03 // TRIAD",
+      status: "INTERSECTION",
       label: "Core disciplines",
-      size: 76,
       detail: "PRODUCT · DATA · CODE",
     },
     {
       value: 8918,
-      label: "Liters of coffee, approximately",
-      size: 88,
-      detail: "",
+      tag: "04 // FUEL",
+      status: "APPROX",
+      label: "Liters of coffee brewed",
+      detail: "ROASTED & BREWED",
     },
   ];
   return (
@@ -603,35 +876,110 @@ function MetricsSection() {
 }
 
 function CompanyLogo({ experience }) {
+  const defaultImage = experience.defaultImage || "/company-dummy.png";
+  const hoverImage = experience.hoverImage || "/company-dummy-hover.png";
+
   return (
-    <div className="company-logo" aria-label={`${experience.company} logo placeholder`}>
-      <span>{experience.logo}</span>
+    <div className="company-logo" aria-label={`${experience.company} logo`}>
+      {defaultImage ? (
+        <>
+          <img
+            className="company-logo-image default"
+            src={defaultImage}
+            alt=""
+          />
+          {hoverImage && (
+            <img className="company-logo-image hover" src={hoverImage} alt="" />
+          )}
+        </>
+      ) : (
+        <span>{experience.logo}</span>
+      )}
     </div>
   );
 }
 
 function ToolsSection() {
-  const tools = ["React", "SQL", "APIs", "Amplitude", "PostHog", "Figma", "Claude", "NotebookLM"];
+  const tools = [
+    {
+      name: "React",
+      category: "UI & State",
+      defaultImage: "/REACT-DARK.png",
+      hoverImage: "/REACT-HOVER.png",
+    },
+    {
+      name: "SQL",
+      category: "Query",
+      defaultImage: "/SQL-DARK.png",
+      hoverImage: "/SQL-HOVER.png",
+    },
+    {
+      name: "APIs",
+      category: "Protocols",
+      defaultImage: "/APIS-DARK.png",
+      hoverImage: "/APIS-HOVER.png",
+    },
+    {
+      name: "Amplitude",
+      category: "Analytics",
+      defaultImage: "/AMPLITUDE-DARK.png",
+      hoverImage: "/AMPLITUDE-HOVER.png",
+    },
+    {
+      name: "PostHog",
+      category: "Telemetry",
+      defaultImage: "/POSTHOG-DARK.png",
+      hoverImage: "/POSTHOG-HOVER.png",
+    },
+    {
+      name: "Figma",
+      category: "Systems",
+      defaultImage: "/FIGMA-DARK.png",
+      hoverImage: "/FIGMA-HOVER.png",
+    },
+    {
+      name: "Claude",
+      category: "AI / LLM",
+      defaultImage: "/CLAUDE-DARK.png",
+      hoverImage: "/CLAUDE-HOVER.png",
+    },
+    {
+      name: "NotebookLM",
+      category: "Research",
+      defaultImage: "/NOTEBOOKLM-DARK.png",
+      hoverImage: "/NOTEBOOKLM-HOVER.png",
+    },
+  ];
   return (
     <section className="tools-section">
       <SectionRule label="Working kit" />
       <div className="section-intro">
         <h2>
-          Tools are part of how <em> I think, test & ship.</em>
+          Tools are part of how <em> I think, test &amp; ship.</em>
         </h2>
         <p>
           From rough ideas to prototypes, decisions, and products in production.
         </p>
       </div>
       <div className="tool-grid" aria-label="Tools I work with">
-        {tools.map((tool, index) => (
-          <article className="tool-card" key={tool}>
-            <div className="tool-mark">
-              <b>{String(index + 1).padStart(2, "0")}</b>
-              <i aria-hidden="true" />
-              <small>YOUR LOGO</small>
+        {tools.map((tool) => (
+          <article className="tool-card" key={tool.name}>
+            <div className="tool-card-corner" aria-hidden="true" />
+            <div className="tool-card-head">
+              <span className="tool-category">{tool.category}</span>
+              <i className="tool-status-dot" />
             </div>
-            <span>{tool}</span>
+            <div className="tool-mark">
+              <img
+                className="tool-image default"
+                src={tool.defaultImage}
+                alt=""
+              />
+              <img className="tool-image hover" src={tool.hoverImage} alt="" />
+            </div>
+            <div className="tool-card-foot">
+              <span className="tool-name">{tool.name}</span>
+            </div>
           </article>
         ))}
       </div>
@@ -654,17 +1002,31 @@ function ExperienceSection() {
       </div>
       <div className="experience-grid">
         {experiences.map((experience) => (
-          <article key={experience.index}>
-            <div className="experience-top">
+          <article className="experience-card" key={experience.company}>
+            <div className="experience-card-corner" aria-hidden="true" />
+            <div className="experience-card-head">
               <CompanyLogo experience={experience} />
-              <small>{experience.index}</small>
+              <div className="experience-status-badge">
+                {experience.status === "CURRENT" ? (
+                  <span className="exp-live">
+                    <i className="status-dot" /> ACTIVE
+                  </span>
+                ) : (
+                  <span className="exp-period">{experience.period}</span>
+                )}
+              </div>
             </div>
-            <h3>{experience.company}</h3>
-            <span>{experience.role}</span>
-            <p>{experience.copy}</p>
+            <div className="experience-card-body">
+              <small className="experience-index">{experience.index} · TEAM</small>
+              <h3>{experience.company}</h3>
+              <span className="experience-role">{experience.role}</span>
+              <p>{experience.copy}</p>
+            </div>
             <div className="experience-tags">
               {experience.tags.map((tag) => (
-                <b key={tag}>{tag}</b>
+                <span className="exp-tag" key={tag}>
+                  {tag}
+                </span>
               ))}
             </div>
           </article>
@@ -690,57 +1052,182 @@ export function ProfilePage() {
   return (
     <>
       <section className="profile-opening page-pad">
-        <img
-          className="profile-portrait"
-          src="/profile-placeholder.png"
-          alt="Temporary profile portrait placeholder"
-        />
-        <div className="profile-shade" aria-hidden="true" />
-        <p>
-          I like building products, especially when the path from idea to
-          production isn’t obvious yet. Over the years, that’s taken me through
-          developer infrastructure, fintech, data, and Bitcoin, working with
-          teams to understand the problem, build something real, and keep
-          improving it once it’s in users’ hands.
-        </p>
+        <div className="portrait-hud">
+          <div className="portrait-hud-top">
+            <span>[OPERATOR // IDENTITY]</span>
+            <span>
+              <i className="status-dot" /> ACTIVE · TORONTO [EDT]
+            </span>
+          </div>
+          <div className="portrait-media-wrap">
+            <img
+              className="profile-portrait"
+              src="/profile-placeholder.png"
+              alt="Profile portrait"
+            />
+            <div className="profile-shade" aria-hidden="true" />
+            <div className="hud-corner hud-tl" />
+            <div className="hud-corner hud-tr" />
+            <div className="hud-corner hud-bl" />
+            <div className="hud-corner hud-br" />
+          </div>
+          <div className="portrait-hud-bottom">
+            <span>SYS_ID: HVE-88 // PM</span>
+            <span>ROLE: SR_PRODUCT_MANAGER</span>
+          </div>
+        </div>
+
+        <div className="profile-lead-wrap">
+          <div className="profile-badge-row">
+            <span className="profile-spec-badge">EXP // 7+ YEARS</span>
+            <span className="profile-spec-badge">FOCUS // 0→1 PLATFORMS</span>
+            <span className="profile-spec-badge">STACK // APIs · DATA · AI</span>
+          </div>
+          <p className="profile-lead-copy">
+            I like building products, especially when the path from idea to
+            production isn’t obvious yet. Over the years, that’s taken me through
+            developer infrastructure, fintech, data, and Bitcoin, working with
+            teams to understand the problem, build something real, and keep
+            improving it once it’s in users’ hands.
+          </p>
+        </div>
       </section>
+
       <section className="profile-story profile-combined">
         <SectionRule label="Profile" />
-        <div className="story-grid">
+        <div className="section-intro">
           <h2>
             Started by learning to build, moved into product, and kept the
-            hands-on curiosity.
+            <em> hands-on curiosity.</em>
           </h2>
           <p>
             I like taking products from early questions to something real,
             understanding the problem, making the trade-offs, shipping, and
-            learning from what happens next. And when it helps, I’ll still open
-            the code and build the idea myself.
+            learning from what happens next.
           </p>
         </div>
-        <SectionRule label="How I work" />
-        <div className="how-grid">
-          <div>
-            <h2>
-              Long story short,
-              <br />I make complexity <em>workable.</em>
-            </h2>
-            <small>MONTRÉAL → TORONTO · 2018 — NOW</small>
-          </div>
-          <div>
-            <p>
-              I connect customer context, business outcomes, and technical
-              reality so teams can make confident decisions and ship useful
-              work.
-            </p>
-            <div className="tag-row">
-              <span>Product strategy</span>
-              <span>Platforms</span>
-              <span>APIs</span>
-              <span>Data</span>
-              <span>UX/UI</span>
-              <span>AI workflows</span>
+
+        <div className="profile-journey-grid">
+          <article className="journey-card">
+            <div className="journey-card-corner" aria-hidden="true" />
+            <div className="journey-card-head">
+              <span className="journey-step">01 · ROOTS</span>
+              <span className="journey-status">FOUNDATION</span>
             </div>
+            <h3>Learning to build</h3>
+            <p>
+              Grounded in software fundamentals and systems thinking. Knowing how
+              architecture, latency, and code actually execute gives clarity when
+              making hard engineering trade-offs.
+            </p>
+            <div className="journey-badges">
+              <span>[CODE // REASONING]</span>
+              <span>[SYSTEMS // THINKING]</span>
+            </div>
+          </article>
+
+          <article className="journey-card">
+            <div className="journey-card-corner" aria-hidden="true" />
+            <div className="journey-card-head">
+              <span className="journey-step">02 · CRAFT</span>
+              <span className="journey-status">PRODUCT</span>
+            </div>
+            <h3>Leading products from 0→1</h3>
+            <p>
+              Bridging engineering reality and business impact. Unifying discovery,
+              user pain points, and strategic roadmaps into clear product specs that
+              teams can ship with confidence.
+            </p>
+            <div className="journey-badges">
+              <span>[STRATEGY // ROADMAPS]</span>
+              <span>[DISCOVERY // SIGNALS]</span>
+            </div>
+          </article>
+
+          <article className="journey-card">
+            <div className="journey-card-corner" aria-hidden="true" />
+            <div className="journey-card-head">
+              <span className="journey-step">03 · VELOCITY</span>
+              <span className="journey-status">EXECUTION</span>
+            </div>
+            <h3>Staying close to production</h3>
+            <p>
+              When a prototype answers an open question faster than two weeks of
+              meetings, I&apos;ll still open the IDE, test the APIs directly, or build
+              the proof-of-concept myself.
+            </p>
+            <div className="journey-badges">
+              <span>[PROTOTYPES // FAST]</span>
+              <span>[PRD → PRODUCTION]</span>
+            </div>
+          </article>
+        </div>
+
+        <SectionRule label="How I work" />
+        <div className="section-intro">
+          <h2>
+            Long story short,
+            <br />I make complexity <em>workable.</em>
+          </h2>
+          <p>
+            Connecting customer context, business outcomes, and technical
+            reality so teams can make confident decisions and ship useful work.
+          </p>
+        </div>
+
+        <div className="how-pillars">
+          <div className="how-pillar-card">
+            <div className="pillar-corner" aria-hidden="true" />
+            <div className="pillar-head">
+              <span className="pillar-phase">PHASE 01 // EVIDENCE</span>
+              <i className="status-dot" />
+            </div>
+            <h3>Context &amp; Discovery</h3>
+            <p>
+              Finding genuine signal across user interviews, behavior analytics,
+              and commercial outcomes before locking commitments.
+            </p>
+            <span className="pillar-metric">EVIDENCE &gt; ASSUMPTIONS</span>
+          </div>
+
+          <div className="how-pillar-card">
+            <div className="pillar-corner" aria-hidden="true" />
+            <div className="pillar-head">
+              <span className="pillar-phase">PHASE 02 // ALIGNMENT</span>
+              <i className="status-dot" />
+            </div>
+            <h3>Technical Reality</h3>
+            <p>
+              Partnering with engineering on API contracts, system constraints,
+              and data models early to ensure what ships is resilient.
+            </p>
+            <span className="pillar-metric">RESILIENT ARCHITECTURE</span>
+          </div>
+
+          <div className="how-pillar-card">
+            <div className="pillar-corner" aria-hidden="true" />
+            <div className="pillar-head">
+              <span className="pillar-phase">PHASE 03 // VELOCITY</span>
+              <i className="status-dot" />
+            </div>
+            <h3>Execution &amp; Telemetry</h3>
+            <p>
+              Rapid prototyping, pragmatic scope slicing, and closing feedback
+              loops immediately after deployment with real production telemetry.
+            </p>
+            <span className="pillar-metric">0→1 SHIP VELOCITY</span>
+          </div>
+        </div>
+
+        <div className="how-capabilities-wrap">
+          <small className="capabilities-label">CORE CAPABILITIES // DOMAIN EXPERTISE</small>
+          <div className="tag-row capabilities-tags">
+            <span>Product strategy</span>
+            <span>Platforms &amp; Infra</span>
+            <span>API Design</span>
+            <span>Data Systems</span>
+            <span>UX/UI Prototyping</span>
+            <span>AI &amp; LLM Workflows</span>
           </div>
         </div>
       </section>
