@@ -10,7 +10,7 @@ const experiences = [
     hoverImage: "/TENKI-HOVER.png",
     company: "Tenki",
     role: "Senior Product Manager",
-    copy: "Building developer infrastructure and products that make compute easier to access, run, and scale.",
+    copy: "Building developer infrastructure and AI products that make compute easier to access, run, and scale.",
     tags: ["Dev Tools", "Infrastructure", "Compute & AI"],
   },
   {
@@ -22,8 +22,8 @@ const experiences = [
     hoverImage: "/LUXOR-HOVER.png",
     company: "Luxor Technology",
     role: "Senior Product Manager",
-    copy: "Joined as the first PM, leading core products and launching new ones from 0→1, including ASIC firmware.",
-    tags: ["Bitcoin", "0→1 Product", "B2B/B2C Platform"],
+    copy: "Joined as the first PM, leading core products and launching new ones from 0 to 1, including ASIC firmware.",
+    tags: ["Bitcoin", "0 to 1 Product", "B2B/B2C Platform"],
   },
   {
     index: "03",
@@ -55,31 +55,31 @@ const focusTracks = [
   {
     eyebrow: "01 · END TO END",
     title: "Product Leadership",
-    copy: "Taking products from an early problem to something people use, measure, and improve.",
+    copy: "Taking products from an early ideas or problems to something people use and want to stick with.",
     nodes: [
-      ["DISCOVER", "42 SIGNALS"],
-      ["FRAME", "03 BETS"],
-      ["SHIP", "Q3 ACTIVE"],
+      ["DISCOVERY", ""],
+      ["DESIGN", ""],
+      ["SHIPPPING", ""],
     ],
   },
   {
     eyebrow: "02 · SYSTEMS",
     title: "Technical Products",
-    copy: "Making complex systems easier to understand, use, and build on.",
+    copy: "Making complex systems easier to understand, challenge, and build upon.",
     nodes: [
-      ["CLIENT", "REQUEST"],
-      ["API", "200 OK"],
-      ["DATA", "SYNCED"],
+      ["CLIENT", ""],
+      ["API", ""],
+      ["DATA", ""],
     ],
   },
   {
-    eyebrow: "03 · ZERO TO ONE",
-    title: "From Idea to Production",
-    copy: "Turning early ideas into real products, shaping the concept, building the first version, and getting it into users' hands.",
+    eyebrow: "03 · READY FOR PRODUCTION",
+    title: "Constant Delivery",
+    copy: "Turning pain points into features, from shaping and building, launching, to iterating with users.",
     nodes: [
-      ["IDEA", "EARLY"],
-      ["BUILD", "V.01"],
-      ["SHIP", "LIVE"],
+      ["IDEA", ""],
+      ["PRIORITIES", ""],
+      ["FEEDBACK", ""],
     ],
   },
 ];
@@ -136,13 +136,49 @@ function HveLogo() {
       className="hve-logo-svg"
     >
       <g className="hve-mark">
-        <line x1="5" y1="5" x2="5" y2="27" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-        <line x1="23" y1="5" x2="23" y2="27" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-        <line x1="5" y1="16" x2="23" y2="16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-        <polyline points="5,7 14,23 23,7" stroke="var(--amber)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <line
+          x1="5"
+          y1="5"
+          x2="5"
+          y2="27"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+        />
+        <line
+          x1="23"
+          y1="5"
+          x2="23"
+          y2="27"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+        />
+        <line
+          x1="5"
+          y1="16"
+          x2="23"
+          y2="16"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+        />
+        <polyline
+          points="5,7 14,23 23,7"
+          stroke="var(--amber)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <circle cx="14" cy="16" r="2.2" fill="var(--amber)" />
       </g>
-      <g className="hve-text" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <g
+        className="hve-text"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <line x1="36" y1="7" x2="36" y2="25" />
         <line x1="36" y1="16" x2="47" y2="16" />
         <line x1="47" y1="7" x2="47" y2="25" />
@@ -152,7 +188,14 @@ function HveLogo() {
         <line x1="77" y1="16" x2="85" y2="16" />
         <line x1="77" y1="25" x2="88" y2="25" />
       </g>
-      <rect x="94" y="21" width="3.5" height="3.5" rx="0.75" fill="var(--amber)" />
+      <rect
+        x="94"
+        y="21"
+        width="3.5"
+        height="3.5"
+        rx="0.75"
+        fill="var(--amber)"
+      />
     </svg>
   );
 }
@@ -192,7 +235,9 @@ function Footer() {
         <span className="telemetry-item">
           <i className="status-dot" /> SYS_CHANNEL // DIRECT CONNECT
         </span>
-        <span className="telemetry-item">TORONTO, CA [EASTERN TIME · UTC-4]</span>
+        <span className="telemetry-item">
+          TORONTO, CA [EASTERN TIME · UTC-4]
+        </span>
         <span className="telemetry-item">
           <i className="status-dot" /> LIVE TELEMETRY · 24ms
         </span>
@@ -204,8 +249,8 @@ function Footer() {
             Ideas are better in <em>production.</em>
           </h3>
           <p>
-            Open to high-impact product leadership, 0→1 platform initiatives, and
-            technical challenges.
+            Focused on high-impact product leadership, 0 to 1 platform
+            initiatives, and complex technical challenges.
           </p>
           <Link className="button button-amber footer-cta-btn" to="/contact">
             Start a conversation <Arrow />
@@ -237,20 +282,18 @@ function Footer() {
 
       <div className="footer-grid">
         <div className="footer-col">
-          <small className="footer-col-num">01 // DIRECT CONTACT</small>
-          <h4>Contact</h4>
+          <small className="footer-col-num">CONTACT</small>
           <a className="footer-strong" href="mailto:heyhayssem@gmail.com">
             heyhayssem@gmail.com
           </a>
           <p>Ideas are better in production.</p>
           <p>Toronto · Eastern Time</p>
           <span className="footer-status-pill">
-            <i className="status-dot" /> OPEN FOR DISCUSSIONS
+            <i className="status-dot" /> OPEN FOR DISCUSSION
           </span>
         </div>
         <div className="footer-col">
-          <small className="footer-col-num">02 // ELSEWHERE</small>
-          <h4>Elsewhere</h4>
+          <small className="footer-col-num">ELSEWHERE</small>
           <div className="footer-link-list">
             <a
               href="https://github.com/cuitlazotlac"
@@ -283,23 +326,20 @@ function Footer() {
           </div>
         </div>
         <div className="footer-col">
-          <small className="footer-col-num">03 // DOMAIN &amp; PRACTICE</small>
-          <h4>Practice</h4>
+          <small className="footer-col-num">DOMAIN &amp; PRACTICE</small>
           <p>Technical Product Leadership</p>
-          <p>Platforms, Compute &amp; Developer Tools</p>
           <div className="footer-tags">
             <span>[PLATFORMS]</span>
             <span>[APIs &amp; DATA]</span>
             <span>[AI WORKFLOWS]</span>
-            <span>[0→1 PRODUCTS]</span>
+            <span>[0 TO 1 PRODUCTS DEVELOPMENT]</span>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Hayssem Vazquez-Elsayed</span>
-        <span>Senior Product Manager // Platforms</span>
-        <span>SYS_BUILD · 2026.09</span>
+        <span>Senior Product Manager</span>
       </div>
     </footer>
   );
@@ -344,14 +384,14 @@ function HeroArchitecture() {
       id: "01",
       tag: "COMPUTE & CLOUD",
       title: "Developer Infrastructure & Compute",
-      role: "Current Focus @ Tenki",
+      role: "Senior PM @Tenki (Current Focus)",
       status: "PRODUCTION",
       summary:
-        "Architecting developer platforms that transform complex bare-metal compute and AI workloads into intuitive APIs and automated scheduling surfaces.",
+        "Architecting developer platforms that transform bare-metal compute into secure, scalable sandboxes for AI agents and next-generation AI workloads.",
       specs: [
         { label: "LATENCY TARGET", value: "<15ms P99" },
         { label: "ORCHESTRATION", value: "Distributed Clusters" },
-        { label: "SURFACE", value: "REST & GraphQL APIs" },
+        { label: "SURFACE", value: "CLI & SDKs" },
         { label: "VELOCITY", value: "Continuous Delivery" },
       ],
       nodes: ["ORCHESTRATION", "API GATEWAY", "COMPUTE NODES", "TELEMETRY"],
@@ -359,23 +399,28 @@ function HeroArchitecture() {
     {
       id: "02",
       tag: "0→1 HARDENED",
-      title: "From 0→1 to Hardened Systems",
-      role: "Senior PM @ Luxor Technology",
-      status: "DEPLOYED",
+      title: "From 0 to 1 to Hardened Systems",
+      role: "Senior PM @Luxor Technology",
+      status: "VERIFIED",
       summary:
-        "First PM driving core products from blank page to global release, including custom ASIC firmware, enterprise hash rate management, and B2B telemetry.",
+        "First PM driving core products, including bitcoin mining pool, custom ASIC firmware and enterprise hashrate management.",
       specs: [
         { label: "SYSTEM TYPE", value: "Embedded + Cloud" },
         { label: "SCALE", value: "Global Hashrate" },
-        { label: "DEVELOPMENT", value: "0→1 Green-field" },
+        { label: "DEVELOPMENT", value: "0 to 1 Green-field" },
         { label: "SECURITY", value: "Hardened Cryptographic" },
       ],
-      nodes: ["FIRMWARE", "INGESTION BUS", "TELEMETRY ENGINE", "ENTERPRISE B2B"],
+      nodes: [
+        "FIRMWARE",
+        "INGESTION BUS",
+        "TELEMETRY ENGINE",
+        "ENTERPRISE B2B",
+      ],
     },
     {
       id: "03",
       tag: "FINTECH & APIS",
-      title: "Resilient Contracts & Financial Data",
+      title: "Resilient Platforms & Financial Data",
       role: "Product Manager @ SocGen & BNP",
       status: "VERIFIED",
       summary:
@@ -383,10 +428,15 @@ function HeroArchitecture() {
       specs: [
         { label: "INTEGRITY", value: "Audited Financials" },
         { label: "DATA PIPELINE", value: "Event-Driven Streams" },
-        { label: "ARCHITECTURE", value: "Defensive Contracts" },
-        { label: "AVAILABILITY", value: "99.99% Enterprise" },
+        { label: "ARCHITECTURE", value: "GraphQL / Rest" },
+        { label: "AVAILABILITY", value: "99.999% Uptime" },
       ],
-      nodes: ["EVENT STREAM", "CONTRACT VALIDATOR", "CORE LEDGER", "AUDIT PIPELINE"],
+      nodes: [
+        "EVENT STREAM",
+        "CONTRACT VALIDATOR",
+        "CORE LEDGER",
+        "AUDIT PIPELINE",
+      ],
     },
   ];
 
@@ -397,7 +447,9 @@ function HeroArchitecture() {
       <div className="hero-arch-top">
         <div className="arch-top-left">
           <span className="arch-dots">● ● ●</span>
-          <span className="arch-system-title">SYSTEMS ARCHITECTURE // PRODUCT OPERATING MODEL</span>
+          <span className="arch-system-title">
+            SYSTEMS ARCHITECTURE // PRODUCT OPERATING MODEL
+          </span>
         </div>
         <div className="arch-top-right">
           <span className="arch-badge">
@@ -408,7 +460,11 @@ function HeroArchitecture() {
       </div>
 
       <div className="hero-arch-body">
-        <div className="arch-selector" role="tablist" aria-label="Architecture Vectors">
+        <div
+          className="arch-selector"
+          role="tablist"
+          aria-label="Architecture Vectors"
+        >
           {vectors.map((vec, idx) => (
             <button
               key={vec.id}
@@ -419,7 +475,9 @@ function HeroArchitecture() {
               type="button"
             >
               <div className="arch-tab-header">
-                <span className="arch-tab-num">{vec.id} // {vec.tag}</span>
+                <span className="arch-tab-num">
+                  {vec.id} // {vec.tag}
+                </span>
                 <span className="arch-tab-status">{vec.status}</span>
               </div>
               <strong className="arch-tab-title">{vec.title}</strong>
@@ -443,9 +501,22 @@ function HeroArchitecture() {
           <p className="viewport-summary">{current.summary}</p>
 
           <div className="viewport-circuit" aria-hidden="true">
-            <svg viewBox="0 0 540 80" className="circuit-svg" preserveAspectRatio="none">
-              <path d="M40 40 L180 40 L340 40 L480 40" className="circuit-wire" />
-              <line x1="40" y1="40" x2="480" y2="40" className="circuit-pulse-line" />
+            <svg
+              viewBox="0 0 540 80"
+              className="circuit-svg"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M40 40 L180 40 L340 40 L480 40"
+                className="circuit-wire"
+              />
+              <line
+                x1="40"
+                y1="40"
+                x2="480"
+                y2="40"
+                className="circuit-pulse-line"
+              />
               <circle cx="40" cy="40" r="4" className="circuit-node" />
               <circle cx="180" cy="40" r="4" className="circuit-node" />
               <circle cx="340" cy="40" r="4" className="circuit-node" />
@@ -487,9 +558,9 @@ function Hero() {
     <section className="hero page-pad">
       <div className="hero-status-strip">
         <span className="status-item">
-          <i className="status-dot" /> ACTIVE ROLE: SENIOR PRODUCT MANAGER @ TENKI
+          <i className="status-dot" /> ACTIVE ROLE: SENIOR PRODUCT MANAGER
+          @TENKI
         </span>
-        <span className="status-item">DEVELOPER INFRASTRUCTURE &amp; COMPUTE</span>
         <span className="status-item">TORONTO, CA [UTC-4]</span>
       </div>
 
@@ -501,14 +572,17 @@ function Hero() {
         </h1>
         <div className="hero-copy">
           <p>
-            Senior Product Manager specializing in developer infrastructure, compute platforms, and 0→1 products. Grounded in technical architecture, clear evidence, and systems that scale.
+            Senior Product Manager specializing in developer infrastructure,
+            compute platforms, and 0 to 1 products. Grounded in technical
+            architecture, clear evidence, and systems that scale.
           </p>
           <div className="button-row">
             <Link className="button button-amber" to="/about">
-              Explore profile &amp; craft <Arrow />
+              Explore Profile
+              <Arrow />
             </Link>
             <Link className="button button-ghost" to="/contact">
-              Start a conversation <Arrow />
+              Contact <Arrow />
             </Link>
           </div>
         </div>
@@ -522,7 +596,7 @@ function Hero() {
 function FocusSection() {
   return (
     <section className="focus-section">
-      <SectionRule label="Tracks" />
+      <SectionRule label="FOCUSES" />
       <div className="section-intro centered">
         <h2>
           Primarily <em>focused on</em>
@@ -569,12 +643,24 @@ function FocusSection() {
                     <g className="iso-cube cube-a">
                       <path className="iso-top" d="m62 91 43-25 43 21-44 26Z" />
                       <path className="iso-left" d="m62 91 42 22v42l-42-22Z" />
-                      <path className="iso-right" d="m104 113 44-26v42l-44 26Z" />
+                      <path
+                        className="iso-right"
+                        d="m104 113 44-26v42l-44 26Z"
+                      />
                     </g>
                     <g className="iso-cube cube-b">
-                      <path className="iso-top" d="m155 118 34-20 34 17-35 20Z" />
-                      <path className="iso-left" d="m155 118 33 17v31l-33-17Z" />
-                      <path className="iso-right" d="m188 135 35-20v31l-35 20Z" />
+                      <path
+                        className="iso-top"
+                        d="m155 118 34-20 34 17-35 20Z"
+                      />
+                      <path
+                        className="iso-left"
+                        d="m155 118 33 17v31l-33-17Z"
+                      />
+                      <path
+                        className="iso-right"
+                        d="m188 135 35-20v31l-35 20Z"
+                      />
                     </g>
                   </>
                 )}
@@ -597,9 +683,18 @@ function FocusSection() {
                         key={level}
                         transform={`translate(0 ${-level * 24})`}
                       >
-                        <path className="iso-top" d="m76 129 79-46 79 39-79 47Z" />
-                        <path className="iso-left" d="m76 129 79 40v18l-79-40Z" />
-                        <path className="iso-right" d="m155 169 79-47v18l-79 47Z" />
+                        <path
+                          className="iso-top"
+                          d="m76 129 79-46 79 39-79 47Z"
+                        />
+                        <path
+                          className="iso-left"
+                          d="m76 129 79 40v18l-79-40Z"
+                        />
+                        <path
+                          className="iso-right"
+                          d="m155 169 79-47v18l-79 47Z"
+                        />
                       </g>
                     ))}
                     <circle className="path-pulse" r="4">
@@ -633,9 +728,15 @@ function FocusSection() {
                           key={point}
                           transform={`translate(${x - 25} ${y})`}
                         >
-                          <path className="iso-top" d="m0 14 25-14 25 13-25 14Z" />
+                          <path
+                            className="iso-top"
+                            d="m0 14 25-14 25 13-25 14Z"
+                          />
                           <path className="iso-left" d="m0 14 25 13v28L0 42Z" />
-                          <path className="iso-right" d="m25 27 25-14v28L25 55Z" />
+                          <path
+                            className="iso-right"
+                            d="m25 27 25-14v28L25 55Z"
+                          />
                         </g>
                       );
                     })}
@@ -795,7 +896,9 @@ function AnimatedMetric({
                 <span className="steam-line s3" />
               </div>
               <div className="beaker-glass">
-                <div className={`beaker-fluid${isVisible ? " is-filled" : ""}`} />
+                <div
+                  className={`beaker-fluid${isVisible ? " is-filled" : ""}`}
+                />
                 <div className="beaker-ticks">
                   <i />
                   <i />
@@ -821,30 +924,30 @@ function MetricsSection() {
     {
       value: 8,
       suffix: "+",
-      tag: "01 // YEARS",
-      status: "CONTINUOUS",
+      tag: "01",
+      status: "IN PROGRESS",
       label: "Years building products",
-      detail: "2018 → 2026",
+      detail: "2018-2026",
     },
     {
       value: 10,
       suffix: "+",
-      tag: "02 // BUILDS",
+      tag: "02",
       status: "PRODUCTION",
       label: "Public product builds",
-      detail: "REPOSITORIES / LIVE",
+      detail: "LIVE",
     },
     {
       value: 3,
-      tag: "03 // TRIAD",
+      tag: "03",
       status: "INTERSECTION",
       label: "Core disciplines",
-      detail: "PRODUCT · DATA · CODE",
+      detail: "PRODUCT-DATA-CODE",
     },
     {
-      value: 8918,
-      tag: "04 // FUEL",
-      status: "APPROX",
+      value: 6918,
+      tag: "04",
+      status: "FUEL",
       label: "Liters of coffee brewed",
       detail: "ROASTED & BREWED",
     },
@@ -859,8 +962,8 @@ function MetricsSection() {
           <em>counted clearly.</em>
         </h2>
         <p>
-          A practice built across strategy, delivery, technical systems, and
-          hands-on experiments.
+          A practice grounded in strategy, delivery, technical systems, and
+          hands-on experimentation.
         </p>
         <Link className="text-link" to="/about">
           Read the full profile →
@@ -903,7 +1006,7 @@ function ToolsSection() {
   const tools = [
     {
       name: "React",
-      category: "UI & State",
+      category: "Framework",
       defaultImage: "/REACT-DARK.png",
       hoverImage: "/REACT-HOVER.png",
     },
@@ -921,19 +1024,19 @@ function ToolsSection() {
     },
     {
       name: "Amplitude",
-      category: "Analytics",
+      category: "Insights",
       defaultImage: "/AMPLITUDE-DARK.png",
       hoverImage: "/AMPLITUDE-HOVER.png",
     },
     {
       name: "PostHog",
-      category: "Telemetry",
+      category: "Analytics",
       defaultImage: "/POSTHOG-DARK.png",
       hoverImage: "/POSTHOG-HOVER.png",
     },
     {
       name: "Figma",
-      category: "Systems",
+      category: "Design",
       defaultImage: "/FIGMA-DARK.png",
       hoverImage: "/FIGMA-HOVER.png",
     },
@@ -955,10 +1058,10 @@ function ToolsSection() {
       <SectionRule label="Working kit" />
       <div className="section-intro">
         <h2>
-          Tools are part of how <em> I think, test &amp; ship.</em>
+          Thinking, testing, and shipping <em>through tools.</em>
         </h2>
         <p>
-          From rough ideas to prototypes, decisions, and products in production.
+          From rough ideas to prototypes, decisions, and features in production.
         </p>
       </div>
       <div className="tool-grid" aria-label="Tools I work with">
@@ -1017,7 +1120,9 @@ function ExperienceSection() {
               </div>
             </div>
             <div className="experience-card-body">
-              <small className="experience-index">{experience.index} · TEAM</small>
+              <small className="experience-index">
+                {experience.index} · TEAM
+              </small>
               <h3>{experience.company}</h3>
               <span className="experience-role">{experience.role}</span>
               <p>{experience.copy}</p>
@@ -1079,16 +1184,20 @@ export function ProfilePage() {
 
         <div className="profile-lead-wrap">
           <div className="profile-badge-row">
-            <span className="profile-spec-badge">EXP // 7+ YEARS</span>
-            <span className="profile-spec-badge">FOCUS // 0→1 PLATFORMS</span>
-            <span className="profile-spec-badge">STACK // APIs · DATA · AI</span>
+            <span className="profile-spec-badge">EXP: 8+ YEARS</span>
+            <span className="profile-spec-badge">
+              FOCUS: PRODUCT DEVELOPMENT
+            </span>
+            <span className="profile-spec-badge">
+              DOMAINS: AI - DATA - DESIGN
+            </span>
           </div>
           <p className="profile-lead-copy">
             I like building products, especially when the path from idea to
-            production isn’t obvious yet. Over the years, that’s taken me through
-            developer infrastructure, fintech, data, and Bitcoin, working with
-            teams to understand the problem, build something real, and keep
-            improving it once it’s in users’ hands.
+            production isn’t obvious yet. Over the years, that’s taken me
+            through developer infrastructure, fintech, data, and Bitcoin,
+            working with teams to understand the problem, build something real,
+            and keep improving it once it’s in users’ hands.
           </p>
         </div>
       </section>
@@ -1116,13 +1225,15 @@ export function ProfilePage() {
             </div>
             <h3>Learning to build</h3>
             <p>
-              Grounded in software fundamentals and systems thinking. Knowing how
-              architecture, latency, and code actually execute gives clarity when
-              making hard engineering trade-offs.
+              Grounded in software fundamentals and systems thinking. Knowing
+              how architecture, latency, and code actually execute gives clarity
+              when making hard engineering trade-offs.
             </p>
             <div className="journey-badges">
-              <span>[CODE // REASONING]</span>
-              <span>[SYSTEMS // THINKING]</span>
+              <span>[REASONING]</span>
+              <span>[CODE]</span>
+              <span>[SYSTEMS]</span>
+              <span>[DESIGN]</span>
             </div>
           </article>
 
@@ -1132,15 +1243,17 @@ export function ProfilePage() {
               <span className="journey-step">02 · CRAFT</span>
               <span className="journey-status">PRODUCT</span>
             </div>
-            <h3>Leading products from 0→1</h3>
+            <h3>Products from 0 to 1</h3>
             <p>
-              Bridging engineering reality and business impact. Unifying discovery,
-              user pain points, and strategic roadmaps into clear product specs that
-              teams can ship with confidence.
+              Bridging engineering reality and business impact. Unifying
+              discovery, user pain points, and strategic roadmaps into clear
+              product specs that teams can ship with confidence.
             </p>
             <div className="journey-badges">
-              <span>[STRATEGY // ROADMAPS]</span>
-              <span>[DISCOVERY // SIGNALS]</span>
+              <span>[STRATEGY]</span>
+              <span>[ROADMAPS]</span>
+              <span>[DISCOVERY]</span>
+              <span>[SIGNALS]</span>
             </div>
           </article>
 
@@ -1150,15 +1263,15 @@ export function ProfilePage() {
               <span className="journey-step">03 · VELOCITY</span>
               <span className="journey-status">EXECUTION</span>
             </div>
-            <h3>Staying close to production</h3>
+            <h3>Continious Development</h3>
             <p>
               When a prototype answers an open question faster than two weeks of
-              meetings, I&apos;ll still open the IDE, test the APIs directly, or build
-              the proof-of-concept myself.
+              meetings, I&apos;ll still open the IDE, test the APIs directly, or
+              build the proof-of-concept myself.
             </p>
             <div className="journey-badges">
-              <span>[PROTOTYPES // FAST]</span>
-              <span>[PRD → PRODUCTION]</span>
+              <span>[PROTOTYPES]</span>
+              <span>[PPRODUCTION]</span>
             </div>
           </article>
         </div>
@@ -1179,13 +1292,13 @@ export function ProfilePage() {
           <div className="how-pillar-card">
             <div className="pillar-corner" aria-hidden="true" />
             <div className="pillar-head">
-              <span className="pillar-phase">PHASE 01 // EVIDENCE</span>
+              <span className="pillar-phase">PHASE 01 - EVIDENCE</span>
               <i className="status-dot" />
             </div>
             <h3>Context &amp; Discovery</h3>
             <p>
               Finding genuine signal across user interviews, behavior analytics,
-              and commercial outcomes before locking commitments.
+              and business outcomes before locking commitments.
             </p>
             <span className="pillar-metric">EVIDENCE &gt; ASSUMPTIONS</span>
           </div>
@@ -1193,13 +1306,13 @@ export function ProfilePage() {
           <div className="how-pillar-card">
             <div className="pillar-corner" aria-hidden="true" />
             <div className="pillar-head">
-              <span className="pillar-phase">PHASE 02 // ALIGNMENT</span>
+              <span className="pillar-phase">PHASE 02 - ALIGNMENT</span>
               <i className="status-dot" />
             </div>
             <h3>Technical Reality</h3>
             <p>
-              Partnering with engineering on API contracts, system constraints,
-              and data models early to ensure what ships is resilient.
+              Partnering with engineering on all phases, system constraints, and
+              data models early to ensure what ships is resilient.
             </p>
             <span className="pillar-metric">RESILIENT ARCHITECTURE</span>
           </div>
@@ -1207,23 +1320,25 @@ export function ProfilePage() {
           <div className="how-pillar-card">
             <div className="pillar-corner" aria-hidden="true" />
             <div className="pillar-head">
-              <span className="pillar-phase">PHASE 03 // VELOCITY</span>
+              <span className="pillar-phase">PHASE 03 - VELOCITY</span>
               <i className="status-dot" />
             </div>
             <h3>Execution &amp; Telemetry</h3>
             <p>
-              Rapid prototyping, pragmatic scope slicing, and closing feedback
+              Fast prototyping, pragmatic scope slicing, and closing feedback
               loops immediately after deployment with real production telemetry.
             </p>
-            <span className="pillar-metric">0→1 SHIP VELOCITY</span>
+            <span className="pillar-metric">SHIPPING VELOCITY</span>
           </div>
         </div>
 
         <div className="how-capabilities-wrap">
-          <small className="capabilities-label">CORE CAPABILITIES // DOMAIN EXPERTISE</small>
+          <small className="capabilities-label">
+            CORE CAPABILITIES & DOMAIN EXPERTISE
+          </small>
           <div className="tag-row capabilities-tags">
-            <span>Product strategy</span>
-            <span>Platforms &amp; Infra</span>
+            <span>Product Strategy</span>
+            <span>Platforms &amp; Infrastructure</span>
             <span>API Design</span>
             <span>Data Systems</span>
             <span>UX/UI Prototyping</span>
